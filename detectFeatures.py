@@ -1,6 +1,6 @@
 import cv2
-import time
 import os
+import json
 
 # Save image in set directory
 # Read RGB image
@@ -68,4 +68,5 @@ for template_img in range(0, len(detectedAndComputedImgsDes)):
                     matches_map[f"{template_img}_{i}"]["template_img_matches"].append((x1, y1))
                     matches_map[f"{template_img}_{i}"]["other_img_matches"].append((x2, y2))
 
-print(matches_map)
+with open("features.json", "w") as outfile:
+    json.dump(matches_map, outfile)
