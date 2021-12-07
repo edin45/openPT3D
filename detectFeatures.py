@@ -5,12 +5,12 @@ import json
 # Save image in set directory
 # Read RGB image
 
-resize_factor = 4
+resize_factor = 1
 imgs_folder = input("Images folder: ")
 result_folder = input("Result folder: ")
-max_distance = input("Max Distance (Default: 1500): ")
+max_distance = input("Max Distance (Default: 60): ")
 if max_distance == "":
-    max_distance = 1500
+    max_distance = 60
 else:
     max_distance = int(max_distance)
 
@@ -26,12 +26,12 @@ def load_images_from_folder(folder):
 imgs = load_images_from_folder(str(imgs_folder))
 
 #Detect and Compute all imgs with SIFT
-sift = cv2.SIFT_create()
+orb = cv2.ORB_create()
 detectedAndComputedImgsKp = []
 detectedAndComputedImgsDes = []
 
 for img in imgs:
-    kp, des = sift.detectAndCompute(img, None)
+    kp, des = orb.detectAndCompute(img, None)
     detectedAndComputedImgsKp.append(kp)
     detectedAndComputedImgsDes.append(des)
 
@@ -39,15 +39,16 @@ for img in imgs:
 matches_map = {}
 
 # Brute Force Matching
-# ToDo: Implement Multythreading for this step
+# ToDo: Implement Multithreading for this step
 for template_img in range(0, len(detectedAndComputedImgsDes)):
+    print(f"Img: {template_img+1}/{len(detectedAndComputedImgsDes)}")
     for i in range(0,len(detectedAndComputedImgsDes) - 1):
         if i != template_img:
-            bf = cv2.BFMatcher(cv2.NORM_L1, crossCheck=True)
+            bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
             matches = bf.match(detectedAndComputedImgsDes[template_img], detectedAndComputedImgsDes[i])
-            matches = sorted(matches, key = lambda x:x.distance)
+            #matches = sorted(matches, key = lambda x:x.distance)
             matches_map[f"{template_img}_{i}"] = {
-                    "template_img_matches" : [],
+                "template_img_matches" : [],
                 "other_img_matches" : [],
             }
             # For each match...
@@ -68,5 +69,5 @@ for template_img in range(0, len(detectedAndComputedImgsDes)):
                     matches_map[f"{template_img}_{i}"]["template_img_matches"].append((x1, y1))
                     matches_map[f"{template_img}_{i}"]["other_img_matches"].append((x2, y2))
 
-with open("features.json", "w") as outfile:
+with open(f"{result_folder}/features.json", "w") as outfile:
     json.dump(matches_map, outfile)
