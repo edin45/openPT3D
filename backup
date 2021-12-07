@@ -1,0 +1,47 @@
+print(img.shape)
+
+img_len_x = (img.shape[0])/60
+img_len_y = (img.shape[1])/60
+
+
+def func(block_range_x,block_range_y):
+    for img_index in imgs:
+        for index_x in range(block_range_x[0], block_range_x[1]):
+            for index_y in range(block_range_y[0], block_range_y[1]):
+                range_block_x = range(int((img_len_x*index_x) - img_len_x),int(img_len_x*index_x))
+                range_block_y = range(int((img_len_y*index_y) - img_len_y),int(img_len_y*index_y))
+                block_average = [0, 0, 0]
+                for x in range_block_x:
+                    for y in range_block_y:
+                        block_average[0] += img_index[x][y][0]
+                        block_average[1] += img_index[x][y][1]
+                        block_average[2] += img_index[x][y][2]
+
+                block_average[0] = int(block_average[0]/(img_len_x*img_len_y))
+                block_average[1] = int(block_average[1]/(img_len_x*img_len_y))
+                block_average[2] = int(block_average[2]/(img_len_x*img_len_y))
+                print(block_average)
+
+thread1 = threading.Thread(target=func, args=([1,7],[1,7],))
+thread1.start()
+
+thread2 = threading.Thread(target=func, args=([8,15],[8,15],))
+thread2.start()
+
+thread3 = threading.Thread(target=func, args=([16,23],[16,23],))
+thread3.start()
+
+thread4 = threading.Thread(target=func, args=([24,31],[24,31],))
+thread4.start()
+
+thread5 = threading.Thread(target=func, args=([32,39],[32,39],))
+thread5.start()
+
+thread6 = threading.Thread(target=func, args=([40,47],[40,47],))
+thread6.start()
+
+thread7 = threading.Thread(target=func, args=([48,55],[48,55],))
+thread7.start()
+
+thread8 = threading.Thread(target=func, args=([56,60],[56,60],))
+thread8.start()
