@@ -6,11 +6,15 @@ import json
 # Read RGB image
 
 resize_factor = 1
+orb_or_sift = input("1: ORB, 2: SIFT (Default: 1): ")
+if orb_or_sift != "2":
+    orb_or_sift = "1"
 imgs_folder = input("Images folder: ")
 result_folder = input("Result folder: ")
-max_distance = input("Max Distance (Default: 60): ")
+default_max_distance = 60 if orb_or_sift == "1" else 1500
+max_distance = input(f"Max Distance (Default: {default_max_distance}): ")
 if max_distance == "":
-    max_distance = 60
+    max_distance = default_max_distance
 else:
     max_distance = int(max_distance)
 
@@ -25,8 +29,8 @@ def load_images_from_folder(folder):
 
 imgs = load_images_from_folder(str(imgs_folder))
 
-#Detect and Compute all imgs with SIFT
-orb = cv2.ORB_create()
+#Detect and Compute all imgs with ORB
+orb = cv2.ORB_create() if orb_or_sift else cv2.SIFT_create()
 detectedAndComputedImgsKp = []
 detectedAndComputedImgsDes = []
 
@@ -39,12 +43,11 @@ for img in imgs:
 matches_map = {}
 
 # Brute Force Matching
-# ToDo: Implement Multithreading for this step
 for template_img in range(0, len(detectedAndComputedImgsDes)):
     print(f"Img: {template_img+1}/{len(detectedAndComputedImgsDes)}")
     for i in range(0,len(detectedAndComputedImgsDes) - 1):
         if i != template_img:
-            bf = cv2.BFMatcher(cv2.NORM_HAMMING, crossCheck=True)
+            bf = cv2.BFMatcher(cv2.NORM_HAMMING if orb_or_sift == "1" else cv2.NORM_L1, crossCheck=True)
             matches = bf.match(detectedAndComputedImgsDes[template_img], detectedAndComputedImgsDes[i])
             #matches = sorted(matches, key = lambda x:x.distance)
             matches_map[f"{template_img}_{i}"] = {
