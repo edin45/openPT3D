@@ -1,11 +1,27 @@
 import cv2
 import os
 import json
+class CalculateCameraPositions:
+    def __init__(self,result_folder,image_count):
+        self.result_folder = result_folder
+        self.image_count = image_count
 
-def calculate_camera_positions(result_folder):
-    f = open(f'{result_folder}/features.json')
-    features = json.load(f)
+    def calculate_camera_positions(self):
+        f = open(f'{self.result_folder}/features.json')
+        features = json.load(f)
+        item_0 = features[0]
+        for item in features:
+            template_img_matches = features[item]["template_img_matches"]
+            other_img_matches = features[item]["other_img_matches"]
+            print(item + ": \n")
+            for i in range(0,len(template_img_matches)):
+                camera_pos = [0,0,0]
+                camera_rot = [0,0,0]
 
-    for item in features:
-        print(f"{item}\n")
-    f.close()
+                template_img_matches[i][0],template_img_matches[i][1]
+                other_img_matches[i][0],other_img_matches[i][1]
+
+
+
+
+        f.close()

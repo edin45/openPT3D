@@ -1,3 +1,4 @@
-./imgs
-./result
+*.jpg
+*.png
+*.pyc
 backup

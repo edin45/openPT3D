@@ -4,60 +4,69 @@ import json
 
 # Save image in set directory
 # Read RGB image
+class DetectFeatures:
 
-def detect_features(resize_factor,imgs_folder,orb_or_sift,max_distance,result_folder):
-    def load_images_from_folder(folder):
-        images = []
-        for filename in os.listdir(folder):
-            img = cv2.imread(os.path.join(folder,filename))
-            if img is not None:
-                images.append(cv2.resize(img, (int(img.shape[0]/resize_factor),int(img.shape[1]/resize_factor)), interpolation = cv2.INTER_AREA))
-        return images
+    def __init__(self, resize_factor,imgs_folder,orb_or_sift,max_distance,result_folder):
+        self.resize_factor = resize_factor
+        self.imgs_folder = imgs_folder
+        self.orb_or_sift = orb_or_sift
+        self.max_distance = max_distance
+        self.result_folder = result_folder
 
-    imgs = load_images_from_folder(str(imgs_folder))
+    def detect_features(self):
+        def load_images_from_folder(folder):
+            images = []
+            for filename in os.listdir(folder):
+                img = cv2.imread(os.path.join(folder,filename))
+                if img is not None:
+                    images.append(cv2.resize(img, (int(img.shape[0]/self.resize_factor),int(img.shape[1]/self.resize_factor)), interpolation = cv2.INTER_AREA))
+            return images
 
-    #Detect and Compute all imgs with ORB
-    orb = cv2.ORB_create() if orb_or_sift else cv2.SIFT_create()
-    detectedAndComputedImgsKp = []
-    detectedAndComputedImgsDes = []
+        print("Loading Images...")
+        self.imgs = load_images_from_folder(str(self.imgs_folder))
 
-    for img in imgs:
-        kp, des = orb.detectAndCompute(img, None)
-        detectedAndComputedImgsKp.append(kp)
-        detectedAndComputedImgsDes.append(des)
+        #Detect and Compute all imgs with ORB
+        orb = cv2.ORB_create() if self.orb_or_sift else cv2.SIFT_create()
+        detectedAndComputedImgsKp = []
+        detectedAndComputedImgsDes = []
+
+        for img in self.imgs:
+            kp, des = orb.detectAndCompute(img, None)
+            detectedAndComputedImgsKp.append(kp)
+            detectedAndComputedImgsDes.append(des)
 
 
-    matches_map = {}
+        matches_map = {}
 
-    # Brute Force Matching
-    for template_img in range(0, len(detectedAndComputedImgsDes)):
-        print(f"Img: {template_img+1}/{len(detectedAndComputedImgsDes)}")
-        for i in range(0,len(detectedAndComputedImgsDes) - 1):
-            if i != template_img:
-                bf = cv2.BFMatcher(cv2.NORM_HAMMING if orb_or_sift == "1" else cv2.NORM_L1, crossCheck=True)
-                matches = bf.match(detectedAndComputedImgsDes[template_img], detectedAndComputedImgsDes[i])
-                #matches = sorted(matches, key = lambda x:x.distance)
-                matches_map[f"{template_img}_{i}"] = {
-                    "template_img_matches" : [],
-                    "other_img_matches" : [],
-                }
-                # For each match...
-                for mat in matches:
+        # Brute Force Matching
+        for template_img in [0]:#range(0, len(detectedAndComputedImgsDes)):
+            print(f"Img: {template_img+1} / {len(detectedAndComputedImgsDes)}")
+            for i in range(0,len(detectedAndComputedImgsDes)):    
+                if i != template_img:
+                    bf = cv2.BFMatcher(cv2.NORM_HAMMING if self.orb_or_sift == "1" else cv2.NORM_L1, crossCheck=True)
+                    matches = bf.match(detectedAndComputedImgsDes[template_img], detectedAndComputedImgsDes[i])
+                    #matches = sorted(matches, key = lambda x:x.distance)
+                    matches_map[f"{template_img}_{i}"] = {
+                        "template_img_matches" : [],
+                        "other_img_matches" : [],
+                    }
+                    # For each match...
+                    for mat in matches:
 
-                    if mat.distance < max_distance:
-                        # Get the matching keypoints for each of the images
-                        img1_idx = mat.queryIdx
-                        img2_idx = mat.trainIdx
+                        if mat.distance < self.max_distance:
+                            # Get the matching keypoints for each of the images
+                            img1_idx = mat.queryIdx
+                            img2_idx = mat.trainIdx
 
-                        # x - columns
-                        # y - rows
-                        # Get the coordinates
-                        (x1, y1) = detectedAndComputedImgsKp[template_img][img1_idx].pt
-                        (x2, y2) = detectedAndComputedImgsKp[i][img2_idx].pt
+                            # x - columns
+                            # y - rows
+                            # Get the coordinates
+                            (x1, y1) = detectedAndComputedImgsKp[template_img][img1_idx].pt
+                            (x2, y2) = detectedAndComputedImgsKp[i][img2_idx].pt
 
-                        # Append to each list
-                        matches_map[f"{template_img}_{i}"]["template_img_matches"].append((x1, y1))
-                        matches_map[f"{template_img}_{i}"]["other_img_matches"].append((x2, y2))
+                            # Append to each list
+                            matches_map[f"{template_img}_{i}"]["template_img_matches"].append((x1, y1))
+                            matches_map[f"{template_img}_{i}"]["other_img_matches"].append((x2, y2))
 
-    with open(f"{result_folder}/features.json", "w") as outfile:
-        json.dump(matches_map, outfile)
+        with open(f"{self.result_folder}/features.json", "w") as outfile:
+            json.dump(matches_map, outfile)
