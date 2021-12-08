@@ -1,4 +1,5 @@
 from cv2 import detail_ExposureCompensator
+from Sfm import Sfm
 from calculate_camera_positions import CalculateCameraPositions
 from detect_features import DetectFeatures
 
@@ -18,5 +19,5 @@ else:
 
 detect_features_obj = DetectFeatures(resize_factor,imgs_folder,orb_or_sift,max_distance,result_folder)
 detect_features_obj.detect_features()
-calc_camera_positions_obj = CalculateCameraPositions(result_folder,len(detect_features_obj.imgs))
-calc_camera_positions_obj.calculate_camera_positions()
+sfm_obj = Sfm(detect_features_obj.matches_map)
+sfm_obj.execute_sfm_process()

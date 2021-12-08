@@ -36,10 +36,10 @@ class DetectFeatures:
             detectedAndComputedImgsDes.append(des)
 
 
-        matches_map = {}
+        self.matches_map = {}
 
         # Brute Force Matching
-        for template_img in [0]:#range(0, len(detectedAndComputedImgsDes)):
+        for template_img in range(0, len(detectedAndComputedImgsDes)):
             print(f"Img: {template_img+1} / {len(detectedAndComputedImgsDes)}")
             for i in range(0,len(detectedAndComputedImgsDes)):    
                 if i != template_img:
@@ -70,5 +70,5 @@ class DetectFeatures:
                     #        matches_map[f"{template_img}_{i}"]["template_img_matches"].append((x1, y1))
                     #        matches_map[f"{template_img}_{i}"]["other_img_matches"].append((x2, y2))
 
-        with open(f"{self.result_folder}/features.json", "w") as outfile:
-            json.dump(matches_map, outfile)
+        #with open(f"{self.result_folder}/features.json", "w") as outfile:
+        #    json.dump(self.matches_map, outfile)
