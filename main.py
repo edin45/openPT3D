@@ -3,8 +3,8 @@ from Sfm import Sfm
 from calculate_camera_positions import CalculateCameraPositions
 from detect_features import DetectFeatures
 
-
 resize_factor = 1
+
 orb_or_sift = input("1: ORB, 2: SIFT (Default: 2): ")
 if orb_or_sift != "1":
     orb_or_sift = "2"
@@ -19,5 +19,7 @@ else:
 
 detect_features_obj = DetectFeatures(resize_factor,imgs_folder,orb_or_sift,max_distance,result_folder)
 detect_features_obj.detect_features()
-sfm_obj = Sfm(detect_features_obj.matches_map)
+sfm_obj = Sfm(detect_features_obj.matches_map,result_folder)
+
+
 sfm_obj.execute_sfm_process()

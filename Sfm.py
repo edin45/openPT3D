@@ -3,27 +3,49 @@ import math
 import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
+import os
+import struct
+from pyntcloud import PyntCloud
+import pandas as pd
+import threading
+import multiprocessing
 
 class Sfm:
 
-    def __init__(self,matches_map):
+    def __init__(self,matches_map,result_folder):
         self.matches_map = matches_map
+        self.result_folder = result_folder
         self.K = np.array([[518.86, 0., 285.58],
               [0., 519.47, 213.74],
               [0.,   0.,   1.]])
         self.point_3d = []
 
     def execute_sfm_process(self):
-        index = 1
+        
         total_length = len(self.matches_map)
-        for item in self.matches_map:
-            print(f"Sfm: {index} / {total_length}")
-            index+=1
-            self.create_essential_matrix(self.matches_map[item]["template_keypoints"],self.matches_map[item]["right_keypoints"],self.matches_map[item]["matches"])
-            self.recover_pose()
-            self.triangulate()
-            self.undistort_points()
-        self.display_point_cloud()
+        def compute(item_from,item_to):
+            index = 0
+            for item in self.matches_map:
+                if index >= item_from and index <= item_to:
+                    print(f"Sfm: {index} / {total_length}")
+                    self.create_essential_matrix(self.matches_map[item]["template_keypoints"],self.matches_map[item]["right_keypoints"],self.matches_map[item]["matches"])
+                    self.recover_pose()
+                    self.triangulate()
+                    self.undistort_points()
+                    index+=1
+
+        #threads = []
+        #cpu_count = multiprocessing.cpu_count()
+        #chunk_count = int(total_length / cpu_count)
+        #for i in range(0,cpu_count-1):
+        #    threads.append(threading.Thread(target=compute, args=(i*chunk_count,((i+1)*chunk_count) if i < (cpu_count-1) else total_length,)))
+        #    threads[i].start()
+
+        
+        #print(threading.active_count())
+        compute(0,total_length)
+        self.write_pointcloud("pointcloud_sfm.ply",self.point_3d)
+        #self.display_point_cloud()
 
     #########################
     #2----essential matrix--#
@@ -96,3 +118,11 @@ class Sfm:
 
         plt.show()
         #fig.savefig('3-D_' + str(counter) + '.jpg')
+
+    def write_pointcloud(self, filename,points,rgb_points=None):
+        cloud = PyntCloud(pd.DataFrame(
+            # same arguments that you are passing to visualize_pcl
+            data=np.hstack((points, points)),
+            columns=["x", "y", "z", "red", "green", "blue"]))
+
+        cloud.to_file(os.path.join(self.result_folder,filename))

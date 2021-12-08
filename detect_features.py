@@ -16,10 +16,14 @@ class DetectFeatures:
     def detect_features(self):
         def load_images_from_folder(folder):
             images = []
-            for filename in os.listdir(folder):
+            imgs_folder = os.listdir(folder)
+            index = 1
+            for filename in imgs_folder:
                 img = cv2.imread(os.path.join(folder,filename))
                 if img is not None:
+                    print(f"Loading: Img {index} / {len(imgs_folder)}")
                     images.append(cv2.resize(img, (int(img.shape[0]/self.resize_factor),int(img.shape[1]/self.resize_factor)), interpolation = cv2.INTER_AREA))
+                    index+=1
             return images
 
         print("Loading Images...")
@@ -30,17 +34,20 @@ class DetectFeatures:
         detectedAndComputedImgsKp = []
         detectedAndComputedImgsDes = []
 
+        index = 1
         for img in self.imgs:
+            print(f"Detecting Features: {index} / {len(self.imgs)}")
             kp, des = orb.detectAndCompute(img, None)
             detectedAndComputedImgsKp.append(kp)
             detectedAndComputedImgsDes.append(des)
+            index+=1
 
 
         self.matches_map = {}
 
         # Brute Force Matching
         for template_img in range(0, len(detectedAndComputedImgsDes)):
-            print(f"Img: {template_img+1} / {len(detectedAndComputedImgsDes)}")
+            print(f"Matching Features: {template_img+1} / {len(detectedAndComputedImgsDes)}")
             for i in range(0,len(detectedAndComputedImgsDes)):    
                 if i != template_img:
                     bf = cv2.BFMatcher(cv2.NORM_HAMMING if self.orb_or_sift == "1" else cv2.NORM_L1, crossCheck=True)
