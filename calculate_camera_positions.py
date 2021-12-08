@@ -1,12 +1,15 @@
 import cv2
 import os
 import json
+import numpy as np
+
 class CalculateCameraPositions:
-    def __init__(self,result_folder,image_count):
-        self.result_folder = result_folder
-        self.image_count = image_count
+    def __init__(self,result_folder,image_count,image_path,feature_type,image_folder):
+        pass
 
     def calculate_camera_positions(self):
+
+
         f = open(f'{self.result_folder}/features.json')
         features = json.load(f)
         item_0 = features[0]

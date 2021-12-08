@@ -45,28 +45,30 @@ class DetectFeatures:
                 if i != template_img:
                     bf = cv2.BFMatcher(cv2.NORM_HAMMING if self.orb_or_sift == "1" else cv2.NORM_L1, crossCheck=True)
                     matches = bf.match(detectedAndComputedImgsDes[template_img], detectedAndComputedImgsDes[i])
+
                     #matches = sorted(matches, key = lambda x:x.distance)
-                    matches_map[f"{template_img}_{i}"] = {
-                        "template_img_matches" : [],
-                        "other_img_matches" : [],
+                    self.matches_map[f"{template_img}_{i}"] = {
+                        "template_keypoints" : detectedAndComputedImgsKp[template_img],
+                        "right_keypoints" : detectedAndComputedImgsKp[i],
+                        "matches" : matches,
                     }
                     # For each match...
-                    for mat in matches:
+                    #for mat in matches:
 
-                        if mat.distance < self.max_distance:
-                            # Get the matching keypoints for each of the images
-                            img1_idx = mat.queryIdx
-                            img2_idx = mat.trainIdx
+                    #    if mat.distance < self.max_distance:
+                    #        # Get the matching keypoints for each of the images
+                    #        img1_idx = mat.queryIdx
+                    #        img2_idx = mat.trainIdx
 
                             # x - columns
                             # y - rows
                             # Get the coordinates
-                            (x1, y1) = detectedAndComputedImgsKp[template_img][img1_idx].pt
-                            (x2, y2) = detectedAndComputedImgsKp[i][img2_idx].pt
+                    #        (x1, y1) = detectedAndComputedImgsKp[template_img][img1_idx].pt
+                    #        (x2, y2) = detectedAndComputedImgsKp[i][img2_idx].pt
 
                             # Append to each list
-                            matches_map[f"{template_img}_{i}"]["template_img_matches"].append((x1, y1))
-                            matches_map[f"{template_img}_{i}"]["other_img_matches"].append((x2, y2))
+                    #        matches_map[f"{template_img}_{i}"]["template_img_matches"].append((x1, y1))
+                    #        matches_map[f"{template_img}_{i}"]["other_img_matches"].append((x2, y2))
 
         with open(f"{self.result_folder}/features.json", "w") as outfile:
             json.dump(matches_map, outfile)

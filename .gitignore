@@ -1,4 +1,5 @@
 *.jpg
 *.png
 *.pyc
+features.json
 backup
