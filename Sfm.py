@@ -1,3 +1,4 @@
+from datetime import date
 import cv2
 import math
 import numpy as np
@@ -9,6 +10,7 @@ from pyntcloud import PyntCloud
 import pandas as pd
 import threading
 import multiprocessing
+import time
 
 class Sfm:
 
@@ -19,59 +21,69 @@ class Sfm:
               [0., 519.47, 213.74],
               [0.,   0.,   1.]])
         self.point_3d = []
+        self.color = []
+        self.p1s = []
+        self.p2s = []
+        self.Es = []
+        self.masks = []
+        self.matchesMasks = []
+        self.points = []
+        self.Rs = []
+        self.ts = []
+        self.P_ls = []
+        self.P_rs = []
 
     def execute_sfm_process(self):
         
-        total_length = len(self.matches_map)
-        def compute(item_from,item_to):
-            index = 0
-            for item in self.matches_map:
-                if index >= item_from and index <= item_to:
-                    print(f"Sfm: {index} / {total_length}")
-                    self.create_essential_matrix(self.matches_map[item]["template_keypoints"],self.matches_map[item]["right_keypoints"],self.matches_map[item]["matches"])
-                    self.recover_pose()
-                    self.triangulate()
-                    self.undistort_points()
-                    index+=1
-
-        #threads = []
-        #cpu_count = multiprocessing.cpu_count()
-        #chunk_count = int(total_length / cpu_count)
-        #for i in range(0,cpu_count-1):
-        #    threads.append(threading.Thread(target=compute, args=(i*chunk_count,((i+1)*chunk_count) if i < (cpu_count-1) else total_length,)))
-        #    threads[i].start()
-
-        
-        #print(threading.active_count())
-        compute(0,total_length)
+        self.total_length = len(self.matches_map)
+        #print(f"item_from: {item_from_to[0]}, item_to: {item_from_to[1]}")
+        index = 0
+        for item in self.matches_map:
+            #print(f"index: {index} -- {item_from_to}")
+            #if index >= item_from_to[0] and index <= item_from_to[1]:
+            print(f"Sfm: {index} / {self.total_length}")
+            self.create_essential_matrix(self.matches_map[item]["template_keypoints"],self.matches_map[item]["right_keypoints"],self.matches_map[item]["matches"],index)
+            self.recover_pose(index)
+            self.triangulate(index)
+            self.undistort_points(index)
+            #else:
+            #    print(f"skip: {thread_name}")
+            index+=1
+            
         self.write_pointcloud("pointcloud_sfm.ply",self.point_3d)
         #self.display_point_cloud()
 
     #########################
     #2----essential matrix--#
     #########################
-    def create_essential_matrix(self,kp1,kp2,matches):
+    def create_essential_matrix(self,kp1,kp2,matches,index):
         
-        self.p1 = np.float32([ kp1[m.queryIdx].pt for m in matches ]).reshape(-1,1,2)
-        self.p2 = np.float32([ kp2[m.trainIdx].pt for m in matches ]).reshape(-1,1,2)
-        self.E, self.mask = cv2.findEssentialMat(self.p1, self.p2, self.K, cv2.RANSAC, 0.999, 1.0)
+        self.p1s.append(np.float32([ kp1[m.queryIdx].pt for m in matches ]).reshape(-1,1,2))
+        self.p2s.append(np.float32([ kp2[m.trainIdx].pt for m in matches ]).reshape(-1,1,2))
+        E, mask = cv2.findEssentialMat(self.p1s[index], self.p2s[index], self.K, cv2.RANSAC, 0.999, 1.0)
+        self.Es.append(E)
+        self.masks.append(mask)
 
-        self.matchesMask = self.mask.ravel().tolist()
+        self.matchesMasks.append(mask.ravel().tolist())
 
     ####################
     #3----recoverpose--#
     ####################
-    def recover_pose(self):
-        self.points, self.R, self.t, mask = cv2.recoverPose(self.E, self.p1, self.p2)
+    def recover_pose(self,index):
+        points, R, t, mask = cv2.recoverPose(self.Es[index], self.p1s[index], self.p2s[index])
+        self.points.append(points)
+        self.Rs.append(R)
+        self.ts.append(t)
+        self.masks[index] = mask
         #print("Rotation:")
         #print(self.R)
         #print("Translation:")
         #print(self.t)
         # p1_tmp = np.expand_dims(np.squeeze(p1), 0)
-        p1_tmp = np.ones([3, self.p1.shape[0]])
-        p1_tmp[:2,:] = np.squeeze(self.p1).T
-        p2_tmp = np.ones([3, self.p2.shape[0]])
-        p2_tmp[:2,:] = np.squeeze(self.p2).T
+        p1_tmp = np.ones([3, self.p1s[index].shape[0]])
+        p1_tmp[:2,:] = np.squeeze(self.p1s[index]).T
+        p2_tmp = np.ones([3, self.p2s[index].shape[0]])
+        p2_tmp[:2,:] = np.squeeze(self.p2s[index]).T
         #print((np.dot(self.R, p2_tmp) + self.t) - p1_tmp)
 
     #######################
@@ -79,33 +91,34 @@ class Sfm:
     #######################
 
     #calculate projection matrix for both camera
-    def triangulate(self):
-        M_r = np.hstack((self.R, self.t))
+    def triangulate(self,index):
+        M_r = np.hstack((self.Rs[index], self.ts[index]))
         M_l = np.hstack((np.eye(3, 3), np.zeros((3, 1))))
 
-        self.P_l = np.dot(self.K,  M_l)
-        self.P_r = np.dot(self.K,  M_r)
+        self.P_ls.append(np.dot(self.K,  M_l))
+        self.P_rs.append(np.dot(self.K,  M_r))
 
     # undistort points
-    def undistort_points(self):
-        self.p1 = self.p1[np.asarray(self.matchesMask)==1,:,:]
-        self.p2 = self.p2[np.asarray(self.matchesMask)==1,:,:]
-        p1_un = cv2.undistortPoints(self.p1,self.K,None)
-        p2_un = cv2.undistortPoints(self.p2,self.K,None)
+    def undistort_points(self,index):
+        self.p1s[index] = self.p1s[index][np.asarray(self.matchesMasks[index])==1,:,:]
+        self.p2s[index] = self.p2s[index][np.asarray(self.matchesMasks[index])==1,:,:]
+        p1_un = cv2.undistortPoints(self.p1s[index],self.K,None)
+        p2_un = cv2.undistortPoints(self.p2s[index],self.K,None)
         p1_un = np.squeeze(p1_un)
         p2_un = np.squeeze(p2_un)
 
         #triangulate points this requires points in normalized coordinate
-        point_4d_hom = cv2.triangulatePoints(self.P_l, self.P_r, p1_un.T, p2_un.T)
+        point_4d_hom = cv2.triangulatePoints(self.P_ls[index], self.P_rs[index], p1_un.T, p2_un.T)
         point_3d = point_4d_hom / np.tile(point_4d_hom[-1, :], (4, 1))
         point_3d = point_3d[:3, :].T
         for i in point_3d:
             self.point_3d.append(i)
+            self.color.append([0,0,0])
 
     #############################
     #5----output 3D pointcloud--#
     #############################
-    def display_point_cloud(self):
+    def display_point_cloud(self,index):
         #print(self.point_3d) 
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')

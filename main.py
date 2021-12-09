@@ -1,7 +1,9 @@
+import multiprocessing
 from cv2 import detail_ExposureCompensator
 from Sfm import Sfm
 from calculate_camera_positions import CalculateCameraPositions
 from detect_features import DetectFeatures
+import threading
 
 resize_factor = 1
 
@@ -20,6 +22,33 @@ else:
 detect_features_obj = DetectFeatures(resize_factor,imgs_folder,orb_or_sift,max_distance,result_folder)
 detect_features_obj.detect_features()
 sfm_obj = Sfm(detect_features_obj.matches_map,result_folder)
-
-
 sfm_obj.execute_sfm_process()
+#def compute(asdf,thread_name):
+#    print(thread_name)
+
+#cpu_count = 4
+#multiprocessing.cpu_count()
+#chunk_count = int(len(detect_features_obj.matches_map) / 4)
+
+#thread1 = threading.Thread(target=sfm_obj.execute_sfm_process, args=([0*chunk_count,((0+1)*chunk_count)],"Thread-1",))
+#thread1.start()
+
+#thread2 = threading.Thread(target=sfm_obj.execute_sfm_process, args=([1*chunk_count,((1+1)*chunk_count)],"Thread-2",))
+#thread2.start()
+
+#thread3 = threading.Thread(target=sfm_obj.execute_sfm_process, args=([2*chunk_count,((2+1)*chunk_count)],"Thread-3",))
+#thread3.start()
+
+#thread4 = threading.Thread(target=sfm_obj.execute_sfm_process, args=([3*chunk_count,len(detect_features_obj.matches_map)],"Thread-4",))
+#thread4.start()
+
+#print(threading.active_count())
+
+#thread1.join()
+#thread2.join()
+#thread3.join()
+#thread4.join()
+
+#sfm_obj.undistort_points()
+
+#sfm_obj.write_pointcloud("pointcloud_sfm.ply",sfm_obj.point_3d)
