@@ -1,54 +1,39 @@
-import multiprocessing
-from cv2 import detail_ExposureCompensator
-from Sfm import Sfm
-from calculate_camera_positions import CalculateCameraPositions
-from detect_features import DetectFeatures
-import threading
+import platform
+import os
+import sys
+import numpy as np
+from plyfile import PlyData
 
-resize_factor = 1
+os_name = platform.system()
 
-orb_or_sift = input("1: ORB, 2: SIFT (Default: 2): ")
-if orb_or_sift != "1":
-    orb_or_sift = "2"
-imgs_folder = input("Images folder: ")
-result_folder = input("Result folder: ")
-default_max_distance = 60 if orb_or_sift == "1" else 1500
-max_distance = input(f"Max Distance (Default: {default_max_distance}): ")
-if max_distance == "":
-    max_distance = default_max_distance
+file1 = open("open_mvg_folder.txt","r+") 
+print(file1.read())
+
+image_folder = input("Image Folder: ")
+result_folder = input("Result Folder: ")
+if file1.read() == "None":
+    open_mvg_build_folder = input("openMVG_build Folder: ")
+    file2 = open("open_mvg_folder.txt","w")
+    file2.write(open_mvg_build_folder)
+    file2.close()
 else:
-    max_distance = int(max_distance)
+    open_mvg_build_folder = file1.read()
+file1.close()
 
-detect_features_obj = DetectFeatures(resize_factor,imgs_folder,orb_or_sift,max_distance,result_folder)
-detect_features_obj.detect_features()
-sfm_obj = Sfm(detect_features_obj.matches_map,result_folder)
-sfm_obj.execute_sfm_process()
-#def compute(asdf,thread_name):
-#    print(thread_name)
+filePath = f"{open_mvg_build_folder}/software/SfM/SfM_SequentialPipeline.py"
+script_descriptor = open(filePath)
+a_script = script_descriptor.read()
+sys.argv = [f"{filePath}", f"{image_folder}", f"{result_folder}"]
+    
+exec(a_script)
 
-#cpu_count = 4
-#multiprocessing.cpu_count()
-#chunk_count = int(len(detect_features_obj.matches_map) / 4)
+def read_ply(filename):
+    """ read XYZ point cloud from filename PLY file """
+    plydata = PlyData.read(filename)
+    pc = plydata['vertex'].data
+    pc_array = np.array([[x, y, z] for x,y,z in pc])
+    return pc_array 
 
-#thread1 = threading.Thread(target=sfm_obj.execute_sfm_process, args=([0*chunk_count,((0+1)*chunk_count)],"Thread-1",))
-#thread1.start()
-
-#thread2 = threading.Thread(target=sfm_obj.execute_sfm_process, args=([1*chunk_count,((1+1)*chunk_count)],"Thread-2",))
-#thread2.start()
-
-#thread3 = threading.Thread(target=sfm_obj.execute_sfm_process, args=([2*chunk_count,((2+1)*chunk_count)],"Thread-3",))
-#thread3.start()
-
-#thread4 = threading.Thread(target=sfm_obj.execute_sfm_process, args=([3*chunk_count,len(detect_features_obj.matches_map)],"Thread-4",))
-#thread4.start()
-
-#print(threading.active_count())
-
-#thread1.join()
-#thread2.join()
-#thread3.join()
-#thread4.join()
-
-#sfm_obj.undistort_points()
-
-#sfm_obj.write_pointcloud("pointcloud_sfm.ply",sfm_obj.point_3d)
+print(read_ply(f"{result_folder}/reconstruction_sequential/colorized.ply"))
+#file = os.path.join("openMVG_Build_Linux/software/Sfm","SfM_SequentialPipeline.py")
+#exec(open(f"{file} \"{image_folder}\" \"{result_folder}\"").read())

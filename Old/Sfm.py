@@ -11,14 +11,23 @@ import pandas as pd
 import threading
 import multiprocessing
 import time
+import math
 
 class Sfm:
 
-    def __init__(self,matches_map,result_folder):
+    def __init__(self,matches_map,result_folder,image_width,image_height,focal_length):
         self.matches_map = matches_map
         self.result_folder = result_folder
-        self.K = np.array([[518.86, 0., 285.58],
-              [0., 519.47, 213.74],
+        #pixelsX = (image_width * 0.5) / math.tan(focal_length * 0.5 * math.pi/180)
+        #pixelsX = (image_width) * (1.2)
+        #pixelsY = (image_height) * (1.2)
+        #pixels = focal_length * 80.457
+        #pixels = max(image_width,image_height) * 1.2
+        #self.K = np.array([[pixels, image_width/2],
+        #                   [0, pixels , image_height/2],
+        #                   [0.,   0.,   1.]])
+        self.K = np.array([[2759.48, 0., 1520.69],
+              [0., 2764.16, 1006.81],
               [0.,   0.,   1.]])
         self.point_3d = []
         self.color = []
@@ -118,7 +127,7 @@ class Sfm:
     #############################
     #5----output 3D pointcloud--#
     #############################
-    def display_point_cloud(self,index):
+    def display_point_cloud(self):
         #print(self.point_3d) 
         fig = plt.figure()
         ax = fig.add_subplot(111, projection='3d')
