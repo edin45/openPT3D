@@ -1,17 +1,51 @@
 import platform
 import os
 import sys
+from tkinter.constants import NONE
 import numpy as np
 from plyfile import PlyData
 import open3d as o3d
+import PySimpleGUI as sg
+import optparse
 
-os_name = platform.system()
+#os_name = platform.system()
+#layout = [
+#    [sg.Text('Images Folder:'),sg.In(size=(70,100), enable_events=True ,key='-IMG_FOLDER-'),sg.FolderBrowse()],
+#    [sg.Text('Result Folder:'),sg.In(size=(70,100), enable_events=True ,key='-RESULT_FOLDER-'),sg.FolderBrowse()],
+#    [sg.Text("Target Resolution"), sg.InputText(size=(70,100),key='target_res',default_text="500000")],
+#    [sg.ProgressBar(1, orientation='h', size=(20, 20), key='progress')],
+#    [sg.Combo(["Possion","BPA"], size=(70, 5), enable_events=True, key='-COMBO-')]
+#    [sg.Button("Close")]
+#    ]
+#window = sg.Window("openPT3D",layout,size=(700,550))
+
+#image_folder = None
+#result_folder = None
+#target_resolution = "500000"
+#while True:
+#    event, values = window.read()
+
+#    if event == "Close" or event == sg.WIN_CLOSED:
+#        break
+#    if event == '-IMG_FOLDER-':
+#        image_folder = values['-IMG_FOLDER-']
+#    if event == '-RESULT_FOLDER-':
+#        result_folder = values['-RESULT_FOLDER-']
+#    if event == 'target_res':
+#        target_resolution = values['targe_res']
+#
+#window.close()
 
 file1 = open("open_mvg_folder.txt","r+") 
 filecontent = file1.read()
-print(filecontent)
-image_folder = input("Image Folder: ")
-result_folder = input("Result Folder: ")
+parser = optparse.OptionParser()
+parser.add_option("-i","--input_images",action="store",help="Input Images")
+parser.add_option("-r","--result_folder",action="store",help="Folder where Results are stored")
+options, args = parser.parse_args()
+image_folder = options.input_images
+result_folder = options.result_folder
+#image_folder = input("Image Folder: ")
+#result_folder = input("Result Folder: ")
 target_resolution = input("Target Resolution (Default 500000):")
 if target_resolution == "":
     target_resolution = 500000
@@ -40,6 +74,8 @@ sys.argv = [f"{filePath}", f"{image_folder}", f"{result_folder}"]
     
 exec(a_script)
 
+os.system((filecontent if open_mvg_build_folder == "" else open_mvg_build_folder) + f"/Linux-x86_64-RELEASE/openMVG_main_ConvertSfM_DataFormat binary -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}/sfm-data.json -V -I -E")
+
 def read_ply(filename):
     """ read XYZ point cloud from filename PLY file """
     plydata = PlyData.read(filename)
@@ -48,6 +84,14 @@ def read_ply(filename):
     return pc_array 
 
 point_cloud = read_ply(f"{result_folder}/reconstruction_sequential/colorized.ply")
+
+
+point_cloud_for_bundle = ""
+for item in point_cloud:
+    point_cloud_for_bundle+=f"{item[0]} {item[1]} {item[2]}\n"
+bundle_out_file = open("bundle.out","w")
+bundle_out_file.write(f"{point_cloud_for_bundle}".replace(","," "))
+bundle_out_file.close()
 
 pcd = o3d.geometry.PointCloud()
 pcd.points = o3d.utility.Vector3dVector(point_cloud[:,:3])
@@ -79,7 +123,4 @@ else:
 
 print(result_folder)
 
-o3d.io.write_triangle_mesh("./result_mesh.ply", mesh)
-#o3d.visualization.draw_geometries([mesh])
-#file = os.path.join("openMVG_Build_Linux/software/Sfm","SfM_SequentialPipeline.py")
-#exec(open(f"{file} \"{image_folder}\" \"{result_folder}\"").read())
+o3d.io.write_triangle_mesh(f"{result_folder}/result_mesh.ply", mesh)
