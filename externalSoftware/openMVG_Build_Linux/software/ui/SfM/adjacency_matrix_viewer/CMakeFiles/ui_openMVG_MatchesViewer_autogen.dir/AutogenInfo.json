@@ -1,0 +1,145 @@
+{
+	"BUILD_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/ui_openMVG_MatchesViewer_autogen",
+	"CMAKE_BINARY_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/CMakeLists.txt",
+		"/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
+		"/usr/lib64/cmake/Qt5Svg/Qt5SvgConfigVersion.cmake",
+		"/usr/lib64/cmake/Qt5Svg/Qt5SvgConfig.cmake",
+		"/usr/lib64/cmake/Qt5OpenGL/Qt5OpenGLConfigVersion.cmake",
+		"/usr/lib64/cmake/Qt5OpenGL/Qt5OpenGLConfig.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG/src",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainframe.h",
+			"Mu",
+			"EWIEGA46WW/moc_mainframe.cpp",
+			null
+		],
+		[
+			"/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainwindow.h",
+			"Mu",
+			"EWIEGA46WW/moc_mainwindow.cpp",
+			null
+		],
+		[
+			"/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/matchingpairgraphicsview.h",
+			"Mu",
+			"EWIEGA46WW/moc_matchingpairgraphicsview.cpp",
+			null
+		],
+		[
+			"/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.h",
+			"Mu",
+			"EWIEGA46WW/moc_pairgraphicsitem.cpp",
+			null
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/ui_openMVG_MatchesViewer_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"LEMON_ONLY_TEMPLATES",
+		"OPENMVG_USE_OPENMP",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_OPENGL_LIB",
+		"QT_SVG_LIB",
+		"QT_WIDGETS_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer",
+		"/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer",
+		"/usr/local/include/eigen3",
+		"/home/edin/programs/openMvgBuildScripts/openMVG/src",
+		"/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/lemon",
+		"/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/lemon",
+		"/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp",
+		"/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3",
+		"/filesystemSimplified",
+		"/usr/include/qt",
+		"/usr/include/qt/QtWidgets",
+		"/usr/include/qt/QtGui",
+		"/usr/include/qt/QtCore",
+		"/usr/lib/qt/mkspecs/linux-g++",
+		"/usr/include/qt/QtSvg",
+		"/usr/include/qt/QtOpenGL",
+		"/usr/include",
+		"/usr/include/c++/11.1.0",
+		"/usr/include/c++/11.1.0/x86_64-pc-linux-gnu",
+		"/usr/include/c++/11.1.0/backward",
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include",
+		"/usr/local/include",
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/ui_openMVG_MatchesViewer_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/main.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainframe.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainwindow.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/matchingpairgraphicsview.cpp",
+			"Mu",
+			null
+		],
+		[
+			"/home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.cpp",
+			"Mu",
+			null
+		]
+	],
+	"VERBOSITY" : 0
+}

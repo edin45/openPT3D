@@ -7,6 +7,8 @@ from plyfile import PlyData
 import open3d as o3d
 import PySimpleGUI as sg
 import optparse
+import json
+import pathlib
 
 #os_name = platform.system()
 #layout = [
@@ -36,8 +38,8 @@ import optparse
 #
 #window.close()
 
-file1 = open("open_mvg_folder.txt","r+") 
-filecontent = file1.read()
+#file1 = open("open_mvg_folder.txt","r+") 
+#filecontent = file1.read()
 parser = optparse.OptionParser()
 parser.add_option("-i","--input_images",action="store",help="Input Images")
 parser.add_option("-r","--result_folder",action="store",help="Folder where Results are stored")
@@ -56,45 +58,64 @@ if strategy.lower() != "bpa":
     strategy = "Possion"
 else:
     strategy = strategy.upper()
-open_mvg_build_folder = ""
-if filecontent == "":
-    open_mvg_build_folder = input("openMVG_build Folder: ")
-    file2 = open("open_mvg_folder.txt","w")
-    file2.write(open_mvg_build_folder)
-    file2.close()
-else:
-    open_mvg_build_folder = file1.read()
+#open_mvg_build_folder = ""
+#if filecontent == "":
+#    open_mvg_build_folder = input("openMVG_build Folder: ")
+#    file2 = open("open_mvg_folder.txt","w")
+#    file2.write(open_mvg_build_folder)
+#    file2.close()
+#else:
+#    open_mvg_build_folder = file1.read()
 
-file1.close()
+#focal_length = float(input("Focal Length (mm): "))
 
-filePath = (filecontent if open_mvg_build_folder == "" else open_mvg_build_folder) + "/software/SfM/SfM_SequentialPipeline.py"
+current_file_path = os.path.dirname(os.path.abspath(__file__))
+
+open_mvg_folder = str(current_file_path) + f"/externalSoftware/openMVG_Build_{platform.system()}/"
+open_mvg_binary_folder = ("Linux-x86_64-RELEASE" if platform.system()=="Linux" else "Windows-x86_64-RELEASE")
+cmvs_folder = current_file_path + f"/externalSoftware/CMVS_PMVS/{platform.system()}"
+filePath = open_mvg_folder + "/software/SfM/SfM_SequentialPipeline.py"
 script_descriptor = open(filePath)
 a_script = script_descriptor.read()
 sys.argv = [f"{filePath}", f"{image_folder}", f"{result_folder}"]
     
 exec(a_script)
 
-os.system((filecontent if open_mvg_build_folder == "" else open_mvg_build_folder) + f"/Linux-x86_64-RELEASE/openMVG_main_ConvertSfM_DataFormat binary -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}/sfm-data.json -V -I -E")
+os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2PMVS -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}")
+#{result_folder}/PMVS
+os.chdir(result_folder + "/PMVS")
+cmvs_command = cmvs_folder + f"/pmvs2 './' 'pmvs_options.txt'"
+#print("cmvs_command: " + cmvs_command)
+os.system(cmvs_command)
 
 def read_ply(filename):
     """ read XYZ point cloud from filename PLY file """
     plydata = PlyData.read(filename)
     pc = plydata['vertex'].data
-    pc_array = np.array([[x, y, z] for x,y,z,r,g,b in pc])
+    pc_array = np.array([[x, y, z, r, g, b] for x,y,z,a,b_b,c,r,g,b,d in pc])
     return pc_array 
 
-point_cloud = read_ply(f"{result_folder}/reconstruction_sequential/colorized.ply")
+point_cloud = read_ply(f"{result_folder}/PMVS/models/pmvs_options.txt.ply")
 
+#bundle_out = ""
 
-point_cloud_for_bundle = ""
-for item in point_cloud:
-    point_cloud_for_bundle+=f"{item[0]} {item[1]} {item[2]}\n"
-bundle_out_file = open("bundle.out","w")
-bundle_out_file.write(f"{point_cloud_for_bundle}".replace(","," "))
-bundle_out_file.close()
+#f = open(f'{result_folder}/sfm-data.json')
+#sfm_data = json.load(f)
+#bundle_out+=str(len(sfm_data["views"]))+" "+ str(len(point_cloud)) + "\n"
+#pixels = focal_length * 80.457
+#bundle_out+=str(pixels) + " " + "0.0 " + "0.0\n"
+#for item in sfm_data["extrinsics"]:
+#    for rotItem in item["value"]["rotation"]:
+#        bundle_out+=str(rotItem[0]) + " " + str(rotItem[1]) + " " + str(rotItem[2]) + "\n"
+#    bundle_out+=str(item["value"]["center"][0]) + " " + str(item["value"]["center"][1]) + " " + str(item["value"]["center"][2]) + "\n"
+#bundle_out_file = open(f"{result_folder}/bundle.outbundle.rd.out","w")
+#bundle_out_file.write(f"{bundle_out}".replace(","," "))
+#bundle_out_file.close()
 
+#f.close()
 pcd = o3d.geometry.PointCloud()
 pcd.points = o3d.utility.Vector3dVector(point_cloud[:,:3])
+#pcd.colors = o3d.utility.Vector3dVector(point_cloud[:,6:9]/255)
 #normals = pcd.estimate_normals(pcd)
 normals = pcd.estimate_normals(search_param=o3d.geometry.KDTreeSearchParamHybrid(radius=0.1, max_nn=30))
 
@@ -116,7 +137,7 @@ if strategy == "BPA":
     dec_mesh.remove_non_manifold_edges()
     mesh = dec_mesh
 else:
-    poisson_mesh = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(pcd, depth=10, width=0, scale=1.1, linear_fit=False)[0]
+    poisson_mesh = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(pcd, depth=9, width=0, scale=1, linear_fit=False)[0]
     bbox = pcd.get_axis_aligned_bounding_box()
     p_mesh_crop = poisson_mesh.crop(bbox)
     mesh = p_mesh_crop
