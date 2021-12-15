@@ -38,35 +38,34 @@ import pathlib
 #
 #window.close()
 
-#file1 = open("open_mvg_folder.txt","r+") 
-#filecontent = file1.read()
 parser = optparse.OptionParser()
 parser.add_option("-i","--input_images",action="store",help="Input Images")
 parser.add_option("-r","--result_folder",action="store",help="Folder where Results are stored")
 options, args = parser.parse_args()
 image_folder = options.input_images
 result_folder = options.result_folder
-#image_folder = input("Image Folder: ")
-#result_folder = input("Result Folder: ")
 target_resolution = input("Target Resolution (Default 500000):")
 if target_resolution == "":
     target_resolution = 500000
 else:
     target_resolution = int(target_resolution)
-strategy = input("Mesh Reconstruction Strategy BPA/Poisson (Default: Possion): ")
-if strategy.lower() != "bpa":
-    strategy = "Possion"
-else:
-    strategy = strategy.upper()
-#open_mvg_build_folder = ""
-#if filecontent == "":
-#    open_mvg_build_folder = input("openMVG_build Folder: ")
-#    file2 = open("open_mvg_folder.txt","w")
-#    file2.write(open_mvg_build_folder)
-#    file2.close()
+#strategy = input("Mesh Reconstruction Strategy BPA (No Texture)/Possion (No Texture)/openMVS (Default: openMVS): ")
+#if strategy.lower() != "bpa" and strategy.lower() != "Possion":
+#    strategy = "openMVS"
 #else:
-#    open_mvg_build_folder = file1.read()
+#    strategy = strategy.upper()
 
+depth_recon_strategy = input("Dense Reconstruction Strategy CMVS/openMVS (Default openMVS): ")
+if depth_recon_strategy != "CMVS":
+    depth_recon_strategy = "openMVS"
+else:
+    depth_recon_strategy = "CMVS"
+
+if depth_recon_strategy == "openMVS":
+    decimate_factor = input("Decimate Factor for Mesh Reconstruction (Default: 2, Increase if program uses to much Ram): ")
+    if decimate_factor == "":
+        decimate_factor = 2
+max_imgs = 50
 #focal_length = float(input("Focal Length (mm): "))
 
 current_file_path = os.path.dirname(os.path.abspath(__file__))
@@ -79,23 +78,47 @@ script_descriptor = open(filePath)
 a_script = script_descriptor.read()
 sys.argv = [f"{filePath}", f"{image_folder}", f"{result_folder}"]
     
-exec(a_script)
+#exec(a_script)
 
-os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2PMVS -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}")
-#{result_folder}/PMVS
-os.chdir(result_folder + "/PMVS")
-cmvs_command = cmvs_folder + f"/pmvs2 './' 'pmvs_options.txt'"
-#print("cmvs_command: " + cmvs_command)
-os.system(cmvs_command)
+def execute_pmvs_process(use_cmvs):
+    os.chdir(result_folder + "/PMVS")
+    sfm_data_file = open("../matches/sfm_data.json")
+    sfm_data = json.load(sfm_data_file)
+    if len(sfm_data["views"]) > max_imgs and use_cmvs:
+        os.system(cmvs_folder + f"/cmvs ./ maximage={max_imgs}")
+        os.system(cmvs_folder + f"/genOption ./")
+        cmvs_command = f"sh pmvs.sh"
+    else:
+        cmvs_command = cmvs_folder + f"/pmvs2 './' 'pmvs_options.txt'"
+    #print("cmvs_command: " + cmvs_command)
+    os.system(cmvs_command)
 
-def read_ply(filename):
-    """ read XYZ point cloud from filename PLY file """
-    plydata = PlyData.read(filename)
-    pc = plydata['vertex'].data
-    pc_array = np.array([[x, y, z, r, g, b] for x,y,z,a,b_b,c,r,g,b,d in pc])
-    return pc_array 
+    sfm_data_file.close()
 
-point_cloud = read_ply(f"{result_folder}/PMVS/models/pmvs_options.txt.ply")
+def execute_openMVS_process():
+    os.chdir(result_folder)
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/DensifyPointCloud scene.mvs")
+
+if depth_recon_strategy == "CMVS":
+    os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2PMVS -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}")
+    execute_pmvs_process(True)
+    pmvs_ply_file = f"{result_folder}/PMVS/models/pmvs_options.txt.ply"
+    if os.path.isfile(pmvs_ply_file) == False:
+        execute_pmvs_process(False)
+else:
+    pass
+    #os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2openMVS -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}/scene.mvs -d {result_folder}/undistorted")
+    #execute_openMVS_process()
+
+#def read_ply(filename):
+#    """ read XYZ point cloud from filename PLY file """
+#    plydata = PlyData.read(filename)
+#    pc = plydata['vertex'].data
+#    #a,b_b,c,,d
+#    pc_array = np.array([[x, y, z, r, g, b] for x,y,z,a,b_b,c,r,g,b in pc])
+#    return pc_array 
+
+#point_cloud = read_ply(pmvs_ply_file if depth_recon_strategy == "CMVS" else f"{result_folder}/scene_dense.ply")
 
 #bundle_out = ""
 
@@ -113,35 +136,43 @@ point_cloud = read_ply(f"{result_folder}/PMVS/models/pmvs_options.txt.ply")
 #bundle_out_file.close()
 
 #f.close()
-pcd = o3d.geometry.PointCloud()
-pcd.points = o3d.utility.Vector3dVector(point_cloud[:,:3])
+#pcd = o3d.geometry.PointCloud()
+#print(point_cloud)
+#pcd.points = o3d.utility.Vector3dVector(point_cloud[:,:3])
 #pcd.colors = o3d.utility.Vector3dVector(point_cloud[:,6:9]/255)
 #normals = pcd.estimate_normals(pcd)
-normals = pcd.estimate_normals(search_param=o3d.geometry.KDTreeSearchParamHybrid(radius=0.1, max_nn=30))
+#normals = pcd.estimate_normals(search_param=o3d.geometry.KDTreeSearchParamHybrid(radius=0.1, max_nn=30))
 
 #pcd.orient_normals_consistent_tangent_plane(k=15)
 #pcd.normals = o3d.utility.Vector3dVector(normals)
 #o3d.visualization.draw_geometries([pcd])
-distances = pcd.compute_nearest_neighbor_distance()
-avg_dist = np.mean(distances)
-radius = 3 * avg_dist
+#distances = pcd.compute_nearest_neighbor_distance()
+#avg_dist = np.mean(distances)
+#radius = 3 * avg_dist
 
-mesh = None
+#mesh = None
 
-if strategy == "BPA":
-    bpa_mesh = o3d.geometry.TriangleMesh.create_from_point_cloud_ball_pivoting(pcd,o3d.utility.DoubleVector([radius, radius * 2]))
-    dec_mesh = bpa_mesh.simplify_quadric_decimation(target_resolution)
-    dec_mesh.remove_degenerate_triangles()
-    dec_mesh.remove_duplicated_triangles()
-    dec_mesh.remove_duplicated_vertices()
-    dec_mesh.remove_non_manifold_edges()
-    mesh = dec_mesh
+#if strategy == "BPA":
+#    bpa_mesh = o3d.geometry.TriangleMesh.create_from_point_cloud_ball_pivoting(pcd,o3d.utility.DoubleVector([radius, radius * 2]))
+#    dec_mesh = bpa_mesh.simplify_quadric_decimation(target_resolution)
+#    dec_mesh.remove_degenerate_triangles()
+#    dec_mesh.remove_duplicated_triangles()
+#    dec_mesh.remove_duplicated_vertices()
+#    dec_mesh.remove_non_manifold_edges()
+#    mesh = dec_mesh
+#    o3d.io.write_triangle_mesh(f"{result_folder}/result_mesh.ply", mesh)
+#elif strategy == "Possion":
+#    poisson_mesh = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(pcd, depth=12, width=0, scale=1, linear_fit=False)[0]
+#    bbox = pcd.get_axis_aligned_bounding_box()
+#    p_mesh_crop = poisson_mesh.crop(bbox)
+#    mesh = p_mesh_crop
+#    o3d.io.write_triangle_mesh(f"{result_folder}/result_mesh.ply", mesh)
+#else:
+if depth_recon_strategy == "CMVS":
+    print(f"Dense Point Cloud: {result_folder}/PMVS/models/pmvs_options.txt.ply")
 else:
-    poisson_mesh = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(pcd, depth=9, width=0, scale=1, linear_fit=False)[0]
-    bbox = pcd.get_axis_aligned_bounding_box()
-    p_mesh_crop = poisson_mesh.crop(bbox)
-    mesh = p_mesh_crop
-
-print(result_folder)
-
-o3d.io.write_triangle_mesh(f"{result_folder}/result_mesh.ply", mesh)
+    os.chdir(f"{result_folder}")
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/ReconstructMesh -d {decimate_factor} scene_dense.mvs")
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/RefineMesh -resolution-level={decimate_factor-2} scene_dense_mesh.mvs")
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/TextureMesh scene_dense_mesh_refine.mvs")
+    print("Final Mesh: " + result_folder + "/scene_dense_mesh_mesh_refine_texture.ply")
