@@ -78,7 +78,7 @@ script_descriptor = open(filePath)
 a_script = script_descriptor.read()
 sys.argv = [f"{filePath}", f"{image_folder}", f"{result_folder}"]
     
-#exec(a_script)
+exec(a_script)
 
 def execute_pmvs_process(use_cmvs):
     os.chdir(result_folder + "/PMVS")
@@ -106,9 +106,8 @@ if depth_recon_strategy == "CMVS":
     if os.path.isfile(pmvs_ply_file) == False:
         execute_pmvs_process(False)
 else:
-    pass
-    #os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2openMVS -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}/scene.mvs -d {result_folder}/undistorted")
-    #execute_openMVS_process()
+    os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2openMVS -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}/scene.mvs -d {result_folder}/undistorted")
+    execute_openMVS_process()
 
 #def read_ply(filename):
 #    """ read XYZ point cloud from filename PLY file """
