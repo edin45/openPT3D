@@ -7,7 +7,7 @@ sudo pacman -S python-pip
 pip install numpy  
 ```
   
-### Debian/Ubuntu/Pop OS installation:  
+### Debian/Ubuntu/Pop OS installation (Untested):  
 ```
 sudo apt-get install python  
 sudo apt-get install python-pip  
