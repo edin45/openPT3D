@@ -1,15 +1,18 @@
 # openPT3D
 
 Arch installation:
-
+```
 sudo pacman -S python  
 sudo pacman -S python-pip  
 pip install numpy  
+```
   
 Debian installation:  
+```
 sudo apt-get install python  
 sudo apt-get install python-pip  
 pip install numpy  
+
 
 Usage:  
   
