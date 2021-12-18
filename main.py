@@ -1,14 +1,9 @@
 import platform
 import os
 import sys
-from tkinter.constants import NONE
 import numpy as np
-from plyfile import PlyData
-import open3d as o3d
-import PySimpleGUI as sg
 import optparse
 import json
-import pathlib
 
 #os_name = platform.system()
 #layout = [
