@@ -33,6 +33,8 @@ import json
 #
 #window.close()
 
+
+
 parser = optparse.OptionParser()
 parser.add_option("-i","--input_images",action="store",help="Input Images")
 parser.add_option("-r","--result_folder",action="store",help="Folder where Results are stored")
@@ -104,6 +106,10 @@ else:
     os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2openMVS -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}/scene.mvs -d {result_folder}/undistorted")
     execute_openMVS_process()
 
+
+
+
+
 #def read_ply(filename):
 #    """ read XYZ point cloud from filename PLY file """
 #    plydata = PlyData.read(filename)
@@ -166,7 +172,7 @@ if depth_recon_strategy == "CMVS":
     print(f"Dense Point Cloud: {result_folder}/PMVS/models/pmvs_options.txt.ply")
 else:
     os.chdir(f"{result_folder}")
-    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/ReconstructMesh -d {decimate_factor} scene_dense.mvs")
-    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/RefineMesh -resolution-level={decimate_factor-2} scene_dense_mesh.mvs")
+    #os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/ReconstructMesh -d {decimate_factor} scene_dense.mvs")
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/RefineMesh --resolution-level={decimate_factor-2} scene_dense_mesh.mvs")
     os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/TextureMesh scene_dense_mesh_refine.mvs")
     print("Final Mesh: " + result_folder + "/scene_dense_mesh_mesh_refine_texture.ply")
