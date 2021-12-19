@@ -173,6 +173,6 @@ if depth_recon_strategy == "CMVS":
 else:
     os.chdir(f"{result_folder}")
     #os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/ReconstructMesh -d {decimate_factor} scene_dense.mvs")
-    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/RefineMesh --resolution-level={decimate_factor-2} scene_dense_mesh.mvs")
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/RefineMesh --resolution-level={decimate_factor} scene_dense_mesh.mvs")
     os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/TextureMesh scene_dense_mesh_refine.mvs")
     print("Final Mesh: " + result_folder + "/scene_dense_mesh_mesh_refine_texture. ply / glb")
