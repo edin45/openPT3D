@@ -3,6 +3,20 @@ if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
   exit
 fi
+pacman -S python
+wait
+pacman -S python-pip
+wait
+pip install numpy
+wait
+pacman -S opencv
+wait
+pacman -S cgal
+wait
+pacman -S lvtk
+wait
+pacman -S vtk
+wait
 git clone --recursive https://github.com/openMVG/openMVG.git
 wait
 pacman -S libpng-dev libjpeg-dev libtiff-dev libxxf86vm1 libxxf86vm-dev libxi-dev libxrandr-dev
