@@ -5,6 +5,9 @@
 sudo pacman -S python  
 sudo pacman -S python-pip  
 pip install numpy  
+git clone https://github.com/edin45/openPT3D.git
+cd externalSoftware
+sh install_build_arch.sh
 ```
   
 ### Debian/Ubuntu/Pop OS installation (Untested):  
@@ -19,6 +22,9 @@ make -j 4
 sudo make altinstall  
 sudo apt install python3-pip  
 sudo pip install numpy  
+git clone https://github.com/edin45/openPT3D.git
+cd externalSoftware
+sh install_build_debian.sh
 ```
 
 ### Usage:  
