@@ -10,7 +10,7 @@
 #define _OPENMVG_MAIN_OPENMVG_TO_WEBGL_CONFIG_H_
 
 #define OPENMVG_SFM_WEBGL_INSTALL_SHARED_PATH "/usr/local/share/openMVG/webgl"
-#define OPENMVG_SFM_WEBGL_SRC_PATH "/home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfMWebGLViewer"
+#define OPENMVG_SFM_WEBGL_SRC_PATH "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfMWebGLViewer"
 
 
 #endif

@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/exif/sensor_width_database
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/exif/sensor_width_database
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,6 +43,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openMVG" TYPE FILE FILES "/home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openMVG" TYPE FILE FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/exif/sensor_width_database/sensor_width_camera_database.txt")
 endif()
 

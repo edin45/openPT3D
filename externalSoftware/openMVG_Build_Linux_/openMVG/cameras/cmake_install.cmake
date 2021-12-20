@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/cameras
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/cameras
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

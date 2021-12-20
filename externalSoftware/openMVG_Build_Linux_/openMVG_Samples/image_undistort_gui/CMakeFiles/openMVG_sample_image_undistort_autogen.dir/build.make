@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Utility rule file for openMVG_sample_image_undistort_autogen.
 
@@ -67,8 +67,8 @@ include openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undi
 include openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/progress.make
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target openMVG_sample_image_undistort"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/cmake -E cmake_autogen /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/AutogenInfo.json RELEASE
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target openMVG_sample_image_undistort"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/cmake -E cmake_autogen /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/AutogenInfo.json RELEASE
 
 openMVG_sample_image_undistort_autogen: openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen
 openMVG_sample_image_undistort_autogen: openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/build.make
@@ -79,10 +79,10 @@ openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_au
 .PHONY : openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/build
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_image_undistort_autogen.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_image_undistort_autogen.dir/cmake_clean.cmake
 .PHONY : openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/clean
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/depend
 

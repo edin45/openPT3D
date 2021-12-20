@@ -1,8 +1,8 @@
-if(NOT EXISTS "/home/edin/programs/openMvgBuildScripts/openMVG_Build/install_manifest.txt")
-  message(FATAL_ERROR "Cannot find install manifest: /home/edin/programs/openMvgBuildScripts/openMVG_Build/install_manifest.txt")
-endif(NOT EXISTS "/home/edin/programs/openMvgBuildScripts/openMVG_Build/install_manifest.txt")
+if(NOT EXISTS "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/install_manifest.txt")
+  message(FATAL_ERROR "Cannot find install manifest: /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/install_manifest.txt")
+endif(NOT EXISTS "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/install_manifest.txt")
 
-file(READ "/home/edin/programs/openMvgBuildScripts/openMVG_Build/install_manifest.txt" files)
+file(READ "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/install_manifest.txt" files)
 string(REGEX REPLACE "\n" ";" files "${files}")
 foreach(file ${files})
   message(STATUS "Uninstalling $ENV{DESTDIR}${file}")

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include openMVG/exif/CMakeFiles/openMVG_exif.dir/depend.make
@@ -70,18 +70,18 @@ include openMVG/exif/CMakeFiles/openMVG_exif.dir/progress.make
 include openMVG/exif/CMakeFiles/openMVG_exif.dir/flags.make
 
 openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o: openMVG/exif/CMakeFiles/openMVG_exif.dir/flags.make
-openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/exif/exif_IO_EasyExif.cpp
+openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/exif/exif_IO_EasyExif.cpp
 openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o: openMVG/exif/CMakeFiles/openMVG_exif.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/exif && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o -MF CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o.d -o CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/exif/exif_IO_EasyExif.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/exif && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o -MF CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o.d -o CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/exif/exif_IO_EasyExif.cpp
 
 openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/exif && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/exif/exif_IO_EasyExif.cpp > CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/exif && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/exif/exif_IO_EasyExif.cpp > CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.i
 
 openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/exif && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/exif/exif_IO_EasyExif.cpp -o CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/exif && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/exif/exif_IO_EasyExif.cpp -o CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.s
 
 # Object files for target openMVG_exif
 openMVG_exif_OBJECTS = \
@@ -93,19 +93,19 @@ openMVG_exif_EXTERNAL_OBJECTS =
 Linux-x86_64-RELEASE/libopenMVG_exif.a: openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o
 Linux-x86_64-RELEASE/libopenMVG_exif.a: openMVG/exif/CMakeFiles/openMVG_exif.dir/build.make
 Linux-x86_64-RELEASE/libopenMVG_exif.a: openMVG/exif/CMakeFiles/openMVG_exif.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../Linux-x86_64-RELEASE/libopenMVG_exif.a"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/exif && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_exif.dir/cmake_clean_target.cmake
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/exif && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_exif.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../Linux-x86_64-RELEASE/libopenMVG_exif.a"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/exif && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_exif.dir/cmake_clean_target.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/exif && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_exif.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 openMVG/exif/CMakeFiles/openMVG_exif.dir/build: Linux-x86_64-RELEASE/libopenMVG_exif.a
 .PHONY : openMVG/exif/CMakeFiles/openMVG_exif.dir/build
 
 openMVG/exif/CMakeFiles/openMVG_exif.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/exif && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_exif.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/exif && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_exif.dir/cmake_clean.cmake
 .PHONY : openMVG/exif/CMakeFiles/openMVG_exif.dir/clean
 
 openMVG/exif/CMakeFiles/openMVG_exif.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/exif /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/exif /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/exif/CMakeFiles/openMVG_exif.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/exif /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/exif /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/exif/CMakeFiles/openMVG_exif.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openMVG/exif/CMakeFiles/openMVG_exif.dir/depend
 

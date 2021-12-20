@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential_ba//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/multiview_robust_essential_ba/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential_ba//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/multiview_robust_essential_ba/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/multiview_robust_essential_ba/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/multiview_robust_essential_ba/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/multiview_robust_essential_ba/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/multiview_robust_essential_ba/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/multiview_robust_essential_ba/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/multiview_robust_essential_ba/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/rule
 .PHONY : openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ openMVG_sample_multiview_robustEssential_ba: openMVG_Samples/multiview_robust_es
 
 # fast build rule for target.
 openMVG_sample_multiview_robustEssential_ba/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/build.make openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/build.make openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/build
 .PHONY : openMVG_sample_multiview_robustEssential_ba/fast
 
 robust_essential_ba.o: robust_essential_ba.cpp.o
@@ -180,7 +180,7 @@ robust_essential_ba.o: robust_essential_ba.cpp.o
 
 # target to build an object file
 robust_essential_ba.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/build.make openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/robust_essential_ba.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/build.make openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/robust_essential_ba.cpp.o
 .PHONY : robust_essential_ba.cpp.o
 
 robust_essential_ba.i: robust_essential_ba.cpp.i
@@ -188,7 +188,7 @@ robust_essential_ba.i: robust_essential_ba.cpp.i
 
 # target to preprocess a source file
 robust_essential_ba.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/build.make openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/robust_essential_ba.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/build.make openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/robust_essential_ba.cpp.i
 .PHONY : robust_essential_ba.cpp.i
 
 robust_essential_ba.s: robust_essential_ba.cpp.s
@@ -196,7 +196,7 @@ robust_essential_ba.s: robust_essential_ba.cpp.s
 
 # target to generate assembly for a file
 robust_essential_ba.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/build.make openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/robust_essential_ba.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/build.make openMVG_Samples/multiview_robust_essential_ba/CMakeFiles/openMVG_sample_multiview_robustEssential_ba.dir/robust_essential_ba.cpp.s
 .PHONY : robust_essential_ba.cpp.s
 
 # Help Target
@@ -226,6 +226,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/depend.make
@@ -70,18 +70,18 @@ include openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_mul
 include openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/flags.make
 
 openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o: openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/flags.make
-openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/multiview_robust_essential/robust_essential.cpp
+openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/multiview_robust_essential/robust_essential.cpp
 openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o: openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o -MF CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o.d -o CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/multiview_robust_essential/robust_essential.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o -MF CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o.d -o CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/multiview_robust_essential/robust_essential.cpp
 
 openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/multiview_robust_essential/robust_essential.cpp > CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/multiview_robust_essential/robust_essential.cpp > CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.i
 
 openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/multiview_robust_essential/robust_essential.cpp -o CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/multiview_robust_essential/robust_essential.cpp -o CMakeFiles/openMVG_sample_multiview_robustEssential.dir/robust_essential.cpp.s
 
 # Object files for target openMVG_sample_multiview_robustEssential
 openMVG_sample_multiview_robustEssential_OBJECTS = \
@@ -115,9 +115,10 @@ Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: /usr/lib/libgomp.
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: /usr/lib/libpthread.so
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: Linux-x86_64-RELEASE/libopenMVG_lInftyComputerVision.a
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: Linux-x86_64-RELEASE/libopenMVG_multiview.a
-Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: /usr/lib/libceres.so.2.0.0
-Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: /usr/lib/libglog.so.0.5.0
-Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: /usr/lib/libgflags.so.2.2.2
+Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: third_party/ceres-solver/lib/libopenMVG_ceres.a
+Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: Linux-x86_64-RELEASE/libopenMVG_cxsparse.a
+Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: /usr/lib/liblapack.so
+Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: /usr/lib/libblas.so
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: Linux-x86_64-RELEASE/libopenMVG_linearProgramming.a
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: Linux-x86_64-RELEASE/libopenMVG_numeric.a
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: Linux-x86_64-RELEASE/liblib_clp.a
@@ -125,18 +126,18 @@ Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: Linux-x86_64-RELE
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: Linux-x86_64-RELEASE/liblib_CoinUtils.a
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: Linux-x86_64-RELEASE/liblib_Osi.a
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential: openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_multiview_robustEssential.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_multiview_robustEssential.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/build: Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential
 .PHONY : openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/build
 
 openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_multiview_robustEssential.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_multiview_robustEssential.dir/cmake_clean.cmake
 .PHONY : openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/clean
 
 openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/multiview_robust_essential /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/multiview_robust_essential /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openMVG_Samples/multiview_robust_essential/CMakeFiles/openMVG_sample_multiview_robustEssential.dir/depend
 

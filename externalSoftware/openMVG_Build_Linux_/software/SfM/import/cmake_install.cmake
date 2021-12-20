@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/import
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/import
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -49,7 +49,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/openMVG_main_SfMInit_ImageListingFromKnownPoses"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/edin/programs/openMvgBuildScripts/openMVG_Build/Linux-x86_64-RELEASE/openMVG_main_SfMInit_ImageListingFromKnownPoses")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/Linux-x86_64-RELEASE/openMVG_main_SfMInit_ImageListingFromKnownPoses")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/openMVG_main_SfMInit_ImageListingFromKnownPoses" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/openMVG_main_SfMInit_ImageListingFromKnownPoses")
     if(CMAKE_INSTALL_DO_STRIP)

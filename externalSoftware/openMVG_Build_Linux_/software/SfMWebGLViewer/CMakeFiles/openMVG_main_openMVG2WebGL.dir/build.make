@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/depend.make
@@ -70,18 +70,18 @@ include software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/progre
 include software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/flags.make
 
 software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o: software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/flags.make
-software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfMWebGLViewer/openMVG_main_openMVG2WebGL.cpp
+software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfMWebGLViewer/openMVG_main_openMVG2WebGL.cpp
 software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o: software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfMWebGLViewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o -MF CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o.d -o CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfMWebGLViewer/openMVG_main_openMVG2WebGL.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfMWebGLViewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o -MF CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o.d -o CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfMWebGLViewer/openMVG_main_openMVG2WebGL.cpp
 
 software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfMWebGLViewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfMWebGLViewer/openMVG_main_openMVG2WebGL.cpp > CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfMWebGLViewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfMWebGLViewer/openMVG_main_openMVG2WebGL.cpp > CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.i
 
 software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfMWebGLViewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfMWebGLViewer/openMVG_main_openMVG2WebGL.cpp -o CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfMWebGLViewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfMWebGLViewer/openMVG_main_openMVG2WebGL.cpp -o CMakeFiles/openMVG_main_openMVG2WebGL.dir/openMVG_main_openMVG2WebGL.cpp.s
 
 # Object files for target openMVG_main_openMVG2WebGL
 openMVG_main_openMVG2WebGL_OBJECTS = \
@@ -118,22 +118,23 @@ Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: Linux-x86_64-RELEASE/liblib_clp
 Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: Linux-x86_64-RELEASE/liblib_OsiClpSolver.a
 Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: Linux-x86_64-RELEASE/liblib_CoinUtils.a
 Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: Linux-x86_64-RELEASE/liblib_Osi.a
-Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: /usr/lib/libceres.so.2.0.0
-Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: /usr/lib/libglog.so.0.5.0
-Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: /usr/lib/libgflags.so.2.2.2
+Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: third_party/ceres-solver/lib/libopenMVG_ceres.a
+Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: Linux-x86_64-RELEASE/libopenMVG_cxsparse.a
+Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: /usr/lib/liblapack.so
+Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: /usr/lib/libblas.so
 Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL: software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfMWebGLViewer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_openMVG2WebGL.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfMWebGLViewer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_openMVG2WebGL.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/build: Linux-x86_64-RELEASE/openMVG_main_openMVG2WebGL
 .PHONY : software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/build
 
 software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfMWebGLViewer && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_openMVG2WebGL.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfMWebGLViewer && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_openMVG2WebGL.dir/cmake_clean.cmake
 .PHONY : software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/clean
 
 software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfMWebGLViewer /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfMWebGLViewer /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfMWebGLViewer /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfMWebGLViewer /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : software/SfMWebGLViewer/CMakeFiles/openMVG_main_openMVG2WebGL.dir/depend
 

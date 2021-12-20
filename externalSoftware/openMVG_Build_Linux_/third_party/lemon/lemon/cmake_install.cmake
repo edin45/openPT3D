@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/lemon/lemon
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/lemon/lemon
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,10 +43,10 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/openMVG/third_party/lemon" TYPE DIRECTORY FILES "/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/lemon/lemon" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/openMVG/third_party/lemon" TYPE DIRECTORY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/lemon/lemon" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/openMVG/third_party/lemon" TYPE FILE FILES "/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/lemon/lemon/config.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/openMVG/third_party/lemon" TYPE FILE FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/lemon/lemon/config.h")
 endif()
 

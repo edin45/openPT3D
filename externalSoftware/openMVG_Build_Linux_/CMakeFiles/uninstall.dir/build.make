@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Utility rule file for uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/uninstall.dir/compiler_depend.make
 include CMakeFiles/uninstall.dir/progress.make
 
 CMakeFiles/uninstall:
-	/usr/bin/cmake -P /home/edin/programs/openMvgBuildScripts/openMVG_Build/cmake_uninstall.cmake
+	/usr/bin/cmake -P /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/cmake_uninstall.cmake
 
 uninstall: CMakeFiles/uninstall
 uninstall: CMakeFiles/uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/uninstall.dir/clean:
 .PHONY : CMakeFiles/uninstall.dir/clean
 
 CMakeFiles/uninstall.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/uninstall.dir/depend
 

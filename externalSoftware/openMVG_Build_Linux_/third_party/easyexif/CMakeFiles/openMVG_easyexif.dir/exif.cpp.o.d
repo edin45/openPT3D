@@ -1,7 +1,7 @@
 third_party/easyexif/CMakeFiles/openMVG_easyexif.dir/exif.cpp.o: \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/easyexif/exif.cpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/easyexif/exif.cpp \
  /usr/include/stdc-predef.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/easyexif/exif.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/easyexif/exif.h \
  /usr/include/c++/11.1.0/string \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \

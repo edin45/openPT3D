@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/depend.make
@@ -70,18 +70,18 @@ include software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/progress.make
 include software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/flags.make
 
 software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o: software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/flags.make
-software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/main_ComputeMatches.cpp
+software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/main_ComputeMatches.cpp
 software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o: software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o -MF CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o.d -o CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/main_ComputeMatches.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o -MF CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o.d -o CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/main_ComputeMatches.cpp
 
 software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/main_ComputeMatches.cpp > CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/main_ComputeMatches.cpp > CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.i
 
 software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/main_ComputeMatches.cpp -o CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/main_ComputeMatches.cpp -o CMakeFiles/openMVG_main_ComputeMatches.dir/main_ComputeMatches.cpp.s
 
 # Object files for target openMVG_main_ComputeMatches
 openMVG_main_ComputeMatches_OBJECTS = \
@@ -112,9 +112,10 @@ Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: /usr/lib/libz.so
 Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: /usr/lib/libtiff.so
 Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: Linux-x86_64-RELEASE/libopenMVG_lInftyComputerVision.a
 Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: Linux-x86_64-RELEASE/libopenMVG_multiview.a
-Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: /usr/lib/libceres.so.2.0.0
-Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: /usr/lib/libglog.so.0.5.0
-Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: /usr/lib/libgflags.so.2.2.2
+Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: third_party/ceres-solver/lib/libopenMVG_ceres.a
+Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: Linux-x86_64-RELEASE/libopenMVG_cxsparse.a
+Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: /usr/lib/liblapack.so
+Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: /usr/lib/libblas.so
 Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: Linux-x86_64-RELEASE/libopenMVG_linearProgramming.a
 Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: Linux-x86_64-RELEASE/libopenMVG_numeric.a
 Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: Linux-x86_64-RELEASE/liblib_clp.a
@@ -122,18 +123,18 @@ Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: Linux-x86_64-RELEASE/liblib_Os
 Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: Linux-x86_64-RELEASE/liblib_CoinUtils.a
 Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: Linux-x86_64-RELEASE/liblib_Osi.a
 Linux-x86_64-RELEASE/openMVG_main_ComputeMatches: software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_main_ComputeMatches"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_ComputeMatches.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_main_ComputeMatches"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_ComputeMatches.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/build: Linux-x86_64-RELEASE/openMVG_main_ComputeMatches
 .PHONY : software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/build
 
 software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_ComputeMatches.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_ComputeMatches.dir/cmake_clean.cmake
 .PHONY : software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/clean
 
 software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : software/SfM/CMakeFiles/openMVG_main_ComputeMatches.dir/depend
 

@@ -1,7 +1,7 @@
 software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o: \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/clustering/domSetLibrary/domset.cc \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/clustering/domSetLibrary/domset.cc \
  /usr/include/stdc-predef.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/clustering/domSetLibrary/domset.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/clustering/domSetLibrary/domset.h \
  /usr/include/c++/11.1.0/algorithm /usr/include/c++/11.1.0/utility \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -151,10 +151,10 @@ software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o: \
  /usr/include/c++/11.1.0/bits/stl_vector.h \
  /usr/include/c++/11.1.0/bits/stl_bvector.h \
  /usr/include/c++/11.1.0/bits/vector.tcc \
- /usr/local/include/eigen3/Eigen/Core \
- /usr/local/include/eigen3/Eigen/src/Core/util/DisableStupidWarnings.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/Macros.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/ConfigureVectorization.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/Core \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/DisableStupidWarnings.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/Macros.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/ConfigureVectorization.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/mmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/emmintrin.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/xmmintrin.h \
@@ -242,7 +242,7 @@ software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o: \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/keylockerintrin.h \
  /usr/include/c++/11.1.0/complex /usr/include/c++/11.1.0/sstream \
  /usr/include/c++/11.1.0/bits/sstream.tcc \
- /usr/local/include/eigen3/Eigen/src/Core/util/MKL_support.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/MKL_support.h \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/omp.h \
  /usr/include/c++/11.1.0/cstddef /usr/include/c++/11.1.0/cassert \
  /usr/include/assert.h /usr/include/c++/11.1.0/functional \
@@ -257,137 +257,137 @@ software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o: \
  /usr/include/bits/local_lim.h /usr/include/linux/limits.h \
  /usr/include/bits/posix2_lim.h /usr/include/bits/xopen_lim.h \
  /usr/include/bits/uio_lim.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/Constants.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/Meta.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/XprHelper.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/Memory.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/IntegralConstant.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/SymbolicIndex.h \
- /usr/local/include/eigen3/Eigen/src/Core/NumTraits.h \
- /usr/local/include/eigen3/Eigen/src/Core/MathFunctions.h \
- /usr/local/include/eigen3/Eigen/src/Core/GenericPacketMath.h \
- /usr/local/include/eigen3/Eigen/src/Core/MathFunctionsImpl.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/Default/ConjHelper.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/Default/Half.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/Default/TypeCasting.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/TypeCasting.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/Complex.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/AVX/PacketMath.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/AVX/TypeCasting.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/AVX/Complex.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/SSE/MathFunctions.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/AVX/MathFunctions.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/Default/Settings.h \
- /usr/local/include/eigen3/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/TernaryFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/BinaryFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/UnaryFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/NullaryFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/StlFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/functors/AssignmentFunctors.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/IndexedViewHelper.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/ReshapedHelper.h \
- /usr/local/include/eigen3/Eigen/src/Core/ArithmeticSequence.h \
- /usr/local/include/eigen3/Eigen/src/Core/IO.h \
- /usr/local/include/eigen3/Eigen/src/Core/DenseCoeffsBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/DenseBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h \
- /usr/local/include/eigen3/Eigen/src/Core/../plugins/BlockMethods.h \
- /usr/local/include/eigen3/Eigen/src/Core/../plugins/IndexedViewMethods.h \
- /usr/local/include/eigen3/Eigen/src/Core/../plugins/IndexedViewMethods.h \
- /usr/local/include/eigen3/Eigen/src/Core/../plugins/ReshapedMethods.h \
- /usr/local/include/eigen3/Eigen/src/Core/../plugins/ReshapedMethods.h \
- /usr/local/include/eigen3/Eigen/src/Core/MatrixBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h \
- /usr/local/include/eigen3/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h \
- /usr/local/include/eigen3/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h \
- /usr/local/include/eigen3/Eigen/src/Core/EigenBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/Product.h \
- /usr/local/include/eigen3/Eigen/src/Core/CoreEvaluators.h \
- /usr/local/include/eigen3/Eigen/src/Core/AssignEvaluator.h \
- /usr/local/include/eigen3/Eigen/src/Core/Assign.h \
- /usr/local/include/eigen3/Eigen/src/Core/ArrayBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h \
- /usr/local/include/eigen3/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/BlasUtil.h \
- /usr/local/include/eigen3/Eigen/src/Core/DenseStorage.h \
- /usr/local/include/eigen3/Eigen/src/Core/NestByValue.h \
- /usr/local/include/eigen3/Eigen/src/Core/ReturnByValue.h \
- /usr/local/include/eigen3/Eigen/src/Core/NoAlias.h \
- /usr/local/include/eigen3/Eigen/src/Core/PlainObjectBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/Matrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/Array.h \
- /usr/local/include/eigen3/Eigen/src/Core/CwiseTernaryOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/CwiseBinaryOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/CwiseNullaryOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/CwiseUnaryView.h \
- /usr/local/include/eigen3/Eigen/src/Core/SelfCwiseBinaryOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/Dot.h \
- /usr/local/include/eigen3/Eigen/src/Core/StableNorm.h \
- /usr/local/include/eigen3/Eigen/src/Core/Stride.h \
- /usr/local/include/eigen3/Eigen/src/Core/MapBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/Map.h \
- /usr/local/include/eigen3/Eigen/src/Core/Ref.h \
- /usr/local/include/eigen3/Eigen/src/Core/Block.h \
- /usr/local/include/eigen3/Eigen/src/Core/VectorBlock.h \
- /usr/local/include/eigen3/Eigen/src/Core/IndexedView.h \
- /usr/local/include/eigen3/Eigen/src/Core/Reshaped.h \
- /usr/local/include/eigen3/Eigen/src/Core/Transpose.h \
- /usr/local/include/eigen3/Eigen/src/Core/DiagonalMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/Diagonal.h \
- /usr/local/include/eigen3/Eigen/src/Core/DiagonalProduct.h \
- /usr/local/include/eigen3/Eigen/src/Core/Redux.h \
- /usr/local/include/eigen3/Eigen/src/Core/Visitor.h \
- /usr/local/include/eigen3/Eigen/src/Core/Fuzzy.h \
- /usr/local/include/eigen3/Eigen/src/Core/Swap.h \
- /usr/local/include/eigen3/Eigen/src/Core/CommaInitializer.h \
- /usr/local/include/eigen3/Eigen/src/Core/GeneralProduct.h \
- /usr/local/include/eigen3/Eigen/src/Core/Solve.h \
- /usr/local/include/eigen3/Eigen/src/Core/Inverse.h \
- /usr/local/include/eigen3/Eigen/src/Core/SolverBase.h \
- /usr/local/include/eigen3/Eigen/src/Core/PermutationMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/Transpositions.h \
- /usr/local/include/eigen3/Eigen/src/Core/TriangularMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/SelfAdjointView.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/Parallelizer.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/Constants.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/Meta.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/ForwardDeclarations.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/StaticAssert.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/XprHelper.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/Memory.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/IntegralConstant.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/SymbolicIndex.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/NumTraits.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/MathFunctions.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/GenericPacketMath.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/MathFunctionsImpl.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/Default/ConjHelper.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/Default/Half.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/Default/BFloat16.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/Default/TypeCasting.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctionsFwd.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/SSE/PacketMath.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/SSE/TypeCasting.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/SSE/Complex.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/AVX/PacketMath.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/AVX/TypeCasting.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/AVX/Complex.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/SSE/MathFunctions.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/AVX/MathFunctions.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/Default/Settings.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/arch/Default/GenericPacketMathFunctions.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/functors/TernaryFunctors.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/functors/BinaryFunctors.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/functors/UnaryFunctors.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/functors/NullaryFunctors.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/functors/StlFunctors.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/functors/AssignmentFunctors.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/IndexedViewHelper.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/ReshapedHelper.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/ArithmeticSequence.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/IO.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/DenseCoeffsBase.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/DenseBase.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/../plugins/CommonCwiseUnaryOps.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/../plugins/BlockMethods.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/../plugins/IndexedViewMethods.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/../plugins/IndexedViewMethods.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/../plugins/ReshapedMethods.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/../plugins/ReshapedMethods.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/MatrixBase.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/../plugins/CommonCwiseBinaryOps.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/../plugins/MatrixCwiseUnaryOps.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/../plugins/MatrixCwiseBinaryOps.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/EigenBase.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Product.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/CoreEvaluators.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/AssignEvaluator.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Assign.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/ArrayBase.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/../plugins/ArrayCwiseUnaryOps.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/../plugins/ArrayCwiseBinaryOps.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/BlasUtil.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/DenseStorage.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/NestByValue.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/ReturnByValue.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/NoAlias.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/PlainObjectBase.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Matrix.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Array.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/CwiseTernaryOp.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/CwiseBinaryOp.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/CwiseUnaryOp.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/CwiseNullaryOp.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/CwiseUnaryView.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/SelfCwiseBinaryOp.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Dot.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/StableNorm.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Stride.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/MapBase.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Map.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Ref.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Block.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/VectorBlock.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/IndexedView.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Reshaped.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Transpose.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/DiagonalMatrix.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Diagonal.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/DiagonalProduct.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Redux.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Visitor.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Fuzzy.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Swap.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/CommaInitializer.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/GeneralProduct.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Solve.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Inverse.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/SolverBase.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/PermutationMatrix.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Transpositions.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/TriangularMatrix.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/SelfAdjointView.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/GeneralBlockPanelKernel.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/Parallelizer.h \
  /usr/include/c++/11.1.0/atomic \
  /usr/include/c++/11.1.0/bits/atomic_base.h \
  /usr/include/c++/11.1.0/bits/atomic_lockfree_defines.h \
- /usr/local/include/eigen3/Eigen/src/Core/ProductEvaluators.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixVector.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/SolveTriangular.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixVector.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointProduct.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/SelfadjointRank2Update.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixVector.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/TriangularMatrixMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/products/TriangularSolverVector.h \
- /usr/local/include/eigen3/Eigen/src/Core/BandMatrix.h \
- /usr/local/include/eigen3/Eigen/src/Core/CoreIterators.h \
- /usr/local/include/eigen3/Eigen/src/Core/ConditionEstimator.h \
- /usr/local/include/eigen3/Eigen/src/Core/BooleanRedux.h \
- /usr/local/include/eigen3/Eigen/src/Core/Select.h \
- /usr/local/include/eigen3/Eigen/src/Core/VectorwiseOp.h \
- /usr/local/include/eigen3/Eigen/src/Core/PartialReduxEvaluator.h \
- /usr/local/include/eigen3/Eigen/src/Core/Random.h \
- /usr/local/include/eigen3/Eigen/src/Core/Replicate.h \
- /usr/local/include/eigen3/Eigen/src/Core/Reverse.h \
- /usr/local/include/eigen3/Eigen/src/Core/ArrayWrapper.h \
- /usr/local/include/eigen3/Eigen/src/Core/StlIterators.h \
- /usr/local/include/eigen3/Eigen/src/Core/GlobalFunctions.h \
- /usr/local/include/eigen3/Eigen/src/Core/util/ReenableStupidWarnings.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/clustering/domSetLibrary/types.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/ProductEvaluators.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/GeneralMatrixVector.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/GeneralMatrixMatrix.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/SolveTriangular.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/GeneralMatrixMatrixTriangular.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/SelfadjointMatrixVector.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/SelfadjointMatrixMatrix.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/SelfadjointProduct.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/SelfadjointRank2Update.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/TriangularMatrixVector.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/TriangularMatrixMatrix.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/TriangularSolverMatrix.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/products/TriangularSolverVector.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/BandMatrix.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/CoreIterators.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/ConditionEstimator.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/BooleanRedux.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Select.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/VectorwiseOp.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/PartialReduxEvaluator.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Random.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Replicate.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/Reverse.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/ArrayWrapper.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/StlIterators.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/GlobalFunctions.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen/Eigen/src/Core/util/ReenableStupidWarnings.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/clustering/domSetLibrary/types.h \
  /usr/include/c++/11.1.0/fstream /usr/include/c++/11.1.0/bits/codecvt.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++io.h \
@@ -398,7 +398,7 @@ software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o: \
  /usr/include/c++/11.1.0/bits/stl_numeric.h /usr/include/c++/11.1.0/set \
  /usr/include/c++/11.1.0/bits/stl_set.h \
  /usr/include/c++/11.1.0/bits/stl_multiset.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/matching/matcher_kdtree_flann.hpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/matching/matcher_kdtree_flann.hpp \
  /usr/include/c++/11.1.0/memory \
  /usr/include/c++/11.1.0/bits/stl_raw_storage_iter.h \
  /usr/include/c++/11.1.0/bits/align.h /usr/include/c++/11.1.0/bit \
@@ -409,37 +409,37 @@ software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o: \
  /usr/include/c++/11.1.0/ext/concurrence.h \
  /usr/include/c++/11.1.0/bits/shared_ptr_atomic.h \
  /usr/include/c++/11.1.0/backward/auto_ptr.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/matching/matching_interface.hpp \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/matching/indMatch.hpp \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/types.hpp \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/flann.hpp \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/general.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/defines.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/config.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/matrix.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/serialization.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/params.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/any.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/saving.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/all_indices.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/nn_index.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/result_set.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/dynamic_bitset.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/kdtree_index.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/heap.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/allocator.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/random.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/kdtree_single_index.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/kmeans_index.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/dist.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/defines.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/center_chooser.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/logger.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/composite_index.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/linear_index.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/hierarchical_clustering_index.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/lsh_index.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/lsh_table.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/matching/matching_interface.hpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/matching/indMatch.hpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/types.hpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/flann.hpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/general.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/defines.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/config.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/matrix.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/serialization.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/params.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/any.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/saving.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/all_indices.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/nn_index.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/result_set.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/dynamic_bitset.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/kdtree_index.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/heap.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/allocator.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/random.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/kdtree_single_index.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/kmeans_index.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/dist.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/defines.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/center_chooser.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/logger.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/composite_index.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/linear_index.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/hierarchical_clustering_index.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/lsh_index.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/lsh_table.h \
  /usr/include/c++/11.1.0/iomanip /usr/include/c++/11.1.0/locale \
  /usr/include/c++/11.1.0/bits/locale_facets_nonio.h \
  /usr/include/c++/11.1.0/ctime \
@@ -449,9 +449,9 @@ software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o: \
  /usr/include/c++/11.1.0/bits/locale_facets_nonio.tcc \
  /usr/include/c++/11.1.0/bits/locale_conv.h \
  /usr/include/c++/11.1.0/math.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/algorithms/autotuned_index.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/nn/ground_truth.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/nn/index_testing.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/timer.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/flann/util/sampling.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/system/logger.hpp
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/algorithms/autotuned_index.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/nn/ground_truth.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/nn/index_testing.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/timer.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/flann/util/sampling.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/system/logger.hpp

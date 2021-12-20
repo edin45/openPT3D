@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_spherical_to_pinholes
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_spherical_to_pinholes
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

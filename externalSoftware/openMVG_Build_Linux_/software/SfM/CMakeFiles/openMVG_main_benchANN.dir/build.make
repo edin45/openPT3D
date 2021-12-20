@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include software/SfM/CMakeFiles/openMVG_main_benchANN.dir/depend.make
@@ -70,18 +70,18 @@ include software/SfM/CMakeFiles/openMVG_main_benchANN.dir/progress.make
 include software/SfM/CMakeFiles/openMVG_main_benchANN.dir/flags.make
 
 software/SfM/CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o: software/SfM/CMakeFiles/openMVG_main_benchANN.dir/flags.make
-software/SfM/CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/main_benchANN.cpp
+software/SfM/CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/main_benchANN.cpp
 software/SfM/CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o: software/SfM/CMakeFiles/openMVG_main_benchANN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/SfM/CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/SfM/CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o -MF CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o.d -o CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/main_benchANN.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/SfM/CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/SfM/CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o -MF CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o.d -o CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/main_benchANN.cpp
 
 software/SfM/CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/main_benchANN.cpp > CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/main_benchANN.cpp > CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.i
 
 software/SfM/CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/main_benchANN.cpp -o CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/main_benchANN.cpp -o CMakeFiles/openMVG_main_benchANN.dir/main_benchANN.cpp.s
 
 # Object files for target openMVG_main_benchANN
 openMVG_main_benchANN_OBJECTS = \
@@ -112,9 +112,10 @@ Linux-x86_64-RELEASE/openMVG_main_benchANN: /usr/lib/libz.so
 Linux-x86_64-RELEASE/openMVG_main_benchANN: /usr/lib/libtiff.so
 Linux-x86_64-RELEASE/openMVG_main_benchANN: Linux-x86_64-RELEASE/libopenMVG_lInftyComputerVision.a
 Linux-x86_64-RELEASE/openMVG_main_benchANN: Linux-x86_64-RELEASE/libopenMVG_multiview.a
-Linux-x86_64-RELEASE/openMVG_main_benchANN: /usr/lib/libceres.so.2.0.0
-Linux-x86_64-RELEASE/openMVG_main_benchANN: /usr/lib/libglog.so.0.5.0
-Linux-x86_64-RELEASE/openMVG_main_benchANN: /usr/lib/libgflags.so.2.2.2
+Linux-x86_64-RELEASE/openMVG_main_benchANN: third_party/ceres-solver/lib/libopenMVG_ceres.a
+Linux-x86_64-RELEASE/openMVG_main_benchANN: Linux-x86_64-RELEASE/libopenMVG_cxsparse.a
+Linux-x86_64-RELEASE/openMVG_main_benchANN: /usr/lib/liblapack.so
+Linux-x86_64-RELEASE/openMVG_main_benchANN: /usr/lib/libblas.so
 Linux-x86_64-RELEASE/openMVG_main_benchANN: Linux-x86_64-RELEASE/libopenMVG_linearProgramming.a
 Linux-x86_64-RELEASE/openMVG_main_benchANN: Linux-x86_64-RELEASE/libopenMVG_numeric.a
 Linux-x86_64-RELEASE/openMVG_main_benchANN: Linux-x86_64-RELEASE/liblib_clp.a
@@ -122,18 +123,18 @@ Linux-x86_64-RELEASE/openMVG_main_benchANN: Linux-x86_64-RELEASE/liblib_OsiClpSo
 Linux-x86_64-RELEASE/openMVG_main_benchANN: Linux-x86_64-RELEASE/liblib_CoinUtils.a
 Linux-x86_64-RELEASE/openMVG_main_benchANN: Linux-x86_64-RELEASE/liblib_Osi.a
 Linux-x86_64-RELEASE/openMVG_main_benchANN: software/SfM/CMakeFiles/openMVG_main_benchANN.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_main_benchANN"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_benchANN.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_main_benchANN"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_benchANN.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 software/SfM/CMakeFiles/openMVG_main_benchANN.dir/build: Linux-x86_64-RELEASE/openMVG_main_benchANN
 .PHONY : software/SfM/CMakeFiles/openMVG_main_benchANN.dir/build
 
 software/SfM/CMakeFiles/openMVG_main_benchANN.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_benchANN.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_benchANN.dir/cmake_clean.cmake
 .PHONY : software/SfM/CMakeFiles/openMVG_main_benchANN.dir/clean
 
 software/SfM/CMakeFiles/openMVG_main_benchANN.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/CMakeFiles/openMVG_main_benchANN.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/CMakeFiles/openMVG_main_benchANN.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : software/SfM/CMakeFiles/openMVG_main_benchANN.dir/depend
 

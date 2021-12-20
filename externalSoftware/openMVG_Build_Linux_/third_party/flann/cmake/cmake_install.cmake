@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/cmake
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/cmake
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,6 +43,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xpkgconfigx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/flann/cmake/flann.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/flann/cmake/flann.pc")
 endif()
 

@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget OpenMVG::lib_CoinUtils OpenMVG::lib_Osi OpenMVG::lib_clp OpenMVG::lib_OsiClpSolver OpenMVG::openMVG_stlplus OpenMVG::openMVG_lemon OpenMVG::openMVG_easyexif OpenMVG::openMVG_fast OpenMVG::openMVG_camera OpenMVG::openMVG_exif OpenMVG::openMVG_features OpenMVG::openMVG_graph OpenMVG::openMVG_image OpenMVG::openMVG_linearProgramming OpenMVG::openMVG_lInftyComputerVision OpenMVG::openMVG_geodesy OpenMVG::openMVG_geometry OpenMVG::openMVG_matching OpenMVG::openMVG_kvld OpenMVG::openMVG_matching_image_collection OpenMVG::openMVG_multiview OpenMVG::openMVG_numeric OpenMVG::openMVG_robust_estimation OpenMVG::openMVG_system OpenMVG::openMVG_sfm OpenMVG::vlsift)
+foreach(_expectedTarget OpenMVG::cereal OpenMVG::lib_CoinUtils OpenMVG::lib_Osi OpenMVG::lib_clp OpenMVG::lib_OsiClpSolver OpenMVG::openMVG_stlplus OpenMVG::openMVG_lemon OpenMVG::openMVG_cxsparse OpenMVG::openMVG_ceres OpenMVG::openMVG_easyexif OpenMVG::openMVG_fast OpenMVG::openMVG_camera OpenMVG::openMVG_exif OpenMVG::openMVG_features OpenMVG::openMVG_graph OpenMVG::openMVG_image OpenMVG::openMVG_linearProgramming OpenMVG::openMVG_lInftyComputerVision OpenMVG::openMVG_geodesy OpenMVG::openMVG_geometry OpenMVG::openMVG_matching OpenMVG::openMVG_kvld OpenMVG::openMVG_matching_image_collection OpenMVG::openMVG_multiview OpenMVG::openMVG_numeric OpenMVG::openMVG_robust_estimation OpenMVG::openMVG_system OpenMVG::openMVG_sfm OpenMVG::vlsift)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -50,6 +50,13 @@ if(_IMPORT_PREFIX STREQUAL "/")
   set(_IMPORT_PREFIX "")
 endif()
 
+# Create imported target OpenMVG::cereal
+add_library(OpenMVG::cereal INTERFACE IMPORTED)
+
+set_target_properties(OpenMVG::cereal PROPERTIES
+  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/openMVG_dependencies/cereal/include"
+)
+
 # Create imported target OpenMVG::lib_CoinUtils
 add_library(OpenMVG::lib_CoinUtils STATIC IMPORTED)
 
@@ -77,6 +84,17 @@ set_target_properties(OpenMVG::openMVG_lemon PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/openMVG/third_party/lemon;${_IMPORT_PREFIX}/include/openMVG/third_party"
 )
 
+# Create imported target OpenMVG::openMVG_cxsparse
+add_library(OpenMVG::openMVG_cxsparse STATIC IMPORTED)
+
+set_target_properties(OpenMVG::openMVG_cxsparse PROPERTIES
+  INTERFACE_COMPILE_DEFINITIONS "NCOMPLEX"
+  INTERFACE_LINK_LIBRARIES "m"
+)
+
+# Create imported target OpenMVG::openMVG_ceres
+add_library(OpenMVG::openMVG_ceres STATIC IMPORTED)
+
 # Create imported target OpenMVG::openMVG_easyexif
 add_library(OpenMVG::openMVG_easyexif STATIC IMPORTED)
 
@@ -89,7 +107,7 @@ add_library(OpenMVG::openMVG_camera INTERFACE IMPORTED)
 set_target_properties(OpenMVG::openMVG_camera PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_11"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "OpenMVG::openMVG_numeric;cereal;OpenMP::OpenMP_CXX"
+  INTERFACE_LINK_LIBRARIES "OpenMVG::openMVG_numeric;OpenMVG::cereal;OpenMP::OpenMP_CXX"
 )
 
 # Create imported target OpenMVG::openMVG_exif
@@ -107,7 +125,7 @@ set_target_properties(OpenMVG::openMVG_features PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_11"
   INTERFACE_COMPILE_OPTIONS "-march=skylake;-msse2;-msse3;-mssse3;-msse4.1;-msse4.2;-mavx;-mfma;-mbmi2;-mavx2;-mno-sse4a;-mno-xop;-mno-fma4;-mno-avx512f;-mno-avx512vl;-mno-avx512pf;-mno-avx512er;-mno-avx512cd;-mno-avx512dq;-mno-avx512bw;-mno-avx512ifma;-mno-avx512vbmi"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;${_IMPORT_PREFIX}/include/openMVG"
-  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:OpenMVG::openMVG_fast>;\$<LINK_ONLY:OpenMVG::openMVG_stlplus>;OpenMP::OpenMP_CXX;cereal"
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:OpenMVG::openMVG_fast>;\$<LINK_ONLY:OpenMVG::openMVG_stlplus>;OpenMP::OpenMP_CXX;OpenMVG::cereal"
 )
 
 # Create imported target OpenMVG::openMVG_graph
@@ -159,7 +177,7 @@ add_library(OpenMVG::openMVG_geometry STATIC IMPORTED)
 set_target_properties(OpenMVG::openMVG_geometry PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_11"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "OpenMVG::openMVG_numeric;cereal;\$<LINK_ONLY:OpenMVG::openMVG_linearProgramming>"
+  INTERFACE_LINK_LIBRARIES "OpenMVG::openMVG_numeric;OpenMVG::cereal;\$<LINK_ONLY:OpenMVG::openMVG_linearProgramming>"
 )
 
 # Create imported target OpenMVG::openMVG_matching
@@ -169,7 +187,7 @@ set_target_properties(OpenMVG::openMVG_matching PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_11"
   INTERFACE_COMPILE_OPTIONS "-DOPENMVG_USE_AVX2;-mavx2;-DOPENMVG_USE_AVX;-mavx"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;${_IMPORT_PREFIX}/include/openMVG"
-  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:OpenMVG::openMVG_stlplus>;\$<LINK_ONLY:OpenMP::OpenMP_CXX>;OpenMVG::openMVG_features;Threads::Threads;cereal"
+  INTERFACE_LINK_LIBRARIES "\$<LINK_ONLY:OpenMVG::openMVG_stlplus>;\$<LINK_ONLY:OpenMP::OpenMP_CXX>;OpenMVG::openMVG_features;Threads::Threads;OpenMVG::cereal"
 )
 
 # Create imported target OpenMVG::openMVG_kvld
@@ -195,7 +213,7 @@ add_library(OpenMVG::openMVG_multiview STATIC IMPORTED)
 set_target_properties(OpenMVG::openMVG_multiview PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_11"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "OpenMVG::openMVG_numeric;\$<LINK_ONLY:OpenMVG::openMVG_graph>;\$<LINK_ONLY:Ceres::ceres>"
+  INTERFACE_LINK_LIBRARIES "OpenMVG::openMVG_numeric;\$<LINK_ONLY:OpenMVG::openMVG_graph>;\$<LINK_ONLY:OpenMVG::openMVG_ceres>"
 )
 
 # Create imported target OpenMVG::openMVG_numeric
@@ -204,7 +222,7 @@ add_library(OpenMVG::openMVG_numeric STATIC IMPORTED)
 set_target_properties(OpenMVG::openMVG_numeric PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_11"
   INTERFACE_COMPILE_OPTIONS "-march=skylake;-msse2;-msse3;-mssse3;-msse4.1;-msse4.2;-mavx;-mfma;-mbmi2;-mavx2;-mno-sse4a;-mno-xop;-mno-fma4;-mno-avx512f;-mno-avx512vl;-mno-avx512pf;-mno-avx512er;-mno-avx512cd;-mno-avx512dq;-mno-avx512bw;-mno-avx512ifma;-mno-avx512vbmi"
-  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;/usr/local/include/eigen3"
+  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;/usr/local/include/openMVG/third_party/eigen/"
 )
 
 # Create imported target OpenMVG::openMVG_robust_estimation
@@ -229,7 +247,7 @@ add_library(OpenMVG::openMVG_sfm STATIC IMPORTED)
 set_target_properties(OpenMVG::openMVG_sfm PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_11"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;${_IMPORT_PREFIX}/include/openMVG"
-  INTERFACE_LINK_LIBRARIES "OpenMVG::openMVG_geometry;OpenMVG::openMVG_features;OpenMVG::openMVG_graph;OpenMVG::openMVG_matching;OpenMVG::openMVG_multiview;cereal;OpenMP::OpenMP_CXX;\$<LINK_ONLY:OpenMVG::openMVG_image>;\$<LINK_ONLY:OpenMVG::openMVG_lInftyComputerVision>;\$<LINK_ONLY:OpenMVG::openMVG_system>;\$<LINK_ONLY:Ceres::ceres>;\$<LINK_ONLY:OpenMVG::openMVG_stlplus>"
+  INTERFACE_LINK_LIBRARIES "OpenMVG::openMVG_geometry;OpenMVG::openMVG_features;OpenMVG::openMVG_graph;OpenMVG::openMVG_matching;OpenMVG::openMVG_multiview;OpenMVG::cereal;OpenMP::OpenMP_CXX;\$<LINK_ONLY:OpenMVG::openMVG_image>;\$<LINK_ONLY:OpenMVG::openMVG_lInftyComputerVision>;\$<LINK_ONLY:OpenMVG::openMVG_system>;\$<LINK_ONLY:OpenMVG::openMVG_ceres>;\$<LINK_ONLY:OpenMVG::openMVG_stlplus>"
 )
 
 # Create imported target OpenMVG::vlsift

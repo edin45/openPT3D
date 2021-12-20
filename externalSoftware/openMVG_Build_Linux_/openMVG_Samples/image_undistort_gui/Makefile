@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/rule
 .PHONY : openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ openMVG_sample_image_undistort: openMVG_Samples/image_undistort_gui/CMakeFiles/o
 
 # fast build rule for target.
 openMVG_sample_image_undistort/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build
 .PHONY : openMVG_sample_image_undistort/fast
 
 # Convenience name for target.
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/rule
 .PHONY : openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ openMVG_sample_image_undistort_autogen: openMVG_Samples/image_undistort_gui/CMak
 
 # fast build rule for target.
 openMVG_sample_image_undistort_autogen/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort_autogen.dir/build
 .PHONY : openMVG_sample_image_undistort_autogen/fast
 
 MainWindow.o: MainWindow.cc.o
@@ -194,7 +194,7 @@ MainWindow.o: MainWindow.cc.o
 
 # target to build an object file
 MainWindow.cc.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o
 .PHONY : MainWindow.cc.o
 
 MainWindow.i: MainWindow.cc.i
@@ -202,7 +202,7 @@ MainWindow.i: MainWindow.cc.i
 
 # target to preprocess a source file
 MainWindow.cc.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.i
 .PHONY : MainWindow.cc.i
 
 MainWindow.s: MainWindow.cc.s
@@ -210,7 +210,7 @@ MainWindow.s: MainWindow.cc.s
 
 # target to generate assembly for a file
 MainWindow.cc.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.s
 .PHONY : MainWindow.cc.s
 
 QImageInterface.o: QImageInterface.cc.o
@@ -218,7 +218,7 @@ QImageInterface.o: QImageInterface.cc.o
 
 # target to build an object file
 QImageInterface.cc.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o
 .PHONY : QImageInterface.cc.o
 
 QImageInterface.i: QImageInterface.cc.i
@@ -226,7 +226,7 @@ QImageInterface.i: QImageInterface.cc.i
 
 # target to preprocess a source file
 QImageInterface.cc.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.i
 .PHONY : QImageInterface.cc.i
 
 QImageInterface.s: QImageInterface.cc.s
@@ -234,7 +234,7 @@ QImageInterface.s: QImageInterface.cc.s
 
 # target to generate assembly for a file
 QImageInterface.cc.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.s
 .PHONY : QImageInterface.cc.s
 
 main.o: main.cc.o
@@ -242,7 +242,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -250,7 +250,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -258,7 +258,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.s
 .PHONY : main.cc.s
 
 openMVG_sample_image_undistort_autogen/mocs_compilation.o: openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o
@@ -266,7 +266,7 @@ openMVG_sample_image_undistort_autogen/mocs_compilation.o: openMVG_sample_image_
 
 # target to build an object file
 openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o
 .PHONY : openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o
 
 openMVG_sample_image_undistort_autogen/mocs_compilation.i: openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.i
@@ -274,7 +274,7 @@ openMVG_sample_image_undistort_autogen/mocs_compilation.i: openMVG_sample_image_
 
 # target to preprocess a source file
 openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.i
 .PHONY : openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.i
 
 openMVG_sample_image_undistort_autogen/mocs_compilation.s: openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.s
@@ -282,7 +282,7 @@ openMVG_sample_image_undistort_autogen/mocs_compilation.s: openMVG_sample_image_
 
 # target to generate assembly for a file
 openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build.make openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.s
 .PHONY : openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.s
 
 # Help Target
@@ -322,6 +322,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

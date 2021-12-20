@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget lib_CoinUtils lib_Osi lib_clp lib_OsiClpSolver openMVG_stlplus openMVG_lemon openMVG_easyexif openMVG_fast openMVG_camera openMVG_exif openMVG_features openMVG_graph openMVG_image openMVG_linearProgramming openMVG_lInftyComputerVision openMVG_geodesy openMVG_geometry openMVG_matching openMVG_kvld openMVG_matching_image_collection openMVG_multiview openMVG_numeric openMVG_robust_estimation openMVG_system openMVG_sfm vlsift)
+foreach(_expectedTarget cereal lib_CoinUtils lib_Osi lib_clp lib_OsiClpSolver openMVG_stlplus openMVG_lemon openMVG_cxsparse openMVG_ceres openMVG_easyexif openMVG_fast openMVG_camera openMVG_exif openMVG_features openMVG_graph openMVG_image openMVG_linearProgramming openMVG_lInftyComputerVision openMVG_geodesy openMVG_geometry openMVG_matching openMVG_kvld openMVG_matching_image_collection openMVG_multiview openMVG_numeric openMVG_robust_estimation openMVG_system openMVG_sfm vlsift)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -48,6 +48,13 @@ if(_IMPORT_PREFIX STREQUAL "/")
   set(_IMPORT_PREFIX "")
 endif()
 
+# Create imported target cereal
+add_library(cereal INTERFACE IMPORTED)
+
+set_target_properties(cereal PROPERTIES
+  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/openMVG_dependencies/cereal/include"
+)
+
 # Create imported target lib_CoinUtils
 add_library(lib_CoinUtils STATIC IMPORTED)
 
@@ -74,6 +81,17 @@ set_target_properties(openMVG_lemon PROPERTIES
   INTERFACE_COMPILE_DEFINITIONS "LEMON_ONLY_TEMPLATES"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/openMVG/third_party/lemon;${_IMPORT_PREFIX}/include/openMVG/third_party"
 )
+
+# Create imported target openMVG_cxsparse
+add_library(openMVG_cxsparse STATIC IMPORTED)
+
+set_target_properties(openMVG_cxsparse PROPERTIES
+  INTERFACE_COMPILE_DEFINITIONS "NCOMPLEX"
+  INTERFACE_LINK_LIBRARIES "m"
+)
+
+# Create imported target openMVG_ceres
+add_library(openMVG_ceres STATIC IMPORTED)
 
 # Create imported target openMVG_easyexif
 add_library(openMVG_easyexif STATIC IMPORTED)
@@ -193,7 +211,7 @@ add_library(openMVG_multiview STATIC IMPORTED)
 set_target_properties(openMVG_multiview PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_11"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "openMVG_numeric;\$<LINK_ONLY:openMVG_graph>;\$<LINK_ONLY:Ceres::ceres>"
+  INTERFACE_LINK_LIBRARIES "openMVG_numeric;\$<LINK_ONLY:openMVG_graph>;\$<LINK_ONLY:openMVG_ceres>"
 )
 
 # Create imported target openMVG_numeric
@@ -202,7 +220,7 @@ add_library(openMVG_numeric STATIC IMPORTED)
 set_target_properties(openMVG_numeric PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_11"
   INTERFACE_COMPILE_OPTIONS "-march=skylake;-msse2;-msse3;-mssse3;-msse4.1;-msse4.2;-mavx;-mfma;-mbmi2;-mavx2;-mno-sse4a;-mno-xop;-mno-fma4;-mno-avx512f;-mno-avx512vl;-mno-avx512pf;-mno-avx512er;-mno-avx512cd;-mno-avx512dq;-mno-avx512bw;-mno-avx512ifma;-mno-avx512vbmi"
-  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;/usr/local/include/eigen3"
+  INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;/usr/local/include/openMVG/third_party/eigen/"
 )
 
 # Create imported target openMVG_robust_estimation
@@ -227,7 +245,7 @@ add_library(openMVG_sfm STATIC IMPORTED)
 set_target_properties(openMVG_sfm PROPERTIES
   INTERFACE_COMPILE_FEATURES "cxx_std_11"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include;${_IMPORT_PREFIX}/include/openMVG"
-  INTERFACE_LINK_LIBRARIES "openMVG_geometry;openMVG_features;openMVG_graph;openMVG_matching;openMVG_multiview;cereal;OpenMP::OpenMP_CXX;\$<LINK_ONLY:openMVG_image>;\$<LINK_ONLY:openMVG_lInftyComputerVision>;\$<LINK_ONLY:openMVG_system>;\$<LINK_ONLY:Ceres::ceres>;\$<LINK_ONLY:openMVG_stlplus>"
+  INTERFACE_LINK_LIBRARIES "openMVG_geometry;openMVG_features;openMVG_graph;openMVG_matching;openMVG_multiview;cereal;OpenMP::OpenMP_CXX;\$<LINK_ONLY:openMVG_image>;\$<LINK_ONLY:openMVG_lInftyComputerVision>;\$<LINK_ONLY:openMVG_system>;\$<LINK_ONLY:openMVG_ceres>;\$<LINK_ONLY:openMVG_stlplus>"
 )
 
 # Create imported target vlsift

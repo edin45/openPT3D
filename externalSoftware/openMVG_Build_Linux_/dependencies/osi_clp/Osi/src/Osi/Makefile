@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/osi_clp/Osi/src/Osi/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/osi_clp/Osi/src/Osi/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/osi_clp/Osi/src/Osi/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/osi_clp/Osi/src/Osi/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/osi_clp/Osi/src/Osi/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/osi_clp/Osi/src/Osi/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/osi_clp/Osi/src/Osi/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/osi_clp/Osi/src/Osi/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/rule
 .PHONY : dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ lib_Osi: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/rule
 
 # fast build rule for target.
 lib_Osi/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build
 .PHONY : lib_Osi/fast
 
 OsiAuxInfo.o: OsiAuxInfo.cpp.o
@@ -180,7 +180,7 @@ OsiAuxInfo.o: OsiAuxInfo.cpp.o
 
 # target to build an object file
 OsiAuxInfo.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o
 .PHONY : OsiAuxInfo.cpp.o
 
 OsiAuxInfo.i: OsiAuxInfo.cpp.i
@@ -188,7 +188,7 @@ OsiAuxInfo.i: OsiAuxInfo.cpp.i
 
 # target to preprocess a source file
 OsiAuxInfo.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.i
 .PHONY : OsiAuxInfo.cpp.i
 
 OsiAuxInfo.s: OsiAuxInfo.cpp.s
@@ -196,7 +196,7 @@ OsiAuxInfo.s: OsiAuxInfo.cpp.s
 
 # target to generate assembly for a file
 OsiAuxInfo.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.s
 .PHONY : OsiAuxInfo.cpp.s
 
 OsiBranchingObject.o: OsiBranchingObject.cpp.o
@@ -204,7 +204,7 @@ OsiBranchingObject.o: OsiBranchingObject.cpp.o
 
 # target to build an object file
 OsiBranchingObject.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o
 .PHONY : OsiBranchingObject.cpp.o
 
 OsiBranchingObject.i: OsiBranchingObject.cpp.i
@@ -212,7 +212,7 @@ OsiBranchingObject.i: OsiBranchingObject.cpp.i
 
 # target to preprocess a source file
 OsiBranchingObject.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.i
 .PHONY : OsiBranchingObject.cpp.i
 
 OsiBranchingObject.s: OsiBranchingObject.cpp.s
@@ -220,7 +220,7 @@ OsiBranchingObject.s: OsiBranchingObject.cpp.s
 
 # target to generate assembly for a file
 OsiBranchingObject.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.s
 .PHONY : OsiBranchingObject.cpp.s
 
 OsiChooseVariable.o: OsiChooseVariable.cpp.o
@@ -228,7 +228,7 @@ OsiChooseVariable.o: OsiChooseVariable.cpp.o
 
 # target to build an object file
 OsiChooseVariable.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o
 .PHONY : OsiChooseVariable.cpp.o
 
 OsiChooseVariable.i: OsiChooseVariable.cpp.i
@@ -236,7 +236,7 @@ OsiChooseVariable.i: OsiChooseVariable.cpp.i
 
 # target to preprocess a source file
 OsiChooseVariable.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.i
 .PHONY : OsiChooseVariable.cpp.i
 
 OsiChooseVariable.s: OsiChooseVariable.cpp.s
@@ -244,7 +244,7 @@ OsiChooseVariable.s: OsiChooseVariable.cpp.s
 
 # target to generate assembly for a file
 OsiChooseVariable.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.s
 .PHONY : OsiChooseVariable.cpp.s
 
 OsiColCut.o: OsiColCut.cpp.o
@@ -252,7 +252,7 @@ OsiColCut.o: OsiColCut.cpp.o
 
 # target to build an object file
 OsiColCut.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o
 .PHONY : OsiColCut.cpp.o
 
 OsiColCut.i: OsiColCut.cpp.i
@@ -260,7 +260,7 @@ OsiColCut.i: OsiColCut.cpp.i
 
 # target to preprocess a source file
 OsiColCut.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.i
 .PHONY : OsiColCut.cpp.i
 
 OsiColCut.s: OsiColCut.cpp.s
@@ -268,7 +268,7 @@ OsiColCut.s: OsiColCut.cpp.s
 
 # target to generate assembly for a file
 OsiColCut.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.s
 .PHONY : OsiColCut.cpp.s
 
 OsiCut.o: OsiCut.cpp.o
@@ -276,7 +276,7 @@ OsiCut.o: OsiCut.cpp.o
 
 # target to build an object file
 OsiCut.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.o
 .PHONY : OsiCut.cpp.o
 
 OsiCut.i: OsiCut.cpp.i
@@ -284,7 +284,7 @@ OsiCut.i: OsiCut.cpp.i
 
 # target to preprocess a source file
 OsiCut.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.i
 .PHONY : OsiCut.cpp.i
 
 OsiCut.s: OsiCut.cpp.s
@@ -292,7 +292,7 @@ OsiCut.s: OsiCut.cpp.s
 
 # target to generate assembly for a file
 OsiCut.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.s
 .PHONY : OsiCut.cpp.s
 
 OsiCuts.o: OsiCuts.cpp.o
@@ -300,7 +300,7 @@ OsiCuts.o: OsiCuts.cpp.o
 
 # target to build an object file
 OsiCuts.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o
 .PHONY : OsiCuts.cpp.o
 
 OsiCuts.i: OsiCuts.cpp.i
@@ -308,7 +308,7 @@ OsiCuts.i: OsiCuts.cpp.i
 
 # target to preprocess a source file
 OsiCuts.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.i
 .PHONY : OsiCuts.cpp.i
 
 OsiCuts.s: OsiCuts.cpp.s
@@ -316,7 +316,7 @@ OsiCuts.s: OsiCuts.cpp.s
 
 # target to generate assembly for a file
 OsiCuts.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.s
 .PHONY : OsiCuts.cpp.s
 
 OsiNames.o: OsiNames.cpp.o
@@ -324,7 +324,7 @@ OsiNames.o: OsiNames.cpp.o
 
 # target to build an object file
 OsiNames.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.o
 .PHONY : OsiNames.cpp.o
 
 OsiNames.i: OsiNames.cpp.i
@@ -332,7 +332,7 @@ OsiNames.i: OsiNames.cpp.i
 
 # target to preprocess a source file
 OsiNames.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.i
 .PHONY : OsiNames.cpp.i
 
 OsiNames.s: OsiNames.cpp.s
@@ -340,7 +340,7 @@ OsiNames.s: OsiNames.cpp.s
 
 # target to generate assembly for a file
 OsiNames.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.s
 .PHONY : OsiNames.cpp.s
 
 OsiPresolve.o: OsiPresolve.cpp.o
@@ -348,7 +348,7 @@ OsiPresolve.o: OsiPresolve.cpp.o
 
 # target to build an object file
 OsiPresolve.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o
 .PHONY : OsiPresolve.cpp.o
 
 OsiPresolve.i: OsiPresolve.cpp.i
@@ -356,7 +356,7 @@ OsiPresolve.i: OsiPresolve.cpp.i
 
 # target to preprocess a source file
 OsiPresolve.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.i
 .PHONY : OsiPresolve.cpp.i
 
 OsiPresolve.s: OsiPresolve.cpp.s
@@ -364,7 +364,7 @@ OsiPresolve.s: OsiPresolve.cpp.s
 
 # target to generate assembly for a file
 OsiPresolve.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.s
 .PHONY : OsiPresolve.cpp.s
 
 OsiRowCut.o: OsiRowCut.cpp.o
@@ -372,7 +372,7 @@ OsiRowCut.o: OsiRowCut.cpp.o
 
 # target to build an object file
 OsiRowCut.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o
 .PHONY : OsiRowCut.cpp.o
 
 OsiRowCut.i: OsiRowCut.cpp.i
@@ -380,7 +380,7 @@ OsiRowCut.i: OsiRowCut.cpp.i
 
 # target to preprocess a source file
 OsiRowCut.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.i
 .PHONY : OsiRowCut.cpp.i
 
 OsiRowCut.s: OsiRowCut.cpp.s
@@ -388,7 +388,7 @@ OsiRowCut.s: OsiRowCut.cpp.s
 
 # target to generate assembly for a file
 OsiRowCut.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.s
 .PHONY : OsiRowCut.cpp.s
 
 OsiRowCutDebugger.o: OsiRowCutDebugger.cpp.o
@@ -396,7 +396,7 @@ OsiRowCutDebugger.o: OsiRowCutDebugger.cpp.o
 
 # target to build an object file
 OsiRowCutDebugger.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o
 .PHONY : OsiRowCutDebugger.cpp.o
 
 OsiRowCutDebugger.i: OsiRowCutDebugger.cpp.i
@@ -404,7 +404,7 @@ OsiRowCutDebugger.i: OsiRowCutDebugger.cpp.i
 
 # target to preprocess a source file
 OsiRowCutDebugger.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.i
 .PHONY : OsiRowCutDebugger.cpp.i
 
 OsiRowCutDebugger.s: OsiRowCutDebugger.cpp.s
@@ -412,7 +412,7 @@ OsiRowCutDebugger.s: OsiRowCutDebugger.cpp.s
 
 # target to generate assembly for a file
 OsiRowCutDebugger.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.s
 .PHONY : OsiRowCutDebugger.cpp.s
 
 OsiSolverBranch.o: OsiSolverBranch.cpp.o
@@ -420,7 +420,7 @@ OsiSolverBranch.o: OsiSolverBranch.cpp.o
 
 # target to build an object file
 OsiSolverBranch.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o
 .PHONY : OsiSolverBranch.cpp.o
 
 OsiSolverBranch.i: OsiSolverBranch.cpp.i
@@ -428,7 +428,7 @@ OsiSolverBranch.i: OsiSolverBranch.cpp.i
 
 # target to preprocess a source file
 OsiSolverBranch.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.i
 .PHONY : OsiSolverBranch.cpp.i
 
 OsiSolverBranch.s: OsiSolverBranch.cpp.s
@@ -436,7 +436,7 @@ OsiSolverBranch.s: OsiSolverBranch.cpp.s
 
 # target to generate assembly for a file
 OsiSolverBranch.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.s
 .PHONY : OsiSolverBranch.cpp.s
 
 OsiSolverInterface.o: OsiSolverInterface.cpp.o
@@ -444,7 +444,7 @@ OsiSolverInterface.o: OsiSolverInterface.cpp.o
 
 # target to build an object file
 OsiSolverInterface.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o
 .PHONY : OsiSolverInterface.cpp.o
 
 OsiSolverInterface.i: OsiSolverInterface.cpp.i
@@ -452,7 +452,7 @@ OsiSolverInterface.i: OsiSolverInterface.cpp.i
 
 # target to preprocess a source file
 OsiSolverInterface.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.i
 .PHONY : OsiSolverInterface.cpp.i
 
 OsiSolverInterface.s: OsiSolverInterface.cpp.s
@@ -460,7 +460,7 @@ OsiSolverInterface.s: OsiSolverInterface.cpp.s
 
 # target to generate assembly for a file
 OsiSolverInterface.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.s
 .PHONY : OsiSolverInterface.cpp.s
 
 # Help Target
@@ -523,6 +523,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

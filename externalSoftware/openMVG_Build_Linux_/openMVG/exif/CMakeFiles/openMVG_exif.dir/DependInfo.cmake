@@ -8,12 +8,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/exif/exif_IO_EasyExif.cpp" "openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o" "gcc" "openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o.d"
+  "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/exif/exif_IO_EasyExif.cpp" "openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o" "gcc" "openMVG/exif/CMakeFiles/openMVG_exif.dir/exif_IO_EasyExif.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/easyexif/CMakeFiles/openMVG_easyexif.dir/DependInfo.cmake"
+  "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/easyexif/CMakeFiles/openMVG_easyexif.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

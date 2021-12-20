@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/depend.make
@@ -70,172 +70,172 @@ include dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/progress.make
 include dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiAuxInfo.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiAuxInfo.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiAuxInfo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiAuxInfo.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiAuxInfo.cpp > CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiAuxInfo.cpp > CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiAuxInfo.cpp -o CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiAuxInfo.cpp -o CMakeFiles/lib_Osi.dir/OsiAuxInfo.cpp.s
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiBranchingObject.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiBranchingObject.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiBranchingObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiBranchingObject.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiBranchingObject.cpp > CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiBranchingObject.cpp > CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiBranchingObject.cpp -o CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiBranchingObject.cpp -o CMakeFiles/lib_Osi.dir/OsiBranchingObject.cpp.s
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiChooseVariable.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiChooseVariable.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiChooseVariable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiChooseVariable.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiChooseVariable.cpp > CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiChooseVariable.cpp > CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiChooseVariable.cpp -o CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiChooseVariable.cpp -o CMakeFiles/lib_Osi.dir/OsiChooseVariable.cpp.s
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiColCut.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiColCut.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiColCut.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiColCut.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiColCut.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiColCut.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiColCut.cpp > CMakeFiles/lib_Osi.dir/OsiColCut.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiColCut.cpp > CMakeFiles/lib_Osi.dir/OsiColCut.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiColCut.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiColCut.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiColCut.cpp -o CMakeFiles/lib_Osi.dir/OsiColCut.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiColCut.cpp -o CMakeFiles/lib_Osi.dir/OsiColCut.cpp.s
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCut.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCut.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiCut.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiCut.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCut.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiCut.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiCut.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCut.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiCut.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCut.cpp > CMakeFiles/lib_Osi.dir/OsiCut.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCut.cpp > CMakeFiles/lib_Osi.dir/OsiCut.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCut.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiCut.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCut.cpp -o CMakeFiles/lib_Osi.dir/OsiCut.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCut.cpp -o CMakeFiles/lib_Osi.dir/OsiCut.cpp.s
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCuts.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCuts.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCuts.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiCuts.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCuts.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiCuts.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCuts.cpp > CMakeFiles/lib_Osi.dir/OsiCuts.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCuts.cpp > CMakeFiles/lib_Osi.dir/OsiCuts.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiCuts.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiCuts.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCuts.cpp -o CMakeFiles/lib_Osi.dir/OsiCuts.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiCuts.cpp -o CMakeFiles/lib_Osi.dir/OsiCuts.cpp.s
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiNames.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiNames.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiNames.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiNames.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiNames.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiNames.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiNames.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiNames.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiNames.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiNames.cpp > CMakeFiles/lib_Osi.dir/OsiNames.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiNames.cpp > CMakeFiles/lib_Osi.dir/OsiNames.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiNames.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiNames.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiNames.cpp -o CMakeFiles/lib_Osi.dir/OsiNames.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiNames.cpp -o CMakeFiles/lib_Osi.dir/OsiNames.cpp.s
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiPresolve.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiPresolve.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiPresolve.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiPresolve.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiPresolve.cpp > CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiPresolve.cpp > CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiPresolve.cpp -o CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiPresolve.cpp -o CMakeFiles/lib_Osi.dir/OsiPresolve.cpp.s
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCut.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCut.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCut.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCut.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCut.cpp > CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCut.cpp > CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCut.cpp -o CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCut.cpp -o CMakeFiles/lib_Osi.dir/OsiRowCut.cpp.s
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCutDebugger.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCutDebugger.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCutDebugger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCutDebugger.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCutDebugger.cpp > CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCutDebugger.cpp > CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCutDebugger.cpp -o CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiRowCutDebugger.cpp -o CMakeFiles/lib_Osi.dir/OsiRowCutDebugger.cpp.s
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverBranch.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverBranch.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverBranch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverBranch.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverBranch.cpp > CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverBranch.cpp > CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverBranch.cpp -o CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverBranch.cpp -o CMakeFiles/lib_Osi.dir/OsiSolverBranch.cpp.s
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/flags.make
-dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverInterface.cpp
+dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverInterface.cpp
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o -MF CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o.d -o CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverInterface.cpp
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverInterface.cpp > CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverInterface.cpp > CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.i
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverInterface.cpp -o CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi/OsiSolverInterface.cpp -o CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.s
 
 # Object files for target lib_Osi
 lib_Osi_OBJECTS = \
@@ -269,19 +269,19 @@ Linux-x86_64-RELEASE/liblib_Osi.a: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/l
 Linux-x86_64-RELEASE/liblib_Osi.a: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/OsiSolverInterface.cpp.o
 Linux-x86_64-RELEASE/liblib_Osi.a: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build.make
 Linux-x86_64-RELEASE/liblib_Osi.a: dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library ../../../../../Linux-x86_64-RELEASE/liblib_Osi.a"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && $(CMAKE_COMMAND) -P CMakeFiles/lib_Osi.dir/cmake_clean_target.cmake
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_Osi.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library ../../../../../Linux-x86_64-RELEASE/liblib_Osi.a"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && $(CMAKE_COMMAND) -P CMakeFiles/lib_Osi.dir/cmake_clean_target.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_Osi.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build: Linux-x86_64-RELEASE/liblib_Osi.a
 .PHONY : dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/build
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi && $(CMAKE_COMMAND) -P CMakeFiles/lib_Osi.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi && $(CMAKE_COMMAND) -P CMakeFiles/lib_Osi.dir/cmake_clean.cmake
 .PHONY : dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/clean
 
 dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/Osi /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/Osi /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dependencies/osi_clp/Osi/src/Osi/CMakeFiles/lib_Osi.dir/depend
 

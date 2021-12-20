@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/features
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/features
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,15 +43,15 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/edin/programs/openMvgBuildScripts/openMVG_Build/Linux-x86_64-RELEASE/libopenMVG_features.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/Linux-x86_64-RELEASE/libopenMVG_features.a")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/features/akaze/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/features/mser/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/features/sift/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/features/tbmr/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/features/akaze/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/features/mser/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/features/sift/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/features/tbmr/cmake_install.cmake")
 
 endif()
 

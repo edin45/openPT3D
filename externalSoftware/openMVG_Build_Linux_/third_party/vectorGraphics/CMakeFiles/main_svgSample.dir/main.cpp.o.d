@@ -1,5 +1,5 @@
 third_party/vectorGraphics/CMakeFiles/main_svgSample.dir/main.cpp.o: \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/vectorGraphics/main.cpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/vectorGraphics/main.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11.1.0/iostream \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -136,7 +136,7 @@ third_party/vectorGraphics/CMakeFiles/main_svgSample.dir/main.cpp.o: \
  /usr/include/c++/11.1.0/bits/stl_vector.h \
  /usr/include/c++/11.1.0/bits/stl_bvector.h \
  /usr/include/c++/11.1.0/bits/vector.tcc \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/vectorGraphics/svgDrawer.hpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/vectorGraphics/svgDrawer.hpp \
  /usr/include/c++/11.1.0/fstream /usr/include/c++/11.1.0/bits/codecvt.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/basic_file.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++io.h \

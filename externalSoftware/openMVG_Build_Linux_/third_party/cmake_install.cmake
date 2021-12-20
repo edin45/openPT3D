@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -51,7 +51,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/./cmdLine" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/./cmdLine" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -63,7 +63,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/./histogram" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/./histogram" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -75,7 +75,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/./htmlDoc" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/./htmlDoc" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -87,7 +87,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/./progress" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/./progress" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -99,7 +99,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/./vectorGraphics" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/./vectorGraphics" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -111,17 +111,20 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/./hnswlib" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/" TYPE DIRECTORY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/./hnswlib" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/lemon/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/vectorGraphics/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/flann/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/easyexif/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/lemon/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/vectorGraphics/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/cxsparse/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/ceres-solver/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/flann/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/easyexif/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/eigen/cmake_install.cmake")
 
 endif()
 

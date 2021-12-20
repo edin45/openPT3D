@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/vectorGraphics
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/vectorGraphics
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

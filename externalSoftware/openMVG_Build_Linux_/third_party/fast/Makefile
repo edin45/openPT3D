@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/fast/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/fast/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/fast/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/fast/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/fast/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/fast/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/fast/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/fast/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 third_party/fast/CMakeFiles/openMVG_fast.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/fast/CMakeFiles/openMVG_fast.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 third_party/fast/CMakeFiles/openMVG_fast.dir/rule
 .PHONY : third_party/fast/CMakeFiles/openMVG_fast.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ openMVG_fast: third_party/fast/CMakeFiles/openMVG_fast.dir/rule
 
 # fast build rule for target.
 openMVG_fast/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/build
 .PHONY : openMVG_fast/fast
 
 fast.o: fast.c.o
@@ -180,7 +180,7 @@ fast.o: fast.c.o
 
 # target to build an object file
 fast.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o
 .PHONY : fast.c.o
 
 fast.i: fast.c.i
@@ -188,7 +188,7 @@ fast.i: fast.c.i
 
 # target to preprocess a source file
 fast.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.i
 .PHONY : fast.c.i
 
 fast.s: fast.c.s
@@ -196,7 +196,7 @@ fast.s: fast.c.s
 
 # target to generate assembly for a file
 fast.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.s
 .PHONY : fast.c.s
 
 fast_10.o: fast_10.c.o
@@ -204,7 +204,7 @@ fast_10.o: fast_10.c.o
 
 # target to build an object file
 fast_10.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.o
 .PHONY : fast_10.c.o
 
 fast_10.i: fast_10.c.i
@@ -212,7 +212,7 @@ fast_10.i: fast_10.c.i
 
 # target to preprocess a source file
 fast_10.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.i
 .PHONY : fast_10.c.i
 
 fast_10.s: fast_10.c.s
@@ -220,7 +220,7 @@ fast_10.s: fast_10.c.s
 
 # target to generate assembly for a file
 fast_10.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.s
 .PHONY : fast_10.c.s
 
 fast_11.o: fast_11.c.o
@@ -228,7 +228,7 @@ fast_11.o: fast_11.c.o
 
 # target to build an object file
 fast_11.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.o
 .PHONY : fast_11.c.o
 
 fast_11.i: fast_11.c.i
@@ -236,7 +236,7 @@ fast_11.i: fast_11.c.i
 
 # target to preprocess a source file
 fast_11.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.i
 .PHONY : fast_11.c.i
 
 fast_11.s: fast_11.c.s
@@ -244,7 +244,7 @@ fast_11.s: fast_11.c.s
 
 # target to generate assembly for a file
 fast_11.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.s
 .PHONY : fast_11.c.s
 
 fast_12.o: fast_12.c.o
@@ -252,7 +252,7 @@ fast_12.o: fast_12.c.o
 
 # target to build an object file
 fast_12.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.o
 .PHONY : fast_12.c.o
 
 fast_12.i: fast_12.c.i
@@ -260,7 +260,7 @@ fast_12.i: fast_12.c.i
 
 # target to preprocess a source file
 fast_12.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.i
 .PHONY : fast_12.c.i
 
 fast_12.s: fast_12.c.s
@@ -268,7 +268,7 @@ fast_12.s: fast_12.c.s
 
 # target to generate assembly for a file
 fast_12.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.s
 .PHONY : fast_12.c.s
 
 fast_9.o: fast_9.c.o
@@ -276,7 +276,7 @@ fast_9.o: fast_9.c.o
 
 # target to build an object file
 fast_9.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.o
 .PHONY : fast_9.c.o
 
 fast_9.i: fast_9.c.i
@@ -284,7 +284,7 @@ fast_9.i: fast_9.c.i
 
 # target to preprocess a source file
 fast_9.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.i
 .PHONY : fast_9.c.i
 
 fast_9.s: fast_9.c.s
@@ -292,7 +292,7 @@ fast_9.s: fast_9.c.s
 
 # target to generate assembly for a file
 fast_9.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.s
 .PHONY : fast_9.c.s
 
 nonmax.o: nonmax.c.o
@@ -300,7 +300,7 @@ nonmax.o: nonmax.c.o
 
 # target to build an object file
 nonmax.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.o
 .PHONY : nonmax.c.o
 
 nonmax.i: nonmax.c.i
@@ -308,7 +308,7 @@ nonmax.i: nonmax.c.i
 
 # target to preprocess a source file
 nonmax.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.i
 .PHONY : nonmax.c.i
 
 nonmax.s: nonmax.c.s
@@ -316,7 +316,7 @@ nonmax.s: nonmax.c.s
 
 # target to generate assembly for a file
 nonmax.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f third_party/fast/CMakeFiles/openMVG_fast.dir/build.make third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.s
 .PHONY : nonmax.c.s
 
 # Help Target
@@ -361,6 +361,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

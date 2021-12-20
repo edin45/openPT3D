@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/matching/kvld//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching/kvld/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/matching/kvld//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching/kvld/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching/kvld/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching/kvld/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching/kvld/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching/kvld/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching/kvld/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching/kvld/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/rule
 .PHONY : openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ openMVG_kvld: openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/rule
 
 # fast build rule for target.
 openMVG_kvld/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build
 .PHONY : openMVG_kvld/fast
 
 algorithm.o: algorithm.cpp.o
@@ -180,7 +180,7 @@ algorithm.o: algorithm.cpp.o
 
 # target to build an object file
 algorithm.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/algorithm.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/algorithm.cpp.o
 .PHONY : algorithm.cpp.o
 
 algorithm.i: algorithm.cpp.i
@@ -188,7 +188,7 @@ algorithm.i: algorithm.cpp.i
 
 # target to preprocess a source file
 algorithm.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/algorithm.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/algorithm.cpp.i
 .PHONY : algorithm.cpp.i
 
 algorithm.s: algorithm.cpp.s
@@ -196,7 +196,7 @@ algorithm.s: algorithm.cpp.s
 
 # target to generate assembly for a file
 algorithm.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/algorithm.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/algorithm.cpp.s
 .PHONY : algorithm.cpp.s
 
 kvld.o: kvld.cpp.o
@@ -204,7 +204,7 @@ kvld.o: kvld.cpp.o
 
 # target to build an object file
 kvld.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/kvld.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/kvld.cpp.o
 .PHONY : kvld.cpp.o
 
 kvld.i: kvld.cpp.i
@@ -212,7 +212,7 @@ kvld.i: kvld.cpp.i
 
 # target to preprocess a source file
 kvld.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/kvld.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/kvld.cpp.i
 .PHONY : kvld.cpp.i
 
 kvld.s: kvld.cpp.s
@@ -220,7 +220,7 @@ kvld.s: kvld.cpp.s
 
 # target to generate assembly for a file
 kvld.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/kvld.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/build.make openMVG/matching/kvld/CMakeFiles/openMVG_kvld.dir/kvld.cpp.s
 .PHONY : kvld.cpp.s
 
 # Help Target
@@ -253,6 +253,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

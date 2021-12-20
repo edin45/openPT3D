@@ -1,5 +1,5 @@
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o: \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast.c \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast.c \
  /usr/include/stdc-predef.h /usr/include/c++/11.1.0/stdlib.h \
  /usr/include/c++/11.1.0/cstdlib \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
@@ -30,4 +30,4 @@ third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o: \
  /usr/include/bits/struct_rwlock.h /usr/include/alloca.h \
  /usr/include/bits/stdlib-bsearch.h /usr/include/bits/stdlib-float.h \
  /usr/include/c++/11.1.0/bits/std_abs.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast.h
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast.h

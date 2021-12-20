@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,7 +43,7 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/edin/programs/openMvgBuildScripts/openMVG_Build/Linux-x86_64-RELEASE/libopenMVG_stlplus.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/Linux-x86_64-RELEASE/libopenMVG_stlplus.a")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -55,6 +55,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMP
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/stlplus3" TYPE DIRECTORY FILES "/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/./filesystemSimplified" FILES_MATCHING REGEX "/[^/]*\\.hpp$")
+  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/stlplus3" TYPE DIRECTORY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/./filesystemSimplified" FILES_MATCHING REGEX "/[^/]*\\.hpp$")
 endif()
 

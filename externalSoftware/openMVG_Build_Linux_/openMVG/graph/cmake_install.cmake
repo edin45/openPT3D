@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/graph
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/graph
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

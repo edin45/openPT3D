@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Osi/src/OsiMsk
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Osi/src/OsiMsk
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

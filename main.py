@@ -172,7 +172,14 @@ if depth_recon_strategy == "CMVS":
     print(f"Dense Point Cloud: {result_folder}/PMVS/models/pmvs_options.txt.ply")
 else:
     os.chdir(f"{result_folder}")
-    #os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/ReconstructMesh -d {decimate_factor} scene_dense.mvs")
-    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/RefineMesh --resolution-level={decimate_factor} scene_dense_mesh.mvs")
-    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/TextureMesh scene_dense_mesh_refine.mvs")
+    while True:
+        if os.path.isfile("scene_dense_mesh.mvs") == False:
+            os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/ReconstructMesh -d {decimate_factor} scene_dense.mvs")
+        elif os.path.isfile("scene_dense_mesh_refine.mvs") == False:
+            os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/RefineMesh --resolution-level={decimate_factor} scene_dense_mesh.mvs")
+        elif os.path.isfile("scene_dense_mesh_refine_texture.mvs") == False:
+            os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/TextureMesh scene_dense_mesh_refine.mvs")
+        else:
+            break
+        
     print("Final Mesh: " + result_folder + "/scene_dense_mesh_mesh_refine_texture. ply / glb")

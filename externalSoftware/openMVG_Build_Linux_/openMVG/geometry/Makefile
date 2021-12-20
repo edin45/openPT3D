@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/geometry//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/geometry/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/geometry//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/geometry/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/geometry/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/geometry/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/geometry/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/geometry/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/geometry/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/geometry/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 openMVG/geometry/CMakeFiles/openMVG_geometry.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/geometry/CMakeFiles/openMVG_geometry.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/geometry/CMakeFiles/openMVG_geometry.dir/rule
 .PHONY : openMVG/geometry/CMakeFiles/openMVG_geometry.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ openMVG_geometry: openMVG/geometry/CMakeFiles/openMVG_geometry.dir/rule
 
 # fast build rule for target.
 openMVG_geometry/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build
 .PHONY : openMVG_geometry/fast
 
 Similarity3.o: Similarity3.cpp.o
@@ -180,7 +180,7 @@ Similarity3.o: Similarity3.cpp.o
 
 # target to build an object file
 Similarity3.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3.cpp.o
 .PHONY : Similarity3.cpp.o
 
 Similarity3.i: Similarity3.cpp.i
@@ -188,7 +188,7 @@ Similarity3.i: Similarity3.cpp.i
 
 # target to preprocess a source file
 Similarity3.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3.cpp.i
 .PHONY : Similarity3.cpp.i
 
 Similarity3.s: Similarity3.cpp.s
@@ -196,7 +196,7 @@ Similarity3.s: Similarity3.cpp.s
 
 # target to generate assembly for a file
 Similarity3.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3.cpp.s
 .PHONY : Similarity3.cpp.s
 
 Similarity3_Kernel.o: Similarity3_Kernel.cpp.o
@@ -204,7 +204,7 @@ Similarity3_Kernel.o: Similarity3_Kernel.cpp.o
 
 # target to build an object file
 Similarity3_Kernel.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3_Kernel.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3_Kernel.cpp.o
 .PHONY : Similarity3_Kernel.cpp.o
 
 Similarity3_Kernel.i: Similarity3_Kernel.cpp.i
@@ -212,7 +212,7 @@ Similarity3_Kernel.i: Similarity3_Kernel.cpp.i
 
 # target to preprocess a source file
 Similarity3_Kernel.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3_Kernel.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3_Kernel.cpp.i
 .PHONY : Similarity3_Kernel.cpp.i
 
 Similarity3_Kernel.s: Similarity3_Kernel.cpp.s
@@ -220,7 +220,7 @@ Similarity3_Kernel.s: Similarity3_Kernel.cpp.s
 
 # target to generate assembly for a file
 Similarity3_Kernel.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3_Kernel.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/Similarity3_Kernel.cpp.s
 .PHONY : Similarity3_Kernel.cpp.s
 
 box.o: box.cpp.o
@@ -228,7 +228,7 @@ box.o: box.cpp.o
 
 # target to build an object file
 box.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/box.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/box.cpp.o
 .PHONY : box.cpp.o
 
 box.i: box.cpp.i
@@ -236,7 +236,7 @@ box.i: box.cpp.i
 
 # target to preprocess a source file
 box.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/box.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/box.cpp.i
 .PHONY : box.cpp.i
 
 box.s: box.cpp.s
@@ -244,7 +244,7 @@ box.s: box.cpp.s
 
 # target to generate assembly for a file
 box.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/box.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/box.cpp.s
 .PHONY : box.cpp.s
 
 convex_hull.o: convex_hull.cpp.o
@@ -252,7 +252,7 @@ convex_hull.o: convex_hull.cpp.o
 
 # target to build an object file
 convex_hull.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/convex_hull.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/convex_hull.cpp.o
 .PHONY : convex_hull.cpp.o
 
 convex_hull.i: convex_hull.cpp.i
@@ -260,7 +260,7 @@ convex_hull.i: convex_hull.cpp.i
 
 # target to preprocess a source file
 convex_hull.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/convex_hull.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/convex_hull.cpp.i
 .PHONY : convex_hull.cpp.i
 
 convex_hull.s: convex_hull.cpp.s
@@ -268,7 +268,7 @@ convex_hull.s: convex_hull.cpp.s
 
 # target to generate assembly for a file
 convex_hull.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/convex_hull.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/convex_hull.cpp.s
 .PHONY : convex_hull.cpp.s
 
 frustum.o: frustum.cpp.o
@@ -276,7 +276,7 @@ frustum.o: frustum.cpp.o
 
 # target to build an object file
 frustum.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/frustum.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/frustum.cpp.o
 .PHONY : frustum.cpp.o
 
 frustum.i: frustum.cpp.i
@@ -284,7 +284,7 @@ frustum.i: frustum.cpp.i
 
 # target to preprocess a source file
 frustum.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/frustum.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/frustum.cpp.i
 .PHONY : frustum.cpp.i
 
 frustum.s: frustum.cpp.s
@@ -292,7 +292,7 @@ frustum.s: frustum.cpp.s
 
 # target to generate assembly for a file
 frustum.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/frustum.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/frustum.cpp.s
 .PHONY : frustum.cpp.s
 
 half_space_intersection.o: half_space_intersection.cpp.o
@@ -300,7 +300,7 @@ half_space_intersection.o: half_space_intersection.cpp.o
 
 # target to build an object file
 half_space_intersection.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/half_space_intersection.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/half_space_intersection.cpp.o
 .PHONY : half_space_intersection.cpp.o
 
 half_space_intersection.i: half_space_intersection.cpp.i
@@ -308,7 +308,7 @@ half_space_intersection.i: half_space_intersection.cpp.i
 
 # target to preprocess a source file
 half_space_intersection.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/half_space_intersection.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/half_space_intersection.cpp.i
 .PHONY : half_space_intersection.cpp.i
 
 half_space_intersection.s: half_space_intersection.cpp.s
@@ -316,7 +316,7 @@ half_space_intersection.s: half_space_intersection.cpp.s
 
 # target to generate assembly for a file
 half_space_intersection.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/half_space_intersection.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/half_space_intersection.cpp.s
 .PHONY : half_space_intersection.cpp.s
 
 rigid_transformation3D_srt.o: rigid_transformation3D_srt.cpp.o
@@ -324,7 +324,7 @@ rigid_transformation3D_srt.o: rigid_transformation3D_srt.cpp.o
 
 # target to build an object file
 rigid_transformation3D_srt.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/rigid_transformation3D_srt.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/rigid_transformation3D_srt.cpp.o
 .PHONY : rigid_transformation3D_srt.cpp.o
 
 rigid_transformation3D_srt.i: rigid_transformation3D_srt.cpp.i
@@ -332,7 +332,7 @@ rigid_transformation3D_srt.i: rigid_transformation3D_srt.cpp.i
 
 # target to preprocess a source file
 rigid_transformation3D_srt.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/rigid_transformation3D_srt.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/rigid_transformation3D_srt.cpp.i
 .PHONY : rigid_transformation3D_srt.cpp.i
 
 rigid_transformation3D_srt.s: rigid_transformation3D_srt.cpp.s
@@ -340,7 +340,7 @@ rigid_transformation3D_srt.s: rigid_transformation3D_srt.cpp.s
 
 # target to generate assembly for a file
 rigid_transformation3D_srt.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/rigid_transformation3D_srt.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/geometry/CMakeFiles/openMVG_geometry.dir/build.make openMVG/geometry/CMakeFiles/openMVG_geometry.dir/rigid_transformation3D_srt.cpp.s
 .PHONY : rigid_transformation3D_srt.cpp.s
 
 # Help Target
@@ -388,6 +388,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

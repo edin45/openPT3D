@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/depend.make
@@ -72,100 +72,100 @@ include software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/flag
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/flags.make
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o: software/VO/AlternativeVO/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.i
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.s
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/flags.make
-software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/main.cpp
+software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/main.cpp
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/main.cpp
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/main.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/main.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.i
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/main.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/main.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.s
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/flags.make
-software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.cpp
+software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.cpp
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.cpp
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.i
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.s
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/flags.make
-software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/MainWindow.cpp
+software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/MainWindow.cpp
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/MainWindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/MainWindow.cpp
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/MainWindow.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/MainWindow.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.i
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/MainWindow.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/MainWindow.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.s
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/flags.make
-software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOFolderProcessor.cpp
+software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOFolderProcessor.cpp
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOFolderProcessor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOFolderProcessor.cpp
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOFolderProcessor.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOFolderProcessor.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.i
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOFolderProcessor.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOFolderProcessor.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.s
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/flags.make
-software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOViewerPanel.cpp
+software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOViewerPanel.cpp
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOViewerPanel.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOViewerPanel.cpp
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOViewerPanel.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOViewerPanel.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.i
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOViewerPanel.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOViewerPanel.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.s
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/flags.make
-software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOViewerDrawableElements.cpp
+software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOViewerDrawableElements.cpp
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOViewerDrawableElements.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o -MF CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o.d -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOViewerDrawableElements.cpp
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOViewerDrawableElements.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOViewerDrawableElements.cpp > CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.i
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/VOViewerDrawableElements.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/VOViewerDrawableElements.cpp -o CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.s
 
 # Object files for target openMVG_main_AlternativeVO
 openMVG_main_AlternativeVO_OBJECTS = \
@@ -203,18 +203,18 @@ Linux-x86_64-RELEASE/openMVG_main_AlternativeVO: /usr/lib/libgomp.so
 Linux-x86_64-RELEASE/openMVG_main_AlternativeVO: /usr/lib/libpthread.so
 Linux-x86_64-RELEASE/openMVG_main_AlternativeVO: Linux-x86_64-RELEASE/libopenMVG_fast.a
 Linux-x86_64-RELEASE/openMVG_main_AlternativeVO: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ../../../Linux-x86_64-RELEASE/openMVG_main_AlternativeVO"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_AlternativeVO.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable ../../../Linux-x86_64-RELEASE/openMVG_main_AlternativeVO"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_AlternativeVO.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build: Linux-x86_64-RELEASE/openMVG_main_AlternativeVO
 .PHONY : software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_AlternativeVO.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_AlternativeVO.dir/cmake_clean.cmake
 .PHONY : software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/clean
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/depend
 

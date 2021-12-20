@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/nonFree/sift//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nonFree/sift/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/nonFree/sift//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nonFree/sift/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nonFree/sift/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nonFree/sift/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nonFree/sift/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nonFree/sift/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nonFree/sift/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nonFree/sift/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 nonFree/sift/CMakeFiles/vlsift.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nonFree/sift/CMakeFiles/vlsift.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 nonFree/sift/CMakeFiles/vlsift.dir/rule
 .PHONY : nonFree/sift/CMakeFiles/vlsift.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ vlsift: nonFree/sift/CMakeFiles/vlsift.dir/rule
 
 # fast build rule for target.
 vlsift/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/build
 .PHONY : vlsift/fast
 
 vl/generic.o: vl/generic.c.o
@@ -180,7 +180,7 @@ vl/generic.o: vl/generic.c.o
 
 # target to build an object file
 vl/generic.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/generic.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/generic.c.o
 .PHONY : vl/generic.c.o
 
 vl/generic.i: vl/generic.c.i
@@ -188,7 +188,7 @@ vl/generic.i: vl/generic.c.i
 
 # target to preprocess a source file
 vl/generic.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/generic.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/generic.c.i
 .PHONY : vl/generic.c.i
 
 vl/generic.s: vl/generic.c.s
@@ -196,7 +196,7 @@ vl/generic.s: vl/generic.c.s
 
 # target to generate assembly for a file
 vl/generic.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/generic.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/generic.c.s
 .PHONY : vl/generic.c.s
 
 vl/host.o: vl/host.c.o
@@ -204,7 +204,7 @@ vl/host.o: vl/host.c.o
 
 # target to build an object file
 vl/host.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/host.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/host.c.o
 .PHONY : vl/host.c.o
 
 vl/host.i: vl/host.c.i
@@ -212,7 +212,7 @@ vl/host.i: vl/host.c.i
 
 # target to preprocess a source file
 vl/host.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/host.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/host.c.i
 .PHONY : vl/host.c.i
 
 vl/host.s: vl/host.c.s
@@ -220,7 +220,7 @@ vl/host.s: vl/host.c.s
 
 # target to generate assembly for a file
 vl/host.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/host.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/host.c.s
 .PHONY : vl/host.c.s
 
 vl/imopv.o: vl/imopv.c.o
@@ -228,7 +228,7 @@ vl/imopv.o: vl/imopv.c.o
 
 # target to build an object file
 vl/imopv.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv.c.o
 .PHONY : vl/imopv.c.o
 
 vl/imopv.i: vl/imopv.c.i
@@ -236,7 +236,7 @@ vl/imopv.i: vl/imopv.c.i
 
 # target to preprocess a source file
 vl/imopv.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv.c.i
 .PHONY : vl/imopv.c.i
 
 vl/imopv.s: vl/imopv.c.s
@@ -244,7 +244,7 @@ vl/imopv.s: vl/imopv.c.s
 
 # target to generate assembly for a file
 vl/imopv.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv.c.s
 .PHONY : vl/imopv.c.s
 
 vl/imopv_sse2.o: vl/imopv_sse2.c.o
@@ -252,7 +252,7 @@ vl/imopv_sse2.o: vl/imopv_sse2.c.o
 
 # target to build an object file
 vl/imopv_sse2.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv_sse2.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv_sse2.c.o
 .PHONY : vl/imopv_sse2.c.o
 
 vl/imopv_sse2.i: vl/imopv_sse2.c.i
@@ -260,7 +260,7 @@ vl/imopv_sse2.i: vl/imopv_sse2.c.i
 
 # target to preprocess a source file
 vl/imopv_sse2.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv_sse2.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv_sse2.c.i
 .PHONY : vl/imopv_sse2.c.i
 
 vl/imopv_sse2.s: vl/imopv_sse2.c.s
@@ -268,7 +268,7 @@ vl/imopv_sse2.s: vl/imopv_sse2.c.s
 
 # target to generate assembly for a file
 vl/imopv_sse2.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv_sse2.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/imopv_sse2.c.s
 .PHONY : vl/imopv_sse2.c.s
 
 vl/mathop.o: vl/mathop.c.o
@@ -276,7 +276,7 @@ vl/mathop.o: vl/mathop.c.o
 
 # target to build an object file
 vl/mathop.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop.c.o
 .PHONY : vl/mathop.c.o
 
 vl/mathop.i: vl/mathop.c.i
@@ -284,7 +284,7 @@ vl/mathop.i: vl/mathop.c.i
 
 # target to preprocess a source file
 vl/mathop.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop.c.i
 .PHONY : vl/mathop.c.i
 
 vl/mathop.s: vl/mathop.c.s
@@ -292,7 +292,7 @@ vl/mathop.s: vl/mathop.c.s
 
 # target to generate assembly for a file
 vl/mathop.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop.c.s
 .PHONY : vl/mathop.c.s
 
 vl/mathop_sse2.o: vl/mathop_sse2.c.o
@@ -300,7 +300,7 @@ vl/mathop_sse2.o: vl/mathop_sse2.c.o
 
 # target to build an object file
 vl/mathop_sse2.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop_sse2.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop_sse2.c.o
 .PHONY : vl/mathop_sse2.c.o
 
 vl/mathop_sse2.i: vl/mathop_sse2.c.i
@@ -308,7 +308,7 @@ vl/mathop_sse2.i: vl/mathop_sse2.c.i
 
 # target to preprocess a source file
 vl/mathop_sse2.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop_sse2.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop_sse2.c.i
 .PHONY : vl/mathop_sse2.c.i
 
 vl/mathop_sse2.s: vl/mathop_sse2.c.s
@@ -316,7 +316,7 @@ vl/mathop_sse2.s: vl/mathop_sse2.c.s
 
 # target to generate assembly for a file
 vl/mathop_sse2.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop_sse2.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/mathop_sse2.c.s
 .PHONY : vl/mathop_sse2.c.s
 
 vl/random.o: vl/random.c.o
@@ -324,7 +324,7 @@ vl/random.o: vl/random.c.o
 
 # target to build an object file
 vl/random.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/random.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/random.c.o
 .PHONY : vl/random.c.o
 
 vl/random.i: vl/random.c.i
@@ -332,7 +332,7 @@ vl/random.i: vl/random.c.i
 
 # target to preprocess a source file
 vl/random.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/random.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/random.c.i
 .PHONY : vl/random.c.i
 
 vl/random.s: vl/random.c.s
@@ -340,7 +340,7 @@ vl/random.s: vl/random.c.s
 
 # target to generate assembly for a file
 vl/random.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/random.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/random.c.s
 .PHONY : vl/random.c.s
 
 vl/sift.o: vl/sift.c.o
@@ -348,7 +348,7 @@ vl/sift.o: vl/sift.c.o
 
 # target to build an object file
 vl/sift.c.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/sift.c.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/sift.c.o
 .PHONY : vl/sift.c.o
 
 vl/sift.i: vl/sift.c.i
@@ -356,7 +356,7 @@ vl/sift.i: vl/sift.c.i
 
 # target to preprocess a source file
 vl/sift.c.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/sift.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/sift.c.i
 .PHONY : vl/sift.c.i
 
 vl/sift.s: vl/sift.c.s
@@ -364,7 +364,7 @@ vl/sift.s: vl/sift.c.s
 
 # target to generate assembly for a file
 vl/sift.c.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/sift.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f nonFree/sift/CMakeFiles/vlsift.dir/build.make nonFree/sift/CMakeFiles/vlsift.dir/vl/sift.c.s
 .PHONY : vl/sift.c.s
 
 # Help Target
@@ -415,6 +415,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/clustering/domSetLibrary
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/clustering/domSetLibrary
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

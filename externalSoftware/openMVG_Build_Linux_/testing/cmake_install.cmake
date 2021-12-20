@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/testing
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/testing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

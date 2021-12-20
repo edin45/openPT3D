@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Utility rule file for ui_openMVG_MatchesViewer_autogen.
 
@@ -67,8 +67,8 @@ include software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesVie
 include software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/progress.make
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target ui_openMVG_MatchesViewer"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/cmake -E cmake_autogen /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/AutogenInfo.json RELEASE
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target ui_openMVG_MatchesViewer"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/cmake -E cmake_autogen /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/AutogenInfo.json RELEASE
 
 ui_openMVG_MatchesViewer_autogen: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen
 ui_openMVG_MatchesViewer_autogen: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/build.make
@@ -79,10 +79,10 @@ software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_auto
 .PHONY : software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/build
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && $(CMAKE_COMMAND) -P CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && $(CMAKE_COMMAND) -P CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/cmake_clean.cmake
 .PHONY : software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/clean
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/linearProgramming
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/linearProgramming
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,12 +43,12 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/edin/programs/openMvgBuildScripts/openMVG_Build/Linux-x86_64-RELEASE/libopenMVG_linearProgramming.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/Linux-x86_64-RELEASE/libopenMVG_linearProgramming.a")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/linearProgramming/lInfinityCV/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/linearProgramming/lInfinityCV/cmake_install.cmake")
 
 endif()
 

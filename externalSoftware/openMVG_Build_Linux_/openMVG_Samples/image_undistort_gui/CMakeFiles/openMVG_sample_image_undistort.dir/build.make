@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/depend.make
@@ -72,58 +72,58 @@ include openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undi
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o: openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/flags.make
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o: openMVG_Samples/image_undistort_gui/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o: openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o -MF CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o -MF CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp > CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp > CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.i
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp -o CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp -o CMakeFiles/openMVG_sample_image_undistort.dir/openMVG_sample_image_undistort_autogen/mocs_compilation.cpp.s
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o: openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/flags.make
-openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/main.cc
+openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/main.cc
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o: openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o -MF CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o.d -o CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o -MF CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o.d -o CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/main.cc
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/main.cc > CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/main.cc > CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.i
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/main.cc -o CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/main.cc -o CMakeFiles/openMVG_sample_image_undistort.dir/main.cc.s
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o: openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/flags.make
-openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/MainWindow.cc
+openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/MainWindow.cc
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o: openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o -MF CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o.d -o CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/MainWindow.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o -MF CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o.d -o CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/MainWindow.cc
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/MainWindow.cc > CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/MainWindow.cc > CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.i
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/MainWindow.cc -o CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/MainWindow.cc -o CMakeFiles/openMVG_sample_image_undistort.dir/MainWindow.cc.s
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o: openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/flags.make
-openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/QImageInterface.cc
+openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/QImageInterface.cc
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o: openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o -MF CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o.d -o CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/QImageInterface.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o -MF CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o.d -o CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/QImageInterface.cc
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/QImageInterface.cc > CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/QImageInterface.cc > CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.i
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui/QImageInterface.cc -o CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui/QImageInterface.cc -o CMakeFiles/openMVG_sample_image_undistort.dir/QImageInterface.cc.s
 
 # Object files for target openMVG_sample_image_undistort
 openMVG_sample_image_undistort_OBJECTS = \
@@ -152,22 +152,23 @@ Linux-x86_64-RELEASE/openMVG_sample_image_undistort: /usr/lib/libpng.so
 Linux-x86_64-RELEASE/openMVG_sample_image_undistort: /usr/lib/libz.so
 Linux-x86_64-RELEASE/openMVG_sample_image_undistort: /usr/lib/libtiff.so
 Linux-x86_64-RELEASE/openMVG_sample_image_undistort: Linux-x86_64-RELEASE/libopenMVG_numeric.a
-Linux-x86_64-RELEASE/openMVG_sample_image_undistort: /usr/lib/libceres.so.2.0.0
-Linux-x86_64-RELEASE/openMVG_sample_image_undistort: /usr/lib/libglog.so.0.5.0
-Linux-x86_64-RELEASE/openMVG_sample_image_undistort: /usr/lib/libgflags.so.2.2.2
+Linux-x86_64-RELEASE/openMVG_sample_image_undistort: third_party/ceres-solver/lib/libopenMVG_ceres.a
+Linux-x86_64-RELEASE/openMVG_sample_image_undistort: Linux-x86_64-RELEASE/libopenMVG_cxsparse.a
+Linux-x86_64-RELEASE/openMVG_sample_image_undistort: /usr/lib/liblapack.so
+Linux-x86_64-RELEASE/openMVG_sample_image_undistort: /usr/lib/libblas.so
 Linux-x86_64-RELEASE/openMVG_sample_image_undistort: openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_image_undistort"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_image_undistort.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_image_undistort"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_image_undistort.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build: Linux-x86_64-RELEASE/openMVG_sample_image_undistort
 .PHONY : openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/build
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_image_undistort.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_image_undistort.dir/cmake_clean.cmake
 .PHONY : openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/clean
 
 openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_undistort_gui /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_undistort_gui /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openMVG_Samples/image_undistort_gui/CMakeFiles/openMVG_sample_image_undistort.dir/depend
 

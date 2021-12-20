@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/control_points_registration//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/control_points_registration//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/rule
 .PHONY : software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ ui_openMVG_control_points_registration: software/ui/SfM/control_points_registrat
 
 # fast build rule for target.
 ui_openMVG_control_points_registration/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build
 .PHONY : ui_openMVG_control_points_registration/fast
 
 # Convenience name for target.
 software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration_autogen.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration_autogen.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration_autogen.dir/rule
 .PHONY : software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration_autogen.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ ui_openMVG_control_points_registration_autogen: software/ui/SfM/control_points_r
 
 # fast build rule for target.
 ui_openMVG_control_points_registration_autogen/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration_autogen.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration_autogen.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration_autogen.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration_autogen.dir/build
 .PHONY : ui_openMVG_control_points_registration_autogen/fast
 
 ControlPoint2DNode.o: ControlPoint2DNode.cpp.o
@@ -194,7 +194,7 @@ ControlPoint2DNode.o: ControlPoint2DNode.cpp.o
 
 # target to build an object file
 ControlPoint2DNode.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPoint2DNode.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPoint2DNode.cpp.o
 .PHONY : ControlPoint2DNode.cpp.o
 
 ControlPoint2DNode.i: ControlPoint2DNode.cpp.i
@@ -202,7 +202,7 @@ ControlPoint2DNode.i: ControlPoint2DNode.cpp.i
 
 # target to preprocess a source file
 ControlPoint2DNode.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPoint2DNode.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPoint2DNode.cpp.i
 .PHONY : ControlPoint2DNode.cpp.i
 
 ControlPoint2DNode.s: ControlPoint2DNode.cpp.s
@@ -210,7 +210,7 @@ ControlPoint2DNode.s: ControlPoint2DNode.cpp.s
 
 # target to generate assembly for a file
 ControlPoint2DNode.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPoint2DNode.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPoint2DNode.cpp.s
 .PHONY : ControlPoint2DNode.cpp.s
 
 ControlPointTableView.o: ControlPointTableView.cpp.o
@@ -218,7 +218,7 @@ ControlPointTableView.o: ControlPointTableView.cpp.o
 
 # target to build an object file
 ControlPointTableView.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPointTableView.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPointTableView.cpp.o
 .PHONY : ControlPointTableView.cpp.o
 
 ControlPointTableView.i: ControlPointTableView.cpp.i
@@ -226,7 +226,7 @@ ControlPointTableView.i: ControlPointTableView.cpp.i
 
 # target to preprocess a source file
 ControlPointTableView.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPointTableView.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPointTableView.cpp.i
 .PHONY : ControlPointTableView.cpp.i
 
 ControlPointTableView.s: ControlPointTableView.cpp.s
@@ -234,7 +234,7 @@ ControlPointTableView.s: ControlPointTableView.cpp.s
 
 # target to generate assembly for a file
 ControlPointTableView.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPointTableView.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPointTableView.cpp.s
 .PHONY : ControlPointTableView.cpp.s
 
 GraphicsView.o: GraphicsView.cpp.o
@@ -242,7 +242,7 @@ GraphicsView.o: GraphicsView.cpp.o
 
 # target to build an object file
 GraphicsView.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/GraphicsView.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/GraphicsView.cpp.o
 .PHONY : GraphicsView.cpp.o
 
 GraphicsView.i: GraphicsView.cpp.i
@@ -250,7 +250,7 @@ GraphicsView.i: GraphicsView.cpp.i
 
 # target to preprocess a source file
 GraphicsView.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/GraphicsView.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/GraphicsView.cpp.i
 .PHONY : GraphicsView.cpp.i
 
 GraphicsView.s: GraphicsView.cpp.s
@@ -258,7 +258,7 @@ GraphicsView.s: GraphicsView.cpp.s
 
 # target to generate assembly for a file
 GraphicsView.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/GraphicsView.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/GraphicsView.cpp.s
 .PHONY : GraphicsView.cpp.s
 
 MainWindow.o: MainWindow.cpp.o
@@ -266,7 +266,7 @@ MainWindow.o: MainWindow.cpp.o
 
 # target to build an object file
 MainWindow.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/MainWindow.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/MainWindow.cpp.o
 .PHONY : MainWindow.cpp.o
 
 MainWindow.i: MainWindow.cpp.i
@@ -274,7 +274,7 @@ MainWindow.i: MainWindow.cpp.i
 
 # target to preprocess a source file
 MainWindow.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/MainWindow.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/MainWindow.cpp.i
 .PHONY : MainWindow.cpp.i
 
 MainWindow.s: MainWindow.cpp.s
@@ -282,7 +282,7 @@ MainWindow.s: MainWindow.cpp.s
 
 # target to generate assembly for a file
 MainWindow.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/MainWindow.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/MainWindow.cpp.s
 .PHONY : MainWindow.cpp.s
 
 main.o: main.cpp.o
@@ -290,7 +290,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/main.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -298,7 +298,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/main.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -306,7 +306,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/main.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 ui_openMVG_control_points_registration_autogen/mocs_compilation.o: ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.o
@@ -314,7 +314,7 @@ ui_openMVG_control_points_registration_autogen/mocs_compilation.o: ui_openMVG_co
 
 # target to build an object file
 ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.o
 .PHONY : ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.o
 
 ui_openMVG_control_points_registration_autogen/mocs_compilation.i: ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.i
@@ -322,7 +322,7 @@ ui_openMVG_control_points_registration_autogen/mocs_compilation.i: ui_openMVG_co
 
 # target to preprocess a source file
 ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.i
 .PHONY : ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.i
 
 ui_openMVG_control_points_registration_autogen/mocs_compilation.s: ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.s
@@ -330,7 +330,7 @@ ui_openMVG_control_points_registration_autogen/mocs_compilation.s: ui_openMVG_co
 
 # target to generate assembly for a file
 ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/build.make software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.s
 .PHONY : ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp.s
 
 # Help Target
@@ -376,6 +376,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

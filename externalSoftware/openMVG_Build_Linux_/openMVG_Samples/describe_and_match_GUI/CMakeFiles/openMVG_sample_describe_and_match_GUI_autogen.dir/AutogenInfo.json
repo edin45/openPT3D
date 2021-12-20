@@ -1,12 +1,12 @@
 {
-	"BUILD_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/describe_and_match_GUI/openMVG_sample_describe_and_match_GUI_autogen",
-	"CMAKE_BINARY_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build",
-	"CMAKE_CURRENT_BINARY_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/describe_and_match_GUI",
-	"CMAKE_CURRENT_SOURCE_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/describe_and_match_GUI",
+	"BUILD_DIR" : "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/describe_and_match_GUI/openMVG_sample_describe_and_match_GUI_autogen",
+	"CMAKE_BINARY_DIR" : "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/describe_and_match_GUI",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/describe_and_match_GUI",
 	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
 	"CMAKE_LIST_FILES" : 
 	[
-		"/home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/describe_and_match_GUI/CMakeLists.txt",
+		"/home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/describe_and_match_GUI/CMakeLists.txt",
 		"/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
 		"/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake",
 		"/usr/lib64/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake",
@@ -16,7 +16,7 @@
 		"/usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtras.cmake",
 		"/usr/lib64/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake",
 		"/usr/lib64/cmake/Qt5Core/Qt5CoreMacros.cmake",
-		"/usr/share/cmake-3.22/Modules/CMakeParseArguments.cmake",
+		"/usr/share/cmake/Modules/CMakeParseArguments.cmake",
 		"/usr/lib64/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake",
 		"/usr/lib64/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake",
 		"/usr/lib64/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake",
@@ -54,29 +54,29 @@
 		"/usr/lib64/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake",
 		"/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake",
 		"/usr/lib64/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
-		"/usr/share/cmake-3.22/Modules/CMakeParseArguments.cmake"
+		"/usr/share/cmake/Modules/CMakeParseArguments.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG/src",
+	"CMAKE_SOURCE_DIR" : "/home/edins/Python/openPT3D/externalSoftware/openMVG/src",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"/home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/describe_and_match_GUI/ImageView.hpp",
+			"/home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/describe_and_match_GUI/ImageView.hpp",
 			"Mu",
 			"EWIEGA46WW/moc_ImageView.cpp",
 			null
 		],
 		[
-			"/home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/describe_and_match_GUI/MainWindow.hpp",
+			"/home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/describe_and_match_GUI/MainWindow.hpp",
 			"Mu",
 			"EWIEGA46WW/moc_MainWindow.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/describe_and_match_GUI/openMVG_sample_describe_and_match_GUI_autogen/include",
-	"MOC_COMPILATION_FILE" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/describe_and_match_GUI/openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/describe_and_match_GUI/openMVG_sample_describe_and_match_GUI_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/describe_and_match_GUI/openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"OPENMVG_USE_OPENMP",
@@ -94,23 +94,24 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/describe_and_match_GUI",
-		"/home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/describe_and_match_GUI",
-		"/usr/local/include/eigen3",
-		"/home/edin/programs/openMvgBuildScripts/openMVG/src",
-		"/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp",
+		"/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/describe_and_match_GUI",
+		"/home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/describe_and_match_GUI",
+		"/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/eigen",
+		"/home/edins/Python/openPT3D/externalSoftware/openMVG/src",
+		"/home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/cereal/include",
+		"/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp",
 		"/usr/include/qt",
 		"/usr/include/qt/QtWidgets",
 		"/usr/include/qt/QtGui",
 		"/usr/include/qt/QtCore",
 		"/usr/lib/qt/mkspecs/linux-g++",
-		"/usr/include",
 		"/usr/include/c++/11.1.0",
 		"/usr/include/c++/11.1.0/x86_64-pc-linux-gnu",
 		"/usr/include/c++/11.1.0/backward",
 		"/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include",
 		"/usr/local/include",
-		"/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed"
+		"/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include-fixed",
+		"/usr/include"
 	],
 	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
 	"MOC_OPTIONS" : [],
@@ -121,33 +122,33 @@
 		"-dM",
 		"-E",
 		"-c",
-		"/usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp"
+		"/usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp"
 	],
-	"MOC_PREDEFS_FILE" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/describe_and_match_GUI/openMVG_sample_describe_and_match_GUI_autogen/moc_predefs.h",
+	"MOC_PREDEFS_FILE" : "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/describe_and_match_GUI/openMVG_sample_describe_and_match_GUI_autogen/moc_predefs.h",
 	"MOC_RELAXED_MODE" : false,
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 4,
-	"PARSE_CACHE_FILE" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "/usr/bin/moc",
 	"QT_UIC_EXECUTABLE" : "",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 15,
-	"SETTINGS_FILE" : "/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"/home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/describe_and_match_GUI/ImageView.cpp",
+			"/home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/describe_and_match_GUI/ImageView.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/describe_and_match_GUI/MainWindow.cpp",
+			"/home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/describe_and_match_GUI/MainWindow.cpp",
 			"Mu",
 			null
 		],
 		[
-			"/home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/describe_and_match_GUI/main.cpp",
+			"/home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/describe_and_match_GUI/main.cpp",
 			"Mu",
 			null
 		]

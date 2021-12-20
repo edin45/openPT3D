@@ -9,10 +9,10 @@
 #
 
 # Indicate the openMVG binary directory
-OPENMVG_SFM_BIN = "/home/edin/programs/openMvgBuildScripts/openMVG_Build/Linux-x86_64-RELEASE"
+OPENMVG_SFM_BIN = "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/Linux-x86_64-RELEASE"
 
 # Indicate the openMVG camera sensor width directory
-CAMERA_SENSOR_WIDTH_DIRECTORY = "/home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM" + "/../../openMVG/exif/sensor_width_database"
+CAMERA_SENSOR_WIDTH_DIRECTORY = "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM" + "/../../openMVG/exif/sensor_width_database"
 
 import os
 import subprocess

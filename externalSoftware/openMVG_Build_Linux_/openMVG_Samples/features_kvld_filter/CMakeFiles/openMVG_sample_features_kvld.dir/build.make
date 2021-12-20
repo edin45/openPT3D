@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/depend.make
@@ -70,18 +70,18 @@ include openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_
 include openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/flags.make
 
 openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o: openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/flags.make
-openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/features_kvld_filter/kvld_filter.cpp
+openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/features_kvld_filter/kvld_filter.cpp
 openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o: openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_kvld_filter && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o -MF CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o.d -o CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/features_kvld_filter/kvld_filter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_kvld_filter && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o -MF CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o.d -o CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/features_kvld_filter/kvld_filter.cpp
 
 openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_kvld_filter && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/features_kvld_filter/kvld_filter.cpp > CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_kvld_filter && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/features_kvld_filter/kvld_filter.cpp > CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.i
 
 openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_kvld_filter && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/features_kvld_filter/kvld_filter.cpp -o CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_kvld_filter && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/features_kvld_filter/kvld_filter.cpp -o CMakeFiles/openMVG_sample_features_kvld.dir/kvld_filter.cpp.s
 
 # Object files for target openMVG_sample_features_kvld
 openMVG_sample_features_kvld_OBJECTS = \
@@ -98,9 +98,10 @@ Linux-x86_64-RELEASE/openMVG_sample_features_kvld: Linux-x86_64-RELEASE/libopenM
 Linux-x86_64-RELEASE/openMVG_sample_features_kvld: Linux-x86_64-RELEASE/libopenMVG_features.a
 Linux-x86_64-RELEASE/openMVG_sample_features_kvld: Linux-x86_64-RELEASE/libopenMVG_matching.a
 Linux-x86_64-RELEASE/openMVG_sample_features_kvld: Linux-x86_64-RELEASE/libopenMVG_stlplus.a
-Linux-x86_64-RELEASE/openMVG_sample_features_kvld: /usr/lib/libceres.so.2.0.0
-Linux-x86_64-RELEASE/openMVG_sample_features_kvld: /usr/lib/libglog.so.0.5.0
-Linux-x86_64-RELEASE/openMVG_sample_features_kvld: /usr/lib/libgflags.so.2.2.2
+Linux-x86_64-RELEASE/openMVG_sample_features_kvld: third_party/ceres-solver/lib/libopenMVG_ceres.a
+Linux-x86_64-RELEASE/openMVG_sample_features_kvld: Linux-x86_64-RELEASE/libopenMVG_cxsparse.a
+Linux-x86_64-RELEASE/openMVG_sample_features_kvld: /usr/lib/liblapack.so
+Linux-x86_64-RELEASE/openMVG_sample_features_kvld: /usr/lib/libblas.so
 Linux-x86_64-RELEASE/openMVG_sample_features_kvld: Linux-x86_64-RELEASE/libopenMVG_image.a
 Linux-x86_64-RELEASE/openMVG_sample_features_kvld: Linux-x86_64-RELEASE/libopenMVG_numeric.a
 Linux-x86_64-RELEASE/openMVG_sample_features_kvld: /usr/lib/libjpeg.so
@@ -113,18 +114,18 @@ Linux-x86_64-RELEASE/openMVG_sample_features_kvld: Linux-x86_64-RELEASE/libopenM
 Linux-x86_64-RELEASE/openMVG_sample_features_kvld: /usr/lib/libgomp.so
 Linux-x86_64-RELEASE/openMVG_sample_features_kvld: /usr/lib/libpthread.so
 Linux-x86_64-RELEASE/openMVG_sample_features_kvld: openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_features_kvld"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_kvld_filter && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_features_kvld.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_features_kvld"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_kvld_filter && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_features_kvld.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/build: Linux-x86_64-RELEASE/openMVG_sample_features_kvld
 .PHONY : openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/build
 
 openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_kvld_filter && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_features_kvld.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_kvld_filter && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_features_kvld.dir/cmake_clean.cmake
 .PHONY : openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/clean
 
 openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/features_kvld_filter /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_kvld_filter /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/features_kvld_filter /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_kvld_filter /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openMVG_Samples/features_kvld_filter/CMakeFiles/openMVG_sample_features_kvld.dir/depend
 

@@ -1,7 +1,7 @@
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o: \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.cpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.cpp \
  /usr/include/stdc-predef.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.hpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO/ControlButtonsPanel.hpp \
  /usr/include/qt/QtWidgets/QWidget /usr/include/qt/QtWidgets/qwidget.h \
  /usr/include/qt/QtWidgets/qtwidgetsglobal.h \
  /usr/include/qt/QtGui/qtguiglobal.h /usr/include/qt/QtCore/qglobal.h \

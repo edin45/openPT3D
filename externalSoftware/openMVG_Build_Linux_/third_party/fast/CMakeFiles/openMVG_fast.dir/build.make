@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include third_party/fast/CMakeFiles/openMVG_fast.dir/depend.make
@@ -70,88 +70,88 @@ include third_party/fast/CMakeFiles/openMVG_fast.dir/progress.make
 include third_party/fast/CMakeFiles/openMVG_fast.dir/flags.make
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/flags.make
-third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast.c
+third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast.c
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o -MF CMakeFiles/openMVG_fast.dir/fast.c.o.d -o CMakeFiles/openMVG_fast.dir/fast.c.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.o -MF CMakeFiles/openMVG_fast.dir/fast.c.o.d -o CMakeFiles/openMVG_fast.dir/fast.c.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast.c
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_fast.dir/fast.c.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast.c > CMakeFiles/openMVG_fast.dir/fast.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast.c > CMakeFiles/openMVG_fast.dir/fast.c.i
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_fast.dir/fast.c.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast.c -o CMakeFiles/openMVG_fast.dir/fast.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast.c -o CMakeFiles/openMVG_fast.dir/fast.c.s
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/flags.make
-third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_10.c
+third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_10.c
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.o -MF CMakeFiles/openMVG_fast.dir/fast_10.c.o.d -o CMakeFiles/openMVG_fast.dir/fast_10.c.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_10.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.o -MF CMakeFiles/openMVG_fast.dir/fast_10.c.o.d -o CMakeFiles/openMVG_fast.dir/fast_10.c.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_10.c
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_fast.dir/fast_10.c.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_10.c > CMakeFiles/openMVG_fast.dir/fast_10.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_10.c > CMakeFiles/openMVG_fast.dir/fast_10.c.i
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_10.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_fast.dir/fast_10.c.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_10.c -o CMakeFiles/openMVG_fast.dir/fast_10.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_10.c -o CMakeFiles/openMVG_fast.dir/fast_10.c.s
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/flags.make
-third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_11.c
+third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_11.c
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.o -MF CMakeFiles/openMVG_fast.dir/fast_11.c.o.d -o CMakeFiles/openMVG_fast.dir/fast_11.c.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_11.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.o -MF CMakeFiles/openMVG_fast.dir/fast_11.c.o.d -o CMakeFiles/openMVG_fast.dir/fast_11.c.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_11.c
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_fast.dir/fast_11.c.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_11.c > CMakeFiles/openMVG_fast.dir/fast_11.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_11.c > CMakeFiles/openMVG_fast.dir/fast_11.c.i
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_11.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_fast.dir/fast_11.c.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_11.c -o CMakeFiles/openMVG_fast.dir/fast_11.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_11.c -o CMakeFiles/openMVG_fast.dir/fast_11.c.s
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/flags.make
-third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_12.c
+third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_12.c
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.o -MF CMakeFiles/openMVG_fast.dir/fast_12.c.o.d -o CMakeFiles/openMVG_fast.dir/fast_12.c.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_12.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.o -MF CMakeFiles/openMVG_fast.dir/fast_12.c.o.d -o CMakeFiles/openMVG_fast.dir/fast_12.c.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_12.c
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_fast.dir/fast_12.c.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_12.c > CMakeFiles/openMVG_fast.dir/fast_12.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_12.c > CMakeFiles/openMVG_fast.dir/fast_12.c.i
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_12.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_fast.dir/fast_12.c.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_12.c -o CMakeFiles/openMVG_fast.dir/fast_12.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_12.c -o CMakeFiles/openMVG_fast.dir/fast_12.c.s
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/flags.make
-third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_9.c
+third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_9.c
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.o -MF CMakeFiles/openMVG_fast.dir/fast_9.c.o.d -o CMakeFiles/openMVG_fast.dir/fast_9.c.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_9.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.o -MF CMakeFiles/openMVG_fast.dir/fast_9.c.o.d -o CMakeFiles/openMVG_fast.dir/fast_9.c.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_9.c
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_fast.dir/fast_9.c.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_9.c > CMakeFiles/openMVG_fast.dir/fast_9.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_9.c > CMakeFiles/openMVG_fast.dir/fast_9.c.i
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/fast_9.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_fast.dir/fast_9.c.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/fast_9.c -o CMakeFiles/openMVG_fast.dir/fast_9.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/fast_9.c -o CMakeFiles/openMVG_fast.dir/fast_9.c.s
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/flags.make
-third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/nonmax.c
+third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/nonmax.c
 third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.o: third_party/fast/CMakeFiles/openMVG_fast.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.o -MF CMakeFiles/openMVG_fast.dir/nonmax.c.o.d -o CMakeFiles/openMVG_fast.dir/nonmax.c.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/nonmax.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.o -MF CMakeFiles/openMVG_fast.dir/nonmax.c.o.d -o CMakeFiles/openMVG_fast.dir/nonmax.c.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/nonmax.c
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_fast.dir/nonmax.c.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/nonmax.c > CMakeFiles/openMVG_fast.dir/nonmax.c.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/nonmax.c > CMakeFiles/openMVG_fast.dir/nonmax.c.i
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_fast.dir/nonmax.c.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast/nonmax.c -o CMakeFiles/openMVG_fast.dir/nonmax.c.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast/nonmax.c -o CMakeFiles/openMVG_fast.dir/nonmax.c.s
 
 # Object files for target openMVG_fast
 openMVG_fast_OBJECTS = \
@@ -173,19 +173,19 @@ Linux-x86_64-RELEASE/libopenMVG_fast.a: third_party/fast/CMakeFiles/openMVG_fast
 Linux-x86_64-RELEASE/libopenMVG_fast.a: third_party/fast/CMakeFiles/openMVG_fast.dir/nonmax.c.o
 Linux-x86_64-RELEASE/libopenMVG_fast.a: third_party/fast/CMakeFiles/openMVG_fast.dir/build.make
 Linux-x86_64-RELEASE/libopenMVG_fast.a: third_party/fast/CMakeFiles/openMVG_fast.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../../Linux-x86_64-RELEASE/libopenMVG_fast.a"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_fast.dir/cmake_clean_target.cmake
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_fast.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX static library ../../Linux-x86_64-RELEASE/libopenMVG_fast.a"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_fast.dir/cmake_clean_target.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_fast.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 third_party/fast/CMakeFiles/openMVG_fast.dir/build: Linux-x86_64-RELEASE/libopenMVG_fast.a
 .PHONY : third_party/fast/CMakeFiles/openMVG_fast.dir/build
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_fast.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_fast.dir/cmake_clean.cmake
 .PHONY : third_party/fast/CMakeFiles/openMVG_fast.dir/clean
 
 third_party/fast/CMakeFiles/openMVG_fast.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/fast /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/fast/CMakeFiles/openMVG_fast.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/fast /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/fast/CMakeFiles/openMVG_fast.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : third_party/fast/CMakeFiles/openMVG_fast.dir/depend
 

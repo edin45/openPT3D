@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/features//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/features/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/features//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/features/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/features/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/features/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/features/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/features/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/features/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/features/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 openMVG/features/CMakeFiles/openMVG_features.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/features/CMakeFiles/openMVG_features.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/features/CMakeFiles/openMVG_features.dir/rule
 .PHONY : openMVG/features/CMakeFiles/openMVG_features.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ openMVG_features: openMVG/features/CMakeFiles/openMVG_features.dir/rule
 
 # fast build rule for target.
 openMVG_features/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/build
 .PHONY : openMVG_features/fast
 
 akaze/AKAZE.o: akaze/AKAZE.cpp.o
@@ -180,7 +180,7 @@ akaze/AKAZE.o: akaze/AKAZE.cpp.o
 
 # target to build an object file
 akaze/AKAZE.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/AKAZE.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/AKAZE.cpp.o
 .PHONY : akaze/AKAZE.cpp.o
 
 akaze/AKAZE.i: akaze/AKAZE.cpp.i
@@ -188,7 +188,7 @@ akaze/AKAZE.i: akaze/AKAZE.cpp.i
 
 # target to preprocess a source file
 akaze/AKAZE.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/AKAZE.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/AKAZE.cpp.i
 .PHONY : akaze/AKAZE.cpp.i
 
 akaze/AKAZE.s: akaze/AKAZE.cpp.s
@@ -196,7 +196,7 @@ akaze/AKAZE.s: akaze/AKAZE.cpp.s
 
 # target to generate assembly for a file
 akaze/AKAZE.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/AKAZE.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/AKAZE.cpp.s
 .PHONY : akaze/AKAZE.cpp.s
 
 akaze/image_describer_akaze.o: akaze/image_describer_akaze.cpp.o
@@ -204,7 +204,7 @@ akaze/image_describer_akaze.o: akaze/image_describer_akaze.cpp.o
 
 # target to build an object file
 akaze/image_describer_akaze.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/image_describer_akaze.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/image_describer_akaze.cpp.o
 .PHONY : akaze/image_describer_akaze.cpp.o
 
 akaze/image_describer_akaze.i: akaze/image_describer_akaze.cpp.i
@@ -212,7 +212,7 @@ akaze/image_describer_akaze.i: akaze/image_describer_akaze.cpp.i
 
 # target to preprocess a source file
 akaze/image_describer_akaze.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/image_describer_akaze.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/image_describer_akaze.cpp.i
 .PHONY : akaze/image_describer_akaze.cpp.i
 
 akaze/image_describer_akaze.s: akaze/image_describer_akaze.cpp.s
@@ -220,7 +220,7 @@ akaze/image_describer_akaze.s: akaze/image_describer_akaze.cpp.s
 
 # target to generate assembly for a file
 akaze/image_describer_akaze.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/image_describer_akaze.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/akaze/image_describer_akaze.cpp.s
 .PHONY : akaze/image_describer_akaze.cpp.s
 
 fast/fast_detector.o: fast/fast_detector.cpp.o
@@ -228,7 +228,7 @@ fast/fast_detector.o: fast/fast_detector.cpp.o
 
 # target to build an object file
 fast/fast_detector.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/fast/fast_detector.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/fast/fast_detector.cpp.o
 .PHONY : fast/fast_detector.cpp.o
 
 fast/fast_detector.i: fast/fast_detector.cpp.i
@@ -236,7 +236,7 @@ fast/fast_detector.i: fast/fast_detector.cpp.i
 
 # target to preprocess a source file
 fast/fast_detector.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/fast/fast_detector.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/fast/fast_detector.cpp.i
 .PHONY : fast/fast_detector.cpp.i
 
 fast/fast_detector.s: fast/fast_detector.cpp.s
@@ -244,7 +244,7 @@ fast/fast_detector.s: fast/fast_detector.cpp.s
 
 # target to generate assembly for a file
 fast/fast_detector.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/fast/fast_detector.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/fast/fast_detector.cpp.s
 .PHONY : fast/fast_detector.cpp.s
 
 feature.o: feature.cpp.o
@@ -252,7 +252,7 @@ feature.o: feature.cpp.o
 
 # target to build an object file
 feature.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/feature.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/feature.cpp.o
 .PHONY : feature.cpp.o
 
 feature.i: feature.cpp.i
@@ -260,7 +260,7 @@ feature.i: feature.cpp.i
 
 # target to preprocess a source file
 feature.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/feature.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/feature.cpp.i
 .PHONY : feature.cpp.i
 
 feature.s: feature.cpp.s
@@ -268,7 +268,7 @@ feature.s: feature.cpp.s
 
 # target to generate assembly for a file
 feature.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/feature.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/feature.cpp.s
 .PHONY : feature.cpp.s
 
 liop/liop_descriptor.o: liop/liop_descriptor.cpp.o
@@ -276,7 +276,7 @@ liop/liop_descriptor.o: liop/liop_descriptor.cpp.o
 
 # target to build an object file
 liop/liop_descriptor.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/liop/liop_descriptor.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/liop/liop_descriptor.cpp.o
 .PHONY : liop/liop_descriptor.cpp.o
 
 liop/liop_descriptor.i: liop/liop_descriptor.cpp.i
@@ -284,7 +284,7 @@ liop/liop_descriptor.i: liop/liop_descriptor.cpp.i
 
 # target to preprocess a source file
 liop/liop_descriptor.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/liop/liop_descriptor.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/liop/liop_descriptor.cpp.i
 .PHONY : liop/liop_descriptor.cpp.i
 
 liop/liop_descriptor.s: liop/liop_descriptor.cpp.s
@@ -292,7 +292,7 @@ liop/liop_descriptor.s: liop/liop_descriptor.cpp.s
 
 # target to generate assembly for a file
 liop/liop_descriptor.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/liop/liop_descriptor.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/liop/liop_descriptor.cpp.s
 .PHONY : liop/liop_descriptor.cpp.s
 
 mser/mser.o: mser/mser.cpp.o
@@ -300,7 +300,7 @@ mser/mser.o: mser/mser.cpp.o
 
 # target to build an object file
 mser/mser.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser.cpp.o
 .PHONY : mser/mser.cpp.o
 
 mser/mser.i: mser/mser.cpp.i
@@ -308,7 +308,7 @@ mser/mser.i: mser/mser.cpp.i
 
 # target to preprocess a source file
 mser/mser.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser.cpp.i
 .PHONY : mser/mser.cpp.i
 
 mser/mser.s: mser/mser.cpp.s
@@ -316,7 +316,7 @@ mser/mser.s: mser/mser.cpp.s
 
 # target to generate assembly for a file
 mser/mser.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser.cpp.s
 .PHONY : mser/mser.cpp.s
 
 mser/mser_region.o: mser/mser_region.cpp.o
@@ -324,7 +324,7 @@ mser/mser_region.o: mser/mser_region.cpp.o
 
 # target to build an object file
 mser/mser_region.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser_region.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser_region.cpp.o
 .PHONY : mser/mser_region.cpp.o
 
 mser/mser_region.i: mser/mser_region.cpp.i
@@ -332,7 +332,7 @@ mser/mser_region.i: mser/mser_region.cpp.i
 
 # target to preprocess a source file
 mser/mser_region.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser_region.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser_region.cpp.i
 .PHONY : mser/mser_region.cpp.i
 
 mser/mser_region.s: mser/mser_region.cpp.s
@@ -340,7 +340,7 @@ mser/mser_region.s: mser/mser_region.cpp.s
 
 # target to generate assembly for a file
 mser/mser_region.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser_region.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser_region.cpp.s
 .PHONY : mser/mser_region.cpp.s
 
 regions.o: regions.cpp.o
@@ -348,7 +348,7 @@ regions.o: regions.cpp.o
 
 # target to build an object file
 regions.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/regions.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/regions.cpp.o
 .PHONY : regions.cpp.o
 
 regions.i: regions.cpp.i
@@ -356,7 +356,7 @@ regions.i: regions.cpp.i
 
 # target to preprocess a source file
 regions.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/regions.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/regions.cpp.i
 .PHONY : regions.cpp.i
 
 regions.s: regions.cpp.s
@@ -364,7 +364,7 @@ regions.s: regions.cpp.s
 
 # target to generate assembly for a file
 regions.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/regions.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/regions.cpp.s
 .PHONY : regions.cpp.s
 
 svg_features.o: svg_features.cpp.o
@@ -372,7 +372,7 @@ svg_features.o: svg_features.cpp.o
 
 # target to build an object file
 svg_features.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/svg_features.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/svg_features.cpp.o
 .PHONY : svg_features.cpp.o
 
 svg_features.i: svg_features.cpp.i
@@ -380,7 +380,7 @@ svg_features.i: svg_features.cpp.i
 
 # target to preprocess a source file
 svg_features.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/svg_features.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/svg_features.cpp.i
 .PHONY : svg_features.cpp.i
 
 svg_features.s: svg_features.cpp.s
@@ -388,7 +388,7 @@ svg_features.s: svg_features.cpp.s
 
 # target to generate assembly for a file
 svg_features.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/svg_features.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/svg_features.cpp.s
 .PHONY : svg_features.cpp.s
 
 tbmr/tbmr.o: tbmr/tbmr.cpp.o
@@ -396,7 +396,7 @@ tbmr/tbmr.o: tbmr/tbmr.cpp.o
 
 # target to build an object file
 tbmr/tbmr.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/tbmr/tbmr.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/tbmr/tbmr.cpp.o
 .PHONY : tbmr/tbmr.cpp.o
 
 tbmr/tbmr.i: tbmr/tbmr.cpp.i
@@ -404,7 +404,7 @@ tbmr/tbmr.i: tbmr/tbmr.cpp.i
 
 # target to preprocess a source file
 tbmr/tbmr.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/tbmr/tbmr.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/tbmr/tbmr.cpp.i
 .PHONY : tbmr/tbmr.cpp.i
 
 tbmr/tbmr.s: tbmr/tbmr.cpp.s
@@ -412,7 +412,7 @@ tbmr/tbmr.s: tbmr/tbmr.cpp.s
 
 # target to generate assembly for a file
 tbmr/tbmr.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/tbmr/tbmr.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/features/CMakeFiles/openMVG_features.dir/build.make openMVG/features/CMakeFiles/openMVG_features.dir/tbmr/tbmr.cpp.s
 .PHONY : tbmr/tbmr.cpp.s
 
 # Help Target
@@ -469,6 +469,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

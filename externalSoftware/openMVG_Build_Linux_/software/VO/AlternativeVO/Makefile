@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/rule
 .PHONY : software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ openMVG_main_AlternativeVO: software/VO/AlternativeVO/CMakeFiles/openMVG_main_Al
 
 # fast build rule for target.
 openMVG_main_AlternativeVO/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build
 .PHONY : openMVG_main_AlternativeVO/fast
 
 # Convenience name for target.
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/rule
 .PHONY : software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ openMVG_main_AlternativeVO_autogen: software/VO/AlternativeVO/CMakeFiles/openMVG
 
 # fast build rule for target.
 openMVG_main_AlternativeVO_autogen/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/build
 .PHONY : openMVG_main_AlternativeVO_autogen/fast
 
 ControlButtonsPanel.o: ControlButtonsPanel.cpp.o
@@ -194,7 +194,7 @@ ControlButtonsPanel.o: ControlButtonsPanel.cpp.o
 
 # target to build an object file
 ControlButtonsPanel.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.o
 .PHONY : ControlButtonsPanel.cpp.o
 
 ControlButtonsPanel.i: ControlButtonsPanel.cpp.i
@@ -202,7 +202,7 @@ ControlButtonsPanel.i: ControlButtonsPanel.cpp.i
 
 # target to preprocess a source file
 ControlButtonsPanel.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.i
 .PHONY : ControlButtonsPanel.cpp.i
 
 ControlButtonsPanel.s: ControlButtonsPanel.cpp.s
@@ -210,7 +210,7 @@ ControlButtonsPanel.s: ControlButtonsPanel.cpp.s
 
 # target to generate assembly for a file
 ControlButtonsPanel.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/ControlButtonsPanel.cpp.s
 .PHONY : ControlButtonsPanel.cpp.s
 
 MainWindow.o: MainWindow.cpp.o
@@ -218,7 +218,7 @@ MainWindow.o: MainWindow.cpp.o
 
 # target to build an object file
 MainWindow.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.o
 .PHONY : MainWindow.cpp.o
 
 MainWindow.i: MainWindow.cpp.i
@@ -226,7 +226,7 @@ MainWindow.i: MainWindow.cpp.i
 
 # target to preprocess a source file
 MainWindow.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.i
 .PHONY : MainWindow.cpp.i
 
 MainWindow.s: MainWindow.cpp.s
@@ -234,7 +234,7 @@ MainWindow.s: MainWindow.cpp.s
 
 # target to generate assembly for a file
 MainWindow.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/MainWindow.cpp.s
 .PHONY : MainWindow.cpp.s
 
 VOFolderProcessor.o: VOFolderProcessor.cpp.o
@@ -242,7 +242,7 @@ VOFolderProcessor.o: VOFolderProcessor.cpp.o
 
 # target to build an object file
 VOFolderProcessor.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.o
 .PHONY : VOFolderProcessor.cpp.o
 
 VOFolderProcessor.i: VOFolderProcessor.cpp.i
@@ -250,7 +250,7 @@ VOFolderProcessor.i: VOFolderProcessor.cpp.i
 
 # target to preprocess a source file
 VOFolderProcessor.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.i
 .PHONY : VOFolderProcessor.cpp.i
 
 VOFolderProcessor.s: VOFolderProcessor.cpp.s
@@ -258,7 +258,7 @@ VOFolderProcessor.s: VOFolderProcessor.cpp.s
 
 # target to generate assembly for a file
 VOFolderProcessor.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOFolderProcessor.cpp.s
 .PHONY : VOFolderProcessor.cpp.s
 
 VOViewerDrawableElements.o: VOViewerDrawableElements.cpp.o
@@ -266,7 +266,7 @@ VOViewerDrawableElements.o: VOViewerDrawableElements.cpp.o
 
 # target to build an object file
 VOViewerDrawableElements.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.o
 .PHONY : VOViewerDrawableElements.cpp.o
 
 VOViewerDrawableElements.i: VOViewerDrawableElements.cpp.i
@@ -274,7 +274,7 @@ VOViewerDrawableElements.i: VOViewerDrawableElements.cpp.i
 
 # target to preprocess a source file
 VOViewerDrawableElements.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.i
 .PHONY : VOViewerDrawableElements.cpp.i
 
 VOViewerDrawableElements.s: VOViewerDrawableElements.cpp.s
@@ -282,7 +282,7 @@ VOViewerDrawableElements.s: VOViewerDrawableElements.cpp.s
 
 # target to generate assembly for a file
 VOViewerDrawableElements.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerDrawableElements.cpp.s
 .PHONY : VOViewerDrawableElements.cpp.s
 
 VOViewerPanel.o: VOViewerPanel.cpp.o
@@ -290,7 +290,7 @@ VOViewerPanel.o: VOViewerPanel.cpp.o
 
 # target to build an object file
 VOViewerPanel.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.o
 .PHONY : VOViewerPanel.cpp.o
 
 VOViewerPanel.i: VOViewerPanel.cpp.i
@@ -298,7 +298,7 @@ VOViewerPanel.i: VOViewerPanel.cpp.i
 
 # target to preprocess a source file
 VOViewerPanel.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.i
 .PHONY : VOViewerPanel.cpp.i
 
 VOViewerPanel.s: VOViewerPanel.cpp.s
@@ -306,7 +306,7 @@ VOViewerPanel.s: VOViewerPanel.cpp.s
 
 # target to generate assembly for a file
 VOViewerPanel.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/VOViewerPanel.cpp.s
 .PHONY : VOViewerPanel.cpp.s
 
 main.o: main.cpp.o
@@ -314,7 +314,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -322,7 +322,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -330,7 +330,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 openMVG_main_AlternativeVO_autogen/mocs_compilation.o: openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o
@@ -338,7 +338,7 @@ openMVG_main_AlternativeVO_autogen/mocs_compilation.o: openMVG_main_AlternativeV
 
 # target to build an object file
 openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o
 .PHONY : openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.o
 
 openMVG_main_AlternativeVO_autogen/mocs_compilation.i: openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.i
@@ -346,7 +346,7 @@ openMVG_main_AlternativeVO_autogen/mocs_compilation.i: openMVG_main_AlternativeV
 
 # target to preprocess a source file
 openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.i
 .PHONY : openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.i
 
 openMVG_main_AlternativeVO_autogen/mocs_compilation.s: openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.s
@@ -354,7 +354,7 @@ openMVG_main_AlternativeVO_autogen/mocs_compilation.s: openMVG_main_AlternativeV
 
 # target to generate assembly for a file
 openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/build.make software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO.dir/openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.s
 .PHONY : openMVG_main_AlternativeVO_autogen/mocs_compilation.cpp.s
 
 # Help Target
@@ -403,6 +403,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

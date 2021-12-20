@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/rule
 .PHONY : software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ ui_openMVG_MatchesViewer: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_
 
 # fast build rule for target.
 ui_openMVG_MatchesViewer/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build
 .PHONY : ui_openMVG_MatchesViewer/fast
 
 # Convenience name for target.
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/rule
 .PHONY : software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ ui_openMVG_MatchesViewer_autogen: software/ui/SfM/adjacency_matrix_viewer/CMakeF
 
 # fast build rule for target.
 ui_openMVG_MatchesViewer_autogen/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer_autogen.dir/build
 .PHONY : ui_openMVG_MatchesViewer_autogen/fast
 
 main.o: main.cpp.o
@@ -194,7 +194,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -202,7 +202,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -210,7 +210,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 mainframe.o: mainframe.cpp.o
@@ -218,7 +218,7 @@ mainframe.o: mainframe.cpp.o
 
 # target to build an object file
 mainframe.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o
 .PHONY : mainframe.cpp.o
 
 mainframe.i: mainframe.cpp.i
@@ -226,7 +226,7 @@ mainframe.i: mainframe.cpp.i
 
 # target to preprocess a source file
 mainframe.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.i
 .PHONY : mainframe.cpp.i
 
 mainframe.s: mainframe.cpp.s
@@ -234,7 +234,7 @@ mainframe.s: mainframe.cpp.s
 
 # target to generate assembly for a file
 mainframe.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.s
 .PHONY : mainframe.cpp.s
 
 mainwindow.o: mainwindow.cpp.o
@@ -242,7 +242,7 @@ mainwindow.o: mainwindow.cpp.o
 
 # target to build an object file
 mainwindow.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o
 .PHONY : mainwindow.cpp.o
 
 mainwindow.i: mainwindow.cpp.i
@@ -250,7 +250,7 @@ mainwindow.i: mainwindow.cpp.i
 
 # target to preprocess a source file
 mainwindow.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.i
 .PHONY : mainwindow.cpp.i
 
 mainwindow.s: mainwindow.cpp.s
@@ -258,7 +258,7 @@ mainwindow.s: mainwindow.cpp.s
 
 # target to generate assembly for a file
 mainwindow.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.s
 .PHONY : mainwindow.cpp.s
 
 matchingpairgraphicsview.o: matchingpairgraphicsview.cpp.o
@@ -266,7 +266,7 @@ matchingpairgraphicsview.o: matchingpairgraphicsview.cpp.o
 
 # target to build an object file
 matchingpairgraphicsview.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o
 .PHONY : matchingpairgraphicsview.cpp.o
 
 matchingpairgraphicsview.i: matchingpairgraphicsview.cpp.i
@@ -274,7 +274,7 @@ matchingpairgraphicsview.i: matchingpairgraphicsview.cpp.i
 
 # target to preprocess a source file
 matchingpairgraphicsview.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.i
 .PHONY : matchingpairgraphicsview.cpp.i
 
 matchingpairgraphicsview.s: matchingpairgraphicsview.cpp.s
@@ -282,7 +282,7 @@ matchingpairgraphicsview.s: matchingpairgraphicsview.cpp.s
 
 # target to generate assembly for a file
 matchingpairgraphicsview.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.s
 .PHONY : matchingpairgraphicsview.cpp.s
 
 pairgraphicsitem.o: pairgraphicsitem.cpp.o
@@ -290,7 +290,7 @@ pairgraphicsitem.o: pairgraphicsitem.cpp.o
 
 # target to build an object file
 pairgraphicsitem.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o
 .PHONY : pairgraphicsitem.cpp.o
 
 pairgraphicsitem.i: pairgraphicsitem.cpp.i
@@ -298,7 +298,7 @@ pairgraphicsitem.i: pairgraphicsitem.cpp.i
 
 # target to preprocess a source file
 pairgraphicsitem.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.i
 .PHONY : pairgraphicsitem.cpp.i
 
 pairgraphicsitem.s: pairgraphicsitem.cpp.s
@@ -306,7 +306,7 @@ pairgraphicsitem.s: pairgraphicsitem.cpp.s
 
 # target to generate assembly for a file
 pairgraphicsitem.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.s
 .PHONY : pairgraphicsitem.cpp.s
 
 ui_openMVG_MatchesViewer_autogen/mocs_compilation.o: ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o
@@ -314,7 +314,7 @@ ui_openMVG_MatchesViewer_autogen/mocs_compilation.o: ui_openMVG_MatchesViewer_au
 
 # target to build an object file
 ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o
 .PHONY : ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o
 
 ui_openMVG_MatchesViewer_autogen/mocs_compilation.i: ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.i
@@ -322,7 +322,7 @@ ui_openMVG_MatchesViewer_autogen/mocs_compilation.i: ui_openMVG_MatchesViewer_au
 
 # target to preprocess a source file
 ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.i
 .PHONY : ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.i
 
 ui_openMVG_MatchesViewer_autogen/mocs_compilation.s: ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.s
@@ -330,7 +330,7 @@ ui_openMVG_MatchesViewer_autogen/mocs_compilation.s: ui_openMVG_MatchesViewer_au
 
 # target to generate assembly for a file
 ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build.make software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.s
 .PHONY : ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.s
 
 # Help Target
@@ -376,6 +376,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

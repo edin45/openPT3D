@@ -1,7 +1,7 @@
 openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/ImageView.cpp.o: \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/describe_and_match_GUI/ImageView.cpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/describe_and_match_GUI/ImageView.cpp \
  /usr/include/stdc-predef.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/describe_and_match_GUI/ImageView.hpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/describe_and_match_GUI/ImageView.hpp \
  /usr/include/qt/QtWidgets/QGraphicsView \
  /usr/include/qt/QtWidgets/qgraphicsview.h \
  /usr/include/qt/QtWidgets/qtwidgetsglobal.h \

@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/software
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,13 +44,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Localization/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Geodesy/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/colorHarmonize/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfMWebGLViewer/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Localization/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Geodesy/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/colorHarmonize/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfMWebGLViewer/cmake_install.cmake")
 
 endif()
 

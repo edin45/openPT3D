@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/depend.make
@@ -70,18 +70,18 @@ include openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_f
 include openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/flags.make
 
 openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o: openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/flags.make
-openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/features_siftPutativeMatches/siftmatch.cpp
+openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/features_siftPutativeMatches/siftmatch.cpp
 openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o: openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_siftPutativeMatches && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o -MF CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o.d -o CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/features_siftPutativeMatches/siftmatch.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_siftPutativeMatches && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o -MF CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o.d -o CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/features_siftPutativeMatches/siftmatch.cpp
 
 openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_siftPutativeMatches && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/features_siftPutativeMatches/siftmatch.cpp > CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_siftPutativeMatches && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/features_siftPutativeMatches/siftmatch.cpp > CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.i
 
 openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_siftPutativeMatches && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/features_siftPutativeMatches/siftmatch.cpp -o CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_siftPutativeMatches && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/features_siftPutativeMatches/siftmatch.cpp -o CMakeFiles/openMVG_sample_features_siftPutative.dir/siftmatch.cpp.s
 
 # Object files for target openMVG_sample_features_siftPutative
 openMVG_sample_features_siftPutative_OBJECTS = \
@@ -107,18 +107,18 @@ Linux-x86_64-RELEASE/openMVG_sample_features_siftPutative: Linux-x86_64-RELEASE/
 Linux-x86_64-RELEASE/openMVG_sample_features_siftPutative: /usr/lib/libgomp.so
 Linux-x86_64-RELEASE/openMVG_sample_features_siftPutative: /usr/lib/libpthread.so
 Linux-x86_64-RELEASE/openMVG_sample_features_siftPutative: openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_features_siftPutative"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_siftPutativeMatches && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_features_siftPutative.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_features_siftPutative"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_siftPutativeMatches && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_features_siftPutative.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/build: Linux-x86_64-RELEASE/openMVG_sample_features_siftPutative
 .PHONY : openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/build
 
 openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_siftPutativeMatches && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_features_siftPutative.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_siftPutativeMatches && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_features_siftPutative.dir/cmake_clean.cmake
 .PHONY : openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/clean
 
 openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/features_siftPutativeMatches /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_siftPutativeMatches /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/features_siftPutativeMatches /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_siftPutativeMatches /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openMVG_Samples/features_siftPutativeMatches/CMakeFiles/openMVG_sample_features_siftPutative.dir/depend
 

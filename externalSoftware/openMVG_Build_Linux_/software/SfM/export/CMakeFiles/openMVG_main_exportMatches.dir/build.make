@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/depend.make
@@ -70,18 +70,18 @@ include software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/progress.m
 include software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/flags.make
 
 software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o: software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/flags.make
-software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/export/main_exportMatches.cpp
+software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/export/main_exportMatches.cpp
 software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o: software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/export && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o -MF CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o.d -o CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/export/main_exportMatches.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/export && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o -MF CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o.d -o CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/export/main_exportMatches.cpp
 
 software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/export && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/export/main_exportMatches.cpp > CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/export && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/export/main_exportMatches.cpp > CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.i
 
 software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/export && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/export/main_exportMatches.cpp -o CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/export && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/export/main_exportMatches.cpp -o CMakeFiles/openMVG_main_exportMatches.dir/main_exportMatches.cpp.s
 
 # Object files for target openMVG_main_exportMatches
 openMVG_main_exportMatches_OBJECTS = \
@@ -117,22 +117,23 @@ Linux-x86_64-RELEASE/openMVG_main_exportMatches: Linux-x86_64-RELEASE/liblib_clp
 Linux-x86_64-RELEASE/openMVG_main_exportMatches: Linux-x86_64-RELEASE/liblib_OsiClpSolver.a
 Linux-x86_64-RELEASE/openMVG_main_exportMatches: Linux-x86_64-RELEASE/liblib_CoinUtils.a
 Linux-x86_64-RELEASE/openMVG_main_exportMatches: Linux-x86_64-RELEASE/liblib_Osi.a
-Linux-x86_64-RELEASE/openMVG_main_exportMatches: /usr/lib/libceres.so.2.0.0
-Linux-x86_64-RELEASE/openMVG_main_exportMatches: /usr/lib/libglog.so.0.5.0
-Linux-x86_64-RELEASE/openMVG_main_exportMatches: /usr/lib/libgflags.so.2.2.2
+Linux-x86_64-RELEASE/openMVG_main_exportMatches: third_party/ceres-solver/lib/libopenMVG_ceres.a
+Linux-x86_64-RELEASE/openMVG_main_exportMatches: Linux-x86_64-RELEASE/libopenMVG_cxsparse.a
+Linux-x86_64-RELEASE/openMVG_main_exportMatches: /usr/lib/liblapack.so
+Linux-x86_64-RELEASE/openMVG_main_exportMatches: /usr/lib/libblas.so
 Linux-x86_64-RELEASE/openMVG_main_exportMatches: software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../Linux-x86_64-RELEASE/openMVG_main_exportMatches"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/export && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_exportMatches.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../../Linux-x86_64-RELEASE/openMVG_main_exportMatches"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/export && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_exportMatches.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/build: Linux-x86_64-RELEASE/openMVG_main_exportMatches
 .PHONY : software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/build
 
 software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/export && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_exportMatches.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/export && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_exportMatches.dir/cmake_clean.cmake
 .PHONY : software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/clean
 
 software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/export /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/export /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/export /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/export /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : software/SfM/export/CMakeFiles/openMVG_main_exportMatches.dir/depend
 

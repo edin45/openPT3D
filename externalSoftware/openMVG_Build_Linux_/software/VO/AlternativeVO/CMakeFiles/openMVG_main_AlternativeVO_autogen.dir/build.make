@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Utility rule file for openMVG_main_AlternativeVO_autogen.
 
@@ -67,8 +67,8 @@ include software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.
 include software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/progress.make
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target openMVG_main_AlternativeVO"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && /usr/bin/cmake -E cmake_autogen /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/AutogenInfo.json RELEASE
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Automatic MOC for target openMVG_main_AlternativeVO"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && /usr/bin/cmake -E cmake_autogen /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/AutogenInfo.json RELEASE
 
 openMVG_main_AlternativeVO_autogen: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen
 openMVG_main_AlternativeVO_autogen: software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/build.make
@@ -79,10 +79,10 @@ software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/buil
 .PHONY : software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/build
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/cmake_clean.cmake
 .PHONY : software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/clean
 
 software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/software/VO/AlternativeVO /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/VO/AlternativeVO /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : software/VO/AlternativeVO/CMakeFiles/openMVG_main_AlternativeVO_autogen.dir/depend
 

@@ -1,7 +1,7 @@
 software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration.dir/ControlPoint2DNode.cpp.o: \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/control_points_registration/ControlPoint2DNode.cpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/control_points_registration/ControlPoint2DNode.cpp \
  /usr/include/stdc-predef.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/control_points_registration/ControlPoint2DNode.hpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/control_points_registration/ControlPoint2DNode.hpp \
  /usr/include/qt/QtWidgets/QGraphicsItem \
  /usr/include/qt/QtWidgets/qgraphicsitem.h \
  /usr/include/qt/QtWidgets/qtwidgetsglobal.h \

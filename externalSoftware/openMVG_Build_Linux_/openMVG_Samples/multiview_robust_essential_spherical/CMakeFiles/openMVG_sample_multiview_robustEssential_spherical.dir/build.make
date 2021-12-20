@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/depend.make
@@ -70,18 +70,18 @@ include openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_
 include openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/flags.make
 
 openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o: openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/flags.make
-openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/multiview_robust_essential_spherical/robust_essential_spherical.cpp
+openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/multiview_robust_essential_spherical/robust_essential_spherical.cpp
 openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o: openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential_spherical && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o -MF CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o.d -o CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/multiview_robust_essential_spherical/robust_essential_spherical.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential_spherical && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o -MF CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o.d -o CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/multiview_robust_essential_spherical/robust_essential_spherical.cpp
 
 openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential_spherical && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/multiview_robust_essential_spherical/robust_essential_spherical.cpp > CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential_spherical && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/multiview_robust_essential_spherical/robust_essential_spherical.cpp > CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.i
 
 openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential_spherical && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/multiview_robust_essential_spherical/robust_essential_spherical.cpp -o CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential_spherical && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/multiview_robust_essential_spherical/robust_essential_spherical.cpp -o CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/robust_essential_spherical.cpp.s
 
 # Object files for target openMVG_sample_multiview_robustEssential_spherical
 openMVG_sample_multiview_robustEssential_spherical_OBJECTS = \
@@ -114,9 +114,10 @@ Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: /usr/li
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: Linux-x86_64-RELEASE/libopenMVG_geometry.a
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: Linux-x86_64-RELEASE/libopenMVG_lInftyComputerVision.a
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: Linux-x86_64-RELEASE/libopenMVG_multiview.a
-Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: /usr/lib/libceres.so.2.0.0
-Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: /usr/lib/libglog.so.0.5.0
-Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: /usr/lib/libgflags.so.2.2.2
+Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: third_party/ceres-solver/lib/libopenMVG_ceres.a
+Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: Linux-x86_64-RELEASE/libopenMVG_cxsparse.a
+Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: /usr/lib/liblapack.so
+Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: /usr/lib/libblas.so
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: Linux-x86_64-RELEASE/libopenMVG_linearProgramming.a
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: Linux-x86_64-RELEASE/libopenMVG_numeric.a
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: Linux-x86_64-RELEASE/liblib_clp.a
@@ -124,18 +125,18 @@ Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: Linux-x
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: Linux-x86_64-RELEASE/liblib_CoinUtils.a
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: Linux-x86_64-RELEASE/liblib_Osi.a
 Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical: openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential_spherical && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential_spherical && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/build: Linux-x86_64-RELEASE/openMVG_sample_multiview_robustEssential_spherical
 .PHONY : openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/build
 
 openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential_spherical && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential_spherical && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/cmake_clean.cmake
 .PHONY : openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/clean
 
 openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/multiview_robust_essential_spherical /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential_spherical /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/multiview_robust_essential_spherical /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential_spherical /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openMVG_Samples/multiview_robust_essential_spherical/CMakeFiles/openMVG_sample_multiview_robustEssential_spherical.dir/depend
 

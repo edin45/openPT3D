@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/depend.make
@@ -70,18 +70,18 @@ include software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/progr
 include software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/flags.make
 
 software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o: software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/flags.make
-software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/Localization/main_SfM_Localization.cpp
+software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/Localization/main_SfM_Localization.cpp
 software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o: software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o -MF CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o.d -o CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/Localization/main_SfM_Localization.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o -MF CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o.d -o CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/Localization/main_SfM_Localization.cpp
 
 software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/Localization/main_SfM_Localization.cpp > CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/Localization/main_SfM_Localization.cpp > CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.i
 
 software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/Localization/main_SfM_Localization.cpp -o CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Localization && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/Localization/main_SfM_Localization.cpp -o CMakeFiles/openMVG_main_SfM_Localization.dir/main_SfM_Localization.cpp.s
 
 # Object files for target openMVG_main_SfM_Localization
 openMVG_main_SfM_Localization_OBJECTS = \
@@ -121,23 +121,24 @@ Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: Linux-x86_64-RELEASE/liblib_
 Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: Linux-x86_64-RELEASE/liblib_OsiClpSolver.a
 Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: Linux-x86_64-RELEASE/liblib_CoinUtils.a
 Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: Linux-x86_64-RELEASE/liblib_Osi.a
-Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: /usr/lib/libceres.so.2.0.0
-Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: /usr/lib/libglog.so.0.5.0
-Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: /usr/lib/libgflags.so.2.2.2
+Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: third_party/ceres-solver/lib/libopenMVG_ceres.a
+Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: Linux-x86_64-RELEASE/libopenMVG_cxsparse.a
+Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: /usr/lib/liblapack.so
+Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: /usr/lib/libblas.so
 Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: Linux-x86_64-RELEASE/libopenMVG_easyexif.a
 Linux-x86_64-RELEASE/openMVG_main_SfM_Localization: software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_main_SfM_Localization"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Localization && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_SfM_Localization.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_main_SfM_Localization"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Localization && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_SfM_Localization.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/build: Linux-x86_64-RELEASE/openMVG_main_SfM_Localization
 .PHONY : software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/build
 
 software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Localization && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_SfM_Localization.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Localization && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_SfM_Localization.dir/cmake_clean.cmake
 .PHONY : software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/clean
 
 software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/software/Localization /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Localization /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/Localization /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Localization /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : software/Localization/CMakeFiles/openMVG_main_SfM_Localization.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/matching_image_collection//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching_image_collection/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/matching_image_collection//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching_image_collection/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching_image_collection/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching_image_collection/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching_image_collection/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching_image_collection/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching_image_collection/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching_image_collection/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/rule
 .PHONY : openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ openMVG_matching_image_collection: openMVG/matching_image_collection/CMakeFiles/
 
 # fast build rule for target.
 openMVG_matching_image_collection/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build
 .PHONY : openMVG_matching_image_collection/fast
 
 Cascade_Hashing_Matcher_Regions.o: Cascade_Hashing_Matcher_Regions.cpp.o
@@ -180,7 +180,7 @@ Cascade_Hashing_Matcher_Regions.o: Cascade_Hashing_Matcher_Regions.cpp.o
 
 # target to build an object file
 Cascade_Hashing_Matcher_Regions.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Cascade_Hashing_Matcher_Regions.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Cascade_Hashing_Matcher_Regions.cpp.o
 .PHONY : Cascade_Hashing_Matcher_Regions.cpp.o
 
 Cascade_Hashing_Matcher_Regions.i: Cascade_Hashing_Matcher_Regions.cpp.i
@@ -188,7 +188,7 @@ Cascade_Hashing_Matcher_Regions.i: Cascade_Hashing_Matcher_Regions.cpp.i
 
 # target to preprocess a source file
 Cascade_Hashing_Matcher_Regions.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Cascade_Hashing_Matcher_Regions.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Cascade_Hashing_Matcher_Regions.cpp.i
 .PHONY : Cascade_Hashing_Matcher_Regions.cpp.i
 
 Cascade_Hashing_Matcher_Regions.s: Cascade_Hashing_Matcher_Regions.cpp.s
@@ -196,7 +196,7 @@ Cascade_Hashing_Matcher_Regions.s: Cascade_Hashing_Matcher_Regions.cpp.s
 
 # target to generate assembly for a file
 Cascade_Hashing_Matcher_Regions.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Cascade_Hashing_Matcher_Regions.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Cascade_Hashing_Matcher_Regions.cpp.s
 .PHONY : Cascade_Hashing_Matcher_Regions.cpp.s
 
 Geometric_Filter_utils.o: Geometric_Filter_utils.cpp.o
@@ -204,7 +204,7 @@ Geometric_Filter_utils.o: Geometric_Filter_utils.cpp.o
 
 # target to build an object file
 Geometric_Filter_utils.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Geometric_Filter_utils.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Geometric_Filter_utils.cpp.o
 .PHONY : Geometric_Filter_utils.cpp.o
 
 Geometric_Filter_utils.i: Geometric_Filter_utils.cpp.i
@@ -212,7 +212,7 @@ Geometric_Filter_utils.i: Geometric_Filter_utils.cpp.i
 
 # target to preprocess a source file
 Geometric_Filter_utils.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Geometric_Filter_utils.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Geometric_Filter_utils.cpp.i
 .PHONY : Geometric_Filter_utils.cpp.i
 
 Geometric_Filter_utils.s: Geometric_Filter_utils.cpp.s
@@ -220,7 +220,7 @@ Geometric_Filter_utils.s: Geometric_Filter_utils.cpp.s
 
 # target to generate assembly for a file
 Geometric_Filter_utils.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Geometric_Filter_utils.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Geometric_Filter_utils.cpp.s
 .PHONY : Geometric_Filter_utils.cpp.s
 
 Matcher_Regions.o: Matcher_Regions.cpp.o
@@ -228,7 +228,7 @@ Matcher_Regions.o: Matcher_Regions.cpp.o
 
 # target to build an object file
 Matcher_Regions.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Matcher_Regions.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Matcher_Regions.cpp.o
 .PHONY : Matcher_Regions.cpp.o
 
 Matcher_Regions.i: Matcher_Regions.cpp.i
@@ -236,7 +236,7 @@ Matcher_Regions.i: Matcher_Regions.cpp.i
 
 # target to preprocess a source file
 Matcher_Regions.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Matcher_Regions.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Matcher_Regions.cpp.i
 .PHONY : Matcher_Regions.cpp.i
 
 Matcher_Regions.s: Matcher_Regions.cpp.s
@@ -244,7 +244,7 @@ Matcher_Regions.s: Matcher_Regions.cpp.s
 
 # target to generate assembly for a file
 Matcher_Regions.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Matcher_Regions.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/build.make openMVG/matching_image_collection/CMakeFiles/openMVG_matching_image_collection.dir/Matcher_Regions.cpp.s
 .PHONY : Matcher_Regions.cpp.s
 
 # Help Target
@@ -280,6 +280,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

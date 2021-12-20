@@ -1,7 +1,7 @@
 openMVG/features/CMakeFiles/openMVG_features.dir/mser/mser_region.cpp.o: \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/features/mser/mser_region.cpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/features/mser/mser_region.cpp \
  /usr/include/stdc-predef.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/features/mser/mser_region.hpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/features/mser/mser_region.hpp \
  /usr/include/c++/11.1.0/vector \
  /usr/include/c++/11.1.0/bits/stl_algobase.h \
  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \

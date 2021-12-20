@@ -1,7 +1,7 @@
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o: \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.cpp \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.cpp \
  /usr/include/stdc-predef.h \
- /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.h \
+ /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.h \
  /usr/include/qt/QtGui/QColor /usr/include/qt/QtGui/qcolor.h \
  /usr/include/qt/QtGui/qtguiglobal.h /usr/include/qt/QtCore/qglobal.h \
  /usr/include/c++/11.1.0/type_traits \

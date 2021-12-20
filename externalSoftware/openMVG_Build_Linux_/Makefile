@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,9 +132,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -264,6 +264,32 @@ main_svgSample: cmake_check_build_system
 main_svgSample/fast:
 	$(MAKE) $(MAKESILENT) -f third_party/vectorGraphics/CMakeFiles/main_svgSample.dir/build.make third_party/vectorGraphics/CMakeFiles/main_svgSample.dir/build
 .PHONY : main_svgSample/fast
+
+#=============================================================================
+# Target rules for targets named openMVG_cxsparse
+
+# Build rule for target.
+openMVG_cxsparse: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_cxsparse
+.PHONY : openMVG_cxsparse
+
+# fast build rule for target.
+openMVG_cxsparse/fast:
+	$(MAKE) $(MAKESILENT) -f third_party/cxsparse/CMakeFiles/openMVG_cxsparse.dir/build.make third_party/cxsparse/CMakeFiles/openMVG_cxsparse.dir/build
+.PHONY : openMVG_cxsparse/fast
+
+#=============================================================================
+# Target rules for targets named openMVG_ceres
+
+# Build rule for target.
+openMVG_ceres: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_ceres
+.PHONY : openMVG_ceres
+
+# fast build rule for target.
+openMVG_ceres/fast:
+	$(MAKE) $(MAKESILENT) -f third_party/ceres-solver/internal/ceres/CMakeFiles/openMVG_ceres.dir/build.make third_party/ceres-solver/internal/ceres/CMakeFiles/openMVG_ceres.dir/build
+.PHONY : openMVG_ceres/fast
 
 #=============================================================================
 # Target rules for targets named openMVG_easyexif
@@ -1473,6 +1499,8 @@ help:
 	@echo "... lib_OsiClpSolver"
 	@echo "... lib_clp"
 	@echo "... main_svgSample"
+	@echo "... openMVG_ceres"
+	@echo "... openMVG_cxsparse"
 	@echo "... openMVG_easyexif"
 	@echo "... openMVG_exif"
 	@echo "... openMVG_fast"

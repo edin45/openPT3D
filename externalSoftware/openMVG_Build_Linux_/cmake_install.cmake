@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,14 +43,14 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xheadersx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/openMVG_dependencies" TYPE DIRECTORY FILES "/home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/openMVG_dependencies" TYPE DIRECTORY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/" FILES_MATCHING REGEX "/[^/]*\\.hpp$" REGEX "/[^/]*\\.h$")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/openMVG-targets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/openMVG-targets.cmake"
-         "/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles/Export/lib/openMVG-targets.cmake")
+         "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles/Export/lib/openMVG-targets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/openMVG-targets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -59,9 +59,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles/Export/lib/openMVG-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles/Export/lib/openMVG-targets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles/Export/lib/openMVG-targets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles/Export/lib/openMVG-targets-release.cmake")
   endif()
 endif()
 
@@ -69,7 +69,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/openMVG/cmake/OpenMVGTargets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/openMVG/cmake/OpenMVGTargets.cmake"
-         "/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles/Export/share/openMVG/cmake/OpenMVGTargets.cmake")
+         "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles/Export/share/openMVG/cmake/OpenMVGTargets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/share/openMVG/cmake/OpenMVGTargets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -78,25 +78,25 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openMVG/cmake" TYPE FILE FILES "/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles/Export/share/openMVG/cmake/OpenMVGTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openMVG/cmake" TYPE FILE FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles/Export/share/openMVG/cmake/OpenMVGTargets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openMVG/cmake" TYPE FILE FILES "/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles/Export/share/openMVG/cmake/OpenMVGTargets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openMVG/cmake" TYPE FILE FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles/Export/share/openMVG/cmake/OpenMVGTargets-release.cmake")
   endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openMVG/cmake" TYPE FILE FILES "/home/edin/programs/openMvgBuildScripts/openMVG_Build/OpenMVGConfig.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/openMVG/cmake" TYPE FILE FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/OpenMVGConfig.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/testing/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/software/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/nonFree/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/testing/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/nonFree/cmake_install.cmake")
 
 endif()
 
@@ -108,5 +108,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/edin/programs/openMvgBuildScripts/openMVG_Build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

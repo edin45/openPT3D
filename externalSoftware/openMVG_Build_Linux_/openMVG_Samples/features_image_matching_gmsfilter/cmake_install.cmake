@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/features_image_matching_gmsfilter
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/features_image_matching_gmsfilter
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

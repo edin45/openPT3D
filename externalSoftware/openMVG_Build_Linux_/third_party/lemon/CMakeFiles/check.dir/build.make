@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Utility rule file for check.
 
@@ -67,7 +67,7 @@ include third_party/lemon/CMakeFiles/check.dir/compiler_depend.make
 include third_party/lemon/CMakeFiles/check.dir/progress.make
 
 third_party/lemon/CMakeFiles/check:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/lemon && /usr/bin/ctest
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/lemon && /usr/bin/ctest
 
 check: third_party/lemon/CMakeFiles/check
 check: third_party/lemon/CMakeFiles/check.dir/build.make
@@ -78,10 +78,10 @@ third_party/lemon/CMakeFiles/check.dir/build: check
 .PHONY : third_party/lemon/CMakeFiles/check.dir/build
 
 third_party/lemon/CMakeFiles/check.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/lemon && $(CMAKE_COMMAND) -P CMakeFiles/check.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/lemon && $(CMAKE_COMMAND) -P CMakeFiles/check.dir/cmake_clean.cmake
 .PHONY : third_party/lemon/CMakeFiles/check.dir/clean
 
 third_party/lemon/CMakeFiles/check.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/lemon /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/lemon /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/lemon/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/lemon /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/lemon /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/lemon/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : third_party/lemon/CMakeFiles/check.dir/depend
 

@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -51,6 +51,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/flann/src/cpp" TYPE DIRECTORY FILES "/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann/src/cpp/." FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.hpp$")
+  file(INSTALL DESTINATION "/usr/local/include/openMVG/third_party/flann/src/cpp" TYPE DIRECTORY FILES "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann/src/cpp/." FILES_MATCHING REGEX "/[^/]*\\.h$" REGEX "/[^/]*\\.hpp$")
 endif()
 

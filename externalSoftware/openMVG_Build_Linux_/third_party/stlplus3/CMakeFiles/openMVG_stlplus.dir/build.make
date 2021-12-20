@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/depend.make
@@ -70,46 +70,46 @@ include third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/progress.make
 include third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/flags.make
 
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o: third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/flags.make
-third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/file_system.cpp
+third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/file_system.cpp
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o: third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o -MF CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o.d -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/file_system.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o -MF CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o.d -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/file_system.cpp
 
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/file_system.cpp > CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/file_system.cpp > CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.i
 
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/file_system.cpp -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/file_system.cpp -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/file_system.cpp.s
 
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o: third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/flags.make
-third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/portability_fixes.cpp
+third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/portability_fixes.cpp
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o: third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o -MF CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o.d -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/portability_fixes.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o -MF CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o.d -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/portability_fixes.cpp
 
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/portability_fixes.cpp > CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/portability_fixes.cpp > CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.i
 
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/portability_fixes.cpp -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/portability_fixes.cpp -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/portability_fixes.cpp.s
 
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o: third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/flags.make
-third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/wildcard.cpp
+third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/wildcard.cpp
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o: third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o -MF CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o.d -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/wildcard.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o -MF CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o.d -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/wildcard.cpp
 
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/wildcard.cpp > CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/wildcard.cpp > CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.i
 
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3/filesystemSimplified/wildcard.cpp -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3/filesystemSimplified/wildcard.cpp -o CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.s
 
 # Object files for target openMVG_stlplus
 openMVG_stlplus_OBJECTS = \
@@ -125,19 +125,19 @@ Linux-x86_64-RELEASE/libopenMVG_stlplus.a: third_party/stlplus3/CMakeFiles/openM
 Linux-x86_64-RELEASE/libopenMVG_stlplus.a: third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/filesystemSimplified/wildcard.cpp.o
 Linux-x86_64-RELEASE/libopenMVG_stlplus.a: third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/build.make
 Linux-x86_64-RELEASE/libopenMVG_stlplus.a: third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../Linux-x86_64-RELEASE/libopenMVG_stlplus.a"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_stlplus.dir/cmake_clean_target.cmake
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_stlplus.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library ../../Linux-x86_64-RELEASE/libopenMVG_stlplus.a"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_stlplus.dir/cmake_clean_target.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_stlplus.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/build: Linux-x86_64-RELEASE/libopenMVG_stlplus.a
 .PHONY : third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/build
 
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_stlplus.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_stlplus.dir/cmake_clean.cmake
 .PHONY : third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/clean
 
 third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/stlplus3 /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3 /home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/stlplus3 /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3 /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/depend
 

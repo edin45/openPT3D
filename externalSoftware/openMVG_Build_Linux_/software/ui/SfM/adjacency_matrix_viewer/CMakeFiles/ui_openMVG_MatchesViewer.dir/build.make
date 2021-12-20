@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/depend.make
@@ -72,86 +72,86 @@ include software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesVie
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/flags.make
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o: software/ui/SfM/adjacency_matrix_viewer/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.i
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/ui_openMVG_MatchesViewer_autogen/mocs_compilation.cpp.s
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/flags.make
-software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/main.cpp
+software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/main.cpp
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/main.cpp
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/main.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/main.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.i
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/main.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/main.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/main.cpp.s
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/flags.make
-software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainwindow.cpp
+software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainwindow.cpp
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainwindow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainwindow.cpp
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainwindow.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainwindow.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.i
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainwindow.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainwindow.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/mainwindow.cpp.s
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/flags.make
-software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainframe.cpp
+software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainframe.cpp
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainframe.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainframe.cpp
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainframe.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainframe.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.i
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainframe.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/mainframe.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/mainframe.cpp.s
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/flags.make
-software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.cpp
+software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.cpp
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.cpp
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.i
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/pairgraphicsitem.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/pairgraphicsitem.cpp.s
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/flags.make
-software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/matchingpairgraphicsview.cpp
+software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/matchingpairgraphicsview.cpp
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/matchingpairgraphicsview.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o -MF CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o.d -o CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/matchingpairgraphicsview.cpp
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/matchingpairgraphicsview.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/matchingpairgraphicsview.cpp > CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.i
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/matchingpairgraphicsview.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer/matchingpairgraphicsview.cpp -o CMakeFiles/ui_openMVG_MatchesViewer.dir/matchingpairgraphicsview.cpp.s
 
 # Object files for target ui_openMVG_MatchesViewer
 ui_openMVG_MatchesViewer_OBJECTS = \
@@ -197,25 +197,26 @@ Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: Linux-x86_64-RELEASE/liblib_OsiCl
 Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: Linux-x86_64-RELEASE/liblib_CoinUtils.a
 Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: Linux-x86_64-RELEASE/liblib_Osi.a
 Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: Linux-x86_64-RELEASE/libopenMVG_system.a
-Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: /usr/lib/libceres.so.2.0.0
-Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: /usr/lib/libglog.so.0.5.0
-Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: /usr/lib/libgflags.so.2.2.2
+Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: third_party/ceres-solver/lib/libopenMVG_ceres.a
+Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: Linux-x86_64-RELEASE/libopenMVG_cxsparse.a
+Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: /usr/lib/liblapack.so
+Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: /usr/lib/libblas.so
 Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: /usr/lib/libQt5Widgets.so.5.15.2
 Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: /usr/lib/libQt5Gui.so.5.15.2
 Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: /usr/lib/libQt5Core.so.5.15.2
 Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer: software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ../../../../Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ui_openMVG_MatchesViewer.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Linking CXX executable ../../../../Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ui_openMVG_MatchesViewer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build: Linux-x86_64-RELEASE/ui_openMVG_MatchesViewer
 .PHONY : software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/build
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer && $(CMAKE_COMMAND) -P CMakeFiles/ui_openMVG_MatchesViewer.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer && $(CMAKE_COMMAND) -P CMakeFiles/ui_openMVG_MatchesViewer.dir/cmake_clean.cmake
 .PHONY : software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/clean
 
 software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/software/ui/SfM/adjacency_matrix_viewer /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/ui/SfM/adjacency_matrix_viewer /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : software/ui/SfM/adjacency_matrix_viewer/CMakeFiles/ui_openMVG_MatchesViewer.dir/depend
 

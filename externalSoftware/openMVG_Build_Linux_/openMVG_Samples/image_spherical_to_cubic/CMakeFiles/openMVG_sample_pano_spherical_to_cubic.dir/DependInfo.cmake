@@ -8,14 +8,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/image_spherical_to_cubic/main_pano_spherical_to_cubic.cpp" "openMVG_Samples/image_spherical_to_cubic/CMakeFiles/openMVG_sample_pano_spherical_to_cubic.dir/main_pano_spherical_to_cubic.cpp.o" "gcc" "openMVG_Samples/image_spherical_to_cubic/CMakeFiles/openMVG_sample_pano_spherical_to_cubic.dir/main_pano_spherical_to_cubic.cpp.o.d"
+  "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/image_spherical_to_cubic/main_pano_spherical_to_cubic.cpp" "openMVG_Samples/image_spherical_to_cubic/CMakeFiles/openMVG_sample_pano_spherical_to_cubic.dir/main_pano_spherical_to_cubic.cpp.o" "gcc" "openMVG_Samples/image_spherical_to_cubic/CMakeFiles/openMVG_sample_pano_spherical_to_cubic.dir/main_pano_spherical_to_cubic.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/image/CMakeFiles/openMVG_image.dir/DependInfo.cmake"
-  "/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/DependInfo.cmake"
-  "/home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/numeric/CMakeFiles/openMVG_numeric.dir/DependInfo.cmake"
+  "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/image/CMakeFiles/openMVG_image.dir/DependInfo.cmake"
+  "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/stlplus3/CMakeFiles/openMVG_stlplus.dir/DependInfo.cmake"
+  "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/numeric/CMakeFiles/openMVG_numeric.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

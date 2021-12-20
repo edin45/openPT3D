@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/depend.make
@@ -70,18 +70,18 @@ include software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/progress.mak
 include software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/flags.make
 
 software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o: software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/flags.make
-software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/clustering/domSetLibrary/domset.cc
+software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/clustering/domSetLibrary/domset.cc
 software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o: software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/clustering/domSetLibrary && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o -MF CMakeFiles/domset.dir/domset.cc.o.d -o CMakeFiles/domset.dir/domset.cc.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/clustering/domSetLibrary/domset.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/clustering/domSetLibrary && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o -MF CMakeFiles/domset.dir/domset.cc.o.d -o CMakeFiles/domset.dir/domset.cc.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/clustering/domSetLibrary/domset.cc
 
 software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/domset.dir/domset.cc.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/clustering/domSetLibrary && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/clustering/domSetLibrary/domset.cc > CMakeFiles/domset.dir/domset.cc.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/clustering/domSetLibrary && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/clustering/domSetLibrary/domset.cc > CMakeFiles/domset.dir/domset.cc.i
 
 software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/domset.dir/domset.cc.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/clustering/domSetLibrary && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/clustering/domSetLibrary/domset.cc -o CMakeFiles/domset.dir/domset.cc.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/clustering/domSetLibrary && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/clustering/domSetLibrary/domset.cc -o CMakeFiles/domset.dir/domset.cc.s
 
 # Object files for target domset
 domset_OBJECTS = \
@@ -93,19 +93,19 @@ domset_EXTERNAL_OBJECTS =
 Linux-x86_64-RELEASE/libdomset.a: software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/domset.cc.o
 Linux-x86_64-RELEASE/libdomset.a: software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/build.make
 Linux-x86_64-RELEASE/libdomset.a: software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../../Linux-x86_64-RELEASE/libdomset.a"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/clustering/domSetLibrary && $(CMAKE_COMMAND) -P CMakeFiles/domset.dir/cmake_clean_target.cmake
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/clustering/domSetLibrary && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/domset.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../../Linux-x86_64-RELEASE/libdomset.a"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/clustering/domSetLibrary && $(CMAKE_COMMAND) -P CMakeFiles/domset.dir/cmake_clean_target.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/clustering/domSetLibrary && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/domset.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/build: Linux-x86_64-RELEASE/libdomset.a
 .PHONY : software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/build
 
 software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/clustering/domSetLibrary && $(CMAKE_COMMAND) -P CMakeFiles/domset.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/clustering/domSetLibrary && $(CMAKE_COMMAND) -P CMakeFiles/domset.dir/cmake_clean.cmake
 .PHONY : software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/clean
 
 software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/software/SfM/clustering/domSetLibrary /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/clustering/domSetLibrary /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/SfM/clustering/domSetLibrary /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/clustering/domSetLibrary /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : software/SfM/clustering/domSetLibrary/CMakeFiles/domset.dir/depend
 

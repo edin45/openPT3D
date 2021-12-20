@@ -1,4 +1,4 @@
-# Install script for directory: /home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/flann
+# Install script for directory: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/flann
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,8 +44,8 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/flann/cmake/cmake_install.cmake")
-  include("/home/edin/programs/openMvgBuildScripts/openMVG_Build/third_party/flann/src/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/flann/cmake/cmake_install.cmake")
+  include("/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/third_party/flann/src/cmake_install.cmake")
 
 endif()
 

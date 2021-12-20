@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/describe_and_match_GUI//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/describe_and_match_GUI//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/rule
 .PHONY : openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/rule
 
 # Convenience name for target.
@@ -172,12 +172,12 @@ openMVG_sample_describe_and_match_GUI: openMVG_Samples/describe_and_match_GUI/CM
 
 # fast build rule for target.
 openMVG_sample_describe_and_match_GUI/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build
 .PHONY : openMVG_sample_describe_and_match_GUI/fast
 
 # Convenience name for target.
 openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/rule
 .PHONY : openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/rule
 
 # Convenience name for target.
@@ -186,7 +186,7 @@ openMVG_sample_describe_and_match_GUI_autogen: openMVG_Samples/describe_and_matc
 
 # fast build rule for target.
 openMVG_sample_describe_and_match_GUI_autogen/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI_autogen.dir/build
 .PHONY : openMVG_sample_describe_and_match_GUI_autogen/fast
 
 ImageView.o: ImageView.cpp.o
@@ -194,7 +194,7 @@ ImageView.o: ImageView.cpp.o
 
 # target to build an object file
 ImageView.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/ImageView.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/ImageView.cpp.o
 .PHONY : ImageView.cpp.o
 
 ImageView.i: ImageView.cpp.i
@@ -202,7 +202,7 @@ ImageView.i: ImageView.cpp.i
 
 # target to preprocess a source file
 ImageView.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/ImageView.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/ImageView.cpp.i
 .PHONY : ImageView.cpp.i
 
 ImageView.s: ImageView.cpp.s
@@ -210,7 +210,7 @@ ImageView.s: ImageView.cpp.s
 
 # target to generate assembly for a file
 ImageView.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/ImageView.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/ImageView.cpp.s
 .PHONY : ImageView.cpp.s
 
 MainWindow.o: MainWindow.cpp.o
@@ -218,7 +218,7 @@ MainWindow.o: MainWindow.cpp.o
 
 # target to build an object file
 MainWindow.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/MainWindow.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/MainWindow.cpp.o
 .PHONY : MainWindow.cpp.o
 
 MainWindow.i: MainWindow.cpp.i
@@ -226,7 +226,7 @@ MainWindow.i: MainWindow.cpp.i
 
 # target to preprocess a source file
 MainWindow.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/MainWindow.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/MainWindow.cpp.i
 .PHONY : MainWindow.cpp.i
 
 MainWindow.s: MainWindow.cpp.s
@@ -234,7 +234,7 @@ MainWindow.s: MainWindow.cpp.s
 
 # target to generate assembly for a file
 MainWindow.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/MainWindow.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/MainWindow.cpp.s
 .PHONY : MainWindow.cpp.s
 
 main.o: main.cpp.o
@@ -242,7 +242,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/main.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -250,7 +250,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/main.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -258,7 +258,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/main.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.o: openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.o
@@ -266,7 +266,7 @@ openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.o: openMVG_sample
 
 # target to build an object file
 openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.o
 .PHONY : openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.o
 
 openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.i: openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.i
@@ -274,7 +274,7 @@ openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.i: openMVG_sample
 
 # target to preprocess a source file
 openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.i
 .PHONY : openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.i
 
 openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.s: openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.s
@@ -282,7 +282,7 @@ openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.s: openMVG_sample
 
 # target to generate assembly for a file
 openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/build.make openMVG_Samples/describe_and_match_GUI/CMakeFiles/openMVG_sample_describe_and_match_GUI.dir/openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.s
 .PHONY : openMVG_sample_describe_and_match_GUI_autogen/mocs_compilation.cpp.s
 
 # Help Target
@@ -322,6 +322,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

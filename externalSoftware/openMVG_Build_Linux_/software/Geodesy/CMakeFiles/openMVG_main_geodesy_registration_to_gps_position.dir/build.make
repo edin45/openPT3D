@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/depend.make
@@ -70,18 +70,18 @@ include software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_pos
 include software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/flags.make
 
 software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o: software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/flags.make
-software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/software/Geodesy/registration_to_exif_gps_position.cpp
+software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/Geodesy/registration_to_exif_gps_position.cpp
 software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o: software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Geodesy && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o -MF CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o.d -o CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/software/Geodesy/registration_to_exif_gps_position.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Geodesy && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o -MF CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o.d -o CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/Geodesy/registration_to_exif_gps_position.cpp
 
 software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Geodesy && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/software/Geodesy/registration_to_exif_gps_position.cpp > CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Geodesy && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/Geodesy/registration_to_exif_gps_position.cpp > CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.i
 
 software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Geodesy && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/software/Geodesy/registration_to_exif_gps_position.cpp -o CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Geodesy && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/Geodesy/registration_to_exif_gps_position.cpp -o CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/registration_to_exif_gps_position.cpp.s
 
 # Object files for target openMVG_main_geodesy_registration_to_gps_position
 openMVG_main_geodesy_registration_to_gps_position_OBJECTS = \
@@ -118,22 +118,23 @@ Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: Linux-x8
 Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: Linux-x86_64-RELEASE/liblib_OsiClpSolver.a
 Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: Linux-x86_64-RELEASE/liblib_CoinUtils.a
 Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: Linux-x86_64-RELEASE/liblib_Osi.a
-Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: /usr/lib/libceres.so.2.0.0
-Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: /usr/lib/libglog.so.0.5.0
-Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: /usr/lib/libgflags.so.2.2.2
+Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: third_party/ceres-solver/lib/libopenMVG_ceres.a
+Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: Linux-x86_64-RELEASE/libopenMVG_cxsparse.a
+Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: /usr/lib/liblapack.so
+Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: /usr/lib/libblas.so
 Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position: software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Geodesy && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Geodesy && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/build: Linux-x86_64-RELEASE/openMVG_main_geodesy_registration_to_gps_position
 .PHONY : software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/build
 
 software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Geodesy && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Geodesy && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/cmake_clean.cmake
 .PHONY : software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/clean
 
 software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/software/Geodesy /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Geodesy /home/edin/programs/openMvgBuildScripts/openMVG_Build/software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/software/Geodesy /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Geodesy /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : software/Geodesy/CMakeFiles/openMVG_main_geodesy_registration_to_gps_position.dir/depend
 

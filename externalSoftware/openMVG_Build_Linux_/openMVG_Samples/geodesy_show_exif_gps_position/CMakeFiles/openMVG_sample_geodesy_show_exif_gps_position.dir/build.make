@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/depend.make
@@ -70,18 +70,18 @@ include openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample
 include openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/flags.make
 
 openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o: openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/flags.make
-openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/geodesy_show_exif_gps_position/show_exif_gps_position_demo.cpp
+openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/geodesy_show_exif_gps_position/show_exif_gps_position_demo.cpp
 openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o: openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/geodesy_show_exif_gps_position && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o -MF CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o.d -o CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/geodesy_show_exif_gps_position/show_exif_gps_position_demo.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/geodesy_show_exif_gps_position && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o -MF CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o.d -o CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/geodesy_show_exif_gps_position/show_exif_gps_position_demo.cpp
 
 openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/geodesy_show_exif_gps_position && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/geodesy_show_exif_gps_position/show_exif_gps_position_demo.cpp > CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/geodesy_show_exif_gps_position && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/geodesy_show_exif_gps_position/show_exif_gps_position_demo.cpp > CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.i
 
 openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/geodesy_show_exif_gps_position && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/geodesy_show_exif_gps_position/show_exif_gps_position_demo.cpp -o CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/geodesy_show_exif_gps_position && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/geodesy_show_exif_gps_position/show_exif_gps_position_demo.cpp -o CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/show_exif_gps_position_demo.cpp.s
 
 # Object files for target openMVG_sample_geodesy_show_exif_gps_position
 openMVG_sample_geodesy_show_exif_gps_position_OBJECTS = \
@@ -97,18 +97,18 @@ Linux-x86_64-RELEASE/openMVG_sample_geodesy_show_exif_gps_position: Linux-x86_64
 Linux-x86_64-RELEASE/openMVG_sample_geodesy_show_exif_gps_position: Linux-x86_64-RELEASE/libopenMVG_easyexif.a
 Linux-x86_64-RELEASE/openMVG_sample_geodesy_show_exif_gps_position: Linux-x86_64-RELEASE/libopenMVG_numeric.a
 Linux-x86_64-RELEASE/openMVG_sample_geodesy_show_exif_gps_position: openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_geodesy_show_exif_gps_position"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/geodesy_show_exif_gps_position && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../Linux-x86_64-RELEASE/openMVG_sample_geodesy_show_exif_gps_position"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/geodesy_show_exif_gps_position && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/build: Linux-x86_64-RELEASE/openMVG_sample_geodesy_show_exif_gps_position
 .PHONY : openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/build
 
 openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/geodesy_show_exif_gps_position && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/geodesy_show_exif_gps_position && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/cmake_clean.cmake
 .PHONY : openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/clean
 
 openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG_Samples/geodesy_show_exif_gps_position /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/geodesy_show_exif_gps_position /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG_Samples/geodesy_show_exif_gps_position /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/geodesy_show_exif_gps_position /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openMVG_Samples/geodesy_show_exif_gps_position/CMakeFiles/openMVG_sample_geodesy_show_exif_gps_position.dir/depend
 

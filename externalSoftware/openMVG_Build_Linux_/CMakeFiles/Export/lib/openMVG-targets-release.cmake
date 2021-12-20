@@ -55,6 +55,27 @@ set_target_properties(openMVG_stlplus PROPERTIES
 list(APPEND _IMPORT_CHECK_TARGETS openMVG_stlplus )
 list(APPEND _IMPORT_CHECK_FILES_FOR_openMVG_stlplus "${_IMPORT_PREFIX}/lib/libopenMVG_stlplus.a" )
 
+# Import target "openMVG_cxsparse" for configuration "RELEASE"
+set_property(TARGET openMVG_cxsparse APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(openMVG_cxsparse PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib/libopenMVG_cxsparse.a"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS openMVG_cxsparse )
+list(APPEND _IMPORT_CHECK_FILES_FOR_openMVG_cxsparse "${_IMPORT_PREFIX}/lib/libopenMVG_cxsparse.a" )
+
+# Import target "openMVG_ceres" for configuration "RELEASE"
+set_property(TARGET openMVG_ceres APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+set_target_properties(openMVG_ceres PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
+  IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "openMVG_cxsparse;/usr/lib/liblapack.so;/usr/lib/libblas.so;/usr/lib/libblas.so;gomp;-lpthread"
+  IMPORTED_LOCATION_RELEASE "${_IMPORT_PREFIX}/lib/libopenMVG_ceres.a"
+  )
+
+list(APPEND _IMPORT_CHECK_TARGETS openMVG_ceres )
+list(APPEND _IMPORT_CHECK_FILES_FOR_openMVG_ceres "${_IMPORT_PREFIX}/lib/libopenMVG_ceres.a" )
+
 # Import target "openMVG_easyexif" for configuration "RELEASE"
 set_property(TARGET openMVG_easyexif APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(openMVG_easyexif PROPERTIES

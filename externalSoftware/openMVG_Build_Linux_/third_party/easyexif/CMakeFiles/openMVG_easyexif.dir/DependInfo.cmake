@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/edin/programs/openMvgBuildScripts/openMVG/src/third_party/easyexif/exif.cpp" "third_party/easyexif/CMakeFiles/openMVG_easyexif.dir/exif.cpp.o" "gcc" "third_party/easyexif/CMakeFiles/openMVG_easyexif.dir/exif.cpp.o.d"
+  "/home/edins/Python/openPT3D/externalSoftware/openMVG/src/third_party/easyexif/exif.cpp" "third_party/easyexif/CMakeFiles/openMVG_easyexif.dir/exif.cpp.o" "gcc" "third_party/easyexif/CMakeFiles/openMVG_easyexif.dir/exif.cpp.o.d"
   )
 
 # Targets to which this target links.

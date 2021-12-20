@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\" \"headers\" \"pkgconfig\""
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Devel\" \"Unspecified\" \"headers\" \"pkgconfig\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -132,14 +132,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/linearProgramming/lInfinityCV//CMakeFiles/progress.marks
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/linearProgramming/lInfinityCV/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/linearProgramming/lInfinityCV//CMakeFiles/progress.marks
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/linearProgramming/lInfinityCV/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/linearProgramming/lInfinityCV/clean
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/linearProgramming/lInfinityCV/clean
 .PHONY : clean
 
 # The main clean target
@@ -148,22 +148,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/linearProgramming/lInfinityCV/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/linearProgramming/lInfinityCV/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/linearProgramming/lInfinityCV/preinstall
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/linearProgramming/lInfinityCV/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/rule:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/rule
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/rule
 .PHONY : openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/rule
 
 # Convenience name for target.
@@ -172,7 +172,7 @@ openMVG_lInftyComputerVision: openMVG/linearProgramming/lInfinityCV/CMakeFiles/o
 
 # fast build rule for target.
 openMVG_lInftyComputerVision/fast:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build
 .PHONY : openMVG_lInftyComputerVision/fast
 
 global_translations_fromTij.o: global_translations_fromTij.cpp.o
@@ -180,7 +180,7 @@ global_translations_fromTij.o: global_translations_fromTij.cpp.o
 
 # target to build an object file
 global_translations_fromTij.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/global_translations_fromTij.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/global_translations_fromTij.cpp.o
 .PHONY : global_translations_fromTij.cpp.o
 
 global_translations_fromTij.i: global_translations_fromTij.cpp.i
@@ -188,7 +188,7 @@ global_translations_fromTij.i: global_translations_fromTij.cpp.i
 
 # target to preprocess a source file
 global_translations_fromTij.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/global_translations_fromTij.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/global_translations_fromTij.cpp.i
 .PHONY : global_translations_fromTij.cpp.i
 
 global_translations_fromTij.s: global_translations_fromTij.cpp.s
@@ -196,7 +196,7 @@ global_translations_fromTij.s: global_translations_fromTij.cpp.s
 
 # target to generate assembly for a file
 global_translations_fromTij.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/global_translations_fromTij.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/global_translations_fromTij.cpp.s
 .PHONY : global_translations_fromTij.cpp.s
 
 resection.o: resection.cpp.o
@@ -204,7 +204,7 @@ resection.o: resection.cpp.o
 
 # target to build an object file
 resection.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection.cpp.o
 .PHONY : resection.cpp.o
 
 resection.i: resection.cpp.i
@@ -212,7 +212,7 @@ resection.i: resection.cpp.i
 
 # target to preprocess a source file
 resection.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection.cpp.i
 .PHONY : resection.cpp.i
 
 resection.s: resection.cpp.s
@@ -220,7 +220,7 @@ resection.s: resection.cpp.s
 
 # target to generate assembly for a file
 resection.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection.cpp.s
 .PHONY : resection.cpp.s
 
 resection_kernel.o: resection_kernel.cpp.o
@@ -228,7 +228,7 @@ resection_kernel.o: resection_kernel.cpp.o
 
 # target to build an object file
 resection_kernel.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection_kernel.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection_kernel.cpp.o
 .PHONY : resection_kernel.cpp.o
 
 resection_kernel.i: resection_kernel.cpp.i
@@ -236,7 +236,7 @@ resection_kernel.i: resection_kernel.cpp.i
 
 # target to preprocess a source file
 resection_kernel.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection_kernel.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection_kernel.cpp.i
 .PHONY : resection_kernel.cpp.i
 
 resection_kernel.s: resection_kernel.cpp.s
@@ -244,7 +244,7 @@ resection_kernel.s: resection_kernel.cpp.s
 
 # target to generate assembly for a file
 resection_kernel.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection_kernel.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/resection_kernel.cpp.s
 .PHONY : resection_kernel.cpp.s
 
 tijsAndXis_From_xi_Ri.o: tijsAndXis_From_xi_Ri.cpp.o
@@ -252,7 +252,7 @@ tijsAndXis_From_xi_Ri.o: tijsAndXis_From_xi_Ri.cpp.o
 
 # target to build an object file
 tijsAndXis_From_xi_Ri.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri.cpp.o
 .PHONY : tijsAndXis_From_xi_Ri.cpp.o
 
 tijsAndXis_From_xi_Ri.i: tijsAndXis_From_xi_Ri.cpp.i
@@ -260,7 +260,7 @@ tijsAndXis_From_xi_Ri.i: tijsAndXis_From_xi_Ri.cpp.i
 
 # target to preprocess a source file
 tijsAndXis_From_xi_Ri.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri.cpp.i
 .PHONY : tijsAndXis_From_xi_Ri.cpp.i
 
 tijsAndXis_From_xi_Ri.s: tijsAndXis_From_xi_Ri.cpp.s
@@ -268,7 +268,7 @@ tijsAndXis_From_xi_Ri.s: tijsAndXis_From_xi_Ri.cpp.s
 
 # target to generate assembly for a file
 tijsAndXis_From_xi_Ri.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri.cpp.s
 .PHONY : tijsAndXis_From_xi_Ri.cpp.s
 
 tijsAndXis_From_xi_Ri_noise.o: tijsAndXis_From_xi_Ri_noise.cpp.o
@@ -276,7 +276,7 @@ tijsAndXis_From_xi_Ri_noise.o: tijsAndXis_From_xi_Ri_noise.cpp.o
 
 # target to build an object file
 tijsAndXis_From_xi_Ri_noise.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri_noise.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri_noise.cpp.o
 .PHONY : tijsAndXis_From_xi_Ri_noise.cpp.o
 
 tijsAndXis_From_xi_Ri_noise.i: tijsAndXis_From_xi_Ri_noise.cpp.i
@@ -284,7 +284,7 @@ tijsAndXis_From_xi_Ri_noise.i: tijsAndXis_From_xi_Ri_noise.cpp.i
 
 # target to preprocess a source file
 tijsAndXis_From_xi_Ri_noise.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri_noise.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri_noise.cpp.i
 .PHONY : tijsAndXis_From_xi_Ri_noise.cpp.i
 
 tijsAndXis_From_xi_Ri_noise.s: tijsAndXis_From_xi_Ri_noise.cpp.s
@@ -292,7 +292,7 @@ tijsAndXis_From_xi_Ri_noise.s: tijsAndXis_From_xi_Ri_noise.cpp.s
 
 # target to generate assembly for a file
 tijsAndXis_From_xi_Ri_noise.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri_noise.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/tijsAndXis_From_xi_Ri_noise.cpp.s
 .PHONY : tijsAndXis_From_xi_Ri_noise.cpp.s
 
 triangulation.o: triangulation.cpp.o
@@ -300,7 +300,7 @@ triangulation.o: triangulation.cpp.o
 
 # target to build an object file
 triangulation.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triangulation.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triangulation.cpp.o
 .PHONY : triangulation.cpp.o
 
 triangulation.i: triangulation.cpp.i
@@ -308,7 +308,7 @@ triangulation.i: triangulation.cpp.i
 
 # target to preprocess a source file
 triangulation.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triangulation.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triangulation.cpp.i
 .PHONY : triangulation.cpp.i
 
 triangulation.s: triangulation.cpp.s
@@ -316,7 +316,7 @@ triangulation.s: triangulation.cpp.s
 
 # target to generate assembly for a file
 triangulation.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triangulation.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triangulation.cpp.s
 .PHONY : triangulation.cpp.s
 
 triplet_tijsAndXis_kernel.o: triplet_tijsAndXis_kernel.cpp.o
@@ -324,7 +324,7 @@ triplet_tijsAndXis_kernel.o: triplet_tijsAndXis_kernel.cpp.o
 
 # target to build an object file
 triplet_tijsAndXis_kernel.cpp.o:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triplet_tijsAndXis_kernel.cpp.o
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triplet_tijsAndXis_kernel.cpp.o
 .PHONY : triplet_tijsAndXis_kernel.cpp.o
 
 triplet_tijsAndXis_kernel.i: triplet_tijsAndXis_kernel.cpp.i
@@ -332,7 +332,7 @@ triplet_tijsAndXis_kernel.i: triplet_tijsAndXis_kernel.cpp.i
 
 # target to preprocess a source file
 triplet_tijsAndXis_kernel.cpp.i:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triplet_tijsAndXis_kernel.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triplet_tijsAndXis_kernel.cpp.i
 .PHONY : triplet_tijsAndXis_kernel.cpp.i
 
 triplet_tijsAndXis_kernel.s: triplet_tijsAndXis_kernel.cpp.s
@@ -340,7 +340,7 @@ triplet_tijsAndXis_kernel.s: triplet_tijsAndXis_kernel.cpp.s
 
 # target to generate assembly for a file
 triplet_tijsAndXis_kernel.cpp.s:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triplet_tijsAndXis_kernel.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(MAKE) $(MAKESILENT) -f openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/build.make openMVG/linearProgramming/lInfinityCV/CMakeFiles/openMVG_lInftyComputerVision.dir/triplet_tijsAndXis_kernel.cpp.s
 .PHONY : triplet_tijsAndXis_kernel.cpp.s
 
 # Help Target
@@ -388,6 +388,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

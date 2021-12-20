@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include openMVG/sfm/CMakeFiles/openMVG_sfm.dir/depend.make
@@ -70,340 +70,340 @@ include openMVG/sfm/CMakeFiles/openMVG_sfm.dir/progress.make
 include openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_rotation_averaging.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_rotation_averaging.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_rotation_averaging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_rotation_averaging.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_rotation_averaging.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_rotation_averaging.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_rotation_averaging.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_rotation_averaging.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_rotation_averaging.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_translation_averaging.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_translation_averaging.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_translation_averaging.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_translation_averaging.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_translation_averaging.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_translation_averaging.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_translation_averaging.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/GlobalSfM_translation_averaging.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/global/GlobalSfM_translation_averaging.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/sfm_global_engine_relative_motions.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/sfm_global_engine_relative_motions.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/sfm_global_engine_relative_motions.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/sfm_global_engine_relative_motions.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/sfm_global_engine_relative_motions.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/sfm_global_engine_relative_motions.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/global/sfm_global_engine_relative_motions.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/global/sfm_global_engine_relative_motions.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/global/sfm_global_engine_relative_motions.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/localization/SfM_Localizer_Single_3DTrackObservation_Database.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/relative_pose_engine.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/relative_pose_engine.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/relative_pose_engine.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/relative_pose_engine.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/relative_pose_engine.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/relative_pose_engine.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/relative_pose_engine.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/relative_pose_engine.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/relative_pose_engine.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerMaxPair.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerMaxPair.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerMaxPair.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerMaxPair.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerMaxPair.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerMaxPair.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerMaxPair.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerMaxPair.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerMaxPair.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerStellar.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerStellar.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerStellar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerStellar.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerStellar.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerStellar.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerStellar.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/SfmSceneInitializerStellar.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/SfmSceneInitializerStellar.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM2.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM2.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM2.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM2.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM2.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM2.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM2.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sequential/sequential_SfM2.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/sequential/sequential_SfM2.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sfm_robust_model_estimation.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sfm_robust_model_estimation.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sfm_robust_model_estimation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sfm_robust_model_estimation.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sfm_robust_model_estimation.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sfm_robust_model_estimation.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/sfm_robust_model_estimation.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/sfm_robust_model_estimation.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/sfm_robust_model_estimation.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/stellar/stellar_solver.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/stellar/stellar_solver.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/stellar/stellar_solver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/stellar/stellar_solver.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/stellar/stellar_solver.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/stellar/stellar_solver.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/stellar/stellar_solver.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/stellar/stellar_solver.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/stellar/stellar_solver.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/structure_from_known_poses/structure_estimator.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/structure_from_known_poses/structure_estimator.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/structure_from_known_poses/structure_estimator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o -MF CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/structure_from_known_poses/structure_estimator.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/structure_from_known_poses/structure_estimator.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/structure_from_known_poses/structure_estimator.cpp > CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/pipelines/structure_from_known_poses/structure_estimator.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/pipelines/structure_from_known_poses/structure_estimator.cpp -o CMakeFiles/openMVG_sfm.dir/pipelines/structure_from_known_poses/structure_estimator.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_BA_ceres.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_BA_ceres.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_BA_ceres.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_BA_ceres.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_BA_ceres.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_BA_ceres.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_BA_ceres.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_BA_ceres.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_BA_ceres.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_colorization.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_colorization.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_colorization.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_colorization.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_colorization.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_colorization.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_colorization.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_colorization.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_colorization.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_filters.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_filters.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_filters.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_filters.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_filters.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_filters.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_filters.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_filters.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_filters.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_filters_frustum.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_filters_frustum.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_filters_frustum.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_filters_frustum.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_filters_frustum.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_filters_frustum.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_filters_frustum.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_filters_frustum.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_filters_frustum.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_graph_utils.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_graph_utils.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_graph_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_graph_utils.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_graph_utils.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_graph_utils.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_graph_utils.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_graph_utils.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_graph_utils.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_io.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_io.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_io.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_io.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_io.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_io.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_io.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_io.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_io.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_io_cereal.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_io_cereal.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_io_cereal.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_io_cereal.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_io_cereal.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_io_cereal.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_io_cereal.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_io_cereal.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_io_cereal.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_transform.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_transform.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_transform.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_transform.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_transform.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_transform.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_transform.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_transform.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_transform.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_triangulation.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_triangulation.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_triangulation.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_triangulation.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_triangulation.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_triangulation.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_triangulation.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_triangulation.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_triangulation.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_utils.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_utils.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_utils.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_utils.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_utils.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_utils.cpp > CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_data_utils.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_data_utils.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_data_utils.cpp.s
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/flags.make
-openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_report.cpp
+openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_report.cpp
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_report.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o -MF CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o.d -o CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_report.cpp
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_report.cpp > CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_report.cpp > CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.i
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm/sfm_report.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm/sfm_report.cpp -o CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.s
 
 # Object files for target openMVG_sfm
 openMVG_sfm_OBJECTS = \
@@ -461,19 +461,19 @@ Linux-x86_64-RELEASE/libopenMVG_sfm.a: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sf
 Linux-x86_64-RELEASE/libopenMVG_sfm.a: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/sfm_report.cpp.o
 Linux-x86_64-RELEASE/libopenMVG_sfm.a: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/build.make
 Linux-x86_64-RELEASE/libopenMVG_sfm.a: openMVG/sfm/CMakeFiles/openMVG_sfm.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX static library ../../Linux-x86_64-RELEASE/libopenMVG_sfm.a"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sfm.dir/cmake_clean_target.cmake
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sfm.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Linking CXX static library ../../Linux-x86_64-RELEASE/libopenMVG_sfm.a"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sfm.dir/cmake_clean_target.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/openMVG_sfm.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/build: Linux-x86_64-RELEASE/libopenMVG_sfm.a
 .PHONY : openMVG/sfm/CMakeFiles/openMVG_sfm.dir/build
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sfm.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm && $(CMAKE_COMMAND) -P CMakeFiles/openMVG_sfm.dir/cmake_clean.cmake
 .PHONY : openMVG/sfm/CMakeFiles/openMVG_sfm.dir/clean
 
 openMVG/sfm/CMakeFiles/openMVG_sfm.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/openMVG/sfm /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm /home/edin/programs/openMvgBuildScripts/openMVG_Build/openMVG/sfm/CMakeFiles/openMVG_sfm.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/openMVG/sfm /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/openMVG/sfm/CMakeFiles/openMVG_sfm.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : openMVG/sfm/CMakeFiles/openMVG_sfm.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/edin/programs/openMvgBuildScripts/openMVG/src
+CMAKE_SOURCE_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/edin/programs/openMvgBuildScripts/openMVG_Build
+CMAKE_BINARY_DIR = /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux
 
 # Include any dependencies generated for this target.
 include dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/depend.make
@@ -70,18 +70,18 @@ include dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/prog
 include dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/flags.make
 
 dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o: dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/flags.make
-dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o: /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Clp/src/OsiClp/OsiClpSolverInterface.cpp
+dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o: /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Clp/src/OsiClp/OsiClpSolverInterface.cpp
 dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o: dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Clp/src/OsiClp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o -MF CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o.d -o CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o -c /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Clp/src/OsiClp/OsiClpSolverInterface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Clp/src/OsiClp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o -MF CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o.d -o CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o -c /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Clp/src/OsiClp/OsiClpSolverInterface.cpp
 
 dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.i"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Clp/src/OsiClp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Clp/src/OsiClp/OsiClpSolverInterface.cpp > CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.i
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Clp/src/OsiClp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Clp/src/OsiClp/OsiClpSolverInterface.cpp > CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.i
 
 dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.s"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Clp/src/OsiClp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Clp/src/OsiClp/OsiClpSolverInterface.cpp -o CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.s
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Clp/src/OsiClp && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Clp/src/OsiClp/OsiClpSolverInterface.cpp -o CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.s
 
 # Object files for target lib_OsiClpSolver
 lib_OsiClpSolver_OBJECTS = \
@@ -93,19 +93,19 @@ lib_OsiClpSolver_EXTERNAL_OBJECTS =
 Linux-x86_64-RELEASE/liblib_OsiClpSolver.a: dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/OsiClpSolverInterface.cpp.o
 Linux-x86_64-RELEASE/liblib_OsiClpSolver.a: dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/build.make
 Linux-x86_64-RELEASE/liblib_OsiClpSolver.a: dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edin/programs/openMvgBuildScripts/openMVG_Build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../../../Linux-x86_64-RELEASE/liblib_OsiClpSolver.a"
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Clp/src/OsiClp && $(CMAKE_COMMAND) -P CMakeFiles/lib_OsiClpSolver.dir/cmake_clean_target.cmake
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Clp/src/OsiClp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_OsiClpSolver.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ../../../../../Linux-x86_64-RELEASE/liblib_OsiClpSolver.a"
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Clp/src/OsiClp && $(CMAKE_COMMAND) -P CMakeFiles/lib_OsiClpSolver.dir/cmake_clean_target.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Clp/src/OsiClp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lib_OsiClpSolver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/build: Linux-x86_64-RELEASE/liblib_OsiClpSolver.a
 .PHONY : dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/build
 
 dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/clean:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Clp/src/OsiClp && $(CMAKE_COMMAND) -P CMakeFiles/lib_OsiClpSolver.dir/cmake_clean.cmake
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Clp/src/OsiClp && $(CMAKE_COMMAND) -P CMakeFiles/lib_OsiClpSolver.dir/cmake_clean.cmake
 .PHONY : dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/clean
 
 dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/depend:
-	cd /home/edin/programs/openMvgBuildScripts/openMVG_Build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edin/programs/openMvgBuildScripts/openMVG/src /home/edin/programs/openMvgBuildScripts/openMVG/src/dependencies/osi_clp/Clp/src/OsiClp /home/edin/programs/openMvgBuildScripts/openMVG_Build /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Clp/src/OsiClp /home/edin/programs/openMvgBuildScripts/openMVG_Build/dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/edins/Python/openPT3D/externalSoftware/openMVG/src /home/edins/Python/openPT3D/externalSoftware/openMVG/src/dependencies/osi_clp/Clp/src/OsiClp /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Clp/src/OsiClp /home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : dependencies/osi_clp/Clp/src/OsiClp/CMakeFiles/lib_OsiClpSolver.dir/depend
 
