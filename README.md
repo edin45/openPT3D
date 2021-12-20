@@ -7,6 +7,8 @@ sudo pacman -S python-pip
 pip install numpy  
 sudo pacman -S opencv
 sudo pacman -S cgal
+sudo pacman -S lvtk
+sudo pacman -S vtk
 git clone https://github.com/edin45/openPT3D.git
 cd externalSoftware
 sh install_build_arch.sh
