@@ -11,9 +11,9 @@ dnf install graphviz
 wait
 dnf install cmake
 wait
-mkdir openMVG_Build
+mkdir openMVG_Build_Linux
 wait
-cd openMVG_Build
+cd openMVG_Build_Linux
 wait
 cmake -DCMAKE_BUILD_TYPE=RELEASE ../openMVG/src/
 wait
