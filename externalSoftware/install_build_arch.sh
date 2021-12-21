@@ -19,7 +19,7 @@ pacman -S vtk
 wait
 git clone --recursive https://github.com/openMVG/openMVG.git
 wait
-pacman -S libpng-dev libjpeg-dev libtiff-dev libxxf86vm1 libxxf86vm-dev libxi-dev libxrandr-dev
+pacman -S libpng libjpeg libtiff libxxf86vm1 libxxf86vm libxi libxrandr
 wait
 pacman -S graphviz
 wait

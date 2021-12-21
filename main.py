@@ -4,6 +4,7 @@ import sys
 import numpy as np
 import optparse
 import json
+import subprocess
 
 #os_name = platform.system()
 #layout = [
@@ -63,19 +64,73 @@ if depth_recon_strategy == "openMVS":
     if decimate_factor == "":
         decimate_factor = 2
 max_imgs = 50
-#focal_length = float(input("Focal Length (mm): "))
+focal_length = str(input("Focal Length (px, you can get this value by multiplying the bigger value width, height by 1.2): "))
 
 current_file_path = os.path.dirname(os.path.abspath(__file__))
 
 open_mvg_folder = str(current_file_path) + f"/externalSoftware/openMVG_Build_{platform.system()}/"
 open_mvg_binary_folder = ("Linux-x86_64-RELEASE" if platform.system()=="Linux" else "Windows-x86_64-RELEASE")
 cmvs_folder = current_file_path + f"/externalSoftware/CMVS_PMVS/{platform.system()}"
-filePath = open_mvg_folder + "/software/SfM/SfM_SequentialPipeline.py"
-script_descriptor = open(filePath)
-a_script = script_descriptor.read()
-sys.argv = [f"{filePath}", f"{image_folder}", f"{result_folder}"]
+#filePath = open_mvg_folder + "/software/SfM/SfM_SequentialPipeline.py"
+#script_descriptor = open(filePath)
+#a_script = script_descriptor.read()
+#sys.argv = [f"{filePath}", f"{image_folder}", f"{result_folder}", f"-f {focal_length}"]
     
-exec(a_script)
+#exec(a_script)
+
+# Indicate the openMVG binary directory
+OPENMVG_SFM_BIN = "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/Linux-x86_64-RELEASE"
+
+# Indicate the openMVG camera sensor width directory
+CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/openMVG/src/software/SfM" + "/../../openMVG/exif/sensor_width_database"
+
+input_dir = image_folder
+output_dir = result_folder
+matches_dir = os.path.join(output_dir, "matches")
+reconstruction_dir = os.path.join(output_dir, "reconstruction_sequential")
+camera_file_params = os.path.join(CAMERA_SENSOR_WIDTH_DIRECTORY, "sensor_width_camera_database.txt")
+
+print ("Using input dir  : ", input_dir)
+print ("      output_dir : ", output_dir)
+
+# Create the ouput/matches folder if not present
+if not os.path.exists(output_dir):
+  os.mkdir(output_dir)
+if not os.path.exists(matches_dir):
+  os.mkdir(matches_dir)
+
+print ("1. Intrinsics analysis")
+pIntrisics = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_SfMInit_ImageListing"),  "-i", input_dir, "-o", matches_dir, "-d", camera_file_params,"-f", focal_length] )
+pIntrisics.wait()
+
+print ("2. Compute features")
+pFeatures = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_ComputeFeatures"),  "-i", matches_dir+"/sfm_data.json", "-o", matches_dir, "-m", "SIFT"] )
+pFeatures.wait()
+
+print ("3. Compute matching pairs")
+pPairs = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_PairGenerator"), "-i", matches_dir+"/sfm_data.json", "-o" , matches_dir + "/pairs.bin" ] )
+pPairs.wait()
+
+print ("4. Compute matches")
+pMatches = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_ComputeMatches"),  "-i", matches_dir+"/sfm_data.json", "-p", matches_dir+ "/pairs.bin", "-o", matches_dir + "/matches.putative.bin" ] )
+pMatches.wait()
+
+print ("5. Filter matches" )
+pFiltering = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_GeometricFilter"), "-i", matches_dir+"/sfm_data.json", "-m", matches_dir+"/matches.putative.bin" , "-g" , "f" , "-o" , matches_dir+"/matches.f.bin" ] )
+pFiltering.wait()
+
+# Create the reconstruction if not present
+if not os.path.exists(reconstruction_dir):
+    os.mkdir(reconstruction_dir)
+
+print ("6. Do Sequential/Incremental reconstruction")
+pRecons = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_SfM"), "--sfm_engine", "INCREMENTAL", "--input_file", matches_dir+"/sfm_data.json", "--match_dir", matches_dir, "--output_dir", reconstruction_dir] )
+pRecons.wait()
+
+print ("7. Colorize Structure")
+pRecons = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, "openMVG_main_ComputeSfM_DataColor"),  "-i", reconstruction_dir+"/sfm_data.bin", "-o", os.path.join(reconstruction_dir,"colorized.ply")] )
+pRecons.wait()
+
 
 def execute_pmvs_process(use_cmvs):
     os.chdir(result_folder + "/PMVS")
@@ -172,14 +227,14 @@ if depth_recon_strategy == "CMVS":
     print(f"Dense Point Cloud: {result_folder}/PMVS/models/pmvs_options.txt.ply")
 else:
     os.chdir(f"{result_folder}")
-    while True:
-        if os.path.isfile("scene_dense_mesh.mvs") == False:
-            os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/ReconstructMesh -d {decimate_factor} scene_dense.mvs")
-        elif os.path.isfile("scene_dense_mesh_refine.mvs") == False:
-            os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/RefineMesh --resolution-level={decimate_factor} scene_dense_mesh.mvs")
-        elif os.path.isfile("scene_dense_mesh_refine_texture.mvs") == False:
-            os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/TextureMesh scene_dense_mesh_refine.mvs")
-        else:
-            break
-        
+    #while True:
+        #if os.path.isfile("scene_dense_mesh.mvs") == False:
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/ReconstructMesh -d {decimate_factor} scene_dense.mvs")
+        #elif os.path.isfile("scene_dense_mesh_refine.mvs") == False:
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/RefineMesh --resolution-level={decimate_factor} scene_dense_mesh.mvs")
+        #elif os.path.isfile("scene_dense_mesh_refine_texture.mvs") == False:
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/TextureMesh scene_dense_mesh_refine.mvs")
+        #else:
+        #    break
+
     print("Final Mesh: " + result_folder + "/scene_dense_mesh_mesh_refine_texture. ply / glb")

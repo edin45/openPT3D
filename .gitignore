@@ -3,3 +3,5 @@
 *.pyc
 features.json
 backup
+externalSoftware/openMVG/
+externalSoftware/openMVG_Build_Linux/
