@@ -29,7 +29,7 @@ sh install_build_debian.sh
 Go to the openPT3D folder then execute:  
 #### Debian based:  
 ```
-python3.9 main.py -i [FOLDER_WITH_INPUT_IMAGES_TO_USE] -r [FOLDER_WHERE_RESULTS_ARE_STORED]  
+python3 main.py -i [FOLDER_WITH_INPUT_IMAGES_TO_USE] -r [FOLDER_WHERE_RESULTS_ARE_STORED]  
 ```
 #### Arch based:
 ```
