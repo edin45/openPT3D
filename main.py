@@ -79,7 +79,7 @@ cmvs_folder = current_file_path + f"/externalSoftware/CMVS_PMVS/{platform.system
 #exec(a_script)
 
 # Indicate the openMVG binary directory
-OPENMVG_SFM_BIN = "/home/edins/Python/openPT3D/externalSoftware/openMVG_Build_Linux/Linux-x86_64-RELEASE"
+OPENMVG_SFM_BIN = current_file_path + "/externalSoftware/openMVG_Build_Linux/Linux-x86_64-RELEASE"
 
 # Indicate the openMVG camera sensor width directory
 CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/openMVG/src/software/SfM" + "/../../openMVG/exif/sensor_width_database"
