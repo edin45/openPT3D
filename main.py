@@ -229,11 +229,11 @@ else:
     os.chdir(f"{result_folder}")
     #while True:
         #if os.path.isfile("scene_dense_mesh.mvs") == False:
-    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/ReconstructMesh -d {decimate_factor} scene_dense.mvs")
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/bin/ReconstructMesh -d {decimate_factor} scene_dense.mvs")
         #elif os.path.isfile("scene_dense_mesh_refine.mvs") == False:
-    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/RefineMesh --resolution-level={decimate_factor} scene_dense_mesh.mvs")
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/bin/RefineMesh --resolution-level={decimate_factor} scene_dense_mesh.mvs")
         #elif os.path.isfile("scene_dense_mesh_refine_texture.mvs") == False:
-    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/TextureMesh scene_dense_mesh_refine.mvs")
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/bin/TextureMesh scene_dense_mesh_refine.mvs")
         #else:
         #    break
 
