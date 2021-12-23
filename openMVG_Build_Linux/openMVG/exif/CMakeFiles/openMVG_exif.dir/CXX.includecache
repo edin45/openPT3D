@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/edin/Python/openPT3D/openMVG/src/openMVG/exif/exif_IO.hpp
+string
+-
+
+/home/edin/Python/openPT3D/openMVG/src/openMVG/exif/exif_IO_EasyExif.cpp
+openMVG/exif/exif_IO_EasyExif.hpp
+/home/edin/Python/openPT3D/openMVG/src/openMVG/exif/openMVG/exif/exif_IO_EasyExif.hpp
+fstream
+-
+limits
+-
+sstream
+-
+vector
+-
+third_party/easyexif/exif.h
+/home/edin/Python/openPT3D/openMVG/src/openMVG/exif/third_party/easyexif/exif.h
+
+/home/edin/Python/openPT3D/openMVG/src/openMVG/exif/exif_IO_EasyExif.hpp
+memory
+-
+string
+-
+openMVG/exif/exif_IO.hpp
+/home/edin/Python/openPT3D/openMVG/src/openMVG/exif/openMVG/exif/exif_IO.hpp
+
+/home/edin/Python/openPT3D/openMVG/src/third_party/easyexif/exif.h
+string
+-
+

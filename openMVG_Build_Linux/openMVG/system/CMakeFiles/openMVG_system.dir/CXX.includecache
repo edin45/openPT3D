@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/edin/Python/openPT3D/openMVG/src/openMVG/system/timer.cpp
+openMVG/system/timer.hpp
+/home/edin/Python/openPT3D/openMVG/src/openMVG/system/openMVG/system/timer.hpp
+ratio
+-
+type_traits
+-
+
+/home/edin/Python/openPT3D/openMVG/src/openMVG/system/timer.hpp
+chrono
+-
+ostream
+-
+

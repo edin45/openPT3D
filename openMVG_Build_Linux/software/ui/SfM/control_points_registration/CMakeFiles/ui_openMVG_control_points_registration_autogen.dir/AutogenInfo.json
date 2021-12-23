@@ -1,0 +1,134 @@
+{
+	"BUILD_DIR" : "/home/edin/Python/openPT3D/openMVG_Build_Linux/software/ui/SfM/control_points_registration/ui_openMVG_control_points_registration_autogen",
+	"CMAKE_BINARY_DIR" : "/home/edin/Python/openPT3D/openMVG_Build_Linux",
+	"CMAKE_CURRENT_BINARY_DIR" : "/home/edin/Python/openPT3D/openMVG_Build_Linux/software/ui/SfM/control_points_registration",
+	"CMAKE_CURRENT_SOURCE_DIR" : "/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration",
+	"CMAKE_EXECUTABLE" : "/usr/bin/cmake",
+	"CMAKE_LIST_FILES" : 
+	[
+		"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration/CMakeLists.txt",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake",
+		"/usr/lib/x86_64-linux-gnu/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake"
+	],
+	"CMAKE_SOURCE_DIR" : "/home/edin/Python/openPT3D/openMVG/src",
+	"DEP_FILE" : "",
+	"DEP_FILE_RULE_NAME" : "",
+	"HEADERS" : 
+	[
+		[
+			"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration/ControlPoint2DNode.hpp",
+			"Mu",
+			"EWIEGA46WW/moc_ControlPoint2DNode.cpp"
+		],
+		[
+			"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration/ControlPointTableView.hpp",
+			"Mu",
+			"EWIEGA46WW/moc_ControlPointTableView.cpp"
+		],
+		[
+			"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration/GraphicsView.hpp",
+			"Mu",
+			"EWIEGA46WW/moc_GraphicsView.cpp"
+		],
+		[
+			"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration/MainWindow.hpp",
+			"Mu",
+			"EWIEGA46WW/moc_MainWindow.cpp"
+		],
+		[
+			"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration/document.hpp",
+			"Mu",
+			"EWIEGA46WW/moc_document.cpp"
+		]
+	],
+	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
+	"INCLUDE_DIR" : "/home/edin/Python/openPT3D/openMVG_Build_Linux/software/ui/SfM/control_points_registration/ui_openMVG_control_points_registration_autogen/include",
+	"MOC_COMPILATION_FILE" : "/home/edin/Python/openPT3D/openMVG_Build_Linux/software/ui/SfM/control_points_registration/ui_openMVG_control_points_registration_autogen/mocs_compilation.cpp",
+	"MOC_DEFINITIONS" : 
+	[
+		"LEMON_ONLY_TEMPLATES",
+		"OPENMVG_USE_OPENMP",
+		"QT_CORE_LIB",
+		"QT_GUI_LIB",
+		"QT_NO_DEBUG",
+		"QT_WIDGETS_LIB"
+	],
+	"MOC_DEPEND_FILTERS" : 
+	[
+		[
+			"Q_PLUGIN_METADATA",
+			"[\n][ \t]*Q_PLUGIN_METADATA[ \t]*\\([^\\)]*FILE[ \t]*\"([^\"]+)\""
+		]
+	],
+	"MOC_INCLUDES" : 
+	[
+		"/home/edin/Python/openPT3D/openMVG_Build_Linux/software/ui/SfM/control_points_registration",
+		"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration",
+		"/usr/local/include/eigen3",
+		"/home/edin/Python/openPT3D/openMVG/src",
+		"/home/edin/Python/openPT3D/openMVG/src/dependencies/cereal/include",
+		"/home/edin/Python/openPT3D/openMVG/src/third_party/lemon",
+		"/home/edin/Python/openPT3D/openMVG_Build_Linux/third_party/lemon",
+		"/home/edin/Python/openPT3D/openMVG/src/third_party/flann/src/cpp",
+		"/home/edin/Python/openPT3D/openMVG/src/third_party/stlplus3",
+		"/filesystemSimplified",
+		"/usr/include/x86_64-linux-gnu/qt5",
+		"/usr/include/x86_64-linux-gnu/qt5/QtWidgets",
+		"/usr/include/x86_64-linux-gnu/qt5/QtGui",
+		"/usr/include/x86_64-linux-gnu/qt5/QtCore",
+		"/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++",
+		"/usr/include/c++/11",
+		"/usr/include/x86_64-linux-gnu/c++/11",
+		"/usr/include/c++/11/backward",
+		"/usr/lib/gcc/x86_64-linux-gnu/11/include",
+		"/usr/local/include",
+		"/usr/include/x86_64-linux-gnu",
+		"/usr/include"
+	],
+	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
+	"MOC_OPTIONS" : [],
+	"MOC_PATH_PREFIX" : false,
+	"MOC_PREDEFS_CMD" : 
+	[
+		"/usr/bin/c++",
+		"-dM",
+		"-E",
+		"-c",
+		"/usr/share/cmake-3.18/Modules/CMakeCXXCompilerABI.cpp"
+	],
+	"MOC_PREDEFS_FILE" : "/home/edin/Python/openPT3D/openMVG_Build_Linux/software/ui/SfM/control_points_registration/ui_openMVG_control_points_registration_autogen/moc_predefs.h",
+	"MOC_RELAXED_MODE" : false,
+	"MOC_SKIP" : [],
+	"MULTI_CONFIG" : false,
+	"PARALLEL" : 4,
+	"PARSE_CACHE_FILE" : "/home/edin/Python/openPT3D/openMVG_Build_Linux/software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration_autogen.dir/ParseCache.txt",
+	"QT_MOC_EXECUTABLE" : "/usr/lib/qt5/bin/moc",
+	"QT_UIC_EXECUTABLE" : "",
+	"QT_VERSION_MAJOR" : 5,
+	"QT_VERSION_MINOR" : 15,
+	"SETTINGS_FILE" : "/home/edin/Python/openPT3D/openMVG_Build_Linux/software/ui/SfM/control_points_registration/CMakeFiles/ui_openMVG_control_points_registration_autogen.dir/AutogenUsed.txt",
+	"SOURCES" : 
+	[
+		[
+			"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration/ControlPoint2DNode.cpp",
+			"Mu"
+		],
+		[
+			"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration/ControlPointTableView.cpp",
+			"Mu"
+		],
+		[
+			"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration/GraphicsView.cpp",
+			"Mu"
+		],
+		[
+			"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration/MainWindow.cpp",
+			"Mu"
+		],
+		[
+			"/home/edin/Python/openPT3D/openMVG/src/software/ui/SfM/control_points_registration/main.cpp",
+			"Mu"
+		]
+	],
+	"VERBOSITY" : 0
+}

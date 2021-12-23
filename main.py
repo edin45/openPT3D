@@ -149,7 +149,7 @@ def execute_pmvs_process(use_cmvs):
 
 def execute_openMVS_process():
     os.chdir(result_folder)
-    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/DensifyPointCloud scene.mvs")
+    os.system(f"{current_file_path}/externalSoftware/openMVS_{platform.system()}_CPU/bin/DensifyPointCloud scene.mvs")
 
 if depth_recon_strategy == "CMVS":
     os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2PMVS -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}")

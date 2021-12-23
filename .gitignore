@@ -5,3 +5,10 @@ features.json
 backup
 externalSoftware/openMVG/
 externalSoftware/openMVG_Build_Linux/
+externalSoftware/openMVS/
+externalSoftware/openMVS_Linux_CPU
+externalSoftware/eigen_build/
+externalSoftware/eigen/
+externalSoftware/ceres-solver/
+externalSoftware/ceres_build/
+externalSoftware/vcglib/
