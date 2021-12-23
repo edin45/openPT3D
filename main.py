@@ -60,9 +60,9 @@ else:
     depth_recon_strategy = "CMVS"
 
 if depth_recon_strategy == "openMVS":
-    decimate_factor = input("Decimate Factor for Mesh Reconstruction (Default: 2, Increase if program uses to much Ram): ")
+    decimate_factor = input("Decimate Factor for Mesh Reconstruction (Default: 1, Increase if program uses to much Ram): ")
     if decimate_factor == "":
-        decimate_factor = 2
+        decimate_factor = 1
 max_imgs = 50
 focal_length = str(input("Focal Length (px, you can get this value by multiplying the bigger value width, height by 1.2): "))
 
