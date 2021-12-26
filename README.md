@@ -2,7 +2,7 @@
 
 ### Arch installation:
 ```
-git clone https://github.com/edin45/openPT3D.git
+git clone --recursive https://github.com/edin45/openPT3D.git
 cd externalSoftware
 sh install_build_arch.sh
 ```
@@ -19,7 +19,7 @@ make -j 4
 sudo make altinstall  
 sudo apt install python3-pip  
 sudo pip install numpy  
-git clone https://github.com/edin45/openPT3D.git
+git clone --recursive https://github.com/edin45/openPT3D.git
 cd externalSoftware
 sh install_build_debian.sh
 ```
