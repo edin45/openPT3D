@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/edin/Python/openPT3D/externalSoftware/openMVG/src/third_party/vectorGraphics/main.cpp
+iostream
+-
+cstdlib
+-
+math.h
+-
+vector
+-
+svgDrawer.hpp
+/home/edin/Python/openPT3D/externalSoftware/openMVG/src/third_party/vectorGraphics/svgDrawer.hpp
+
+/home/edin/Python/openPT3D/externalSoftware/openMVG/src/third_party/vectorGraphics/svgDrawer.hpp
+fstream
+-
+iterator
+-
+sstream
+-
+string
+-
+vector
+-
+
