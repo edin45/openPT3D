@@ -3,7 +3,7 @@
 ### Arch installation:
 ```
 git clone --recursive https://github.com/edin45/openPT3D.git
-cd externalSoftware
+cd openPT3D && cd externalSoftware
 sh install_build_arch.sh
 ```
   
@@ -17,10 +17,11 @@ cd Python-3.9.*/
 ./configure --enable-optimizations  
 make -j 4  
 sudo make altinstall  
+cd ..
 sudo apt install python3-pip  
 sudo pip install numpy  
 git clone --recursive https://github.com/edin45/openPT3D.git
-cd externalSoftware
+cd openPT3D && cd externalSoftware
 sh install_build_debian.sh
 ```
 
