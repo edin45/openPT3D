@@ -9,7 +9,7 @@ apt-get upgrade
 wait
 apt-get update -qq && apt-get install -qq
 wait
-apt-get -y install git cmake libpng-dev libjpeg-dev libtiff-dev libglu1-mesa-dev
+apt-get -y install git cmake libpng-dev=1.6.37-3 libjpeg-dev=1:2.0.6-4 libtiff-dev=4.2.0-1 libglu1-mesa-dev=9.0.1-1
 wait
 main_path=`pwd`
 wait
@@ -25,19 +25,19 @@ wait
 cd ..
 wait
 #Boost (Required)
-apt-get -y install libboost-iostreams-dev libboost-program-options-dev libboost-system-dev libboost-serialization-dev
+apt-get -y install libboost-iostreams-dev=1.74.0.3 libboost-program-options-dev=1.74.0.3 libboost-system-dev=1.74.0.3 libboost-serialization-dev=1.74.0.3
 wait
 #OpenCV (Required)
-apt-get -y install libopencv-dev
+apt-get -y install libopencv-dev=4.5.1+dfsg-5
 wait
 #CGAL (Required)
-apt-get -y install libcgal-dev libcgal-qt5-dev
+apt-get -y install libcgal-dev=5.2-3 libcgal-qt5-dev=5.2-3
 wait
 #VCGLib (Required)
 #git clone https://github.com/cdcseacave/VCG.git vcglib
 #wait
 #Ceres (Optional)
-sudo apt-get -y install libatlas-base-dev libsuitesparse-dev
+sudo apt-get -y install libatlas-base-dev=3.10.3-10 libsuitesparse-dev=1:5.8.1+dfsg-2
 wait
 git clone https://ceres-solver.googlesource.com/ceres-solver ceres-solver
 wait
@@ -50,7 +50,7 @@ wait
 cd ..
 wait
 #GLFW3 (Optional)
-apt-get -y install freeglut3-dev libglew-dev libglfw3-dev
+apt-get -y install freeglut3-dev=2.8.1-6 libglew-dev=2.1.0-4+b1 libglfw3-dev=3.3.2-1
 wait
 #OpenMVS
 #git clone https://github.com/cdcseacave/openMVS.git openMVS
@@ -66,9 +66,9 @@ wait
 #wait
 #git clone --recursive https://github.com/openMVG/openMVG.git
 #wait
-sudo apt-get install libpng-dev libjpeg-dev libtiff-dev libxxf86vm1 libxxf86vm-dev libxi-dev libxrandr-dev
+sudo apt-get install libpng-dev=1.6.37-3 libjpeg-dev=1:2.0.6-4 libtiff-dev=4.2.0-1 libxxf86vm1=1:1.1.4-1+b2 libxxf86vm-dev=1:1.1.4-1+b2 libxi-dev=2:1.7.10-1 libxrandr-dev=2:1.5.1-1
 wait
-sudo apt-get install graphviz
+sudo apt-get install graphviz=2.42.2-5
 wait
 sudo apt-get install cmake
 #wait

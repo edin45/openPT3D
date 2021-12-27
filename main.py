@@ -68,6 +68,8 @@ focal_length = str(input("Focal Length (px, you can get this value by multiplyin
 
 current_file_path = os.path.dirname(os.path.abspath(__file__))
 
+slash_replacement = "/"
+
 if platform.system() == "Linux":
     open_mvg_folder = str(current_file_path) + f"/externalSoftware/openMVG_Build_{platform.system()}/"
     open_mvg_binary_folder = ("Linux-x86_64-RELEASE" if platform.system()=="Linux" else "Windows-x86_64-RELEASE")
@@ -85,6 +87,7 @@ if platform.system() == "Linux":
     # Indicate the openMVG camera sensor width directory
     CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/openMVG/src/software/SfM" + "/../../openMVG/exif/sensor_width_database"
 else:
+    slash_replacement="\\"
     open_mvg_folder = str(current_file_path) + f"/externalSoftware/Windows/openMVG/openMVG_Build_{platform.system()}/"
     open_mvg_binary_folder = ("Linux-x86_64-RELEASE" if platform.system()=="Linux" else "Windows-AMD64-Release/Release")
     cmvs_folder = current_file_path + f"/externalSoftware/CMVS_PMVS/{platform.system()}"
@@ -96,13 +99,13 @@ else:
     #exec(a_script)
 
     # Indicate the openMVG binary directory
-    OPENMVG_SFM_BIN = current_file_path + "/externalSoftware/Windows/openMVG/openMVG_Build_Windows/Windows-AMD64-Release"
+    OPENMVG_SFM_BIN = current_file_path + "/externalSoftware/Windows/openMVG/openMVG_Build_Windows/Windows-AMD64-Release".replace("/",slash_replacement)
 
     # Indicate the openMVG camera sensor width directory
-    CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/openMVG/src/software/SfM" + "/../../openMVG/exif/sensor_width_database"
+    CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/openMVG/src/software/SfM" + "/../../openMVG/exif/sensor_width_database".replace("/",slash_replacement)
 
-input_dir = image_folder
-output_dir = result_folder
+input_dir = image_folder.replace("/",slash_replacement)
+output_dir = result_folder.replace("/",slash_replacement)
 matches_dir = os.path.join(output_dir, "matches")
 reconstruction_dir = os.path.join(output_dir, "reconstruction_sequential")
 camera_file_params = os.path.join(CAMERA_SENSOR_WIDTH_DIRECTORY, "sensor_width_camera_database.txt")
@@ -121,19 +124,19 @@ pIntrisics = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_SfM
 pIntrisics.wait()
 
 print ("2. Compute features")
-pFeatures = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_ComputeFeatures" + ("" if platform.system() == "Linux" else ".exe")),  "-i", matches_dir+"/sfm_data.json", "-o", matches_dir, "-m", "SIFT"] )
+pFeatures = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_ComputeFeatures" + ("" if platform.system() == "Linux" else ".exe")),  "-i", matches_dir+"/sfm_data.json".replace("/",slash_replacement), "-o", matches_dir, "-m", "SIFT"] )
 pFeatures.wait()
 
 print ("3. Compute matching pairs")
-pPairs = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_PairGenerator" + ("" if platform.system() == "Linux" else ".exe")), "-i", matches_dir+"/sfm_data.json", "-o" , matches_dir + "/pairs.bin" ] )
+pPairs = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_PairGenerator" + ("" if platform.system() == "Linux" else ".exe")), "-i", matches_dir+"/sfm_data.json".replace("/",slash_replacement), "-o" , matches_dir + "/pairs.bin".replace("/",slash_replacement) ] )
 pPairs.wait()
 
 print ("4. Compute matches")
-pMatches = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_ComputeMatches" + ("" if platform.system() == "Linux" else ".exe")),  "-i", matches_dir+"/sfm_data.json", "-p", matches_dir+ "/pairs.bin", "-o", matches_dir + "/matches.putative.bin" ] )
+pMatches = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_ComputeMatches" + ("" if platform.system() == "Linux" else ".exe")),  "-i", matches_dir+"/sfm_data.json".replace("/",slash_replacement), "-p", matches_dir+ "/pairs.bin".replace("/",slash_replacement), "-o", matches_dir + "/matches.putative.bin".replace("/",slash_replacement) ] )
 pMatches.wait()
 
 print ("5. Filter matches" )
-pFiltering = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_GeometricFilter" + ("" if platform.system() == "Linux" else ".exe")), "-i", matches_dir+"/sfm_data.json", "-m", matches_dir+"/matches.putative.bin" , "-g" , "f" , "-o" , matches_dir+"/matches.f.bin" ] )
+pFiltering = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_GeometricFilter" + ("" if platform.system() == "Linux" else ".exe")), "-i", matches_dir+"/sfm_data.json".replace("/",slash_replacement), "-m", matches_dir+"/matches.putative.bin".replace("/",slash_replacement) , "-g" , "f" , "-o" , matches_dir+"/matches.f.bin".replace("/",slash_replacement) ] )
 pFiltering.wait()
 
 # Create the reconstruction if not present
@@ -141,11 +144,11 @@ if not os.path.exists(reconstruction_dir):
     os.mkdir(reconstruction_dir)
 
 print ("6. Do Sequential/Incremental reconstruction")
-pRecons = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_SfM" + ("" if platform.system() == "Linux" else ".exe")), "--sfm_engine", "INCREMENTAL", "--input_file", matches_dir+"/sfm_data.json", "--match_dir", matches_dir, "--output_dir", reconstruction_dir] )
+pRecons = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_SfM" + ("" if platform.system() == "Linux" else ".exe")), "--sfm_engine", "INCREMENTAL", "--input_file", matches_dir+"/sfm_data.json".replace("/",slash_replacement), "--match_dir", matches_dir, "--output_dir", reconstruction_dir] )
 pRecons.wait()
 
 print ("7. Colorize Structure")
-pRecons = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_ComputeSfM_DataColor" + ("" if platform.system() == "Linux" else ".exe")),  "-i", reconstruction_dir+"/sfm_data.bin", "-o", os.path.join(reconstruction_dir,"colorized.ply")] )
+pRecons = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_ComputeSfM_DataColor" + ("" if platform.system() == "Linux" else ".exe")),  "-i", reconstruction_dir+"/sfm_data.bin".replace("/",slash_replacement), "-o", os.path.join(reconstruction_dir,"colorized.ply")] )
 pRecons.wait()
 
 
@@ -166,16 +169,16 @@ def execute_pmvs_process(use_cmvs):
 
 def execute_openMVS_process():
     os.chdir(result_folder)
-    os.system(f"{current_file_path}/externalSoftware" + ("" if platform.system() == "Linux" else "/Windows") + f"/openMVS_{platform.system()}_CPU/bin/DensifyPointCloud" + ("" if platform.system() == "Linux" else ".exe") + " scene.mvs")
+    os.system(f"{current_file_path}/externalSoftware".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "\\Windows") + f"/openMVS_{platform.system()}_CPU/bin/DensifyPointCloud".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + " scene.mvs")
 
 if depth_recon_strategy == "CMVS":
-    os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2PMVS" + ("" if platform.system() == "Linux" else ".exe") + f" -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}")
+    os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2PMVS".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}".replace("/",slash_replacement))
     execute_pmvs_process(True)
     pmvs_ply_file = f"{result_folder}/PMVS/models/pmvs_options.txt.ply"
     if os.path.isfile(pmvs_ply_file) == False:
         execute_pmvs_process(False)
 else:
-    os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2openMVS" + ("" if platform.system() == "Linux" else ".exe") + f" -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}/scene.mvs -d {result_folder}/undistorted")
+    os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2openMVS".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}/scene.mvs -d {result_folder}/undistorted".replace("/",slash_replacement))
     execute_openMVS_process()
 
 
@@ -246,11 +249,11 @@ else:
     os.chdir(f"{result_folder}")
     #while True:
         #if os.path.isfile("scene_dense_mesh.mvs") == False:
-    os.system(f"{current_file_path}/externalSoftware/" + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/ReconstructMesh" + ("" if platform.system() == "Linux" else ".exe") + f" -d {decimate_factor} scene_dense.mvs")
+    os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/ReconstructMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" -d {decimate_factor} scene_dense.mvs")
         #elif os.path.isfile("scene_dense_mesh_refine.mvs") == False:
-    os.system(f"{current_file_path}/externalSoftware/" + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/RefineMesh" + ("" if platform.system() == "Linux" else ".exe") + f" --resolution-level={decimate_factor} scene_dense_mesh.mvs")
+    os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/RefineMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" --resolution-level={decimate_factor} scene_dense_mesh.mvs")
         #elif os.path.isfile("scene_dense_mesh_refine_texture.mvs") == False:
-    os.system(f"{current_file_path}/externalSoftware/" + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/TextureMesh" + ("" if platform.system() == "Linux" else ".exe") + " scene_dense_mesh_refine.mvs")
+    os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/TextureMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + " scene_dense_mesh_refine.mvs")
         #else:
         #    break
 
