@@ -99,7 +99,7 @@ else:
     #exec(a_script)
 
     # Indicate the openMVG binary directory
-    OPENMVG_SFM_BIN = current_file_path + "/externalSoftware/Windows/openMVG/openMVG_Build_Windows/Windows-AMD64-Release".replace("/",slash_replacement)
+    OPENMVG_SFM_BIN = current_file_path + "/externalSoftware/Windows/openMVG/openMVG_Build_Windows/Windows-AMD64-Release/Release".replace("/",slash_replacement)
 
     # Indicate the openMVG camera sensor width directory
     CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/openMVG/src/software/SfM" + "/../../openMVG/exif/sensor_width_database".replace("/",slash_replacement)
