@@ -119,9 +119,14 @@ if not os.path.exists(output_dir):
 if not os.path.exists(matches_dir):
   os.mkdir(matches_dir)
 
-print ("1. Intrinsics analysis")
-pIntrisics = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_SfMInit_ImageListing" + ("" if platform.system() == "Linux" else ".exe")),  "-i", input_dir, "-o", matches_dir, "-d", camera_file_params,"-f", focal_length] )
-pIntrisics.wait()
+if platform.system() == "Linux":
+    print ("1. Intrinsics analysis")
+    pIntrisics = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_SfMInit_ImageListing" + ("" if platform.system() == "Linux" else ".exe")),  "-i", input_dir, "-o", matches_dir, "-d", camera_file_params,"-f", focal_length] )
+    pIntrisics.wait()
+else:
+    print ("1. Intrinsics analysis")
+    pIntrisics = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_SfMInit_ImageListing" + ("" if platform.system() == "Linux" else ".exe")),  "-i", input_dir, "-o", matches_dir, "-f", focal_length] )
+    pIntrisics.wait()
 
 print ("2. Compute features")
 pFeatures = subprocess.Popen( [os.path.join(OPENMVG_SFM_BIN, f"openMVG_main_ComputeFeatures" + ("" if platform.system() == "Linux" else ".exe")),  "-i", matches_dir+"/sfm_data.json".replace("/",slash_replacement), "-o", matches_dir, "-m", "SIFT"] )
