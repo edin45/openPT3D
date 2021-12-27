@@ -102,7 +102,7 @@ else:
     OPENMVG_SFM_BIN = current_file_path + "/externalSoftware/Windows/openMVG/openMVG_Build_Windows/Windows-AMD64-Release/Release".replace("/",slash_replacement)
 
     # Indicate the openMVG camera sensor width directory
-    CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/openMVG/src/software/SfM" + "/../../openMVG/exif/sensor_width_database".replace("/",slash_replacement)
+    CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/openMVG/src/software/SfM".replace("/",slash_replacement) + "/../../openMVG/exif/sensor_width_database".replace("/",slash_replacement)
 
 input_dir = image_folder.replace("/",slash_replacement)
 output_dir = result_folder.replace("/",slash_replacement)
