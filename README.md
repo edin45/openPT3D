@@ -29,6 +29,8 @@ sh install_build_debian.sh
 Download python from: https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe
 Check "Add Python to PATH" and continue
 Then after installlation click the "Remove Path Length Limit button"
+reboot your system
+pip install numpy
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D
 ```
