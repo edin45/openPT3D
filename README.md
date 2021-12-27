@@ -24,6 +24,14 @@ git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D && cd externalSoftware
 sh install_build_debian.sh
 ```
+### Windows installation:
+```
+Download python from: https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe
+Check "Add Python to PATH" and continue
+Then after installlation click the "Remove Path Length Limit button"
+git clone --recursive https://github.com/edin45/openPT3D.git
+cd openPT3D
+```
 
 ### Usage:  
   
@@ -32,7 +40,7 @@ Go to the openPT3D folder then execute:
 ```
 python3 main.py -i [FOLDER_WITH_INPUT_IMAGES_TO_USE] -r [FOLDER_WHERE_RESULTS_ARE_STORED]  
 ```
-#### Arch based:
+#### Arch & Windows based:
 ```
 python main.py -i [FOLDER_WITH_INPUT_IMAGES_TO_USE] -r [FOLDER_WHERE_RESULTS_ARE_STORED]  
 ```
