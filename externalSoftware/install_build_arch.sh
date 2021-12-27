@@ -25,7 +25,20 @@ pacman -S graphviz
 wait
 pacman -S cmake
 wait
-pacman -S boost
+#pacman -S boost
+wget https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.bz2
+wait
+tar -xf boost_1_74_0.tar.bz2
+wait
+cd boost_1_74_0
+wait
+./bootstrap.sh --prefix=/usr --with-python=python3
+wait
+./b2 stage -j4 threading=multi link=shared
+wait
+./b2 install threading=multi link=shared      
+wait
+cd ..     
 #wait
 #mkdir openMVG_Build_Linux
 #wait
