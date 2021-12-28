@@ -20,6 +20,7 @@ sudo make altinstall
 cd ..
 sudo apt install python3-pip  
 sudo pip install numpy  
+sudo pip install opencv-python
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D && cd externalSoftware
 sh install_build_debian.sh
