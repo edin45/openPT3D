@@ -1,11 +1,4 @@
 # openPT3D
-
-### Arch installation:
-```
-git clone --recursive https://github.com/edin45/openPT3D.git
-cd openPT3D && cd externalSoftware
-sh install_build_arch.sh
-```
   
 ### Debian/Ubuntu/Pop OS installation:  
 ```
@@ -34,6 +27,13 @@ reboot your system
 pip install numpy
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D
+```
+
+### Arch installation (Broken, is being worked on):
+```
+git clone --recursive https://github.com/edin45/openPT3D.git
+cd openPT3D && cd externalSoftware
+sh install_build_arch.sh
 ```
 
 ### Usage:  
