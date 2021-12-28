@@ -9,6 +9,8 @@ pacman -S python-pip
 wait
 pip install numpy
 wait
+pip install opencv-python
+wait
 pacman -S opencv
 wait
 pacman -S cgal
