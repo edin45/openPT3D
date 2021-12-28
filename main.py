@@ -5,6 +5,7 @@ import numpy as np
 import optparse
 import json
 import subprocess
+import cv2
 
 #os_name = platform.system()
 #layout = [
@@ -64,7 +65,11 @@ if depth_recon_strategy == "openMVS":
     if decimate_factor == "":
         decimate_factor = 1
 max_imgs = 50
-focal_length = str(input("Focal Length (px, you can get this value by multiplying the bigger value width, height by 1.2): "))
+
+imgs_folder = os.listdir(image_folder)
+img = cv2.imread(os.path.join(image_folder,imgs_folder[0]))
+focal_length = str(max(img.shape[0],img.shape[1]) * 1.2)
+#str(input("Focal Length (px, you can get this value by multiplying the bigger value width, height by 1.2): "))
 
 current_file_path = os.path.dirname(os.path.abspath(__file__))
 
