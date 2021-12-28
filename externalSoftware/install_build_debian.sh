@@ -9,7 +9,18 @@ apt-get upgrade
 wait
 apt-get update -qq && apt-get install -qq
 wait
-apt-get -y install git cmake libpng-dev=1.6.37-3 libjpeg-dev=1:2.0.6-4 libtiff-dev=4.2.0-1 libglu1-mesa-dev=9.0.1-1
+wget -c 'http://ftp.de.debian.org/debian/pool/main/libp/libpng1.6/libpng-dev_1.6.37-3_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-dev_2.0.6-4_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/t/tiff/libtiff-dev_4.2.0-1_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/libg/libglu/libglu1-mesa-dev_9.0.1-1_amd64.deb'
+wait
+dpkg -i libpng-dev_1.6.37-3_amd64.deb
+dpkg -i libjpeg-dev_2.0.6-4_amd64.deb
+dpkg -i libtiff-dev_4.2.0-1_amd64.deb
+dpkg -i libglu1-mesa-dev_9.0.1-1_amd64.deb
+wait
+apt-get -y install git cmake 
+#libpng-dev=1.6.37-3 libjpeg-dev=1:2.0.6-4 libtiff-dev=4.2.0-1 libglu1-mesa-dev=9.0.1-1
 wait
 main_path=`pwd`
 wait
@@ -24,20 +35,34 @@ make && sudo make install
 wait
 cd ..
 wait
+wget -c 'http://ftp.de.debian.org/debian/pool/main/b/boost-defaults/libboost-iostreams-dev_1.74.0.3_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/b/boost-defaults/libboost-program-options-dev_1.74.0.3_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/b/boost-defaults/libboost-system-dev_1.74.0.3_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/b/boost-defaults/libboost-serialization-dev_1.74.0.3_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/c/cgal/libcgal-dev_5.2-3_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/c/cgal/libcgal-qt5-dev_5.2-3_amd64.deb'
+wait
+#apt-get -y install libboost-iostreams-dev=1.74.0.3 libboost-program-options-dev=1.74.0.3 libboost-system-dev=1.74.0.3 libboost-serialization-dev=1.74.0.3
 #Boost (Required)
-apt-get -y install libboost-iostreams-dev=1.74.0.3 libboost-program-options-dev=1.74.0.3 libboost-system-dev=1.74.0.3 libboost-serialization-dev=1.74.0.3
-wait
-#OpenCV (Required)
-apt-get -y install libopencv-dev=4.5.1+dfsg-5
-wait
-#CGAL (Required)
-apt-get -y install libcgal-dev=5.2-3 libcgal-qt5-dev=5.2-3
-wait
-#VCGLib (Required)
-#git clone https://github.com/cdcseacave/VCG.git vcglib
+dpkg -i libboost-iostreams-dev_1.74.0.3_amd64.deb
+dpkg -i libboost-program-options-dev_1.74.0.3_amd64.deb
+dpkg -i libboost-system-dev_1.74.0.3_amd64.deb
+dpkg -i libboost-serialization-dev_1.74.0.3_amd64.deb
+#OpenCV
+dpkg -i libopencv-dev_4.5.1+dfsg-5_amd64.deb
+#CGAL
+dpkg -i libcgal-dev_5.2-3_amd64.deb
+dpkg -i libcgal-qt5-dev_5.2-3_amd64.deb
 #wait
+#apt-get -y install libcgal-dev=5.2-3 libcgal-qt5-dev=5.2-3
+wait
 #Ceres (Optional)
-sudo apt-get -y install libatlas-base-dev=3.10.3-10 libsuitesparse-dev=1:5.8.1+dfsg-2
+wget -c 'http://ftp.de.debian.org/debian/pool/main/a/atlas/libatlas-base-dev_3.10.3-10_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/s/suitesparse/libsuitesparse-dev_5.8.1+dfsg-2_amd64.deb'
+dpkg -i libatlas-base-dev_3.10.3-10_amd64.deb
+dkpg -i libsuitesparse-dev_5.8.1+dfsg-2_amd64.deb
+#sudo apt-get -y install libatlas-base-dev=3.10.3-10 libsuitesparse-dev=1:5.8.1+dfsg-2
 wait
 git clone https://ceres-solver.googlesource.com/ceres-solver ceres-solver
 wait
@@ -50,8 +75,8 @@ wait
 cd ..
 wait
 #GLFW3 (Optional)
-apt-get -y install freeglut3-dev=2.8.1-6 libglew-dev=2.1.0-4+b1 libglfw3-dev=3.3.2-1
-wait
+#apt-get -y install freeglut3-dev=2.8.1-6 libglew-dev=2.1.0-4+b1 libglfw3-dev=3.3.2-1
+#wait
 #OpenMVS
 #git clone https://github.com/cdcseacave/openMVS.git openMVS
 #wait
@@ -66,11 +91,21 @@ wait
 #wait
 #git clone --recursive https://github.com/openMVG/openMVG.git
 #wait
-sudo apt-get install libpng-dev=1.6.37-3 libjpeg-dev=1:2.0.6-4 libtiff-dev=4.2.0-1 libxxf86vm1=1:1.1.4-1+b2 libxxf86vm-dev=1:1.1.4-1+b2 libxi-dev=2:1.7.10-1 libxrandr-dev=2:1.5.1-1
-wait
-sudo apt-get install graphviz=2.42.2-5
-wait
-sudo apt-get install cmake
+wget -c 'http://ftp.de.debian.org/debian/pool/main/libx/libxxf86vm/libxxf86vm1_1.1.4-1+b2_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/libx/libxxf86vm/libxxf86vm-dev_1.1.4-1+b2_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/libx/libxi/libxi-dev_1.7.10-1_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/libx/libxrandr/libxrandr-dev_1.5.1-1_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/g/graphviz/graphviz_2.42.2-5_amd64.deb'
+dpkg -i libxxf86vm1_1.1.4-1+b2_amd64.deb
+dpkg -i libxxf86vm-dev_1.1.4-1+b2_amd64.deb
+dpkg -i libxi-dev_1.7.10-1_amd64.deb
+dpkg -i libxrandr-dev_1.5.1-1_amd64.deb
+dpkg -i graphviz_2.42.2-5_amd64.deb
+#sudo apt-get install libpng-dev=1.6.37-3 libjpeg-dev=1:2.0.6-4 libtiff-dev=4.2.0-1 libxxf86vm1=1:1.1.4-1+b2 libxxf86vm-dev=1:1.1.4-1+b2 libxi-dev=2:1.7.10-1 libxrandr-dev=2:1.5.1-1
+#wait
+#sudo apt-get install graphviz=2.42.2-5
+#wait
+#sudo apt-get install cmake
 #wait
 #mkdir openMVG_Build_Linux
 #wait
