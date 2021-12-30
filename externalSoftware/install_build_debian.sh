@@ -9,34 +9,34 @@ apt-get upgrade
 wait
 apt-get update -qq && apt-get install -qq
 wait
-apt install libopencv-calib3d-dev
-apt install libopencv-contrib-dev
-apt install libopencv-core-dev
-apt install libopencv-dnn-dev
-apt install libopencv-features2d-dev
-apt install libopencv-flann-dev
-apt install libopencv-highgui-dev
-apt install libopencv-imgcodecs-dev
-apt install libopencv-imgproc-dev
-apt install libopencv-ml-dev
-apt install libopencv-objdetect-dev
-apt install libopencv-photo-dev
-apt install libopencv-shape-dev
-apt install libopencv-stitching-dev
-apt install libopencv-superres-dev
-apt install libopencv-video-dev
-apt install libopencv-videoio-dev
-apt install libopencv-videostab-dev
-apt install libopencv-viz-dev
-apt install libopencv-calib3d4.5
-apt install libopencv-contrib4.5
-apt install libopencv-features2d4.5
-apt install libopencv-highgui4.5
-apt install libopencv-imgcodecs4.5
-apt install libopencv-imgproc4.5
-apt install libopencv-videoio4.5
-apt install libilmbase-dev
-wait
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-calib3d-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-contrib-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-core-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-dnn-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-features2d-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-flann-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-highgui-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-imgcodecs-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-imgproc-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-ml-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-objdetect-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-photo-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-shape-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-stitching-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-superres-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-video-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-videoio-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-videostab-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-viz-dev_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-calib3d4.5_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-contrib4.5_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-features2d4.5_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-highgui4.5_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-imgcodecs4.5_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-imgproc4.5_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/o/opencv/libopencv-videoio4.5_4.5.1+dfsg-5_amd64.deb'
+wget -c 'http://ftp.de.debian.org/debian/pool/main/i/ilmbase/libilmbase-dev_4.5.1+dfsg-5_amd64.deb'
+
 wget -c 'http://ftp.de.debian.org/debian/pool/main/libp/libpng1.6/libpng-dev_1.6.37-3_amd64.deb'
 wget -c 'http://ftp.de.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-dev_2.0.6-4_amd64.deb'
 wget -c 'http://ftp.de.debian.org/debian/pool/main/t/tiff/libtiff-dev_4.2.0-1_amd64.deb'
@@ -46,6 +46,35 @@ dpkg -i libpng-dev_1.6.37-3_amd64.deb
 dpkg -i libjpeg-dev_2.0.6-4_amd64.deb
 dpkg -i libtiff-dev_4.2.0-1_amd64.deb
 dpkg -i libglu1-mesa-dev_9.0.1-1_amd64.deb
+
+dpkg -i libopencv-calib3d-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-contrib-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-core-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-dnn-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-features2d-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-flann-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-highgui-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-imgcodecs-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-imgproc-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-ml-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-objdetect-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-photo-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-shape-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-stitching-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-superres-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-video-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-videoio-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-videostab-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-viz-dev_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-calib3d4.5_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-contrib4.5_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-features2d4.5_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-highgui4.5_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-imgcodecs4.5_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-imgproc4.5_4.5.1+dfsg-5_amd64.deb
+dpkg -i libopencv-videoio4.5_4.5.1+dfsg-5_amd64.deb
+dpkg -i libilmbase-dev_4.5.1+dfsg-5_amd64.deb
+
 wait
 apt-get -y install git cmake 
 #libpng-dev=1.6.37-3 libjpeg-dev=1:2.0.6-4 libtiff-dev=4.2.0-1 libglu1-mesa-dev=9.0.1-1
