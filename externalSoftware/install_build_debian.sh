@@ -135,17 +135,17 @@ wait
 apt-get -y install freeglut3-dev libglew-dev libglfw3-dev
 wait
 #OpenMVS
-git clone https://github.com/cdcseacave/openMVS.git openMVS
-wait
-mkdir openMVS_Linux_CPU && cd openMVS_Linux_CPU
-wait
-cmake . ../openMVS -DCMAKE_BUILD_TYPE=Release -DVCG_ROOT="$main_path/vcglib" -DOpenMVS_USE_CUDA=OFF
-wait
-Install OpenMVS library (optional):
-make -j8
-wait
-cd ..
-wait
+#git clone https://github.com/cdcseacave/openMVS.git openMVS
+#wait
+#mkdir openMVS_Linux_CPU && cd openMVS_Linux_CPU
+#wait
+#cmake . ../openMVS -DCMAKE_BUILD_TYPE=Release -DVCG_ROOT="$main_path/vcglib" -DOpenMVS_USE_CUDA=OFF
+#wait
+#Install OpenMVS library (optional):
+#make -j8
+#wait
+#cd ..
+#wait
 git clone --recursive https://github.com/openMVG/openMVG.git
 wait
 #wget -c 'http://ftp.de.debian.org/debian/pool/main/libx/libxxf86vm/libxxf86vm1_1.1.4-1+b2_amd64.deb'
