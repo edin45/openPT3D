@@ -3,9 +3,9 @@
 ## Note: Windows is currently broken, is being worked on
 
 ### Based on:
-  OpenMvs: https://github.com/cdcseacave/openMVS
-  OpenMvg: https://github.com/openMVG/openMVG
-  CMVS/PMVS: https://github.com/pmoulon/CMVS-PMVS
+  OpenMvs: https://github.com/cdcseacave/openMVS   
+  OpenMvg: https://github.com/openMVG/openMVG   
+  CMVS/PMVS: https://github.com/pmoulon/CMVS-PMVS   
 
 ### Debian/Ubuntu/Pop OS installation:  
 ```
