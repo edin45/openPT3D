@@ -3,6 +3,8 @@ if ! [ $(id -u) = 0 ]; then
    echo "Please run as root!"
    exit 1
 fi
+dnf install curl zip unzip tar
+wait
 git clone https://github.com/Microsoft/vcpkg
 wait
 cd vcpkg
