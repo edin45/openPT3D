@@ -88,7 +88,7 @@ mkdir eigen_build && cd eigen_build
 wait
 cmake . ../eigen
 wait
-make && sudo make install
+make -j4 && sudo make install
 wait
 cd ..
 wait
@@ -127,7 +127,7 @@ mkdir ceres_build && cd ceres_build
 wait
 cmake . ../ceres-solver/ -DMINIGLOG=ON -DBUILD_TESTING=OFF -DBUILD_EXAMPLES=OFF
 wait
-make -j2 && sudo make install
+make -j4 && sudo make install
 wait
 cd ..
 wait
