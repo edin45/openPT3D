@@ -27,6 +27,8 @@ reboot your system
 pip install numpy
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D
+cd externalSoftware
+Run: install_build_windows.bat
 ```
 
 ### Arch installation (Broken, is being worked on):
