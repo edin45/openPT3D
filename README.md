@@ -36,7 +36,7 @@ and install it (just click next you dont have to change anything)
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D
 cd externalSoftware
-Run: install_build_windows.bat
+install_build_windows.bat
 ```
 
 ### Arch installation:
