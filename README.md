@@ -1,5 +1,12 @@
 # openPT3D
   
+## Note: Windows is currently broken, is being worked on
+
+### Based on:
+  OpenMvs: https://github.com/cdcseacave/openMVS   
+  OpenMvg: https://github.com/openMVG/openMVG   
+  CMVS/PMVS: https://github.com/pmoulon/CMVS-PMVS   
+
 ### Debian/Ubuntu/Pop OS installation:  
 ```
 sudo apt update && sudo apt upgrade  
@@ -21,7 +28,7 @@ sh install_build_debian.sh
 ### Windows installation:
 ```
 Download python from: https://www.python.org/ftp/python/3.10.1/python-3.10.1-amd64.exe
-Check "Add Python to PATH" and continue
+Check "Add Python to PATH" and click Install Now
 Then after installlation click the "Remove Path Length Limit button"
 reboot your system
 pip install numpy
@@ -34,7 +41,7 @@ cd externalSoftware
 Run: install_build_windows.bat
 ```
 
-### Arch installation (Broken, is being worked on):
+### Arch installation:
 ```
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D && cd externalSoftware
