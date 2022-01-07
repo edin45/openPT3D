@@ -9,20 +9,9 @@
 
 ### Debian/Ubuntu/Pop OS installation:  
 ```
-sudo apt update && sudo apt upgrade  
-sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libssl-dev libreadline-dev libffi-dev libsqlite3-dev wget libbz2-dev  
-wget https://www.python.org/ftp/python/3.9.0/Python-3.9.0.tgz  
-tar -xf Python-3.9.*.tgz  
-cd Python-3.9.*/  
-./configure --enable-optimizations  
-make -j 4  
-sudo make altinstall  
-cd ..
-sudo apt install python3-pip  
-sudo pip install numpy  
-sudo pip install opencv-python
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D && cd externalSoftware
+sh install_python3_debian.sh
 sh install_build_debian.sh
 ```
 ### Windows installation:
