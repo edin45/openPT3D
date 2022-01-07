@@ -19,33 +19,24 @@ pacman -S lvtk
 wait
 pacman -S vtk
 wait
-git clone --recursive https://github.com/openMVG/openMVG.git
+pacman -S curl zip unzip tar
 wait
-pacman -S libpng libjpeg6 libtiff4 libxxf86vm1 libxxf86vm libxi libxrandr
+git clone https://github.com/Microsoft/vcpkg
 wait
-pacman -S graphviz
+cd vcpkg
 wait
-pacman -S cmake
+./bootstrap-vcpkg.sh
 wait
-pacman -S boost
-#wget https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.bz2
-#wait
-#tar -xf boost_1_74_0.tar.bz2
-#wait
-#cd boost_1_74_0
-#wait
-#./bootstrap.sh --prefix=/usr --with-python=python3
-#wait
-#./b2 stage -j4 threading=multi link=shared
-#wait
-#./b2 install threading=multi link=shared      
-#wait
-#cd ..     
+./vcpkg install cereal ceres eigen3 libjpeg-turbo libpng tiff
 wait
-mkdir openMVG_Build_Linux
+wget -c "https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.bz2"
 wait
-cd openMVG_Build_Linux
+tar -xf boost_1_74_0.tar.bz2
 wait
-cmake -DCMAKE_BUILD_TYPE=RELEASE ../openMVG/src/
+cd boost_1_74_0
 wait
-cmake --build . --target install
+./bootstrap.sh --prefix=/usr --with-python=python3 &&
+wait
+./b2 stage -j4 threading=multi link=shared
+wait
+./b2 install threading=multi link=shared           

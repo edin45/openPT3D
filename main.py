@@ -43,16 +43,6 @@ parser.add_option("-r","--result_folder",action="store",help="Folder where Resul
 options, args = parser.parse_args()
 image_folder = options.input_images
 result_folder = options.result_folder
-target_resolution = input("Target Resolution (Default 500000):")
-if target_resolution == "":
-    target_resolution = 500000
-else:
-    target_resolution = int(target_resolution)
-#strategy = input("Mesh Reconstruction Strategy BPA (No Texture)/Possion (No Texture)/openMVS (Default: openMVS): ")
-#if strategy.lower() != "bpa" and strategy.lower() != "Possion":
-#    strategy = "openMVS"
-#else:
-#    strategy = strategy.upper()
 
 depth_recon_strategy = input("Dense Reconstruction Strategy CMVS(Only on Linux)/openMVS (Default openMVS): ")
 if depth_recon_strategy != "CMVS":
@@ -77,7 +67,7 @@ slash_replacement = "/"
 
 if platform.system() == "Linux":
     open_mvg_folder = str(current_file_path) + f"/externalSoftware/openMVG_Build_{platform.system()}/"
-    open_mvg_binary_folder = ("Linux-x86_64-RELEASE" if platform.system()=="Linux" else "Windows-x86_64-RELEASE")
+    open_mvg_binary_folder = ("Linux-x86_64-Release" if platform.system()=="Linux" else "Windows-x86_64-RELEASE")
     cmvs_folder = current_file_path + f"/externalSoftware/CMVS_PMVS/{platform.system()}"
     #filePath = open_mvg_folder + "/software/SfM/SfM_SequentialPipeline.py"
     #script_descriptor = open(filePath)
@@ -87,10 +77,10 @@ if platform.system() == "Linux":
     #exec(a_script)
 
     # Indicate the openMVG binary directory
-    OPENMVG_SFM_BIN = current_file_path + "/externalSoftware/openMVG_Build_Linux/Linux-x86_64-RELEASE"
+    OPENMVG_SFM_BIN = current_file_path + "/externalSoftware/openMVG_Build_Linux/Linux-x86_64-Release"
 
     # Indicate the openMVG camera sensor width directory
-    CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/openMVG/src/software/SfM" + "/../../openMVG/exif/sensor_width_database"
+    CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/sensor_width_database"
 else:
     slash_replacement="\\"
     open_mvg_folder = str(current_file_path) + f"/externalSoftware/Windows/openMVG/openMVG_Build_{platform.system()}/"
@@ -107,7 +97,7 @@ else:
     OPENMVG_SFM_BIN = current_file_path + "/externalSoftware/Windows/openMVG/openMVG_Build_Windows/Windows-AMD64-Release/Release".replace("/",slash_replacement)
 
     # Indicate the openMVG camera sensor width directory
-    CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/openMVG/src".replace("/",slash_replacement) + "/openMVG/exif/sensor_width_database".replace("/",slash_replacement)
+    CAMERA_SENSOR_WIDTH_DIRECTORY = current_file_path + "/externalSoftware/sensor_width_database".replace("/",slash_replacement)
 
 input_dir = image_folder.replace("/",slash_replacement)
 output_dir = result_folder.replace("/",slash_replacement)
@@ -191,68 +181,6 @@ else:
     os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2openMVS".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}/scene.mvs -d {result_folder}/undistorted".replace("/",slash_replacement))
     execute_openMVS_process()
 
-
-
-
-
-#def read_ply(filename):
-#    """ read XYZ point cloud from filename PLY file """
-#    plydata = PlyData.read(filename)
-#    pc = plydata['vertex'].data
-#    #a,b_b,c,,d
-#    pc_array = np.array([[x, y, z, r, g, b] for x,y,z,a,b_b,c,r,g,b in pc])
-#    return pc_array 
-
-#point_cloud = read_ply(pmvs_ply_file if depth_recon_strategy == "CMVS" else f"{result_folder}/scene_dense.ply")
-
-#bundle_out = ""
-
-#f = open(f'{result_folder}/sfm-data.json')
-#sfm_data = json.load(f)
-#bundle_out+=str(len(sfm_data["views"]))+" "+ str(len(point_cloud)) + "\n"
-#pixels = focal_length * 80.457
-#bundle_out+=str(pixels) + " " + "0.0 " + "0.0\n"
-#for item in sfm_data["extrinsics"]:
-#    for rotItem in item["value"]["rotation"]:
-#        bundle_out+=str(rotItem[0]) + " " + str(rotItem[1]) + " " + str(rotItem[2]) + "\n"
-#    bundle_out+=str(item["value"]["center"][0]) + " " + str(item["value"]["center"][1]) + " " + str(item["value"]["center"][2]) + "\n"
-#bundle_out_file = open(f"{result_folder}/bundle.outbundle.rd.out","w")
-#bundle_out_file.write(f"{bundle_out}".replace(","," "))
-#bundle_out_file.close()
-
-#f.close()
-#pcd = o3d.geometry.PointCloud()
-#print(point_cloud)
-#pcd.points = o3d.utility.Vector3dVector(point_cloud[:,:3])
-#pcd.colors = o3d.utility.Vector3dVector(point_cloud[:,6:9]/255)
-#normals = pcd.estimate_normals(pcd)
-#normals = pcd.estimate_normals(search_param=o3d.geometry.KDTreeSearchParamHybrid(radius=0.1, max_nn=30))
-
-#pcd.orient_normals_consistent_tangent_plane(k=15)
-#pcd.normals = o3d.utility.Vector3dVector(normals)
-#o3d.visualization.draw_geometries([pcd])
-#distances = pcd.compute_nearest_neighbor_distance()
-#avg_dist = np.mean(distances)
-#radius = 3 * avg_dist
-
-#mesh = None
-
-#if strategy == "BPA":
-#    bpa_mesh = o3d.geometry.TriangleMesh.create_from_point_cloud_ball_pivoting(pcd,o3d.utility.DoubleVector([radius, radius * 2]))
-#    dec_mesh = bpa_mesh.simplify_quadric_decimation(target_resolution)
-#    dec_mesh.remove_degenerate_triangles()
-#    dec_mesh.remove_duplicated_triangles()
-#    dec_mesh.remove_duplicated_vertices()
-#    dec_mesh.remove_non_manifold_edges()
-#    mesh = dec_mesh
-#    o3d.io.write_triangle_mesh(f"{result_folder}/result_mesh.ply", mesh)
-#elif strategy == "Possion":
-#    poisson_mesh = o3d.geometry.TriangleMesh.create_from_point_cloud_poisson(pcd, depth=12, width=0, scale=1, linear_fit=False)[0]
-#    bbox = pcd.get_axis_aligned_bounding_box()
-#    p_mesh_crop = poisson_mesh.crop(bbox)
-#    mesh = p_mesh_crop
-#    o3d.io.write_triangle_mesh(f"{result_folder}/result_mesh.ply", mesh)
-#else:
 if depth_recon_strategy == "CMVS":
     print(f"Dense Point Cloud: {result_folder}/PMVS/models/pmvs_options.txt.ply")
 else:

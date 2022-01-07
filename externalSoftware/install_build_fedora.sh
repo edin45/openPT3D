@@ -1,20 +1,26 @@
-#! /bin/bash
-if [ "$EUID" -ne 0 ]
-  then echo "Please run as root"
-  exit
+#!/bin/bash
+if ! [ $(id -u) = 0 ]; then
+   echo "Please run as root!"
+   exit 1
 fi
-git clone --recursive https://github.com/openMVG/openMVG.git
+dnf install curl zip unzip tar
 wait
-dnf install libpng-dev libjpeg-dev libtiff-dev libxxf86vm1 libxxf86vm-dev libxi-dev libxrandr-dev
+git clone https://github.com/Microsoft/vcpkg
 wait
-dnf install graphviz
+cd vcpkg
 wait
-dnf install cmake
+./bootstrap-vcpkg.sh
 wait
-mkdir openMVG_Build_Linux
+./vcpkg install cereal ceres eigen3 libjpeg-turbo libpng tiff
 wait
-cd openMVG_Build_Linux
+wget -c "https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.bz2"
 wait
-cmake -DCMAKE_BUILD_TYPE=RELEASE ../openMVG/src/
+tar -xf boost_1_74_0.tar.bz2
 wait
-cmake --build . --target install
+cd boost_1_74_0
+wait
+./bootstrap.sh --prefix=/usr --with-python=python3 &&
+wait
+./b2 stage -j4 threading=multi link=shared
+wait
+./b2 install threading=multi link=shared     
