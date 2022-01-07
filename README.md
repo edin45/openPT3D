@@ -1,6 +1,4 @@
 # openPT3D
-  
-## Note: Windows is currently broken, is being worked on
 
 ### Based on:
   OpenMvs: https://github.com/cdcseacave/openMVS   
