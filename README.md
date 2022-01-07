@@ -25,6 +25,9 @@ Check "Add Python to PATH" and continue
 Then after installlation click the "Remove Path Length Limit button"
 reboot your system
 pip install numpy
+pip install opencv-python
+Dowload git from: https://git-scm.com/downloads
+and install it (just click next you dont have to change anything)
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D
 cd externalSoftware
