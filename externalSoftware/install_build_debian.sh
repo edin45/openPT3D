@@ -15,7 +15,7 @@ wait
 wait
 ./vcpkg install cereal ceres eigen3 libjpeg-turbo libpng tiff
 wait
-wget -c "https://dl.bintray.com/boostorg/release/1.74.0/source/boost_1_74_0.tar.bz2"
+wget -c "https://boostorg.jfrog.io/artifactory/main/release/1.74.0/source/boost_1_74_0.tar.bz2"
 wait
 tar -xf boost_1_74_0.tar.bz2
 wait
