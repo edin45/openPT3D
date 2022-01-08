@@ -3,14 +3,6 @@ if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
   exit
 fi
-pacman -S python
-wait
-pacman -S python-pip
-wait
-pip install numpy
-wait
-pip install opencv-python
-wait
 pacman -S opencv
 wait
 pacman -S cgal

@@ -9,7 +9,6 @@
 ```
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D && cd externalSoftware
-sh install_python3_debian.sh
 sh install_build_debian.sh
 ```
 ### Windows installation:

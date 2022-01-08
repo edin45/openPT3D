@@ -5,12 +5,6 @@ if ! [ $(id -u) = 0 ]; then
 fi
 sudo apt update && sudo apt upgrade  
 wait
-sudo apt install python3-pip  
-wait
-sudo pip install numpy  
-wait
-sudo pip install opencv-python
-wait
 apt install curl zip unzip tar
 wait
 git clone https://github.com/Microsoft/vcpkg

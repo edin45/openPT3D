@@ -61,7 +61,7 @@ img = cv2.imread(os.path.join(image_folder,imgs_folder[0]))
 focal_length = str(max(img.shape[0],img.shape[1]) * 1.2)
 #str(input("Focal Length (px, you can get this value by multiplying the bigger value width, height by 1.2): "))
 
-current_file_path = os.path.dirname(os.path.abspath(__file__))
+current_file_path = os.getcwd()
 
 slash_replacement = "/"
 
