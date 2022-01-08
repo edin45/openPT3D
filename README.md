@@ -31,7 +31,7 @@ sh install_build_arch.sh
 Go to the openPT3D folder then execute:  
 #### Linux:  
 ```
-main -i [FOLDER_WITH_INPUT_IMAGES_TO_USE] -r [FOLDER_WHERE_RESULTS_ARE_STORED]  
+./main -i [FOLDER_WITH_INPUT_IMAGES_TO_USE] -r [FOLDER_WHERE_RESULTS_ARE_STORED]  
 ```
 #### Windows:
 ```
