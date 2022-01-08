@@ -5,7 +5,7 @@ if ! [ $(id -u) = 0 ]; then
 fi
 sudo apt update && sudo apt upgrade  
 wait
-apt install curl zip unzip tar
+apt install curl zip unzip tar bison libopencv-dev
 wait
 git clone https://github.com/Microsoft/vcpkg
 wait
