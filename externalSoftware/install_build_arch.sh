@@ -3,7 +3,7 @@ if [ "$EUID" -ne 0 ]
   then echo "Please run as root"
   exit
 fi
-pacman -S opencv
+pacman -S opencv gperf
 wait
 pacman -S cgal
 wait
