@@ -1,5 +1,7 @@
 # openPT3D
 
+## Note: The Linux installation is currently broken - Is being worked on
+
 ### Based on:
   OpenMvs: https://github.com/cdcseacave/openMVS   
   OpenMvg: https://github.com/openMVG/openMVG   
