@@ -5,13 +5,10 @@ if ! [ $(id -u) = 0 ]; then
 fi
 sudo apt update && sudo apt upgrade  
 wait
-sudo apt install python3-pip  
-wait
-sudo pip install numpy  
-wait
-sudo pip install opencv-python
-wait
-apt install curl zip unzip tar
+apt install curl zip unzip tar bison libopencv-dev gperf autoconf libjpeg62-dev
+#wget -c "http://ftp.de.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-dev_2.0.6-4_amd64.deb"
+#wait
+#dpkg -i libjpeg-dev_2.0.6-4_amd64.deb
 wait
 git clone https://github.com/Microsoft/vcpkg
 wait
@@ -19,7 +16,7 @@ cd vcpkg
 wait
 ./bootstrap-vcpkg.sh
 wait
-./vcpkg install cereal ceres eigen3 libjpeg-turbo libpng tiff
+./vcpkg install cereal ceres eigen3 libpng tiff opencv
 wait
 wget -c "https://boostorg.jfrog.io/artifactory/main/release/1.74.0/source/boost_1_74_0.tar.bz2"
 wait
