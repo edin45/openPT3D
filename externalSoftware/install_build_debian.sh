@@ -86,4 +86,4 @@ cmake . ../openMVS -DCMAKE_BUILD_TYPE=Release -DVCG_ROOT="$main_path/vcglib"
 -DBUILD_SHARED_LIBS=ON
 
 #Install OpenMVS library (optional):
-make -j2 && sudo make installs   
+make -j6
