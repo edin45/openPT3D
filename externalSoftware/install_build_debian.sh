@@ -18,6 +18,7 @@ wait
 wait
 ./vcpkg install cereal ceres eigen3 libpng tiff opencv
 wait
+cd ..
 wget -c "https://boostorg.jfrog.io/artifactory/main/release/1.74.0/source/boost_1_74_0.tar.bz2"
 wait
 tar -xf boost_1_74_0.tar.bz2
@@ -29,6 +30,8 @@ wait
 ./b2 stage -j4 threading=multi link=shared
 wait
 ./b2 install threading=multi link=shared        
+wait
+cd ..
 #Prepare and empty machine for building:
 sudo apt-get update -qq && sudo apt-get install -qq
 wait
