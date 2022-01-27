@@ -8,6 +8,7 @@
   CMVS/PMVS: https://github.com/pmoulon/CMVS-PMVS   
 
 ### Debian/Ubuntu/Pop OS installation:  
+#### This will take about 30 minutes on a 4 core CPU
 ```
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D && cd externalSoftware
@@ -15,6 +16,7 @@ sh install_python3_debian.sh
 sh install_build_debian.sh
 ```
 ### Windows installation:
+#### This will take about 10 minutes
 ```
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D
@@ -23,6 +25,7 @@ install_build_windows.bat
 ```
 
 ### Arch installation:
+#### This will take about 30 minutes on a 4 core CPU
 ```
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D && cd externalSoftware

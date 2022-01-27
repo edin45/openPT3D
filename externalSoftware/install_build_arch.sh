@@ -62,7 +62,7 @@ make && sudo make install
 wait
 cd ..
 wait
-pacman -S libstdc++5
+pacman -S libstdc++5 make
 wait
 pacman -Syu lib32-gcc-libs
 wait
