@@ -11,6 +11,7 @@
 ```
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D && cd externalSoftware
+sh install_python3_debian.sh
 sh install_build_debian.sh
 ```
 ### Windows installation:
@@ -33,7 +34,7 @@ sh install_build_arch.sh
 Go to the openPT3D folder then execute:  
 #### Linux:  
 ```
-./main -i [FOLDER_WITH_INPUT_IMAGES_TO_USE] -r [FOLDER_WHERE_RESULTS_ARE_STORED]  
+python main.py -i [FOLDER_WITH_INPUT_IMAGES_TO_USE] -r [FOLDER_WHERE_RESULTS_ARE_STORED]  
 ```
 #### Windows:
 ```

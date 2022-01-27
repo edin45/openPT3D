@@ -9,6 +9,14 @@ pacman -S cgal
 wait
 pacman -S lvtk
 wait
+pacman -S python
+wait
+pacman -S python-pip
+wait
+pip install opencv-python
+wait
+pip install numpy
+wait
 pacman -S vtk
 wait
 pacman -S curl zip unzip tar

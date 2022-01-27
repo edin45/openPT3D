@@ -5,6 +5,10 @@ if ! [ $(id -u) = 0 ]; then
 fi
 sudo apt update && sudo apt upgrade  
 wait
+python3.9 -m pip install opencv-python
+wait
+python3.9 -m pip install numpy
+wait
 apt install curl zip unzip tar bison libopencv-dev gperf autoconf libjpeg62-dev
 #wget -c "http://ftp.de.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-dev_2.0.6-4_amd64.deb"
 #wait
