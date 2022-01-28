@@ -83,18 +83,18 @@ make -j6 && sudo make install
 wait
 cd ..
 wait
-pacman -S freeglut glew glfw
+pacman -S freeglut glew glfw pugixml
 wait
 #OpenMVS
 #git clone https://github.com/cdcseacave/openMVS.git openMVS
 wget -c "https://github.com/cdcseacave/openMVS/archive/refs/tags/v2.0.tar.gz"
 wait
-unzip v2.0.tar.gz
+tar -xf v2.0.tar.gz
 wait
 mkdir openMVS_Linux_CPU && cd openMVS_Linux_CPU
 wait
 echo "Using CPU" 
-cmake . ../v2.0 -DCMAKE_BUILD_TYPE=Release -DVCG_ROOT="$main_path/vcglib" -DOpenMVS_USE_CUDA=OFF
+cmake . ../openMVS-2.0 -DCMAKE_BUILD_TYPE=Release -DVCG_ROOT="$main_path/vcglib" -DOpenMVS_USE_CUDA=OFF
 wait
 #Install OpenMVS library (optional):
 make -j6
