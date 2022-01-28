@@ -8,7 +8,8 @@
 ### Windows installation:
 #### This will take about 10 minutes
 ```
-Install Git from: https://git-scm.com/downloads
+Install Git from: https://git-scm.com/downloads  
+Then open a command line window and execute these commands:  
 git clone --recursive https://github.com/edin45/openPT3D.git (or unzip the zip you download from the stable release)
 cd openPT3D
 cd externalSoftware
