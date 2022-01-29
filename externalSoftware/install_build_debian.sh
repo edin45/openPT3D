@@ -3,6 +3,31 @@ if ! [ $(id -u) = 0 ]; then
    echo "Please run as root!"
    exit 1
 fi
+if [ $# -ne 2 ]; then
+  echo "Please specify what device OpenMVS (Depth Reconstruction) should use, specify CPU / GPU with -d cpu or -d gpu"
+  exit
+fi
+while getopts ":d:" opt; do
+  case $opt in
+    d)
+      if [ "$OPTARG" == "cpu" ]; then
+        echo "Using CPU"
+      fi
+      if [ "$OPTARG" == "gpu" ]; then
+        echo "Using GPU"
+      fi
+
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+    :)
+      echo "Option -$OPTARG requires an argument." >&2
+      exit 1
+      ;;
+  esac
+done
 sudo apt update && sudo apt upgrade  
 wait
 python3.9 -m pip install opencv-python
@@ -89,8 +114,29 @@ tar -xf v2.0.tar.gz
 wait
 mkdir openMVS_Linux_CPU && cd openMVS_Linux_CPU
 wait
-echo "Using CPU" 
-cmake . ../openMVS-2.0 -DCMAKE_BUILD_TYPE=Release -DVCG_ROOT="$main_path/vcglib" -DOpenMVS_USE_CUDA=OFF
+while getopts ":d:" opt; do
+  case $opt in
+    d)
+      if [ "$OPTARG" == "cpu" ]; then
+        echo "Using CPU"
+        cmake . ../openMVS-2.0 -DCMAKE_BUILD_TYPE=Release -DVCG_ROOT="$main_path/vcglib" -DOpenMVS_USE_CUDA=OFF
+      fi
+      if [ "$OPTARG" == "gpu" ]; then
+        echo "Using GPU"
+        cmake . ../openMVS-2.0 -DCMAKE_BUILD_TYPE=Release -DVCG_ROOT="$main_path/vcglib"
+      fi
+
+      ;;
+    \?)
+      echo "Invalid option: -$OPTARG" >&2
+      exit 1
+      ;;
+    :)
+      echo "Option -$OPTARG requires an argument." >&2
+      exit 1
+      ;;
+  esac
+done
 wait
 #Install OpenMVS library (optional):
 make -j6
