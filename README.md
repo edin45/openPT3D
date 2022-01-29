@@ -1,9 +1,9 @@
-# openPT3D
+# openPT3D - A Fast & Easy Open Source Photogrammetry Tool
 
 ### Based on:
-  OpenMvs: https://github.com/cdcseacave/openMVS   
-  OpenMvg: https://github.com/openMVG/openMVG   
-  CMVS/PMVS: https://github.com/pmoulon/CMVS-PMVS   
+- OpenMvs: https://github.com/cdcseacave/openMVS   
+- OpenMvg: https://github.com/openMVG/openMVG   
+- CMVS/PMVS: https://github.com/pmoulon/CMVS-PMVS   
 
 ### Windows installation:
 #### This will take about 10 minutes
@@ -19,7 +19,7 @@ install_build_windows.bat
 ```
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D && cd externalSoftware
-sh install_build_arch.sh
+sh install_build_arch.sh -d (here you have to choose either cpu or gpu for the dense recon step)
 ```
 
 ### Debian/Ubuntu/Pop OS installation:  
@@ -28,7 +28,7 @@ sh install_build_arch.sh
 git clone --recursive https://github.com/edin45/openPT3D.git
 cd openPT3D && cd externalSoftware
 sh install_python3_debian.sh
-sh install_build_debian.sh
+sh install_build_debian.sh -d (here you have to choose either cpu or gpu for the dense recon step)
 ```
 
 ### Usage:  
