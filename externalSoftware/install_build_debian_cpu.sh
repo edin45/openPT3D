@@ -5,9 +5,11 @@ if ! [ $(id -u) = 0 ]; then
 fi
 sudo apt update && sudo apt upgrade  
 wait
-python3.9 -m pip install opencv-python
+sudo apt install python3 python3-pip
 wait
-python3.9 -m pip install numpy
+pip install opencv-python
+wait
+pip install numpy
 wait
 apt install curl zip unzip tar bison libopencv-dev gperf autoconf libjpeg62-dev
 #wget -c "http://ftp.de.debian.org/debian/pool/main/libj/libjpeg-turbo/libjpeg-dev_2.0.6-4_amd64.deb"
@@ -83,14 +85,12 @@ wait
 sudo apt-get -y install freeglut3-dev libglew-dev libglfw3-dev
 wait
 #OpenMVS
-wget -c "https://github.com/cdcseacave/openMVS/archive/refs/tags/v2.0.tar.gz"
-wait
-tar -xf v2.0.tar.gz
+git clone https://github.com/cdcseacave/openMVS.git openMVS
 wait
 mkdir openMVS_Linux_CPU && cd openMVS_Linux_CPU
 wait
 echo "Using CPU" 
-cmake . ../openMVS-2.0 -DCMAKE_BUILD_TYPE=Release -DVCG_ROOT="$main_path/vcglib" -DOpenMVS_USE_CUDA=OFF
+cmake . ../openMVS -DCMAKE_BUILD_TYPE=Release -DVCG_ROOT="$main_path/vcglib" -DOpenMVS_USE_CUDA=OFF
 wait
 #Install OpenMVS library (optional):
 make -j6
