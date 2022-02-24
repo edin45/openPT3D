@@ -50,10 +50,10 @@ if depth_recon_strategy != "CMVS":
 else:
     depth_recon_strategy = "CMVS"
 
-if depth_recon_strategy == "openMVS":
-    decimate_factor = input("Decimate Factor for Mesh Reconstruction (Default: 1, Increase if program uses to much Ram): ")
-    if decimate_factor == "":
-        decimate_factor = 1
+#if depth_recon_strategy == "openMVS":
+#    decimate_factor = input("Decimate Factor for Mesh Reconstruction (Default: 1, Increase if program uses to much Ram): ")
+#    if decimate_factor == "":
+#        decimate_factor = 1
 max_imgs = 50
 
 imgs_folder = os.listdir(image_folder)
@@ -169,7 +169,10 @@ def execute_pmvs_process(use_cmvs):
 
 def execute_openMVS_process():
     os.chdir(result_folder)
-    os.system(f"{current_file_path}/externalSoftware".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "\\Windows") + f"/openMVS_{platform.system()}_CPU/bin/DensifyPointCloud".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + " scene.mvs")
+    if os.path.isfile("scene_dense.mvs"):
+        print("scene_dense.mvs already exists, skipping...")
+    else:   
+        os.system(f"{current_file_path}/externalSoftware".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "\\Windows") + f"/openMVS_{platform.system()}_CPU/bin/DensifyPointCloud".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + " scene.mvs")
 
 if depth_recon_strategy == "CMVS":
     os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2PMVS".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}".replace("/",slash_replacement))
@@ -178,21 +181,27 @@ if depth_recon_strategy == "CMVS":
     if os.path.isfile(pmvs_ply_file) == False:
         execute_pmvs_process(False)
 else:
-    os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2openMVS".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}/scene.mvs -d {result_folder}/undistorted".replace("/",slash_replacement))
-    execute_openMVS_process()
+    if os.path.isfile(f"{result_folder}/scene_dense.mvs".replace("/",slash_replacement)):
+        print("scene_dense.mvs already exists, skipping...")
+    else:
+        os.system(open_mvg_folder + open_mvg_binary_folder + f"/openMVG_main_openMVG2openMVS".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" -i {result_folder}/reconstruction_sequential/sfm_data.bin -o {result_folder}/scene.mvs -d {result_folder}/undistorted".replace("/",slash_replacement))
+        execute_openMVS_process()
 
 if depth_recon_strategy == "CMVS":
     print(f"Dense Point Cloud: {result_folder}/PMVS/models/pmvs_options.txt.ply")
 else:
+    decimate_factor_recon_mesh = 0
+    decimate_factor_refine_mesh = 0
     os.chdir(f"{result_folder}")
-    #while True:
-        #if os.path.isfile("scene_dense_mesh.mvs") == False:
-    os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/ReconstructMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" -d {decimate_factor} scene_dense.mvs")
-        #elif os.path.isfile("scene_dense_mesh_refine.mvs") == False:
-    os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/RefineMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" --resolution-level={decimate_factor} scene_dense_mesh.mvs")
-        #elif os.path.isfile("scene_dense_mesh_refine_texture.mvs") == False:
-    os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/TextureMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + " scene_dense_mesh_refine.mvs")
-        #else:
-        #    break
+    while True:
+        if os.path.isfile("scene_dense_mesh.mvs") == False:
+            os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/ReconstructMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" -d {decimate_factor_recon_mesh} scene_dense.mvs")
+            decimate_factor_recon_mesh+=1
+        elif os.path.isfile("scene_dense_mesh_refine.mvs") == False:
+            os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/RefineMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" --resolution-level={decimate_factor_refine_mesh} scene_dense_mesh.mvs")
+            decimate_factor_refine_mesh+=1
+        elif os.path.isfile("scene_dense_mesh_refine_texture.mvs") == False:
+            os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/TextureMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + " scene_dense_mesh_refine.mvs")
+            break
 
     print("Final Mesh: " + result_folder + "/scene_dense_mesh_mesh_refine_texture. ply / glb")
