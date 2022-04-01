@@ -16,11 +16,15 @@ apt install curl zip unzip tar bison libopencv-dev gperf autoconf libjpeg62-dev
 #wait
 #dpkg -i libjpeg-dev_2.0.6-4_amd64.deb
 wait
+apt-get install bison
+wait
 git clone https://github.com/Microsoft/vcpkg
 wait
 cd vcpkg
 wait
 ./bootstrap-vcpkg.sh
+wait
+./vcpkg update
 wait
 ./vcpkg install cereal ceres eigen3 libpng tiff opencv
 wait
