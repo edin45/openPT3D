@@ -1,0 +1,6 @@
+dependencies:
+- boost 1.74.0: apt install libboost1.74-all-dev
+- opencv: apt install libopencv-imgcodecs4.5 libopencv-calib3d4.5 libopencv-highgui4.5
+- libjpeg: apt install libjpeg62
+- libpng: apt install libpng16-16
+- libtiff: apt install libtiff5

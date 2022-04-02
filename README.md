@@ -30,8 +30,7 @@ sh install_build_arch_gpu.sh for gpu (CUDA)
 ```
 git clone --recursive https://github.com/edin45/openPT3D.git (or unzip the zip you download from the stable release)
 cd openPT3D && cd externalSoftware
-sh install_build_debian_cpu.sh for cpu or
-sh install_build_debian_gpu.sh for gpu (CUDA)
+sh install_debian.sh
 ```
 
 ### Usage:  
