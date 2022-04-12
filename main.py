@@ -56,6 +56,10 @@ if depth_recon_strategy == "openMVS":
         min_decimate_factor = 0
 max_imgs = 50
 
+refine = 'true'
+if input('Refine Mesh? y/n') == 'n':
+    refine = 'false'
+
 imgs_folder = os.listdir(image_folder)
 img = cv2.imread(os.path.join(image_folder,imgs_folder[0]))
 focal_length = str(max(img.shape[0],img.shape[1]) * 1.2)
@@ -205,7 +209,7 @@ else:
             if(adjustment_counter_mesh_recon > 20):
                 print('Tried to Reconstruct Mesh 20 times, Failed')
                 break
-        elif os.path.isfile("scene_dense_mesh_refine.mvs") == False:
+        elif os.path.isfile("scene_dense_mesh_refine.mvs") == False and refine == 'true':
             os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/RefineMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + f" --resolution-level={decimate_factor_refine_mesh} scene_dense_mesh.mvs" + ("" if platform.system() == "Linux" else " --export-type obj"))
             decimate_factor_refine_mesh+=1
             adjustment_counter_mesh_refine+=1
@@ -213,7 +217,10 @@ else:
                 print('Tried to Refine Mesh 20 times, Failed')
                 break
         elif os.path.isfile("scene_dense_mesh_refine_texture.mvs") == False:
-            os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/TextureMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + " scene_dense_mesh_refine.mvs" + ("" if platform.system() == "Linux" else " --export-type obj"))
+            if refine == 'true':
+                os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/TextureMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + " scene_dense_mesh_refine.mvs" + ("" if platform.system() == "Linux" else " --export-type obj"))
+            else:
+                os.system(f"{current_file_path}/externalSoftware/".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else "Windows/") + f"openMVS_{platform.system()}_CPU/bin/TextureMesh".replace("/",slash_replacement) + ("" if platform.system() == "Linux" else ".exe") + " scene_dense_mesh.mvs" + ("" if platform.system() == "Linux" else " --export-type obj"))
             break
 
     print("Final Mesh: " + result_folder + "/scene_dense_mesh_mesh_refine_texture. obj / glb")
