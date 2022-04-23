@@ -151,10 +151,56 @@ class _HomeState extends State<Home> {
     sharedPreferences.setBool('accurate', accurate);
 
     focal_length = accurate ? ((double.parse(focalLengthController.text) / double.parse(sensorWidthController.text)) * double.parse(imgWidth.text)) : (max(double.parse(imgWidth.text),double.parse(imgHeight.text)) * 1.2);
+    
+    //////////////////////////////
+    ////        OpenMVG       ////
+    //////////////////////////////
 
     currentStep = 0;
     setState(() {});
     await shell.run('''externalSoftware/$platform/openMVG/openMVG_main_SfMInit_ImageListing$executableEnding -i $imgFolder -o $resultFolder/matches/ -d externalSoftware/sensor_width_database/sensor_width_camera_database.txt -f $focal_length''');
+
+    currentStep++;
+    setState(() {});
+    await shell.run('''externalSoftware/$platform/openMVG/openMVG_main_ComputeFeatures$executableEnding -i $resultFolder/matches/sfm_data.json -o $resultFolder/matches/ -m SIFT''');
+
+    currentStep++;
+    setState(() {});
+    await shell.run('''externalSoftware/$platform/openMVG/openMVG_main_PairGenerator$executableEnding -i $resultFolder/matches/sfm_data.json -o $resultFolder/matches/pairs.bin''');
+
+    currentStep++;
+    setState(() {});
+    await shell.run('''externalSoftware/$platform/openMVG/openMVG_main_ComputeMatches$executableEnding -i $resultFolder/matches/sfm_data.json -p $resultFolder/matches/pairs.bin -o $resultFolder/matches/matches.putative.bin''');
+
+
+
+    currentStep++;
+    setState(() {});
+
+    final Directory reconstruction_sequential =
+    Directory('$resultFolder/reconstruction_sequential/');
+
+    if (await _appDocDirFolder.exists()) {
+      //if folder already exists return path
+      
+    } else {
+      //if folder not exists create folder and then return its path
+      final Directory _appDocDirNewFolder =
+      await _appDocDirFolder.create(recursive: true);
+    }
+
+    await shell.run('''externalSoftware/$platform/openMVG/openMVG_main_SfM$executableEnding --sfm-engine INCREMENTAL --input-file $resultFolder/matches/sfm_data.json --match_dir $resultFolder/matches --output_dir $resultFolder/reconstruction_sequential''');
+
+
+    currentStep++;
+    setState(() {});
+    await shell.run('''externalSoftware/$platform/openMVG/openMVG_main_ComputeSfM_DataColor$executableEnding -i $resultFolder/reconstruction_sequential/sfm_data.bin -o $resultFolder/reconstruction_sequential/colorized.ply''');
+
+    //////////////////////////////
+    ////        OpenMVS       ////
+    //////////////////////////////
+
+    currentStep++;
     
   }
 
@@ -264,6 +310,7 @@ class _HomeState extends State<Home> {
             ),
           ),
           const Padding(padding: EdgeInsets.all(4.0)),
+          /*
           Center(
             child: Container(
               width: width+140,
@@ -294,6 +341,7 @@ class _HomeState extends State<Home> {
               ),
             ),
           ),
+          */
           const Padding(padding: EdgeInsets.all(4.0)),
           Center(
             child: Container(
@@ -462,7 +510,7 @@ class _HomeState extends State<Home> {
             ),
           ),
           Padding(padding: EdgeInsets.all(4.0)),
-          Center(child: progressWidget(width, currentStep, steps)),
+          Center(child: progressWidget(width+140, currentStep, steps)),
         ],
       ),
     );

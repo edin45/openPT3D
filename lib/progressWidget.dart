@@ -17,15 +17,15 @@ class progressWidget extends StatelessWidget {
       child: ListView.builder(itemBuilder: (BuildContext context,int index) {
         return Column(
           children: [
-            Text(steps[index].toString(),style: const TextStyle(color: Colors.white,fontSize: 18.0),),
+            Container(width: width/steps.length,child: Text(steps[index].toString(),style: const TextStyle(color: Colors.white,fontSize: 13.0),overflow: TextOverflow.ellipsis,)),
             Container(
               height: 5.0,
               width: width/steps.length,
-              color: currentStep>index?Colors.green:currentStep==0?Colors.orange:Colors.grey,
+              color: currentStep>index?Colors.green:currentStep==index?Colors.orange:Colors.grey,
             ),
           ],
         );
-      }),
+      },scrollDirection: Axis.horizontal,physics: NeverScrollableScrollPhysics(),),
     );
   }
 }
