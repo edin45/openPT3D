@@ -1,12 +1,15 @@
 import 'dart:io';
+import 'dart:math';
 
 import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 import 'package:numberpicker/numberpicker.dart';
+import 'package:openpt3d/progressWidget.dart';
 import 'package:path_provider/path_provider.dart';
 import 'package:process_run/shell.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toggle_switch/toggle_switch.dart';
 
 void main() {
@@ -50,6 +53,10 @@ class _HomeState extends State<Home> {
   bool accurate = false;
 
   double focal_length = 0.0;
+
+  int currentStep = -1;
+
+  List<String> steps = ['ImageListing','ComputeFeatures','PairGenerator','ComputeMatches','GeometricFilter','SfM','DataColor','openMVG2openMVS','DensifyPointCloud','ReconstructMesh','RefineMesh','TextureMesh'];
 
   runProcess() async {
     //await shell.run('''externalSoftware/$platform/openMVG/openMVG_main_openMVG2openMVS$executableEnding''');
@@ -125,7 +132,7 @@ class _HomeState extends State<Home> {
 
     if(!containsImgs && !didAlertShow) {
       Alert(context: context,title: 'The Image folder should contain only .jpg/.png/.tif images',buttons: [
-        DialogButton(child: Text('Ok',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),), onPressed: () {
+        DialogButton(child: const Text('Ok',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),), onPressed: () {
           Navigator.pop(context);
         })
       ]).show();
@@ -135,9 +142,36 @@ class _HomeState extends State<Home> {
 
     //focal_length = 6220.8;
     //focal_length = (focal_mm / sensor_width_mm) * image_width_in_pixels
-    
+
+    SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+    sharedPreferences.setString('imgWidth', imgWidth.text);
+    sharedPreferences.setString('imgHeight', imgHeight.text);
+    sharedPreferences.setString('focalLengthmm', focalLengthController.text);
+    sharedPreferences.setString('sensorWidthmm', sensorWidthController.text);
+    sharedPreferences.setBool('accurate', accurate);
+
+    focal_length = accurate ? ((double.parse(focalLengthController.text) / double.parse(sensorWidthController.text)) * double.parse(imgWidth.text)) : (max(double.parse(imgWidth.text),double.parse(imgHeight.text)) * 1.2);
+
+    currentStep = 0;
+    setState(() {});
     await shell.run('''externalSoftware/$platform/openMVG/openMVG_main_SfMInit_ImageListing$executableEnding -i $imgFolder -o $resultFolder/matches/ -d externalSoftware/sensor_width_database/sensor_width_camera_database.txt -f $focal_length''');
     
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    asyncInitTasks() async {
+      SharedPreferences sharedPreferences = await SharedPreferences.getInstance();
+      imgWidth.text = sharedPreferences.getString('imgWidth') ?? '';
+      imgHeight.text = sharedPreferences.getString('imgHeight') ?? '';
+      focalLengthController.text = sharedPreferences.getString('focalLengthmm') ?? '';
+      sensorWidthController.text = sharedPreferences.getString('sensorWidthmm') ?? '';
+      accurate = sharedPreferences.getBool('accurate') ?? false;
+
+      setState(() {});
+    }
   }
 
   @override
@@ -246,8 +280,8 @@ class _HomeState extends State<Home> {
                     inactiveBgColor: Colors.grey,
                     inactiveFgColor: Colors.white,
                     totalSwitches: 2,
-                    labels: ['openMVS', 'CMVS (Linux only)'],
-                    activeBgColors: [[Colors.blue],[Colors.blue]],
+                    labels: const ['openMVS', 'CMVS (Linux only)'],
+                    activeBgColors: const [[Colors.blue],[Colors.blue]],
                     onToggle: (index) {
                       if(index == 0) {
                         denseReconApplication = 'openMVS';
@@ -346,8 +380,8 @@ class _HomeState extends State<Home> {
                         inactiveBgColor: Colors.grey,
                         inactiveFgColor: Colors.white,
                         totalSwitches: 2,
-                        labels: ['Focal Length approx., Requires Image Width and height', 'Calculate Focal Length, Requires Focal Length (mm), Sensor Width (mm), Image Width (before resizing)'],
-                        activeBgColors: [[Colors.blue],[Colors.blue]],
+                        labels: const ['Focal Length approx., Requires Image Width and height', 'Calculate Focal Length, Requires Focal Length (mm), Sensor Width (mm), Image Width (before resizing)'],
+                        activeBgColors: const [[Colors.blue],[Colors.blue]],
                         onToggle: (index) {
                           if(index == 0) {
                             accurate = false;
@@ -377,19 +411,19 @@ class _HomeState extends State<Home> {
                   Container(
                     width: (width+116)/3,
                     height: 60,
-                    child: TextField(controller: imgWidth,style: const TextStyle(color: Colors.white),decoration: InputDecoration(hintText: 'Image width (Before any resizing)',hintStyle: TextStyle(color: Colors.grey)),),
+                    child: TextField(controller: imgWidth,style: const TextStyle(color: Colors.white),decoration: const InputDecoration(hintText: 'Image width (Before any resizing)',hintStyle: TextStyle(color: Colors.grey)),),
                   ),
-                  const Padding(padding: const EdgeInsets.all(6),),
+                  const Padding(padding: EdgeInsets.all(6),),
                   Container(
                     width: (width+116)/3,
                     height: 60,
-                    child: TextField(controller: focalLengthController,style: const TextStyle(color: Colors.white),decoration: InputDecoration(hintText: 'Focal length (mm)',hintStyle: TextStyle(color: Colors.grey)),),
+                    child: TextField(controller: focalLengthController,style: const TextStyle(color: Colors.white),decoration: const InputDecoration(hintText: 'Focal length (mm)',hintStyle: TextStyle(color: Colors.grey)),),
                   ),
-                  const Padding(padding: const EdgeInsets.all(6),),
+                  const Padding(padding: EdgeInsets.all(6),),
                   Container(
                     width: (width+116)/3,
                     height: 60,
-                    child: TextField(controller: sensorWidthController,style: const TextStyle(color: Colors.white),decoration: InputDecoration(hintText: 'Sensor Width (mm)',hintStyle: TextStyle(color: Colors.grey)),),
+                    child: TextField(controller: sensorWidthController,style: const TextStyle(color: Colors.white),decoration: const InputDecoration(hintText: 'Sensor Width (mm)',hintStyle: TextStyle(color: Colors.grey)),),
                   ),
                 ],
               ),
@@ -403,13 +437,13 @@ class _HomeState extends State<Home> {
                   Container(
                     width: (width+128)/2,
                     height: 60,
-                    child: TextField(controller: imgWidth,style: TextStyle(color: Colors.white),decoration: InputDecoration(hintText: 'Image width (Before any resizing)',hintStyle: TextStyle(color: Colors.grey)),),
+                    child: TextField(controller: imgWidth,style: const TextStyle(color: Colors.white),decoration: const InputDecoration(hintText: 'Image width (Before any resizing)',hintStyle: TextStyle(color: Colors.grey)),),
                   ),
-                  Padding(padding: const EdgeInsets.all(6),),
+                  const Padding(padding: EdgeInsets.all(6),),
                   Container(
                     width: (width+128)/2,
                     height: 60,
-                    child: TextField(controller: imgHeight,style: TextStyle(color: Colors.white),decoration: InputDecoration(hintText: 'Image height (Before any resizing)',hintStyle: TextStyle(color: Colors.grey)),),
+                    child: TextField(controller: imgHeight,style: const TextStyle(color: Colors.white),decoration: const InputDecoration(hintText: 'Image height (Before any resizing)',hintStyle: TextStyle(color: Colors.grey)),),
                   ),
                 ],
               ),
@@ -427,6 +461,8 @@ class _HomeState extends State<Home> {
               ),)),
             ),
           ),
+          Padding(padding: EdgeInsets.all(4.0)),
+          Center(child: progressWidget(width, currentStep, steps)),
         ],
       ),
     );
