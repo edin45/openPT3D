@@ -4,6 +4,7 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
 import 'package:numberpicker/numberpicker.dart';
+import 'package:path_provider/path_provider.dart';
 import 'package:process_run/shell.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:toggle_switch/toggle_switch.dart';
@@ -40,27 +41,63 @@ class _HomeState extends State<Home> {
   TextEditingController imgFolderController = TextEditingController();
   TextEditingController resultFolderController = TextEditingController();
 
+  TextEditingController imgWidth = TextEditingController();
+  TextEditingController imgHeight = TextEditingController();
+
+  TextEditingController focalLengthController = TextEditingController();
+  TextEditingController sensorWidthController = TextEditingController();
+
+  bool accurate = false;
+
   double focal_length = 0.0;
 
   runProcess() async {
     //await shell.run('''externalSoftware/$platform/openMVG/openMVG_main_openMVG2openMVS$executableEnding''');
     //await shell.run('''''');
     bool didAlertShow = false;
+    String errorMessage = '';
     if(imgFolder == null || imgFolder == '') {
-      Alert(context: context,title: 'Please select a Image Folder',buttons: [
-        DialogButton(child: Text('Ok',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),), onPressed: () {
-          Navigator.pop(context);
-        })
-      ]).show();
+      errorMessage = 'Please select a Image Folder';
       didAlertShow = true;
     }else if(resultFolder == null || resultFolder == '') {
-      Alert(context: context,title: 'Please select a Result Folder',buttons: [
-        DialogButton(child: Text('Ok',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),), onPressed: () {
-          Navigator.pop(context);
-        })
-      ]).show();
+      errorMessage = 'Please select a Result Folder';
+      didAlertShow = true;
+      
+    }else if(accurate && (imgWidth.text.trim() == '' || focalLengthController.text.trim() == '' || sensorWidthController.text.trim() == '')) {
+      errorMessage = 'Please enter the Image Width and the Focal Length and the Sensor Width';
+      didAlertShow = true;
+      
+    }else if(!accurate && (imgWidth.text.trim() == '' || imgHeight.text.trim() == '')) {
+      errorMessage = 'Please enter the Image Width and Height';
       didAlertShow = true;
     }
+
+    try{
+      if(accurate) {
+        double imgWidthTest = double.parse(imgWidth.text);
+        double imgFocalLengthTest = double.parse(focalLengthController.text);
+        double sensorWidthTest = double.parse(sensorWidthController.text);
+      }else{
+        double imgWidthTest = double.parse(imgWidth.text);
+        double imgHeightTest = double.parse(imgHeight.text);
+      }
+    }catch(_){
+      if(accurate) {
+        errorMessage = 'The Image Width and the Focal Length and the Sensor Width have to be numbers';
+      }else{
+        errorMessage = 'The Image Width and Height have to be numbers';
+      }
+    }
+
+    if(errorMessage != '') {
+      Alert(context: context,type: AlertType.error,title: errorMessage,buttons: [
+          DialogButton(child: const Text('Ok',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold),), onPressed: () {
+            Navigator.pop(context);
+          })
+        ]).show();
+        return;
+    }
+
     final Directory _appDocDirFolder =
     Directory('$resultFolder/matches/');
 
@@ -73,13 +110,16 @@ class _HomeState extends State<Home> {
       await _appDocDirFolder.create(recursive: true);
     }
 
-    List file = Directory("$imgFolder/").listSync();
+    List imgFiles = Directory("$imgFolder/").listSync();
 
     bool containsImgs = false;
+    int lastImgIndex = 0;
 
-    for(int i = 0;i<file.length;i++) {
-      if(file[i].toString().contains('.jpg') || file[i].toString().contains('.png') || file[i].toString().contains('.tif') || file[i].toString().contains('.tiff')) {
+    for(int i = 0;i<imgFiles.length;i++) {
+      print('imgFiles: ${imgFiles[i]}');
+      if(imgFiles[i].toString().contains('.jpg') || imgFiles[i].toString().contains('.png') || imgFiles[i].toString().contains('.tif') || imgFiles[i].toString().contains('.tiff')) {
         containsImgs = true;
+        lastImgIndex = i;
       }
     }
 
@@ -92,12 +132,12 @@ class _HomeState extends State<Home> {
       return;
     }
 
-    File image = new File('${imgFolder}'); // Or any other way to get a File instance.
-    var decodedImage = await decodeImageFromList(image.readAsBytesSync());
-    print(decodedImage.width);
-    print(decodedImage.height);
 
-    await shell.run('''externalSoftware/$platform/openMVG/openMVG_main_SfMInit_ImageListing$executableEnding -i $imgFolder -o $resultFolder/matches/ -d externalSoftware/sensor_width_database/sensor_width_camera_database.txt -f focal_length''');
+    //focal_length = 6220.8;
+    //focal_length = (focal_mm / sensor_width_mm) * image_width_in_pixels
+    
+    await shell.run('''externalSoftware/$platform/openMVG/openMVG_main_SfMInit_ImageListing$executableEnding -i $imgFolder -o $resultFolder/matches/ -d externalSoftware/sensor_width_database/sensor_width_camera_database.txt -f $focal_length''');
+    
   }
 
   @override
@@ -287,6 +327,89 @@ class _HomeState extends State<Home> {
                        }),
                      ),
                    ],
+                  ),
+                ],
+              ),
+            ),
+          ),
+          const Padding(padding: EdgeInsets.all(4.0)),
+          Center(
+            child: Container(
+              width: width+140,
+              child: Align(
+                alignment: Alignment.topLeft,
+                child: ToggleSwitch(
+                        minWidth: (width+139 > 1920 ? 1920 : width+139)/2,
+                        initialLabelIndex: accurate ? 1 : 0,
+                        cornerRadius: 20.0,
+                        activeFgColor: Colors.white,
+                        inactiveBgColor: Colors.grey,
+                        inactiveFgColor: Colors.white,
+                        totalSwitches: 2,
+                        labels: ['Focal Length approx., Requires Image Width and height', 'Calculate Focal Length, Requires Focal Length (mm), Sensor Width (mm), Image Width (before resizing)'],
+                        activeBgColors: [[Colors.blue],[Colors.blue]],
+                        onToggle: (index) {
+                          if(index == 0) {
+                            accurate = false;
+                          }else{
+                            accurate = true;
+                          }
+                          setState(() {});
+                        },
+                      ),
+              ),
+            ),
+          ),
+          const Padding(padding: EdgeInsets.all(8.0)),
+          Center(
+            child: Container(
+              width: width+140,
+              child: const Text('This data will be saved for later',style: TextStyle(color: Colors.white),),
+            ),
+          ),
+          const Padding(padding: EdgeInsets.all(2.0)),
+          accurate ? Center(
+            child: Container(
+              width: width+140,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: (width+116)/3,
+                    height: 60,
+                    child: TextField(controller: imgWidth,style: const TextStyle(color: Colors.white),decoration: InputDecoration(hintText: 'Image width (Before any resizing)',hintStyle: TextStyle(color: Colors.grey)),),
+                  ),
+                  const Padding(padding: const EdgeInsets.all(6),),
+                  Container(
+                    width: (width+116)/3,
+                    height: 60,
+                    child: TextField(controller: focalLengthController,style: const TextStyle(color: Colors.white),decoration: InputDecoration(hintText: 'Focal length (mm)',hintStyle: TextStyle(color: Colors.grey)),),
+                  ),
+                  const Padding(padding: const EdgeInsets.all(6),),
+                  Container(
+                    width: (width+116)/3,
+                    height: 60,
+                    child: TextField(controller: sensorWidthController,style: const TextStyle(color: Colors.white),decoration: InputDecoration(hintText: 'Sensor Width (mm)',hintStyle: TextStyle(color: Colors.grey)),),
+                  ),
+                ],
+              ),
+            ),
+          ) : Center(
+            child: Container(
+              width: width+140,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Container(
+                    width: (width+128)/2,
+                    height: 60,
+                    child: TextField(controller: imgWidth,style: TextStyle(color: Colors.white),decoration: InputDecoration(hintText: 'Image width (Before any resizing)',hintStyle: TextStyle(color: Colors.grey)),),
+                  ),
+                  Padding(padding: const EdgeInsets.all(6),),
+                  Container(
+                    width: (width+128)/2,
+                    height: 60,
+                    child: TextField(controller: imgHeight,style: TextStyle(color: Colors.white),decoration: InputDecoration(hintText: 'Image height (Before any resizing)',hintStyle: TextStyle(color: Colors.grey)),),
                   ),
                 ],
               ),
