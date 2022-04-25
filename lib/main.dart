@@ -233,7 +233,7 @@ class _HomeState extends State<Home> {
     }
 
     await shell.run(
-        '''externalSoftware/$platform/openMVG/openMVG_main_SfM$executableEnding --sfm-engine INCREMENTAL --input-file $resultFolder/matches/sfm_data.json --match_dir $resultFolder/matches --output_dir $resultFolder/reconstruction_sequential''');
+        '''externalSoftware/$platform/openMVG/openMVG_main_SfM$executableEnding --sfm_engine INCREMENTAL --input-file $resultFolder/matches/sfm_data.json --match_dir $resultFolder/matches --output_dir $resultFolder/reconstruction_sequential''');
 
     currentStep++;
     setState(() {});
@@ -300,13 +300,15 @@ apt-get -y install libboost1.74-all-dev libopencv-imgcodecs4.5 libopencv-calib3d
                                             Navigator.pop(context);
                                           })
                                     ]).show();
+                                    sharedPreferences.setString('areDependenciesInstalled', 'v1');
+                                    installed =true;
                                 await shell.run(
                                     'sudo sh externalSoftware/Linux/install_debian.sh');
-                                    sharedPreferences.setString('areDependenciesInstalled', 'v1');
                               })
                         ]).show();
                   } else {
                     await shell.run('install_windows.bat');
+                    installed =true;
                     sharedPreferences.setString('areDependenciesInstalled', 'v1');
                   }
                 }),
@@ -316,6 +318,8 @@ apt-get -y install libboost1.74-all-dev libopencv-imgcodecs4.5 libopencv-calib3d
                   Navigator.pop(context);
                 }),
           ]).show();
+    }else{
+      installed =true;
     }
     return installed;
   }
