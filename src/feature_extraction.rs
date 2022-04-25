@@ -15,7 +15,7 @@ pub fn extract_features(img_path: &str,feature_difference_threshold: i16,feature
     
     let mut previous_pixel_data:(u32, u32, image::Rgba<u8>) = (0,0,img.get_pixel(0,0));
 
-    let mut imgbuf = image::ImageBuffer::new(img_width, img_height);
+    //let mut imgbuf = image::ImageBuffer::new(img_width, img_height);
 
     let mut contrasty_pixels = HashMap::<String,bool>::new();
 
@@ -49,62 +49,59 @@ pub fn extract_features(img_path: &str,feature_difference_threshold: i16,feature
 
             //If the total difference is greater than the feature difference threshold the current pixel will be added to the contrasty pixels HashMap
             if total_difference > feature_difference_threshold {
-                contrasty_pixels.insert(format!("{}{}",p.0,p.1),true);
+                //contrasty_pixels.insert(format!("{}{}",p.0,p.1),true);
+                if p.0 + feature_size < img_width && p.1 + feature_size < img_height {
+                    let mut final_features_pixel_indexes_temp: Vec<(u32,u32)> = vec![];
+                    let mut are_any_pixels_occupied = false;
+                    for x in 0..feature_size {
+                        if are_any_pixels_occupied {
+                            break;
+                        }
+                        for y in 0..feature_size {
+                            let key = format!("{}{}",x+p.0,y+p.1);
+                            if occupied_pixels.contains_key(&key) {
+                                are_any_pixels_occupied = true;
+                                break;
+                            }
+                            final_features_pixel_indexes_temp.push((x+p.0,y+p.1));
+                            occupied_pixels.insert(format!("{}{}",x+p.0,y+p.1),true);
+                        }
+                    }
+                    if !are_any_pixels_occupied {
+                        final_features_pixel_indexes.push(final_features_pixel_indexes_temp);
+                    }
+                }
             }
         }
         previous_pixel_data = p;
         index+=1;
     }
 
-    let mut final_feature_index = 0;
-    let mut should_be_part_of_inflated_feature = 0;
-
-    for p in img.pixels() {
-        let key = format!("{}{}",p.0,p.1);
-        if contrasty_pixels.contains_key(&key) && p.0 + feature_size < img_width && p.1 + feature_size < img_height {
-            let mut final_features_pixel_indexes_temp: Vec<(u32,u32)> = vec![];
-            let mut are_any_pixels_occupied = false;
-            for x in 0..feature_size {
-                if(are_any_pixels_occupied) {
-                    break;
-                }
-                for y in 0..feature_size {
-                    let key = format!("{}{}",x+p.0,y+p.1);
-                    if(occupied_pixels.contains_key(&key)) {
-                        are_any_pixels_occupied = true;
-                        break;
-                    }
-                    final_features_pixel_indexes_temp.push((x+p.0,y+p.1));
-                    occupied_pixels.insert(format!("{}{}"),x+p.0,y+p.1,true);
-                }
-            }
-            if(!are_any_pixels_occupied) {
-                final_features_pixel_indexes.push(final_features_pixel_indexes_temp);
-            }
+    for item in final_features_pixel_indexes {
+        let mut pixel_data_bundle: Vec<image::Rgba<u8>> = vec![];
+        for x_y in item {
+            let pixel = img.get_pixel(x_y.0,x_y.1);
+            pixel_data_bundle.push(pixel);
         }
-        final_feature_index+=1;
+        final_features.push(pixel_data_bundle);
     }
 
-    for p in img.pixels() {
+    println!("Found {} features",final_features.len());
 
-    }
+    // for (x, y, pixel) in imgbuf.enumerate_pixels_mut() {
+    //     let key = format!("{}{}",x,y);
+    //     if occupied_pixels.contains_key(&key) {
+    //         *pixel = image::Rgb([255 as u8, 255 as u8, 255 as u8]);
+    //     }else{
+    //         *pixel = image::Rgb([0, 0, 0]);
+    //     }
+    // }
 
-    println!("Found {} features",contrasty_pixels.len());
+    // println!("Saving image");
 
-    for (x, y, pixel) in imgbuf.enumerate_pixels_mut() {
-        let key = format!("{}{}",x,y);
-        if contrasty_pixels.contains_key(&key) {
-            *pixel = image::Rgb([255 as u8, 255 as u8, 255 as u8]);
-        }else{
-            *pixel = image::Rgb([0, 0, 0]);
-        }
-    }
+    // imgbuf.save("result.png").unwrap();
 
-    println!("Saving image");
-
-    imgbuf.save("result.png").unwrap();
-
-    println!("Saved image");
+    // println!("Saved image");
 
     // for p in img.pixels() {
 
