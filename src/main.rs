@@ -1,7 +1,8 @@
-use std::thread;
-use std::time::Duration;
+//use std::thread;
+//use std::time::Duration;
 
 mod feature_extraction;
+//mod undistort_images;
 
 fn main() {
     /*thread::spawn(|| {
@@ -26,5 +27,8 @@ fn main() {
         feature_extraction::extract_features("/media/edin/21e2cbef-5a87-475b-8753-31755e0a279d1/3dscanning/wood_watering_place_001/processed/IMG_6206.tif",35,50);    
     }); */
     
-    feature_extraction::extract_features("/home/edin/Downloads/testset-ga/IMG_3485.JPG",35,30);
+    //feature_extraction::extract_features("/home/edin/Downloads/testset-ga/IMG_3485.JPG",35,30);
+    //undistort_images::undistort_images("/home/edin/Downloads/testset-ga/IMG_3485.JPG","/home/edin/Downloads/testset-ga/IMG_3485_undistorted.JPG");
+
+    feature_extraction::extract_features_for_all_images("/home/edin/Downloads/testset-ga");
 }

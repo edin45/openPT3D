@@ -1,11 +1,20 @@
 use image::GenericImageView;
+use num_cpus;
 
 use std::path::Path;
 use std::collections::HashMap;
+use std::fs;
+use math::round;
+use std::{
+    sync::{Arc, Mutex},
+    thread,
+};
 
 // ToDo: Optimize the feature extraction, because you can have 3x the extracted features if you don't let occupied_pixels map be so cluttered with failed features, I tried to do it but it left the feature extraction about 4x slower, so I will have to come back to it
 
-pub fn extract_features(img_path: &str,feature_difference_threshold: i16,feature_size: u32) {
+static supported_image_formats:[&str; 22] = ["PNG","JPEG","JPG","BMP","TIFF","TIF","AVIF","PNM","DDS","TGA","EXR","png","jpeg","jpg","bmp","tiff","tif","avif","pnm","dds","tga","exr"];
+
+fn extract_features(img_path: &str,feature_difference_threshold: i16,feature_size: u32) {
     //Open the Image
     let img = image::open(&Path::new(img_path)).unwrap();
     let img_width = img.dimensions().0;
@@ -17,7 +26,7 @@ pub fn extract_features(img_path: &str,feature_difference_threshold: i16,feature
     
     let mut previous_pixel_data:(u32, u32, image::Rgba<u8>) = (0,0,img.get_pixel(0,0));
 
-    //let mut imgbuf = image::ImageBuffer::new(img_width, img_height);
+    // let mut imgbuf = image::ImageBuffer::new(img_width, img_height);
 
     //let mut contrasty_pixels = HashMap::<String,bool>::new();
 
@@ -61,8 +70,8 @@ pub fn extract_features(img_path: &str,feature_difference_threshold: i16,feature
                             break;
                         }
                         for y in 0..feature_size {
-                            let key = (x+p.0,y+p.1);
-                            if occupied_pixels.contains_key(&key) {
+                            let oc_pixle_key = (x+p.0,y+p.1);
+                            if occupied_pixels.contains_key(&oc_pixle_key) {
                                 are_any_pixels_occupied = true;
                                 break;
                             }
@@ -95,29 +104,106 @@ pub fn extract_features(img_path: &str,feature_difference_threshold: i16,feature
 
     println!("Found {} features",final_features.len());
 
-    //  for (x, y, pixel) in imgbuf.enumerate_pixels_mut() {
-    //      let key = format!("{}{}",x,y);
-    //      if occupied_pixels.contains_key(&key) {
-    //          *pixel = image::Rgb([255 as u8, 255 as u8, 255 as u8]);
-    //      }else{
-    //          *pixel = image::Rgb([0, 0, 0]);
-    //      }
-    //  }
+    //   for (x, y, pixel) in imgbuf.enumerate_pixels_mut() {
+    //       let key = (x,y);
+    //       if occupied_pixels.contains_key(&key) {
+    //           *pixel = image::Rgb([255 as u8, 255 as u8, 255 as u8]);
+    //       }else{
+    //           *pixel = image::Rgb([0, 0, 0]);
+    //       }
+    //   }
 
-    //  println!("Saving image");
+    //   println!("Saving image");
 
-    //   imgbuf.save("result.png").unwrap();
+    //   let result_path = str::replace(img_path,".","_result.");
 
-    //  println!("Saved image");
+    //   imgbuf.save(format!("{}.png",result_path)).unwrap();
 
-    // for p in img.pixels() {
+    //   println!("Saved image");
+}
 
-    //     //println!("p: {:?}",p.2.0[0]);
-    //     if(index > 0) {
-    //         let r_diff = p.2.0[0];
-    //         let g_diff = p.2.0[0];
-    //         let b_diff = p.2.0[0];
-    //     }
-    //     index++1;
+pub fn extract_features_for_all_images(image_dir: &str) {
+    let mut thread_count = num_cpus::get();
+    let dir_contents = fs::read_dir(image_dir).unwrap();
+    let mut input_image_paths: Vec<String> = vec![];
+
+    let mut thread_img_distribution = HashMap::<u16,Vec<String>>::new();
+
+    let mut images_per_thread = 1;
+    let mut left_over_count = 0;
+
+    let mut left_overs: Vec<String> = vec![];
+    
+    for entry in fs::read_dir(image_dir).unwrap() {
+        let path = entry.unwrap().path();
+        // Get path string.
+        let path_str = path.to_str().unwrap();
+
+        for format in supported_image_formats {
+            if path_str.contains(format) {
+                input_image_paths.push(path_str.to_string());
+            }
+        }
+    }
+
+    if input_image_paths.len() < thread_count {
+        thread_count = input_image_paths.len();
+    }
+
+    println!("{:?}",input_image_paths);
+
+    if input_image_paths.len() % thread_count == 0 {
+        println!("divisible");
+        images_per_thread = input_image_paths.len() / thread_count;
+    }else{
+        println!("not divisible");
+        images_per_thread = round::ceil(input_image_paths.len() as f64 / thread_count as f64, 0) as usize;
+        left_over_count = (images_per_thread*thread_count) - input_image_paths.len();
+        println!("left_over_count: {:?}",left_over_count);
+    }
+
+    for i in 0..thread_count {
+        let mut img_paths_for_single_thread: Vec<String> = vec![];
+        if i == thread_count-1 {
+            for b in 0..(images_per_thread+left_over_count) {
+                img_paths_for_single_thread.push(input_image_paths[i+b].clone());
+            }
+        }else{
+            for b in 0..images_per_thread {
+                img_paths_for_single_thread.push(input_image_paths[i+b].clone());
+            }
+        }
+        thread_img_distribution.insert(i.try_into().unwrap(),img_paths_for_single_thread);
+    }
+
+    println!("thread_img_distribution: {:?}",thread_img_distribution);
+
+    let mut index = 0;
+    //let thread_img_distribution_local = thread_img_distribution;
+    //let shared_thread_img_distribution = Arc::new(Mutex::new(thread_img_distribution));
+
+    // let mut running_threads = vec![];
+
+    // for img_bundle in thread_img_distribution {
+    //     running_threads.push(thread::spawn(move || {
+    //         for path in img_bundle.1 {
+    //             extract_features(&path,35,30);
+    //         }
+    //     }));
+    //     index+=1;
     // }
+
+    //let lastThread = (thread_count as u16) -1;
+    //for path in thread_img_distribution[&lastThread] {
+    //    extract_features(&path,35,30);
+    //}
+
+    // for t in running_threads {
+    //     t.join();
+    // }
+    println!("{}",thread_count);
+
+    for path in dir_contents {
+        println!("Name: {}", path.unwrap().path().display())
+    }
 }
