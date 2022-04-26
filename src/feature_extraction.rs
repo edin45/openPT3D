@@ -3,6 +3,8 @@ use image::GenericImageView;
 use std::path::Path;
 use std::collections::HashMap;
 
+// ToDo: Optimize the feature extraction, because you can have 3x the extracted features if you don't let occupied_pixels map be so cluttered with failed features, I tried to do it but it left the feature extraction about 4x slower, so I will have to come back to it
+
 pub fn extract_features(img_path: &str,feature_difference_threshold: i16,feature_size: u32) {
     //Open the Image
     let img = image::open(&Path::new(img_path)).unwrap();
@@ -17,9 +19,9 @@ pub fn extract_features(img_path: &str,feature_difference_threshold: i16,feature
 
     //let mut imgbuf = image::ImageBuffer::new(img_width, img_height);
 
-    let mut contrasty_pixels = HashMap::<String,bool>::new();
+    //let mut contrasty_pixels = HashMap::<String,bool>::new();
 
-    let mut occupied_pixels = HashMap::<String,bool>::new();
+    let mut occupied_pixels = HashMap::<(u32,u32),bool>::new();
 //: Vec<Vec<image::Rgba<u8>>>
     let mut final_features: Vec::<Vec::<image::Rgba<u8>>> = Vec::new();
     let mut final_features_pixel_indexes: Vec::<Vec::<(u32,u32)>> = Vec::new();
@@ -53,22 +55,27 @@ pub fn extract_features(img_path: &str,feature_difference_threshold: i16,feature
                 if p.0 + feature_size < img_width && p.1 + feature_size < img_height {
                     let mut final_features_pixel_indexes_temp: Vec<(u32,u32)> = vec![];
                     let mut are_any_pixels_occupied = false;
+                    //let mut occupied_pixels_temp: Vec<(u32,u32)> = vec![];
                     for x in 0..feature_size {
                         if are_any_pixels_occupied {
                             break;
                         }
                         for y in 0..feature_size {
-                            let key = format!("{}{}",x+p.0,y+p.1);
+                            let key = (x+p.0,y+p.1);
                             if occupied_pixels.contains_key(&key) {
                                 are_any_pixels_occupied = true;
                                 break;
                             }
                             final_features_pixel_indexes_temp.push((x+p.0,y+p.1));
-                            occupied_pixels.insert(format!("{}{}",x+p.0,y+p.1),true);
+                            //occupied_pixels_temp.push((x+p.0,y+p.1));
+                            occupied_pixels.insert((x+p.0,y+p.1),true);
                         }
                     }
                     if !are_any_pixels_occupied {
                         final_features_pixel_indexes.push(final_features_pixel_indexes_temp);
+                        //for i in occupied_pixels_temp {
+                        //    occupied_pixels.insert(format!("{}{}",i.0,i.1),true);
+                        //}
                     }
                 }
             }
@@ -88,20 +95,20 @@ pub fn extract_features(img_path: &str,feature_difference_threshold: i16,feature
 
     println!("Found {} features",final_features.len());
 
-    // for (x, y, pixel) in imgbuf.enumerate_pixels_mut() {
-    //     let key = format!("{}{}",x,y);
-    //     if occupied_pixels.contains_key(&key) {
-    //         *pixel = image::Rgb([255 as u8, 255 as u8, 255 as u8]);
-    //     }else{
-    //         *pixel = image::Rgb([0, 0, 0]);
-    //     }
-    // }
+    //  for (x, y, pixel) in imgbuf.enumerate_pixels_mut() {
+    //      let key = format!("{}{}",x,y);
+    //      if occupied_pixels.contains_key(&key) {
+    //          *pixel = image::Rgb([255 as u8, 255 as u8, 255 as u8]);
+    //      }else{
+    //          *pixel = image::Rgb([0, 0, 0]);
+    //      }
+    //  }
 
-    // println!("Saving image");
+    //  println!("Saving image");
 
-    // imgbuf.save("result.png").unwrap();
+    //   imgbuf.save("result.png").unwrap();
 
-    // println!("Saved image");
+    //  println!("Saved image");
 
     // for p in img.pixels() {
 
