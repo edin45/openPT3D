@@ -30,5 +30,5 @@ fn main() {
     //feature_extraction::extract_features("/home/edin/Downloads/testset-ga/IMG_3485.JPG",35,30);
     //undistort_images::undistort_images("/home/edin/Downloads/testset-ga/IMG_3485.JPG","/home/edin/Downloads/testset-ga/IMG_3485_undistorted.JPG");
 
-    feature_extraction::extract_features_for_all_images("/home/edin/Downloads/testset-ga");
+    feature_extraction::extract_features_for_all_images("/home/edin/Downloads/testset-ga","/home/edin/Downloads/result");
 }

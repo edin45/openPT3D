@@ -9,14 +9,15 @@ use std::{
     sync::{Arc, Mutex},
     thread,
 };
+use std::sync::mpsc;
 
 // ToDo: Optimize the feature extraction, because you can have 3x the extracted features if you don't let occupied_pixels map be so cluttered with failed features, I tried to do it but it left the feature extraction about 4x slower, so I will have to come back to it
 
 static supported_image_formats:[&str; 22] = ["PNG","JPEG","JPG","BMP","TIFF","TIF","AVIF","PNM","DDS","TGA","EXR","png","jpeg","jpg","bmp","tiff","tif","avif","pnm","dds","tga","exr"];
 
-fn extract_features(img_path: &str,feature_difference_threshold: i16,feature_size: u32) {
+fn extract_features(img_path: String,feature_difference_threshold: i16,feature_size: u32) -> (String,Vec::<Vec::<[u8; 4]>>) {
     //Open the Image
-    let img = image::open(&Path::new(img_path)).unwrap();
+    let img = image::open(&Path::new(&img_path)).unwrap();
     let img_width = img.dimensions().0;
     let img_height = img.dimensions().1;
 
@@ -32,7 +33,7 @@ fn extract_features(img_path: &str,feature_difference_threshold: i16,feature_siz
 
     let mut occupied_pixels = HashMap::<(u32,u32),bool>::new();
 //: Vec<Vec<image::Rgba<u8>>>
-    let mut final_features: Vec::<Vec::<image::Rgba<u8>>> = Vec::new();
+    let mut final_features: Vec::<Vec::<[u8; 4]>> = Vec::new();
     let mut final_features_pixel_indexes: Vec::<Vec::<(u32,u32)>> = Vec::new();
 
     //Iterate over the Pixels in the image
@@ -94,13 +95,15 @@ fn extract_features(img_path: &str,feature_difference_threshold: i16,feature_siz
     }
 
     for item in final_features_pixel_indexes {
-        let mut pixel_data_bundle: Vec<image::Rgba<u8>> = vec![];
+        let mut pixel_data_bundle: Vec<[u8; 4]> = vec![];
         for x_y in item {
             let pixel = img.get_pixel(x_y.0,x_y.1);
-            pixel_data_bundle.push(pixel);
+            pixel_data_bundle.push(pixel.0);
         }
         final_features.push(pixel_data_bundle);
     }
+
+
 
     println!("Found {} features",final_features.len());
 
@@ -120,9 +123,16 @@ fn extract_features(img_path: &str,feature_difference_threshold: i16,feature_siz
     //   imgbuf.save(format!("{}.png",result_path)).unwrap();
 
     //   println!("Saved image");
+    let img_path_split = img_path.split("/");
+    let img_name: Vec<&str> = img_path_split.collect();
+
+    return (img_name[img_name.len()-1].to_string(),final_features);
 }
 
-pub fn extract_features_for_all_images(image_dir: &str) {
+pub fn extract_features_for_all_images(image_dir: &str,result_path: &str) {
+
+    let (tx,rx) = mpsc::channel();
+
     let mut thread_count = num_cpus::get();
     let dir_contents = fs::read_dir(image_dir).unwrap();
     let mut input_image_paths: Vec<String> = vec![];
@@ -133,8 +143,10 @@ pub fn extract_features_for_all_images(image_dir: &str) {
     let mut left_over_count = 0;
 
     let mut left_overs: Vec<String> = vec![];
+
+    let mut final_feature_map = HashMap::<String, Vec::<Vec::<[u8; 4]>>>::new();
     
-    for entry in fs::read_dir(image_dir).unwrap() {
+    for entry in fs::read_dir(image_dir).unwrap(]6) {
         let path = entry.unwrap().path();
         // Get path string.
         let path_str = path.to_str().unwrap();
@@ -152,58 +164,67 @@ pub fn extract_features_for_all_images(image_dir: &str) {
 
     println!("{:?}",input_image_paths);
 
-    if input_image_paths.len() % thread_count == 0 {
-        println!("divisible");
-        images_per_thread = input_image_paths.len() / thread_count;
-    }else{
-        println!("not divisible");
-        images_per_thread = round::ceil(input_image_paths.len() as f64 / thread_count as f64, 0) as usize;
-        left_over_count = (images_per_thread*thread_count) - input_image_paths.len();
-        println!("left_over_count: {:?}",left_over_count);
-    }
+    images_per_thread = round::ceil(input_image_paths.len() as f64 / thread_count as f64, 0) as usize;
+
+    // if input_image_paths.len() % thread_count == 0 {
+    //     println!("divisible");
+    //     images_per_thread = round::ceil(input_image_paths.len() as f64 / thread_count as f64, 0) as usize;
+    // }else{
+    //     println!("not divisible");
+    //     images_per_thread = round::ceil(input_image_paths.len() as f64 / thread_count as f64, 0) as usize;
+    //     left_over_count = (images_per_thread*thread_count) - input_image_paths.len();
+    //     println!("left_over_count: {:?}",left_over_count);
+    // }
+
+    let mut total_images = 0;
 
     for i in 0..thread_count {
         let mut img_paths_for_single_thread: Vec<String> = vec![];
-        if i == thread_count-1 {
-            for b in 0..(images_per_thread+left_over_count) {
-                img_paths_for_single_thread.push(input_image_paths[i+b].clone());
-            }
-        }else{
+
+        if total_images < input_image_paths.len() {
             for b in 0..images_per_thread {
-                img_paths_for_single_thread.push(input_image_paths[i+b].clone());
+                if input_image_paths.len() > total_images {
+                    img_paths_for_single_thread.push(input_image_paths[i+b].clone());
+                    total_images+=1;
+                }
             }
         }
         thread_img_distribution.insert(i.try_into().unwrap(),img_paths_for_single_thread);
     }
 
-    println!("thread_img_distribution: {:?}",thread_img_distribution);
-
     let mut index = 0;
     //let thread_img_distribution_local = thread_img_distribution;
     //let shared_thread_img_distribution = Arc::new(Mutex::new(thread_img_distribution));
 
-    // let mut running_threads = vec![];
+     let mut running_threads = vec![];
 
-    // for img_bundle in thread_img_distribution {
-    //     running_threads.push(thread::spawn(move || {
-    //         for path in img_bundle.1 {
-    //             extract_features(&path,35,30);
-    //         }
-    //     }));
-    //     index+=1;
-    // }
+     for img_bundle in thread_img_distribution {
+         let loc_tx = tx.clone();
+         running_threads.push(thread::spawn(move || {
+             for path in img_bundle.1 {
+                let feature_data = extract_features(path,35,30);
+                //final_feature_map.insert(feature_data.0,feature_data.1);
+                loc_tx.send(feature_data).unwrap();
+             }
+         }));
+         index+=1;
+     }
 
-    //let lastThread = (thread_count as u16) -1;
-    //for path in thread_img_distribution[&lastThread] {
-    //    extract_features(&path,35,30);
-    //}
+     for t in running_threads {
+         t.join();
+     }
 
-    // for t in running_threads {
-    //     t.join();
-    // }
+     for d in rx.iter().take(thread_count) {
+         final_feature_map.insert(d.0,d.1);
+     }
+
+    //let mut file = File::create(format!("{}/feature_extraction.data",result_path));
+    //file.write_all(format!("{:?}",final_feature_map));
+
+    //let data = "Some data!";
+    fs::write(format!("{}/feature_extraction.json",result_path), format!("{:?}",final_feature_map)).expect("Unable to write file");
+
+     //println!("final_feature_map: {:?}",final_feature_map);
     println!("{}",thread_count);
-
-    for path in dir_contents {
-        println!("Name: {}", path.unwrap().path().display())
-    }
+    //serde_json::to_writer(file, hashmap)?;
 }
