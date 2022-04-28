@@ -5,15 +5,12 @@ use std::path::Path;
 use std::collections::HashMap;
 use std::fs;
 use math::round;
-use std::{
-    sync::{Arc, Mutex},
-    thread,
-};
+use std::thread;
 use std::sync::mpsc;
 
 // ToDo: Optimize the feature extraction, because you can have 3x the extracted features if you don't let occupied_pixels map be so cluttered with failed features, I tried to do it but it left the feature extraction about 4x slower, so I will have to come back to it
 
-static supported_image_formats:[&str; 22] = ["PNG","JPEG","JPG","BMP","TIFF","TIF","AVIF","PNM","DDS","TGA","EXR","png","jpeg","jpg","bmp","tiff","tif","avif","pnm","dds","tga","exr"];
+static SUPPORTED_IMAGE_FORMATS:[&str; 22] = ["PNG","JPEG","JPG","BMP","TIFF","TIF","AVIF","PNM","DDS","TGA","EXR","png","jpeg","jpg","bmp","tiff","tif","avif","pnm","dds","tga","exr"];
 
 fn extract_features(img_path: String,feature_difference_threshold: i16,feature_size: u32) -> (String,Vec::<Vec::<[u8; 4]>>) {
     //Open the Image
@@ -123,6 +120,7 @@ fn extract_features(img_path: String,feature_difference_threshold: i16,feature_s
     //   imgbuf.save(format!("{}.png",result_path)).unwrap();
 
     //   println!("Saved image");
+
     let img_path_split = img_path.split("/");
     let img_name: Vec<&str> = img_path_split.collect();
 
@@ -134,15 +132,9 @@ pub fn extract_features_for_all_images(image_dir: &str,result_path: &str) {
     let (tx,rx) = mpsc::channel();
 
     let mut thread_count = num_cpus::get();
-    let dir_contents = fs::read_dir(image_dir).unwrap();
     let mut input_image_paths: Vec<String> = vec![];
 
     let mut thread_img_distribution = HashMap::<u16,Vec<String>>::new();
-
-    let mut images_per_thread = 1;
-    let mut left_over_count = 0;
-
-    let mut left_overs: Vec<String> = vec![];
 
     let mut final_feature_map = HashMap::<String, Vec::<Vec::<[u8; 4]>>>::new();
     
@@ -151,7 +143,7 @@ pub fn extract_features_for_all_images(image_dir: &str,result_path: &str) {
         // Get path string.
         let path_str = path.to_str().unwrap();
 
-        for format in supported_image_formats {
+        for format in SUPPORTED_IMAGE_FORMATS {
             if path_str.contains(format) {
                 input_image_paths.push(path_str.to_string());
             }
@@ -164,17 +156,7 @@ pub fn extract_features_for_all_images(image_dir: &str,result_path: &str) {
 
     println!("{:?}",input_image_paths);
 
-    images_per_thread = round::ceil(input_image_paths.len() as f64 / thread_count as f64, 0) as usize;
-
-    // if input_image_paths.len() % thread_count == 0 {
-    //     println!("divisible");
-    //     images_per_thread = round::ceil(input_image_paths.len() as f64 / thread_count as f64, 0) as usize;
-    // }else{
-    //     println!("not divisible");
-    //     images_per_thread = round::ceil(input_image_paths.len() as f64 / thread_count as f64, 0) as usize;
-    //     left_over_count = (images_per_thread*thread_count) - input_image_paths.len();
-    //     println!("left_over_count: {:?}",left_over_count);
-    // }
+    let images_per_thread = round::ceil(input_image_paths.len() as f64 / thread_count as f64, 0) as usize;
 
     let mut total_images = 0;
 
@@ -192,10 +174,6 @@ pub fn extract_features_for_all_images(image_dir: &str,result_path: &str) {
         thread_img_distribution.insert(i.try_into().unwrap(),img_paths_for_single_thread);
     }
 
-    let mut index = 0;
-    //let thread_img_distribution_local = thread_img_distribution;
-    //let shared_thread_img_distribution = Arc::new(Mutex::new(thread_img_distribution));
-
      let mut running_threads = vec![];
 
      for img_bundle in thread_img_distribution {
@@ -207,11 +185,13 @@ pub fn extract_features_for_all_images(image_dir: &str,result_path: &str) {
                 loc_tx.send(feature_data).unwrap();
              }
          }));
-         index+=1;
      }
 
      for t in running_threads {
-         t.join();
+         match t.join() {
+            Err(e) => println!("{:?}", e),
+            _ => ()
+        }
      }
 
      for d in rx.iter().take(thread_count) {
