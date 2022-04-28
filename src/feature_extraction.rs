@@ -146,7 +146,7 @@ pub fn extract_features_for_all_images(image_dir: &str,result_path: &str) {
 
     let mut final_feature_map = HashMap::<String, Vec::<Vec::<[u8; 4]>>>::new();
     
-    for entry in fs::read_dir(image_dir).unwrap(]6) {
+    for entry in fs::read_dir(image_dir).unwrap() {
         let path = entry.unwrap().path();
         // Get path string.
         let path_str = path.to_str().unwrap();
