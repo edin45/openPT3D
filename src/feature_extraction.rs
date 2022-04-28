@@ -12,7 +12,7 @@ use std::sync::mpsc;
 
 static SUPPORTED_IMAGE_FORMATS:[&str; 22] = ["PNG","JPEG","JPG","BMP","TIFF","TIF","AVIF","PNM","DDS","TGA","EXR","png","jpeg","jpg","bmp","tiff","tif","avif","pnm","dds","tga","exr"];
 
-fn extract_features(img_path: String,feature_difference_threshold: i16,feature_size: u32) -> (String,Vec::<Vec::<[u8; 4]>>) {
+fn extract_features(img_path: String,feature_difference_threshold: i16,feature_size: u32) -> (String,Vec::<((u32,u32),Vec::<[u8; 4]>)>) {
     //Open the Image
     let img = image::open(&Path::new(&img_path)).unwrap();
     let img_width = img.dimensions().0;
@@ -30,7 +30,7 @@ fn extract_features(img_path: String,feature_difference_threshold: i16,feature_s
 
     let mut occupied_pixels = HashMap::<(u32,u32),bool>::new();
 //: Vec<Vec<image::Rgba<u8>>>
-    let mut final_features: Vec::<Vec::<[u8; 4]>> = Vec::new();
+    let mut final_features: Vec::<((u32,u32),Vec::<[u8; 4]>)> = Vec::new();
     let mut final_features_pixel_indexes: Vec::<Vec::<(u32,u32)>> = Vec::new();
 
     //Iterate over the Pixels in the image
@@ -93,11 +93,14 @@ fn extract_features(img_path: String,feature_difference_threshold: i16,feature_s
 
     for item in final_features_pixel_indexes {
         let mut pixel_data_bundle: Vec<[u8; 4]> = vec![];
+        let mut feature_pixel_coordinates: (u32,u32) = (25,25);
         for x_y in item {
             let pixel = img.get_pixel(x_y.0,x_y.1);
             pixel_data_bundle.push(pixel.0);
+            feature_pixel_coordinates = (x_y.0,x_y.1);
         }
-        final_features.push(pixel_data_bundle);
+        feature_pixel_coordinates = (feature_pixel_coordinates.0 - (feature_size/2),feature_pixel_coordinates.1 - (feature_size/2));
+        final_features.push(((feature_pixel_coordinates.0,feature_pixel_coordinates.1),pixel_data_bundle));
     }
 
 
@@ -136,7 +139,7 @@ pub fn extract_features_for_all_images(image_dir: &str,result_path: &str) {
 
     let mut thread_img_distribution = HashMap::<u16,Vec<String>>::new();
 
-    let mut final_feature_map = HashMap::<String, Vec::<Vec::<[u8; 4]>>>::new();
+    let mut final_feature_map = HashMap::<String, Vec::<((u32,u32),Vec::<[u8; 4]>)>>::new();
     
     for entry in fs::read_dir(image_dir).unwrap() {
         let path = entry.unwrap().path();
