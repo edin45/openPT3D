@@ -1,3 +1,5 @@
+# This Project is not maintained - I've made a better version with a GUI: https://github.com/edin45/simple_photogrammetry_gui
+
 # openPT3D
 
 ### Based on:
